@@ -95,6 +95,11 @@ intro =
 				color:#4b86ff;
 			}
 		
+			a b {
+				
+				white-space: nowrap;
+			}
+		
 			a {
 				color:				black;
 				text-decoration:	none;

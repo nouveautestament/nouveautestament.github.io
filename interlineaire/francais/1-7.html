@@ -95,6 +95,10 @@
 				font-family:		sans-serif;
 			}
 			
+			a b {
+				
+				white-space: nowrap;
+			}
 			
 			a {
 				
@@ -139,7 +143,6 @@
 				height:100%;
 				
 				float:left;
-				
 				overflow: auto;
 			
 			}
@@ -157,16 +160,10 @@
 				overflow: hidden;
 			}
 
-			
 
 			#inleft {
 				
 				padding:5px;
-			}
-
-			#box {
-				
-				width:100%;
 			}
 			
 			img {
@@ -420,10 +417,13 @@
 <br>
 </div></div>
 
-<div id="right"><img id="box" src=""></div><br>
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
 
 </body>
-
 <script>
 
 
@@ -458,31 +458,50 @@ xbook = {
 }
 
 
-element = document.getElementById('box')
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
 nbmakelc = 0;
 
 lcarray = {}
 
-panzoom(element, {
-  maxZoom: 70,
-  minZoom: 0.1,
-  initialX: 0,
-  initialY: 0,
-  initialZoom: 1,
-  filterKey: function(/* e, dx, dy, dz */) {
-    // don't let panzoom handle this event:
-    return true;
-  }
-});
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
 
 
 
-function fokos(ver)
+function loader()
 {
 	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
 }
-
-
 
 
 
@@ -491,10 +510,10 @@ document.onkeydown = checkKey;
 function checkKey(e) 
 {
 
-	if (element.getAttribute("src") != "")
+	if (elempic.getAttribute("src") != "")
 	{
 
-		pic = element.src.match(/([0-9]+).jpg/)[1]
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
 
 		e = e || window.event;
 
@@ -502,19 +521,19 @@ function checkKey(e)
 		
 		if (e.keyCode == '27') {
 			
-			if (element.src.indexOf('lefevre') != -1)
+			if (elempic.src.indexOf('lefevre') != -1)
 				view('lefevre')
 			
-			if (element.src.indexOf('olivetan') != -1)
+			if (elempic.src.indexOf('olivetan') != -1)
 				view('olivetan')
 			
-			if (element.src.indexOf('grosjean') != -1)
+			if (elempic.src.indexOf('grosjean') != -1)
 				view('grosjean')
 			
-			if (element.src.indexOf('bayard') != -1)
+			if (elempic.src.indexOf('bayard') != -1)
 				view('bayard')
 
-			if (element.src.indexOf('martin') != -1)
+			if (elempic.src.indexOf('martin') != -1)
 				view('martin_1707')
 
 		}
@@ -531,23 +550,23 @@ function checkKey(e)
 			{
 					pic--
 						
-				if (element.src.indexOf('lefevre') != -1)
-					element.src = "../../lefevre/"+array_lefevre[pic]
+				if (elempic.src.indexOf('lefevre') != -1)
+					elempic.src = "../../lefevre/"+array_lefevre[pic]
 				
-				else if (element.src.indexOf('olivetan') != -1)
+				else if (elempic.src.indexOf('olivetan') != -1)
 				{
-					index_olivetan = array_olivetan.indexOf(element.src.replace(/^.*?olivetan\//,''))
-					element.src = "../../olivetan/"+array_olivetan[index_olivetan-1]
+					index_olivetan = array_olivetan.indexOf(elempic.src.replace(/^.*?olivetan\//,''))
+					elempic.src = "../../olivetan/"+array_olivetan[index_olivetan-1]
 				}
 				
-				else if (element.src.indexOf('grosjean') != -1)
-					element.src = "../../grosjean/"+array_grosjean[pic]
+				else if (elempic.src.indexOf('grosjean') != -1)
+					elempic.src = "../../grosjean/"+array_grosjean[pic]
 				
-				else if (element.src.indexOf('bayard') != -1)
-					element.src = "../../bayard/"+array_bayard[pic]
+				else if (elempic.src.indexOf('bayard') != -1)
+					elempic.src = "../../bayard/"+array_bayard[pic]
 				
-				else if (element.src.indexOf('martin') != -1)
-					element.src = "../../martin_1707/"+array_martin_1707[pic]
+				else if (elempic.src.indexOf('martin') != -1)
+					elempic.src = "../../martin_1707/"+array_martin_1707[pic]
 				
 				
 			}
@@ -556,46 +575,46 @@ function checkKey(e)
 		else if (e.keyCode == '39') 
 		{
 			
-			if (element.src.indexOf('lefevre') != -1)
+			if (elempic.src.indexOf('lefevre') != -1)
 			{
 				if (pic < array_lefevre.length-1)
 					pic++
 				
-				element.src = "../../lefevre/"+array_lefevre[pic]
+				elempic.src = "../../lefevre/"+array_lefevre[pic]
 			}
 			
-			else if (element.src.indexOf('olivetan') != -1)
+			else if (elempic.src.indexOf('olivetan') != -1)
 			{
 				if (pic < array_olivetan.length-1)
 					pic++
 				
-				index_olivetan = array_olivetan.indexOf(element.src.replace(/^.*?olivetan\//,''))
-				element.src = "../../olivetan/"+array_olivetan[index_olivetan+1]
+				index_olivetan = array_olivetan.indexOf(elempic.src.replace(/^.*?olivetan\//,''))
+				elempic.src = "../../olivetan/"+array_olivetan[index_olivetan+1]
 			}
 			
-			else if (element.src.indexOf('grosjean') != -1)
+			else if (elempic.src.indexOf('grosjean') != -1)
 			{
 				if (pic < array_grosjean.length-1)
 					pic++
 				
-				element.src = "../../grosjean/"+array_grosjean[pic]
+				elempic.src = "../../grosjean/"+array_grosjean[pic]
 			}
 			
-			else if (element.src.indexOf('bayard') != -1)
+			else if (elempic.src.indexOf('bayard') != -1)
 			{
 				if (pic < array_bayard.length-1)
 					pic++
 				
-				element.src = "../../bayard/"+array_bayard[pic]
+				elempic.src = "../../bayard/"+array_bayard[pic]
 			
 			}
 			
-			else if (element.src.indexOf('martin') != -1)
+			else if (elempic.src.indexOf('martin') != -1)
 			{
 				if (pic < array_martin_1707.length-1)
 					pic++
 				
-				element.src = "../../martin_1707/"+array_martin_1707[pic]
+				elempic.src = "../../martin_1707/"+array_martin_1707[pic]
 			
 			}
 			
@@ -605,7 +624,7 @@ function checkKey(e)
 		else if (e.keyCode == '67') 
 		{
 			nbmakelc++
-			srclef = element.getAttribute("src").replace('../../','')
+			srclef = elempic.getAttribute("src").replace('../../','')
 			
 			remlc = makelc[nbmakelc].split(':')
 			remlc = xbook[remlc[0]]+':'+remlc[1]

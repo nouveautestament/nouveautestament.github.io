@@ -136,6 +136,10 @@ intro =
 				font-family:		sans-serif;
 			}
 			
+			a b {
+				
+				white-space: nowrap;
+			}
 			
 			a {
 				
@@ -180,7 +184,6 @@ intro =
 				height:100%;
 				
 				float:left;
-				
 				overflow: auto;
 			
 			}
@@ -293,8 +296,8 @@ end = `
 		<img onload="loader();" id="box" src=""></div>
 	</div>
 </div>
-</body>
 
+</body>
 <script>
 
 
