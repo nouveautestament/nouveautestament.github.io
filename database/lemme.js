@@ -30061,8 +30061,8 @@ lemme={
   "D'origine latine"
  ],
  "Τίτος": [
-  "Titos",
-  "Titos, Tite = \"nourrice\", \"honorable\"   un Chrétien venant de chez les Gentils, un compagnon de Paul dans quelques-uns de ses voyages",
+  "Titus",
+  "Titus, Tite = \"nourrice\", \"honorable\", d’origine latine (titulus : inscription),  un Chrétien venant de chez les Gentils, un compagnon de Paul dans quelques-uns de ses voyages",
   "Nom propre masculin",
   "D'origine latine mais signification incertaine"
  ],

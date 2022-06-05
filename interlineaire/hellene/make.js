@@ -136,11 +136,6 @@ intro =
 				font-family:		sans-serif;
 			}
 			
-			a b {
-				
-				white-space: nowrap;
-			}
-			
 			a {
 				
 				color:				black;
@@ -884,7 +879,7 @@ bezae_b                =  fichier.readFileSync('../../database/el/bezae_b.txt', 
 bezae_c                =  fichier.readFileSync('../../database/el/bezae_c.txt',                'utf8');
 washingtonianus_a      =  fichier.readFileSync('../../database/el/washingtonianus_a.txt',      'utf8');
 washingtonianus_b      =  fichier.readFileSync('../../database/el/washingtonianus_b.txt',      'utf8');
-
+nestle_aland_28        =  fichier.readFileSync('../../database/el/nestle_aland_28.txt',      'utf8');
 
 
 bible = 
@@ -907,7 +902,8 @@ bezae_a                +
 bezae_b                +
 bezae_c                +
 washingtonianus_a      +
-washingtonianus_b      
+washingtonianus_b      +
+nestle_aland_28        ;
 
 
 bible = bible.split(/\r\n?|\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)

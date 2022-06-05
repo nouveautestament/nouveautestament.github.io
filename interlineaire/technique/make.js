@@ -84,7 +84,6 @@ intro =
 				text-decoration:none;
 			}
 			
-			
 			.blocban:hover {
 				
 				text-decoration:none;
@@ -93,11 +92,6 @@ intro =
 		
 			.lemme a {
 				color:#4b86ff;
-			}
-		
-			a b {
-				
-				white-space: nowrap;
 			}
 		
 			a {

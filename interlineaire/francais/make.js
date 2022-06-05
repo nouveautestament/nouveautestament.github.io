@@ -1536,11 +1536,6 @@ intro =
 				font-family:		sans-serif;
 			}
 			
-			a b {
-				
-				white-space: nowrap;
-			}
-			
 			a {
 				
 				color:				black;
@@ -4528,7 +4523,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	
 	
-	//1:1:1:MATTHIEU:1:2022:OLIVETAN
+	//1:1:1:MATTHIEU:1:2022:LEFEVRE
 	//0 1 2 3        4 5    6
 
 	
