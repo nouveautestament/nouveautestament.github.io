@@ -210,7 +210,7 @@ intro =
 				border-radius: 14px;
 			}
 			
-			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus {
+			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus, .westcott_hort {
 			
 				cursor:	pointer;
 				color:	blue;
@@ -673,6 +673,10 @@ function checkKey(e)
 
 			else if (elempic.src.indexOf('washingtonianus') != -1)
 				view('washingtonianus')
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+				view('westcott_hort')
+			
 		}
 		
 		
@@ -722,6 +726,12 @@ function checkKey(e)
 				{
 					elempic.src = "../../washingtonianus/"+pic+".jpg";
 					show_number("washingtonianus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('westcott_hort') != -1)
+				{
+					elempic.src = "../../westcott_hort/"+pic+".jpg";
+					show_number("westcott_hort/"+pic+".jpg")
 				}
 			}
 		}
@@ -781,6 +791,16 @@ function checkKey(e)
 				
 				elempic.src = "../../washingtonianus/"+pic+".jpg";
 				show_number("washingtonianus/"+pic+".jpg")
+			}
+			
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+			{
+				if (pic < 547)
+					pic++
+				
+				elempic.src = "../../westcott_hort/"+pic+".jpg";
+				show_number("westcott_hort/"+pic+".jpg")
 			}
 			
 		}
@@ -856,6 +876,7 @@ require('./lcv_vaticanus.js')
 require('./lcv_ephraemi_rescriptus.js')
 require('./lcv_bezae.js')
 require('./lcv_washingtonianus.js')
+require('./lc_westcott_hort.js')
 
 
 
@@ -879,7 +900,8 @@ bezae_b                =  fichier.readFileSync('../../database/el/bezae_b.txt', 
 bezae_c                =  fichier.readFileSync('../../database/el/bezae_c.txt',                'utf8');
 washingtonianus_a      =  fichier.readFileSync('../../database/el/washingtonianus_a.txt',      'utf8');
 washingtonianus_b      =  fichier.readFileSync('../../database/el/washingtonianus_b.txt',      'utf8');
-nestle_aland_28        =  fichier.readFileSync('../../database/el/nestle_aland_28.txt',      'utf8');
+nestle_aland_28        =  fichier.readFileSync('../../database/el/nestle_aland_28.txt',        'utf8');
+westcott_hort          =  fichier.readFileSync('../../database/el/westcott_hort.txt',          'utf8');
 
 
 bible = 
@@ -903,7 +925,8 @@ bezae_b                +
 bezae_c                +
 washingtonianus_a      +
 washingtonianus_b      +
-nestle_aland_28        ;
+nestle_aland_28        +
+westcott_hort          ;
 
 
 bible = bible.split(/\r\n?|\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
@@ -944,8 +967,8 @@ for (line = 0 ; line != bible.length ; line++)
 	xlcv	= livre+':'+chapitre+':'+verset;
 	texte	= bible[line].replace(info[0]+" ","")
 	
-	//console.log(line+'--> '+backlivre+':'+backchap+':'+backverset+' '+bible[line]+' '+livre+' '+chapitre)
 	
+	//console.log(line+'--> '+backlivre+':'+backchap+':'+backverset+' '+bible[line]+' '+livre+' '+chapitre)
 	
 
 
@@ -1143,11 +1166,42 @@ for (line = 0 ; line != bible.length ; line++)
 
 	}	
 	
+	
+
+	else if (traducteur.indexOf('WESTCOTT_HORT') != -1)
+	{
+
+		
+		
+		if (lc_westcott_hort[bookname+':'+chapitre])
+		{
+			data	+= 
+			'<tr><td nowrap class="westcott_hort" onclick="eimiv='+verset+';view(\'westcott_hort/'+lc_westcott_hort[bookname+':'+chapitre]+'.jpg\');">'+traducteur+'</a></td>'+
+			'<td>'+date+'</td>'+
+			'<td>'+texte+'</td></tr>'
+		
+		}
+
+		else
+		{
+			
+			data += 
+			'<tr><td nowrap>'+traducteur+'</td>'+
+			'<td>'+date+'</td>'+
+			'<td>'+texte+'</td></tr>'	
+		}
+
+	}
+
+	
+	
 	else
 		data += 
 			'<tr><td nowrap>'+traducteur+'</td>'+
 			'<td>'+date+'</td>'+
 			'<td>'+texte+'</td></tr>'
+
+
 
 
 
@@ -1160,6 +1214,10 @@ for (line = 0 ; line != bible.length ; line++)
 	backverset	= verset;
 	
 	}
+	
+	
+	
+	
 	
 }
 
