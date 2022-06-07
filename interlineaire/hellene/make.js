@@ -210,7 +210,7 @@ intro =
 				border-radius: 14px;
 			}
 			
-			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus, .westcott_hort {
+			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus, .westcott_hort, .tischendorf {
 			
 				cursor:	pointer;
 				color:	blue;
@@ -677,6 +677,10 @@ function checkKey(e)
 			else if (elempic.src.indexOf('westcott_hort') != -1)
 				view('westcott_hort')
 			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+				view('tischendorf')
+			
+			
 		}
 		
 		
@@ -733,6 +737,13 @@ function checkKey(e)
 					elempic.src = "../../westcott_hort/"+pic+".jpg";
 					show_number("westcott_hort/"+pic+".jpg")
 				}
+				
+				else if (elempic.src.indexOf('tischendorf') != -1)
+				{
+					elempic.src = "../../tischendorf/"+pic+".jpg";
+					show_number("tischendorf/"+pic+".jpg")
+				}
+				
 			}
 		}
 		
@@ -801,6 +812,15 @@ function checkKey(e)
 				
 				elempic.src = "../../westcott_hort/"+pic+".jpg";
 				show_number("westcott_hort/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+			{
+				if (pic < 2014)
+					pic++
+				
+				elempic.src = "../../tischendorf/"+pic+".jpg";
+				show_number("tischendorf/"+pic+".jpg")
 			}
 			
 		}
@@ -877,7 +897,7 @@ require('./lcv_ephraemi_rescriptus.js')
 require('./lcv_bezae.js')
 require('./lcv_washingtonianus.js')
 require('./lc_westcott_hort.js')
-
+require('./lc_tischendorf.js')
 
 
 sinaiticus_a           =  fichier.readFileSync('../../database/el/sinaiticus_a.txt',           'utf8');
@@ -902,6 +922,8 @@ washingtonianus_a      =  fichier.readFileSync('../../database/el/washingtonianu
 washingtonianus_b      =  fichier.readFileSync('../../database/el/washingtonianus_b.txt',      'utf8');
 nestle_aland_28        =  fichier.readFileSync('../../database/el/nestle_aland_28.txt',        'utf8');
 westcott_hort          =  fichier.readFileSync('../../database/el/westcott_hort.txt',          'utf8');
+tischendorf            =  fichier.readFileSync('../../database/el/tischendorf.txt',          'utf8');
+
 
 
 bible = 
@@ -926,7 +948,8 @@ bezae_c                +
 washingtonianus_a      +
 washingtonianus_b      +
 nestle_aland_28        +
-westcott_hort          ;
+westcott_hort          +
+tischendorf            ;
 
 
 bible = bible.split(/\r\n?|\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
@@ -1170,9 +1193,7 @@ for (line = 0 ; line != bible.length ; line++)
 
 	else if (traducteur.indexOf('WESTCOTT_HORT') != -1)
 	{
-
-		
-		
+	
 		if (lc_westcott_hort[bookname+':'+chapitre])
 		{
 			data	+= 
@@ -1193,6 +1214,29 @@ for (line = 0 ; line != bible.length ; line++)
 
 	}
 
+
+	else if (traducteur.indexOf('TISCHENDORF') != -1)
+	{
+	
+		if (lc_tischendorf[bookname+':'+chapitre])
+		{
+			data	+= 
+			'<tr><td nowrap class="tischendorf" onclick="eimiv='+verset+';view(\'tischendorf/'+lc_tischendorf[bookname+':'+chapitre]+'.jpg\');">'+traducteur+'</a></td>'+
+			'<td>'+date+'</td>'+
+			'<td>'+texte+'</td></tr>'
+		
+		}
+
+		else
+		{
+			
+			data += 
+			'<tr><td nowrap>'+traducteur+'</td>'+
+			'<td>'+date+'</td>'+
+			'<td>'+texte+'</td></tr>'	
+		}
+
+	}
 	
 	
 	else
