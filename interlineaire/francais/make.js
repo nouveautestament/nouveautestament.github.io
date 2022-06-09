@@ -1660,6 +1660,7 @@ intro =
 	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
 	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
 	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
 	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
@@ -4402,7 +4403,7 @@ fichier	= require('fs');
 
 
 
-sebastien_d_g     =  fichier.readFileSync('../../database/fr/sebastien_fr.txt',      'utf8').replace(/#/g,' ');
+nouvelle_disposition     =  fichier.readFileSync('../../database/fr/nouvelle_disposition.txt',      'utf8').replace(/#/g,' ');
 alain_dumont      =  fichier.readFileSync('../../database/fr/alain-dumont.txt',      'utf8');
 jacqueline        =  fichier.readFileSync('../../database/fr/jacqueline.txt',        'utf8');
 osty_et_trinquet  =  fichier.readFileSync('../../database/fr/osty-et-trinquet.txt',  'utf8');
@@ -4454,7 +4455,7 @@ parole_vivante    =  fichier.readFileSync('../../database/fr/parole-vivante.txt'
 
 
 bible = 
-sebastien_d_g     +
+nouvelle_disposition     +
 alain_dumont      +
 jacqueline        +
 osty_et_trinquet  +

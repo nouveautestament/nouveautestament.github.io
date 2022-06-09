@@ -249,6 +249,19 @@ intro =
 				background-color:#3f4346;
 			}
 
+			rtxt {
+				color: green;
+			}
+			
+			wits {
+				color: red;
+			}
+			
+			table b {
+				display: block;
+				color: orange;
+				margin-bottom: 3px;
+			}
 		</style>
 	</head>
 
@@ -262,6 +275,7 @@ intro =
 	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
 	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
 	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
 	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
@@ -900,6 +914,7 @@ require('./lc_westcott_hort.js')
 require('./lc_tischendorf.js')
 
 
+apparat_critique       =  fichier.readFileSync('../../database/cr/apparat_critique.txt',       'utf8');
 sinaiticus_a           =  fichier.readFileSync('../../database/el/sinaiticus_a.txt',           'utf8');
 sinaiticus_b           =  fichier.readFileSync('../../database/el/sinaiticus_b.txt',           'utf8');
 sinaiticus_c           =  fichier.readFileSync('../../database/el/sinaiticus_c.txt',           'utf8');
@@ -922,11 +937,17 @@ washingtonianus_a      =  fichier.readFileSync('../../database/el/washingtonianu
 washingtonianus_b      =  fichier.readFileSync('../../database/el/washingtonianus_b.txt',      'utf8');
 nestle_aland_28        =  fichier.readFileSync('../../database/el/nestle_aland_28.txt',        'utf8');
 westcott_hort          =  fichier.readFileSync('../../database/el/westcott_hort.txt',          'utf8');
-tischendorf            =  fichier.readFileSync('../../database/el/tischendorf.txt',          'utf8');
-
+tischendorf            =  fichier.readFileSync('../../database/el/tischendorf.txt',            'utf8');
+stephanus              =  fichier.readFileSync('../../database/el/stephanus.txt',              'utf8');
+scrivener              =  fichier.readFileSync('../../database/el/scrivener.txt',              'utf8');
+king_james             =  fichier.readFileSync('../../database/el/king_james.txt',             'utf8');
+sbl                    =  fichier.readFileSync('../../database/el/sbl.txt',                    'utf8');
+robinson_et_pierpont   =  fichier.readFileSync('../../database/el/robinson_et_pierpont.txt',   'utf8');
+nouvelle_disposition   =  fichier.readFileSync('../../database/el/nouvelle_disposition.txt',   'utf8');
 
 
 bible = 
+apparat_critique       +
 sinaiticus_a           +
 sinaiticus_b           +
 sinaiticus_c           +
@@ -949,7 +970,13 @@ washingtonianus_a      +
 washingtonianus_b      +
 nestle_aland_28        +
 westcott_hort          +
-tischendorf            ;
+tischendorf            +
+stephanus              +
+scrivener              +
+king_james             +
+sbl                    +
+robinson_et_pierpont   +
+nouvelle_disposition   ;
 
 
 bible = bible.split(/\r\n?|\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)

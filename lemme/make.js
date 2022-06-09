@@ -87,11 +87,11 @@ file2		= require('fs')
 
 require('../database/lemme.js')
 
-sebastien_te	= file1		.readFileSync('../database/te/sebastien_te.txt',"utf-8")
+sebastien_te	= file1		.readFileSync('../database/te/nouvelle_disposition_te.txt',"utf-8")
 sebastien_te	= sebastien_te	.split('\n')
 
 
-sebastien_fr	= file1			.readFileSync('../database/fr/sebastien_fr.txt',"utf-8")
+sebastien_fr	= file1			.readFileSync('../database/fr/nouvelle_disposition.txt',"utf-8")
 sebastien_fr	= sebastien_fr	.split('\n')
 
 
@@ -230,6 +230,7 @@ intro = `<!DOCTYPE html>
 	--><a class="blocban" href="../interlineaire/francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../interlineaire/technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="conflits.html">CONFLIT</a><!--
 	--><a class="blocban" href="../dictionnaire/lsj.html">LSJ</a><!--
 	--><a class="blocban" href="../dictionnaire/bailly.html">BAILLY</a><!--
 	--><a class="blocban" href="../minidico/dictionnaire.html">MINIDICO</a><!--
@@ -264,7 +265,7 @@ function clean(xxx)
 
 
 lemmes = ''
-incoherences = ''
+conflits = ''
 x = 0
 
 inco = 0
@@ -500,7 +501,7 @@ for (lem in lemme)
 	
 
 
-	//incoherences
+	//conflits
 	for (lem2 in lemme)
 	{
 		trad1	= trad.split(',')[0]
@@ -512,21 +513,21 @@ for (lem in lemme)
 			{
 				if
 				(
-					incoherences.indexOf
+					conflits.indexOf
 					(
 						'<td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td><td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td></tr>\n'
 					) == -1
 					
 					&&
 					
-					incoherences.indexOf
+					conflits.indexOf
 					(
 						'<td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td><td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td></tr>\n'
 					) == -1
 				)
 				{
 					inco++;
-					incoherences += '<tr><td><b>'+inco+'</b></td><td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td><td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td></tr>\n'
+					conflits += '<tr><td><b>'+inco+'</b></td><td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td><td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td></tr>\n'
 				}
 				
 			}
@@ -542,4 +543,4 @@ for (lem in lemme)
 
 file2.writeFileSync('lemmes.html' , intro + '<table cellspacing="0">' + lemmes + '</table>' + end , "utf-8")
 
-file2.writeFileSync('incoherences.html' , intro + '<table cellspacing="0">' + incoherences + '</table>' + end , "utf-8")
+file2.writeFileSync('conflits.html' , intro + '<table cellspacing="0">' + conflits + '</table>' + end , "utf-8")

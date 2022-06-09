@@ -5,7 +5,7 @@ fichier1 = require('fs')
 require('../database/lemme.js');
 require('../database/verbes.js');
 
-sebastien_te	= fichier1.readFileSync('../database/te/sebastien_te.txt', 'utf8').split('\n')
+nouvelle_disposition_te	= fichier1.readFileSync('../database/te/nouvelle_disposition_te.txt', 'utf8').split('\n')
 
 
 xbook = {
@@ -50,13 +50,13 @@ function convnumber(a,b,c)
 
 
 
-for (lineseb = 0 ; lineseb != sebastien_te.length ; lineseb++) {
+for (lineseb = 0 ; lineseb != nouvelle_disposition_te.length ; lineseb++) {
 
-if (sebastien_te[lineseb] != "" && sebastien_te[lineseb]) { 
+if (nouvelle_disposition_te[lineseb] != "" && nouvelle_disposition_te[lineseb]) { 
 
 
 
-allinfo		=	sebastien_te[lineseb].split(' ')
+allinfo		=	nouvelle_disposition_te[lineseb].split(' ')
 lcvte		=	allinfo[0].split(':')
 
 
@@ -87,7 +87,7 @@ fr		= ''
 //check lemme
 if (!lemme[lemma])
 {
-	if (sebastien_te[lineseb] != allinfo[0]+' ') //blank line, pas de verset
+	if (nouvelle_disposition_te[lineseb] != allinfo[0]+' ') //blank line, pas de verset
 	{
 		console.log('ERROR: '+lemma)
 		console.log(lcvte)
@@ -2822,7 +2822,7 @@ motfr = motfr.slice(0,-1);
 
 
 
-console.log(livre+':'+chapitre+':'+verset+':'+xbook[livre]+':1:2022:SEBASTIEN-D-G '+motfr)
+console.log(livre+':'+chapitre+':'+verset+':'+xbook[livre]+':1:2022:NOUVELLE_DISPOSITION '+motfr)
 
 
 

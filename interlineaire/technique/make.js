@@ -174,6 +174,7 @@ intro =
 	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
 	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
 	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
 	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
@@ -240,10 +241,10 @@ chbook = {
 fichier		= require('fs')
 
 
-sebastien_te	= fichier.readFileSync('../../database/te/sebastien_te.txt', 'utf8').split('\n')
-sebastien_fr	= fichier.readFileSync('../../database/fr/sebastien_fr.txt', 'utf8').split('\n')
-tauber_te		= fichier.readFileSync('../../database/te/tauber_te.txt', 'utf8')
-robinson_te		= fichier.readFileSync('../../database/te/robinson_te.txt', 'utf8')
+sebastien_te	= fichier.readFileSync('../../database/te/nouvelle_disposition_te.txt', 'utf8').split('\n')
+sebastien_fr	= fichier.readFileSync('../../database/fr/nouvelle_disposition.txt', 'utf8').split('\n')
+tauber_te		= fichier.readFileSync('../../database/te/sbl_tauber_te.txt', 'utf8')
+robinson_te		= fichier.readFileSync('../../database/te/robinson_et_pierpont_te.txt', 'utf8')
 ieronymus_ro	= fichier.readFileSync('../../database/ro/IERONYMUS.txt', 'utf8')
 
 
@@ -380,7 +381,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	
 	
-	if (traducteur == "SEBASTIEN-D-G")
+	if (traducteur == "NOUVELLE_DISPOSITION")
 	{
 		
 		sebastien = ""
@@ -429,7 +430,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			//add tr
 			data += ``+
-			`<tr><td class="td1">SEBASTIEN-D-G</td><td class="td2">2022</td><td class="td3">`+sebastien+`</td></tr>`;
+			`<tr><td class="td1">NOUVELLE_DISPOSITION</td><td class="td2">2022</td><td class="td3">`+sebastien+`</td></tr>`;
 		
 		}
 		
@@ -437,7 +438,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 
 	
-	if (traducteur == "SBL-TAUBER")
+	if (traducteur == "SBL_TAUBER")
 	{
 		
 		sbltauber = ""
@@ -481,7 +482,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			//add tr
 			data += ``+
-			`<tr><td class="td1">SBL-TAUBER</td><td class="td2">2018</td><td class="td3">`+sbltauber+`</td></tr>`;
+			`<tr><td class="td1">SBL_TAUBER</td><td class="td2">2018</td><td class="td3">`+sbltauber+`</td></tr>`;
 		
 		}
 		
@@ -492,7 +493,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	
 	
-	if (traducteur == "ROBINSON-ET-PIERPONT")
+	if (traducteur == "ROBINSON_ET_PIERPONT")
 	{
 		
 		robinsonpierpont = ""
@@ -536,7 +537,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			//add tr
 			data += ``+
-			`<tr><td class="td1">ROBINSON-ET-PIERPONT</td><td class="td2">2019</td><td class="td3">`+robinsonpierpont+`</td></tr>`;
+			`<tr><td class="td1">ROBINSON_ET_PIERPONT</td><td class="td2">2019</td><td class="td3">`+robinsonpierpont+`</td></tr>`;
 		
 		}
 		
@@ -556,7 +557,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			//add tr
 			data += ``+
-			`<tr><td class="td1">IERONYMUS</td><td class="td2">2007</td><td class="td3">`+ieronymus+`</td></tr>`;
+			`<tr><td class="td1">IERONYMUS</td><td class="td2">2007</td><td class="td3"><div class="int">`+ieronymus+`</div></td></tr>`;
 		
 		}
 		
