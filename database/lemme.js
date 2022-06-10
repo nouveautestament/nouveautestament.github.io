@@ -15390,8 +15390,8 @@ lemme={
   "Vient de  καλός  et  διδάσκαλος"
  ],
  "Καλοὶ": [
-  "Kaloi[Beaux-Ports]",
-  "Beaux Ports, Beaux-Ports = \"bon ports\"   baie de Crète, près de la ville de Lasée, ainsi appelée à cause de son bon port",
+  "Beaux",
+  "Beaux, Beaux-Ports = \"bon ports\"   baie de Crète, près de la ville de Lasée, ainsi appelée à cause de son bon port",
   "Nom propre locatif",
   "Pluriel de  καλός  et  λιμήν"
  ],
