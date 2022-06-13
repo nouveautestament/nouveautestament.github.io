@@ -6984,10 +6984,10 @@ lemme={
   "Vient de  δέομαι"
  ],
  "δεῖ": [
-  "devoir",
-  "devoir, falloir, travailler, il est nécessaire, il est besoin de, il est juste et correct.   nécessité liée à la nature du cas.  nécessité conduite par les circonstances ou la manière de faire des autres envers nous.  nécessité en référence à ce qui est requis pour atteindre un but.  nécessité de la loi et des commandements.  nécessité établie par le conseil et les décrets de Dieu, spécialement par le moyen de ce qui est relaté pour le salut des hommes par l'intervention de Christ et ce qui est écrit dans les prophéties de l'Ancien Testament.    concernant ce que Christ devait finalement subir, ses souffrances, sa mort, sa résurrection, son ascension     Pour les Synonymes voir entrée  5829",
+  "attache de lien",
+  "faut, attache de lien, falloir, il est nécessaire, il est besoin de, il est juste et correct.   nécessité liée à la nature du cas.  nécessité conduite par les circonstances ou la manière de faire des autres envers nous.  nécessité en référence à ce qui est requis pour atteindre un but.  nécessité de la loi et des commandements.  nécessité établie par le conseil et les décrets de Dieu, spécialement par le moyen de ce qui est relaté pour le salut des hommes par l'intervention de Christ et ce qui est écrit dans les prophéties de l'Ancien Testament.  Concernant ce que Christ devait finalement subir, ses souffrances, sa mort, sa résurrection, son ascension....",
   "Verbe",
-  "Vient du mot δέω"
+  "Vient du mot δέω (verbe,indicatif,présent,actif,3e,singulier)"
  ],
  "δεῖγμα": [
   "exemple",
