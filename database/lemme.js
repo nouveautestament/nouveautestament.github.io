@@ -3978,13 +3978,13 @@ lemme={
   "Vient de  ἀπό  et  τολμάω"
  ],
  "ἀποτομία": [
-  "longue incision",
+  "longue scission",
   "coupure lointaine, action de couper au loin",
   "Nom féminin",
   "Vient de apo (au loin) et tomie (couper) peut-être de ἀποτόμως"
  ],
  "ἀποτόμως": [
-  "en retranchement",
+  "en longue scission",
   "couper au loin, sévèrement, brusquement, précipitamment.  sévèrement, avec rigueur, d'une manière tranchante",
   "Adverbe",
   "Vient d'un dérivé de  ἀπό  et temno (couper)"
@@ -16188,8 +16188,8 @@ lemme={
   "Vient de  κατά  et  τίθημι"
  ],
  "κατατομή": [
-  "concision de haut en bas",
-  "concision de haut en bas, concision complète, contre-concision, couper, une mutilation",
+  "scission de haut en bas",
+  "scission de haut en bas, scission complète, contre-scission, concision, couper, une mutilation",
   "Nom féminin",
   "Vient d'un composé de  κατά  et temno (couper)"
  ],
@@ -29029,10 +29029,10 @@ lemme={
   "Vient de  σύν  et  τελέω"
  ],
  "συντέμνω": [
-  "couper ensemble",
+  "scissionner ensemble",
   "couper ensemble, couper en morceaux.  découper.  métaphorique.   expédier brièvement, exécuter ou finir rapidement.  se hâter.  une courte parole c'est à dire une prophétie ou un décret très brefs",
   "Verbe",
-  "Vient de  σύν  et de  τομώτερος"
+  "Vient de  σύν  et de τέμνω  τομώτερος"
  ],
  "συντηρέω": [
   "garder ensemble",
@@ -29047,7 +29047,7 @@ lemme={
   "Vient de  σύν  et  τίθημι"
  ],
  "συντόμως": [
-  "brièvement",
+  "en co-scission",
   "brièvement, avec concision, brièvement, en quelques paroles",
   "Adverbe",
   "Vient d'un dérivé de  συντέμνω"
@@ -30127,10 +30127,10 @@ lemme={
   "Vient de  τολμάω"
  ],
  "τομώτερος": [
-  "plus tranchant",
-  "plus tranchant, plus tranchant",
+  "plus scissionnant",
+  "plus scissionnant, plus tranchant",
   "Adjectif",
-  "Comparatif d'un dérivé du mot temno (couper, plus compréhensible ou décisif que κόπτω)"
+  "Comparatif d'un dérivé du mot τέμνω ( couper, plus compréhensible ou décisif que κόπτω ) συντέμνω"
  ],
  "τόξον": [
   "arc",
