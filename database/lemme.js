@@ -8934,8 +8934,8 @@ lemme={
   "Seconde personne du présent singulier de  εἰμί"
  ],
  "εἴγε": [
-  "si en effet",
-  "si toutefois, si du moins, si, en effet, d'autant plus que, comme, puisque",
+  "si du moins",
+  "si du moins, si toutefois, si en effet, d'autant plus que, comme, puisque",
   "Conjonction",
   "Vient de  εἰ  et  γε"
  ],
@@ -9618,7 +9618,7 @@ lemme={
   "Vient de  ἐκ  et  πορεύομαι"
  ],
  "ἐκπορνεύω": [
-  "sexualiser dehors",
+  "porner à l'excès",
   "livrer à l'impudicité, aller à la prostitution, se livrer à la fornication, à l'impudicité",
   "Verbe",
   "Vient de  ἐκ  et  πορνεύω"
@@ -16188,8 +16188,8 @@ lemme={
   "Vient de  κατά  et  τίθημι"
  ],
  "κατατομή": [
-  "coupure de haut en bas",
-  "coupure de haut en bas, incision de haut en bas, couper, une mutilation",
+  "concision de haut en bas",
+  "concision de haut en bas, concision complète, contre-concision, couper, une mutilation",
   "Nom féminin",
   "Vient d'un composé de  κατά  et temno (couper)"
  ],
@@ -29035,8 +29035,8 @@ lemme={
   "Vient de  σύν  et de  τομώτερος"
  ],
  "συντηρέω": [
-  "conserver",
-  "conserver, garder ensemble, préserver, conserver (une chose pour qu'elle ne soit pas perdue).  garder en soi-même, garder à l'esprit (une chose, de peur qu'elle ne soit oubliée)",
+  "garder ensemble",
+  "garder ensemble, conserver, préserver, conserver (une chose pour qu'elle ne soit pas perdue).  garder en soi-même, garder à l'esprit (une chose, de peur qu'elle ne soit oubliée)",
   "Verbe",
   "Vient de  σύν  et  τηρέω"
  ],
@@ -33427,8 +33427,8 @@ lemme={
   "δυσφημία"
  ],
  "ἐάνπερ": [
-  "si en effet",
-  "si en effet, si en effet",
+  "si le cas échéant certes",
+  "si le cas échéant certes",
   "Conjonction",
   "Vient de  ἐάν  et  περ"
  ],
