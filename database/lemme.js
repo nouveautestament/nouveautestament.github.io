@@ -19591,10 +19591,10 @@ lemme={
   "Particule primaire de négation qualifiée (tandis que  οὐ  exprime un refus absolu )"
  ],
  "ἐὰν": [
-  "si",
-  "si, si ... pas, à moins que ... ne, qui que ..",
+  "sinon le cas échéant",
+  "si ... pas, à moins que ... ne, qui que ..",
   "Conjonction",
-  "Vient de  ἐάν  et  μή"
+  "Vient de εἰ et ἄν et μή"
  ],
  "μηδαμῶς": [
   "certainement non",
