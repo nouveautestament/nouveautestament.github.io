@@ -786,8 +786,8 @@ lemme={
   "Vient de  αἷμα  et  ῥέω"
  ],
  "Αἰνέας": [
-  "Énée",
-  "Énée, Énée = \"louable\"   le nom d'un paralytique guéri par Pierre à Lydde",
+  "Ainéa",
+  "Ainéa, Ainéas, Énée = \"louable\"   le nom d'un paralytique guéri par Pierre à Lydde",
   "Nom propre masculin",
   "Dérivation incertaine"
  ],
@@ -3168,7 +3168,7 @@ lemme={
   "Vient de  ἀπό  et un dérivé de  ἀντί"
  ],
  "ἀπάντησις": [
-  "rencontre",
+  "rencontre de loin",
   "rencontre, aller à la rencontre, rencontrer quelqu'un",
   "Nom féminin",
   "Vient de  ἀπαντάω"
@@ -4536,13 +4536,13 @@ lemme={
   "Vient de  ἀρχή  et un composé de  τρεῖς  et  κλίνω  (divan pour repas, composé  De trois places)"
  ],
  "ἄρχομαι": [
-  "commencer",
+  "originer",
   "commencer, se mettre, être mis, aller, bientôt, depuis, être le premier à faire (quelque chose), commencer.  être le chef, le dirigeant.  commencer, de mettre à",
   "Verbe",
   "Vient de  ἄρχω  (à travers l'implication de préséance)"
  ],
  "ἄρχω": [
-  "commencer",
+  "originer",
   "commencer en premier, être premier, être un chef, diriger, régner",
   "Verbe",
   "Un mot primaire"
@@ -5646,7 +5646,7 @@ lemme={
   "En Hébreu mauvais oeil(רַ֣ע עָ֑יִן) φάσκω"
  ],
  "βαστάζω": [
-  "porter",
+  "mettre en charge",
   "porter, se charger, supporter, prendre, emporter, persévérance, prendre, soulever avec les mains.  prendre dans le but de transporter, poser sur soi une chose à transporter.  porter, transporter.   se transporter.  soutenir, supporter",
   "Verbe",
   "Peut-être vaguement dérivé de  βάσις  (à travers l'idée d'enlèvement)"
@@ -8514,8 +8514,8 @@ lemme={
   "Particule primaire"
  ],
  "δυσβάστακτος": [
-  "difficiles à porter",
-  "difficiles à porter, lourd, encombrant, difficile à porter",
+  "difficiles mises en charges",
+  "difficile à porter, difficiles charges à porter, lourd, encombrant",
   "Adjectif",
   "Vient de  δυσ-  et un dérivé de  βαστάζω"
  ],
@@ -10344,7 +10344,7 @@ lemme={
   "Vient de  ἔναντι"
  ],
  "ἐνάρχομαι": [
-  "commencer dedans",
+  "originer dedans",
   "commencer en, commencer dans, faire un commencement",
   "Verbe",
   "Vient de  ἐν  et  ἄρχομαι"
@@ -10998,7 +10998,7 @@ lemme={
   "Vient de  ἔχω  (dans le sens d'adjoindre)"
  ],
  "ἐξηχέω": [
-  "résonner hors",
+  "résonner au-dehors",
   "résonner hors, retentir, retentir, émettre, sonner, résonner",
   "Verbe",
   "Vient de  ἐκ  et  ἠχέω"
@@ -11016,7 +11016,7 @@ lemme={
   "Vient de  ἐκ  et  ἵστημι"
  ],
  "ἐξισχύω": [
-  "pouvoir hors",
+  "avoir la ténacité à l'excès",
   "pouvoir,puissiez, être éminemment capable, avoir une pleine force",
   "Verbe",
   "Vient de  ἐκ  et  ἰσχύω"
@@ -15822,7 +15822,7 @@ lemme={
   "Vient de  κατά  et de  λαλέω"
  ],
  "καταλαμβάνω": [
-  "prendre contre",
+  "prendre de haut en bas",
   "prendre de haut en bas, recevoir, être surpris, surprendre, sachant que,  reconnaître, obtenir, remporter, comprendre, se saisir.   saisir quelque chose comme pour en faire son propre bien, s'approprier.  faire une saisie, prendre possession de.   des maux qui surviennent, du dernier jour qui conduira le méchant à la destruction, des démons qui tourmentent.  dans un bon sens : Christ saisissant l'humanité par son saint pouvoir et son influence pour la gouverner.    découvrir, attraper.  saisir avec l'esprit.   comprendre, percevoir, apprendre",
   "Verbe",
   "Vient de  κατά  et  λαμβάνω"
@@ -25087,7 +25087,7 @@ lemme={
   "Vient de  πρό  et  ἔπω"
  ],
  "προενάρχομαι": [
-  "commencer avant",
+  "originer avant",
   "commencer avant, faire un commencement avant",
   "Verbe",
   "Vient de  πρό  et  ἐνάρχομαι"
@@ -26497,8 +26497,8 @@ lemme={
   "Vient de  ῥύομαι"
  ],
  "Ῥωμαϊκός": [
-  "Romain",
-  "Romain, Latin : \"la force de Rome\"   le langage parlé par les Romains",
+  "romaïque",
+  "romaïque, Latin : \"la force de Rome\"   le langage parlé par les Romains",
   "Adjectif",
   "Vient de  Ῥωμαῖος"
  ],
@@ -26935,16 +26935,16 @@ lemme={
   "Vient d'un dérivé présumé de  σελήνη"
  ],
  "Σεμεειν": [
-  "Semeein",
+  "Sémeeïn",
   "Semeein, Semeein, Sémeï (Shimei) = \"renommée, ou l'Éternel a écouté\"   le père de Mattathias dans la généalogie de Christ",
   "Nom propre masculin",
-  "D'origine hébraïque  08096, Σεμεειν : Papyrus 4, Codex Vaticanus, Codex Sinaiticus"
+  "D'origine hébraïque, Σεμεειν : Papyrus 4, Codex Vaticanus, Codex Sinaiticus Σεμειν"
  ],
  "Σεμειν": [
-  "Semeein",
-  "Semeein, Semeein, Sémeï (Shimei) = \"renommée, ou l'Éternel a écouté\"   le père de Mattathias dans la généalogie de Christ",
+  "Sémeïn",
+  "Sémeïn, Sémeï (Shimei) = \"renommée, ou l'Éternel a écouté\"   le père de Mattathias dans la généalogie de Christ",
   "Nom propre masculin",
-  "D'origine hébraïque  08096, Σεμεειν : Papyrus 4, Codex Vaticanus, Codex Sinaiticus"
+  "D'origine hébraïque  voir Septante Σεμεειν"
  ],
  "σεμίδαλις": [
   "fleur de farine",

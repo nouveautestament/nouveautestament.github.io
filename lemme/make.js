@@ -256,6 +256,7 @@ function clean(xxx)
 	xxx = xxx.toLowerCase();
 	xxx = xxx.replace(/[\.;;,\[\]\·]/g,'')
 	xxx = xxx.replace(/[\⟦\⟧]/g,'')
+	xxx = xxx.replace(/[()]/g,'')
 	
 	return xxx;
 }
@@ -525,7 +526,18 @@ for (lem in lemme)
 					(
 						'<td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td><td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td></tr>\n'
 					) == -1
+					
+					&& trad1 != "moi"
+					&& trad1 != "si"
+					&& trad1 != "nous"
+					&& trad1 != "toi"
+					&& trad1 != "ces"
+					&& trad1 != "vous"
+					&& trad1 != "votre"
+					&& trad1 != "cette"
 				)
+				
+				
 				{
 					inco++;
 					conflits += '<tr><td><b>'+inco+'</b></td><td><a target="_blank" href="'+lem+'.html">'+lem+'</a></td><td>'+trad1+'</td><td><a target="_blank" href="'+lem2+'.html">'+lem2+'</a></td><td>'+trad2+'</td></tr>\n'
