@@ -1487,6 +1487,9 @@ intro =
 					document.getElementById('box').src = '../../'+link;
 					
 					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
 					show = 1;
 					
 				}
@@ -1506,6 +1509,7 @@ intro =
 					
 					current = "";
 				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
 				}
 
 			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
@@ -1687,15 +1691,9 @@ end = `
 </div></div>
 
 <div id="right">
-	<div style="font-size:1.1em;display:block;cursor:pointer;user-select:none;">
-		<span onclick="page_left()" style="float:left;"><<---</span><span onclick="page_right()" style="float:right;">--->></span>
-	</div>
-	
-	<br>
-	
-	<div><div id="inright">
+	<div id="inright">
 		<img onload="loader();" id="box" src=""></div>
-	</div></div>
+	</div>
 </div>
 
 </body>
@@ -4631,8 +4629,7 @@ for (line = 0 ; line != bible.length ; line++)
 <a href="../hellene/`+livre+`-`+chapitre+`.html#V`+verset+`">EL</a> 
 <a href="../francais/`+livre+`-`+chapitre+`.html#V`+verset+`">FR</a> 
 <a href="../technique/`+livre+`-`+chapitre+`.html#V`+verset+`">TE</a>
-<table cellspacing="0"><tbody>
-`;
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody>`;
 
 
 }
