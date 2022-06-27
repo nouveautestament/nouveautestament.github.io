@@ -273,6 +273,7 @@ intro =
 	--><a class="blocban" href="../../index.html">INDEX</a><!--
 	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
 	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
 	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
@@ -1063,6 +1064,7 @@ for (line = 0 ; line != bible.length ; line++)
 		data +=`
 <br><br><div id="V`+verset+`"></div><a href="#banniere"><b>`+xbook[livre]+' '+chapitre+' '+verset+`</b></a> 
 <a href="../hellene/`+livre+`-`+chapitre+`.html#V`+verset+`">EL</a> 
+<a href="../romain/`+livre+`-`+chapitre+`.html#V`+verset+`">RO</a> 
 <a href="../francais/`+livre+`-`+chapitre+`.html#V`+verset+`">FR</a> 
 <a href="../technique/`+livre+`-`+chapitre+`.html#V`+verset+`">TE</a>
 <table cellspacing="0"><tbody>

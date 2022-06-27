@@ -172,6 +172,7 @@ intro =
 	--><a class="blocban" href="../../index.html">INDEX</a><!--
 	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
 	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
 	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
 	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
@@ -197,7 +198,8 @@ intro =
 `;
 
 
-end = `</tbody></table></div><br></body></html>`
+end = `
+</tbody></table></div><br></body></html>`
 
 
 
@@ -366,14 +368,15 @@ for (line = 0 ; line != bible.length ; line++)
 		{
 
 		if (verset != 1)
-			data +=`</tbody></table>`
+			data +=`\n</tbody></table>`
 
 
-			data +=``+
+			data +=`\n`+
 			`<br><br><div id="V`+verset+`"></div><a href="#banniere"><b>`+xbook[livre]+' '+chapitre+' '+verset+`</b></a> `+
 			`<a href="../hellene/`+livre+`-`+chapitre+`.html#V`+verset+`">EL</a> `+ 
+			`<a href="../romain/`+livre+`-`+chapitre+`.html#V`+verset+`">RO</a> `+ 
 			`<a href="../francais/`+livre+`-`+chapitre+`.html#V`+verset+`">FR</a> `+
-			`<a href="../technique/`+livre+`-`+chapitre+`.html#V`+verset+`">TE</a> `+
+			`<a href="../technique/`+livre+`-`+chapitre+`.html#V`+verset+`">TE</a> \n`+
 			`<table cellspacing="0"><tbody>`;
 
 
@@ -430,8 +433,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			
 			//add tr
-			data += ``+
-			`<tr><td class="td1">NOUVELLE_DISPOSITION</td><td class="td2">2022</td><td class="td3">`+sebastien+`</td></tr>`;
+			data += `\n<tr><td class="td1">NOUVELLE_DISPOSITION</td><td class="td2">2022</td><td class="td3">`+sebastien+`</td></tr>`;
 		
 		}
 		
@@ -482,8 +484,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			
 			//add tr
-			data += ``+
-			`<tr><td class="td1">SBL_TAUBER</td><td class="td2">2018</td><td class="td3">`+sbltauber+`</td></tr>`;
+			data += `\n<tr><td class="td1">SBL_TAUBER</td><td class="td2">2018</td><td class="td3">`+sbltauber+`</td></tr>`;
 		
 		}
 		
@@ -537,8 +538,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			
 			//add tr
-			data += ``+
-			`<tr><td class="td1">ROBINSON_ET_PIERPONT</td><td class="td2">2019</td><td class="td3">`+robinsonpierpont+`</td></tr>`;
+			data += `\n<tr><td class="td1">ROBINSON_ET_PIERPONT</td><td class="td2">2019</td><td class="td3">`+robinsonpierpont+`</td></tr>`;
 		
 		}
 		

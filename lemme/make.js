@@ -228,10 +228,11 @@ intro = `<!DOCTYPE html>
 	--><a class="blocban" href="../index.html">INDEX</a><!--
 	--><a class="blocban" href="../nd/nd.html">ND</a><!--
 	--><a class="blocban" href="../interlineaire/hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../interlineaire/romain/1-1.html">ROMAIN</a><!--
 	--><a class="blocban" href="../interlineaire/francais/1-1.html">FRANCAIS</a><!--
 	--><a class="blocban" href="../interlineaire/technique/1-1.html">TECHNIQUE</a><!--
-	--><a class="blocban" href="lemmes.html">LEMME</a><!--
-	--><a class="blocban" href="conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../lemme/conflits.html">CONFLIT</a><!--
 	--><a class="blocban" href="../dictionnaire/lsj.html">LSJ</a><!--
 	--><a class="blocban" href="../dictionnaire/bailly.html">BAILLY</a><!--
 	--><a class="blocban" href="../minidico/dictionnaire.html">MINIDICO</a><!--
@@ -416,6 +417,7 @@ for (lem in lemme)
 			
 			main2 +=	'<br><b>'+lcvteinfo[3]+' '+lcvteinfo[1]+' '+lcvteinfo[2]+'</b> '+
 						'<a target="_blank" href="../interlineaire/hellene/'+lcvteinfo[0]+'-'+lcvteinfo[1]+'.html#V'+lcvteinfo[2]+'">EL</a> '+
+						'<a target="_blank" href="../interlineaire/romain/'+lcvteinfo[0]+'-'+lcvteinfo[1]+'.html#V'+lcvteinfo[2]+'">RO</a> '+
 						'<a target="_blank" href="../interlineaire/francais/'+lcvteinfo[0]+'-'+lcvteinfo[1]+'.html#V'+lcvteinfo[2]+'">FR</a> '+
 						'<a target="_blank" href="../interlineaire/technique/'+lcvteinfo[0]+'-'+lcvteinfo[1]+'.html#V'+lcvteinfo[2]+'">TE</a><br>'
 			
