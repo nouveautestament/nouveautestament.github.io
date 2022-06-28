@@ -244,12 +244,12 @@ chbook = {
 fichier		= require('fs')
 
 
-sebastien_te	= fichier.readFileSync('../../database/te/nouvelle_disposition_te.txt', 'utf8').split('\n')
-sebastien_fr	= fichier.readFileSync('../../database/fr/nouvelle_disposition.txt', 'utf8').split('\n')
-tauber_te		= fichier.readFileSync('../../database/te/sbl_tauber_te.txt', 'utf8')
-robinson_te		= fichier.readFileSync('../../database/te/robinson_et_pierpont_te.txt', 'utf8')
-ieronymus_ro	= fichier.readFileSync('../../database/ro/IERONYMUS.txt', 'utf8')
-
+sebastien_te		= fichier.readFileSync('../../database/TE/NOUVELLE_DISPOSITION_TE.txt', 'utf8').split('\n')
+sebastien_fr		= fichier.readFileSync('../../database/FR/NOUVELLE_DISPOSITION.txt', 'utf8').split('\n')
+tauber_te			= fichier.readFileSync('../../database/TE/SBL_TAUBER_TE.txt', 'utf8')
+robinson_te			= fichier.readFileSync('../../database/TE/ROBINSON_ET_PIERPONT_TE.txt', 'utf8')
+ieronymus_perseus	= fichier.readFileSync('../../database/TE/IERONYMUS_PERSEUS_TE.txt', 'utf8')
+ieronymus_proiel	= fichier.readFileSync('../../database/TE/IERONYMUS_PROIEL_TE.txt', 'utf8')
 
 
 //FUSION NDH-NDF
@@ -279,10 +279,11 @@ for (line = 0 ; line != sebastien_te.length ; line++)
 //SORT ALL
 
 bible =
-ndfh		+
-tauber_te	+
-robinson_te +
-ieronymus_ro
+ndfh				+
+tauber_te			+
+robinson_te			+
+ieronymus_perseus	+
+ieronymus_proiel
 
 bible = bible.split(/\r?\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
 
@@ -441,7 +442,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 
 	
-	if (traducteur == "SBL_TAUBER")
+	else if (traducteur == "SBL_TAUBER")
 	{
 		
 		sbltauber = ""
@@ -495,7 +496,7 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	
 	
-	if (traducteur == "ROBINSON_ET_PIERPONT")
+	else if (traducteur == "ROBINSON_ET_PIERPONT")
 	{
 		
 		robinsonpierpont = ""
@@ -547,26 +548,128 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	
 	
-	
-	if (traducteur == "IERONYMUS")
-	{
 
-		ieronymus = bible[line].replace(info[0]+" ","")
+	
+	else if (traducteur == "IERONYMUS_PERSEUS")
+	{
+		
+		ieronymus_perseus = ""
+
+		textete = bible[line].replace(info[0]+" ","").split(' ')
 		
 		if (textete != "")
 		{
+		
+			//CREATION TR SPAN
+			for (s = 0 ; s != textete.length ; s++)
+			{
+				
+					//console.log(textete)
+					//console.log(textefr)
+					
+					lemmep	= textete[s].split('=')[1]
+					
+					
+					if (lemmep == "-")
+					{
+						span_latin_dico = ""
+					}
+					else
+					{
+						nlemmep	= lemmep.replace(/[0-9]+/g,"")
+						span_latin_dico = 
+						`<span class="lemme">`+
+							`<a target="_blank" href="https://www.grand-dictionnaire-latin.com/dictionnaire-latin-francais.php?parola=`+nlemmep+`">#1</a> `+
+							`<a target="_blank" href="https://gaffiot.fr/#`+nlemmep+`">#2</a> `+
+							`<a target="_blank" href="https://www.dicolatin.com/Latin/Lemme/0/`+nlemmep+`">#3</a> `+
+						`</span>`
+					}
+					
+					
+					
+					
+					if (textete[s].split('=')[2].match(/,/))
+					{
+						morphp1 = textete[s].split('=')[2].split(',')[0];
+						morphp2 = textete[s].split('=')[2].replace(morphp1+',',""); 
+					}
+
+					else
+					{
+						morphp1 = textete[s].split('=')[2];
+						morphp2 = '-';
+					}
+
+
+					ieronymus_perseus +=``+
+					`<div class="int">`+
+					`<span class="el">`+textete[s].split('=')[0]+`</span>`+
+					`<span class="info">`+morphp1+`</span>`+
+					`<span class="subinfo">`+morphp2+`</span>`+
+					`<span class="lemme">`+textete[s].split('=')[1]+`</span>`+
+					span_latin_dico+
+					`</div>`;
+
+
+			}
+			
 			
 			//add tr
-			data += ``+
-			`<tr><td class="td1">IERONYMUS</td><td class="td2">2007</td><td class="td3"><div class="int">`+ieronymus+`</div></td></tr>`;
+			data += `\n<tr><td class="td1">IERONYMUS_PERSEUS</td><td class="td2">2014</td><td class="td3">`+ieronymus_perseus+`</td></tr>`;
 		
 		}
 		
 	}
+	
+	
+	else if (traducteur == "IERONYMUS_PROIEL")
+	{
+		
+		ieronymus_proiel = ""
 
-	
-	
-	
+		textete = bible[line].replace(info[0]+" ","").split(' ')
+		
+		if (textete != "")
+		{
+		
+			//CREATION TR SPAN
+			for (s = 0 ; s != textete.length ; s++)
+			{
+				
+					//console.log(textete)
+					//console.log(textefr)
+					
+					if (textete[s].split('=')[2].match(/,/))
+					{
+						lem1 = textete[s].split('=')[2].split(',')[0];
+						lem2 = textete[s].split('=')[2].replace(lem1+',',""); 
+					}
+
+					else
+					{
+						lem1 = textete[s].split('=')[2];
+						lem2 = '-';
+					}
+
+
+					ieronymus_proiel +=``+
+					`<div class="int">`+
+					`<span class="el">`+textete[s].split('=')[0]+`</span>`+
+					`<span class="info">`+lem1+`</span>`+
+					`<span class="subinfo">`+lem2+`</span>`+
+					`<span class="lemme">`+textete[s].split('=')[1]+`</span>`+
+					`</div>`;
+
+
+			}
+			
+			
+			//add tr
+			data += `\n<tr><td class="td1">IERONYMUS_PROIEL</td><td class="td2">2018</td><td class="td3">`+ieronymus_proiel+`</td></tr>`;
+		
+		}
+		
+	}
 	
 	
 	
