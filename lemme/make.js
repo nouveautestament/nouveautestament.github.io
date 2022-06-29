@@ -226,6 +226,7 @@ intro = `<!DOCTYPE html>
 <div id="banniere"><!--
 	--><span class="blocban">Ȼ</span><!--
 	--><a class="blocban" href="../index.html">INDEX</a><!--
+	--><a class="blocban" href="../agora/index.html">AGORA</a><!--
 	--><a class="blocban" href="../nd/nd.html">ND</a><!--
 	--><a class="blocban" href="../interlineaire/hellene/1-1.html">HELLENE</a><!--
 	--><a class="blocban" href="../interlineaire/romain/1-1.html">ROMAIN</a><!--

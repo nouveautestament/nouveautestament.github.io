@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+
+
+		<title>AGORA</title>
+
+		<style>
+
+			html, body {
+			
+				margin:0;
+				padding:0;
+				
+				font-family:sans-serif;
+				color:black;
+			}
+
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				background-color:#3f4346;
+			}
+		
+
+			#main {
+			
+				margin:60px auto;
+				padding:0;
+				
+				width:80%;
+			}
+			
+			#left {
+			
+				margin:0;
+				padding:0;
+				
+				width:70%;
+			
+				float:left;
+			}
+			
+			#inleft {
+			
+				padding-right:70px;
+				color:#313131;
+			}
+			
+			#right {
+			
+				margin:0;
+				padding:0;
+				
+				width:30%;
+				
+				float:left;
+			}
+
+			#titre1 {
+			
+				font-size:2em;
+				font-family:serif;
+			}
+			
+			#titre2 {
+			
+				font-size:1.7em;
+				font-family:serif;
+			}
+
+			.min {
+			
+				font-size: 0.8em;
+			}
+			
+			p {
+			
+				line-height: 1.5em;
+			}
+
+
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			table td {
+			
+				padding-right: 1em;
+			}
+
+
+		</style>
+	</head>
+
+<body>
+
+
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../index.html">INDEX</a><!--
+	--><a class="blocban" href="../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../interlineaire/hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../interlineaire/romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../interlineaire/francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../interlineaire/technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+
+
+
+<div id="main">
+
+	<h1>[ AGORA ]</h1>
+	<div id="divsms" style="height: 500px; overflow-y: scroll; width:100%;padding: 10px;">
+		<table  cellspacing="0" id="messages"></table>
+	</div>
+	
+	<input autofocus type="text" id="messageBox" onkeypress="if (event.keyCode == 13) sender()" style="width:100%; padding: 10px;" />
+</div>
+
+</body>
+
+<script>
+
+
+
+
+
+function getdate()
+{
+
+    //Date object
+    var d = new Date();
+
+
+    // subtract local time zone offset : UTC time in msec
+    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+    // create new Date object for different city
+    // using supplied offset
+    var nd = new Date(utc + (3600000*'+2'));
+
+
+    return '[ '+nd.toLocaleString()+' ]';
+}
+
+
+
+
+
+
+window.onload = function() { nameis = prompt("[ NOM ]"); if (nameis == "") nameis = "Anonyme" }
+
+
+	x = 0;
+	//reader = new FileReader();
+	//reader.onload = function(event) { showMessage(reader.result) };
+	
+	refTable = document.getElementById("messages");
+	divsms = document.getElementById("divsms");
+	messageBox = document.getElementById('messageBox');
+	
+	let ws;
+	
+	function showMessage(message) {
+
+		
+		
+
+		split_user_sms = message.split(' -- ')
+		
+		superdate = split_user_sms[0]
+		username = split_user_sms[1]
+		sms	= message.replace(superdate+" -- "+username+" -- ","")
+		
+		row = refTable.insertRow(-1);
+		
+		cell_1 = row.insertCell();
+		cell_1.innerHTML = superdate;
+		
+		cell_2 = row.insertCell();
+		cell_2.innerHTML = username;
+		
+		cell_2 = row.insertCell();
+		cell_2.innerHTML = sms;
+
+		
+		//messages.textContent += `\n${message}`;
+		divsms.scrollTop = divsms.scrollHeight;
+		messageBox.value = '';
+	  
+    }
+
+
+
+
+
+
+
+    function init() {
+	
+	
+      if (ws) {
+        ws.onerror = ws.onopen = ws.onclose = null;
+        ws.close();
+      }
+
+      ws = new WebSocket('wss://nouveautestament.alwaysdata.net');
+
+	  
+	ws.onopen = () => 
+	  {
+        console.log('connecté');
+		if (x == 0)
+		{
+			ws.send("getsms");
+			x = 1;
+		}
+      }
+    
+
+
+	ws.onmessage = ( data ) => 
+	{
+		
+		if (data.data != "")
+			showMessage(data.data)
+
+
+      }
+	 
+	 ws.onclose = function() 
+	 {
+	 
+		//document.getElementById("messages").innerHTML = ""
+		ws = null;
+		init();
+		
+	}
+    
+	
+	}
+
+    function sender() {
+      if (!ws) {
+        
+        return ;
+      }
+
+      ws.send		("sms -- "	+	getdate() + " -- " + nameis+" -- "+messageBox.value);
+      showMessage	(				getdate() + " -- " + nameis+" -- "+messageBox.value);
+    }
+
+    init();
+	
+</script>
+</html>

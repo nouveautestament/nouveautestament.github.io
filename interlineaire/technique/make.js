@@ -170,6 +170,7 @@ intro =
 <div id="banniere"><!--
 	--><span class="blocban">Ȼ</span><!--
 	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
 	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
 	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
 	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
@@ -572,7 +573,7 @@ for (line = 0 ; line != bible.length ; line++)
 					
 					if (lemmep == "-")
 					{
-						span_latin_dico = ""
+						span_latin_dico = `<span class="lemme">-</span>`
 					}
 					else
 					{
