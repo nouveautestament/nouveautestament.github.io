@@ -1110,7 +1110,7 @@ lemme={
   "Vient de ἄλφα (négatif) et un dérivé présumé de  κεράννυμι"
  ],
  "ἀκλινής": [
-  "sans inclinaison",
+  "sans clinaison",
   "aclinique, inflexible, fermement, qui ne vacille pas, ferme, inamovible",
   "Adjectif",
   "Vient de ἄλφα (négatif) et  κλίνω"
@@ -1458,13 +1458,13 @@ lemme={
   "Un mot primaire"
  ],
  "ἀλλοτριοεπίσκοπος": [
-  "fouineur",
+  "superviseur d'autrui",
   "fouineur, ingérer dans les affaires d'autrui, celui qui veut s'occuper des affaires des autres, et qui n'est pas sage pour lui-même",
   "Nom masculin",
-  "Vient de  ἀλλότριος  et  ἐπίσκοπος"
+  "ἀλλότριος  et  ἐπίσκοπος : Papyrus 72 et Alexandrinus"
  ],
  "ἀλλότριος": [
-  "d’autre, d’autres, d’autre, d’autres",
+  "d'autrui, d'autruis, d'autruie, d'autruies",
   "autre, étranger, étrangère, autrui, d'autres, appartenant à d'autres.  étranger, pas de notre famille, un ennemi",
   "Adjectif",
   "Vient de  ἄλλος"
@@ -3589,7 +3589,7 @@ lemme={
  ],
  "ἀποθνῄσκω": [
   "mourir loin",
-  "mourir au loin, mourir pleinement, mourir, mort.   de la mort naturelle d'un homme.  de mort violente pour un homme ou un animal.  périr par le moyen de quelque chose.  des arbres ou des semences qui sèchent.  de la mort éternelle, être sujet à la misère éternelle en enfer",
+  "mourir loin, mourir pleinement, périr complètement, mort naturelle d'un homme,  de mort violente pour un homme ou un animal,  périr par le moyen de quelque chose.  des arbres ou des semences qui sèchent.  de la mort éternelle, être sujet à la misère éternelle en enfer",
   "Verbe",
   "Vient de  ἀπό  et  θνῄσκω"
  ],
@@ -6120,7 +6120,7 @@ lemme={
   "Vient du même mot que  βραβεῖον, exulter dans la Vulgate"
  ],
  "βραδύνω": [
-  "tarder",
+  "être lent",
   "tarder, tarder, être lent.   ralentir, retarder.  traîner, flâner",
   "Verbe",
   "Vient de  βραδύς"
@@ -8496,7 +8496,7 @@ lemme={
   "Vient de  δύναμαι"
  ],
  "δύνω": [
-  "coucher",
+  "plonger",
   "coucher, entrer, rentrer.  aller sous, être plongé dans, enfoncer dans.   utilisé dans le Nouveau Testament pour le coucher du soleil",
   "Verbe",
   "Forme d'un mot non usuel \"duo\" (doo'-o, enfoncer)"
@@ -9138,7 +9138,7 @@ lemme={
   "Troisième personne du pluriel du présent de l'indicatif de  εἰμί"
  ],
  "εἰσκαλέομαι": [
-  "appeler dedans",
+  "appeler envers",
   "faire entrer, inviter dans sa maison",
   "Verbe",
   "Vient de  εἰς  et  καλέω"
@@ -9438,19 +9438,19 @@ lemme={
   "Composé de  ἐκ  et dérivé de  καλέω"
  ],
  "ἐκκλίνω": [
-  "écarter",
-  "égarer,égarés, éloignez-vous, qu'il s'éloigne, tourner de côté, dévier (du droit chemin).  se retourner, s'éloigner de, se tenir à l'écart d'une société  fuir quelqu'un",
+  "décliner",
+  "écarter, égarer, éloigner, qu'il s'éloigne, tourner de côté, dévier (du droit chemin).  se retourner, s'éloigner de, se tenir à l'écart d'une société  fuir quelqu'un",
   "Verbe",
   "Vient de  ἐκ  et  κλίνω"
  ],
  "ἐκκολυμβάω": [
-  "plonger dehors",
-  "nager,à la nage, s'éloigner à la nage",
+  "nager au dehors",
+  "nager dehors, à la nage, s'éloigner à la nage",
   "Verbe",
   "Vient de  ἐκ  et  κολυμβάω"
  ],
  "ἐκκομίζω": [
-  "porter soigneusement au dehors",
+  "prendre soigneusement au dehors",
   "porter en terre, portait en terre, porter en terre.   un mort pour l'enterrer",
   "Verbe",
   "Vient de  ἐκ  et  κομίζω"
@@ -10440,7 +10440,7 @@ lemme={
   "Vient de  ἐν  et  δυναμόω"
  ],
  "ἐνδύνω": [
-  "coucher à l'intérieur",
+  "plonger à l'intérieur",
   "introduire, envelopper, cacher.   litéralement : enfiler un vêtement.  métaphorique revêtir une armure.   se glisser dans, s'insinuer dans, entrer",
   "Verbe",
   "Vient de  ἔννομος  et  δύνω"
@@ -10452,7 +10452,7 @@ lemme={
   "Vient de  ἐνδύω"
  ],
  "ἐνδύω": [
-  "habiller",
+  "envêtir",
   "être vêtu, revêtir, se revêtir, remettre, vêtement, s'enfoncer dans (des vêtements), vêtir, se vêtir, se revêtir",
   "Verbe",
   "Vient de  ἐν  et  δύνω  (sens d'enfiler un vêtement)"
@@ -11388,8 +11388,8 @@ lemme={
   "Vient de  ἐπί  et  ἐκτείνω"
  ],
  "ἐπενδύομαι": [
-  "revêtir",
-  "revêtir, revêtir",
+  "surenvêtir",
+  "surenvêtir, vêtir dedans sur, revêtir par-dessus",
   "Verbe",
   "Vient de  ἐπί  et  ἐνδύω"
  ],
@@ -11562,7 +11562,7 @@ lemme={
   "Vient de  ἐπί  et d'un dérivé de  ὀρθός"
  ],
  "ἐπιδύω": [
-  "coucher sur",
+  "surplonger",
   "coucher, descendre, se coucher (du soleil)",
   "Verbe",
   "Vient de  ἐπί  et  δύνω"
@@ -11586,8 +11586,8 @@ lemme={
   "Vient de  ἐπί  et  ζητέω"
  ],
  "ἐπιθανάτιος": [
-  "condamnés à mort",
-  "condamnés à mort, condamné à mort",
+  "sur-trépassés",
+  "sur point de trépasser, condamnés à morts",
   "Adjectif",
   "Vient de  ἐπί  et  θάνατος"
  ],
@@ -13494,8 +13494,8 @@ lemme={
   "Forme prolongée de  θριαμβεύω"
  ],
  "ἡμιθανής": [
-  "moitié mort",
-  "à demi mort, demi mort",
+  "demi-mort",
+  "demi mort, demi-péri",
   "Adjectif",
   "Vient d'un composé présumé de  ἥμισυς  et  θνῄσκω"
  ],
@@ -13692,7 +13692,7 @@ lemme={
   "θαμβέω et parent du mot désuet 'tapho' (abasourdir)"
  ],
  "θανάσιμος": [
-  "de trépassant",
+  "trépassant",
   "qui mène au trépas, de trépas, qui trépasse, mortel",
   "Adjectif",
   "Vient de  θάνατος"
@@ -13705,13 +13705,13 @@ lemme={
  ],
  "θάνατος": [
   "trépas, trépas",
-  "mort, mourront, mourrait, mortelle, la mort du corps.   cette séparation (naturelle ou violente) de l'âme et du corps par laquelle se termine la vie sur la terre.  avec l'idée implicite de misère future en enfer.   le pouvoir de la mort.    le monde souterrain, la demeure de la mort, était représenté comme très noir, l'équivalent de la région des épaisses ténèbres, région enveloppée de l'obscurité de l'ignorance et du péché   métaphorique, la perte de la vie terrestre.   misère de l'âme coupable de péché, qui commence sur la terre mais continue et s'accroît après la mort du corps, en enfer.   l'état misérable du méchant en enfer.  dans un sens plus large, la mort qui inclue toutes les misères provenant du péché, tant la mort physique que la négation d'une vie consacrée à Dieu, bénie par lui sur terre, et qui sera suivie de misère en enfer",
+  "mort, la mort du corps.   cette séparation (naturelle ou violente) de l'âme et du corps par laquelle se termine la vie sur la terre.  avec l'idée implicite de misère future en enfer.   le pouvoir de la mort.    le monde souterrain, la demeure de la mort, était représenté comme très noir, l'équivalent de la région des épaisses ténèbres, région enveloppée de l'obscurité de l'ignorance et du péché   métaphorique, la perte de la vie terrestre.   misère de l'âme coupable de péché, qui commence sur la terre mais continue et s'accroît après la mort du corps, en enfer.   l'état misérable du méchant en enfer.  dans un sens plus large, la mort qui inclue toutes les misères provenant du péché, tant la mort physique que la négation d'une vie consacrée à Dieu, bénie par lui sur terre, et qui sera suivie de misère en enfer",
   "Nom masculin",
-  "Vient de  θνῄσκω"
+  "θανατόω θνῄσκω"
  ],
  "θανατόω": [
   "mettre à trépas",
-  "tuer, faire mourir, mettre à mort, mettre à mort.  métaphorique.   faire mourir, c'est à dire détruire, éteindre.  être libéré, comme par la mort, de l'esclavage de toute chose, littéralement être mort à quelque chose",
+  "faire mourir, mettre à mort, mettre à mort.  métaphorique.   faire mourir, c'est à dire détruire, éteindre.  être libéré, comme par la mort, de l'esclavage de toute chose, littéralement être mort à quelque chose",
   "Verbe",
   "Vient de  θάνατος"
  ],
@@ -14064,14 +14064,14 @@ lemme={
   "Vient de  θλίβω"
  ],
  "θνῄσκω": [
-  "être mort, être morts",
-  "être mort, mourir.  métaphorique être mort spirituellement",
+  "mourir",
+  "périr, mourir, être mort,  métaphorique être mort spirituellement",
   "Verbe",
   "Forme renforcée du mot primaire 'thano' utilisé seulement à certains temps"
  ],
  "θνητός": [
   "mortel, mortels, mortelle, mortelles",
-  "mortel, mortelle, sujet à la mort, mortel",
+  "mortel, périssable, sujet à la mort",
   "Adjectif",
   "Vient de  θνῄσκω"
  ],
@@ -15738,7 +15738,7 @@ lemme={
   "Vient de κατά et d'un dérivé d'un composé de κληρονομέω et κλῆρος et δίδωμι"
  ],
  "κατακλίνω": [
-  "incliner de haut en bas",
+  "cliner de haut en bas",
   "incliner de haut en bas, dans le Nouveau Testament, référence au repas, faire asseoir.  se reposer (à une table)",
   "Verbe",
   "Vient de  κατά  et  κλίνω"
@@ -16932,8 +16932,8 @@ lemme={
   "Vient du même mot que  κλῆσις"
  ],
  "κλίβανος": [
-  "four",
-  "four, un \"clibanus\", four familial privé, était une grande jarre en terre , et transportable ;  après l'avoir chauffée, on appliquait contre les parois de la jarre les galettes, qui, cuites de cette manière étaient très minces.  un fourneau, un four",
+  "clibanus",
+  "un \"clibanus\", four familial privé, était une grande jarre en terre , et transportable ;  après l'avoir chauffée, on appliquait contre les parois de la jarre les galettes, qui, cuites de cette manière étaient très minces.  un fourneau, un four",
   "Nom masculin",
   "Dérivation incertaine"
  ],
@@ -16944,26 +16944,26 @@ lemme={
   "Vient de  κλίνω"
  ],
  "κλίνη": [
-  "lit",
-  "lit, un petit lit, une couche.  un divan sur lequel on prend le repas.  une litière sur lequel un malade est transporté",
+  "lit, lits, lit, lits",
+  "lit, couche, divan, litière",
   "Nom neutre",
   "Vient de  κλίνω"
  ],
  "κλινίδιον": [
-  "couchette",
-  "couchette, civière, petit lit, un petit lit, une couche",
+  "petit lit",
+  "couchette, civière, petit lit",
   "Nom neutre",
   "Vient d'un dérivé présumé de  κλίνη"
  ],
  "κλίνω": [
-  "incliner",
+  "cliner",
   "incliner, pencher, incliner, courber.  faire tomber, faire fuir.  reposer.   dans un lieu pour le repos.    intrans.   baisser, décliner.   le déclin du jour",
   "Verbe",
   "Un mot racine"
  ],
  "κλισία": [
-  "tablées",
-  "tablées, une hutte érigée pour passer la nuit.  une tente.  toute chose pour se reposer.   une chaise où on peut s'asseoir et reposer sa tête.  un siège de repos.   une compagnie au repos.   une rangée ou un certain nombre de personnes se reposant pour le repas",
+  "places de clinaisons",
+  "tablées, hutte, tente, toute chose pour se reposer, chaise (où on peut s'asseoir et reposer sa tête), siège de repos, compagnie au repos, rangée ou un certain nombre de personnes se reposant pour le repas",
   "Nom féminin",
   "Vient d'un dérivé de  κλίνω"
  ],
@@ -20402,19 +20402,19 @@ lemme={
  ],
  "νεκρός": [
   "mort, morts, morte, mortes",
-  "mort, morts, morte, inutile, réellement.   celui qui a rendu son dernier souffle, sans vie.  décédé, parti, celui dont l'âme est dans le Hadès.  sans vie, qui a perdu la vie, inanimé   métaphorique.   spirituellement mort.   destitué de la vie qui reconnaît et se dévoue à dieu, qui se donne aux péchés, à la mort.  inactif dans la réalisation de ce qui est droit.   destitué de force ou pouvoir, inactif, inopérant",
+  "mort, nécrosé, inutile, réellement.   celui qui a rendu son dernier souffle, sans vie.  décédé, parti, celui dont l'âme est dans le Hadès.  sans vie, qui a perdu la vie, inanimé   métaphorique.   spirituellement mort.   destitué de la vie qui reconnaît et se dévoue à dieu, qui se donne aux péchés, à la mort.  inactif dans la réalisation de ce qui est droit.   destitué de force ou pouvoir, inactif, inopérant",
   "Adjectif",
   "Vient apparemment de 'nekus' (cadavre)"
  ],
  "νεκρόω": [
   "mortifier",
-  "mortifier, mettre à mort, pousser à la mort, tuer.  usé de corps.   d'un vieil homme impotent.   priver de puissance, détruire la force de",
+  "mortifier, nécroser, mettre à mort, pousser à la mort, tuer.  usé de corps.   d'un vieil homme impotent.   priver de puissance, détruire la force de",
   "Verbe",
   "Vient de  νεκρός"
  ],
  "νέκρωσις": [
   "mortification",
-  "mortification, installation dans la mort.  être amené à la mort.  l'état de mort, absolue paresse.   des membres et des organes du corps",
+  "mortification, nécrose, installation dans la mort.  être amené à la mort.  l'état de mort, absolue paresse.   des membres et des organes du corps",
   "Nom féminin",
   "Vient de  νεκρόω"
  ],
@@ -22669,8 +22669,8 @@ lemme={
   "Vient de  παρακαλέω"
  ],
  "παράκλητος": [
-  "appeleur à côté",
-  "paraclet, convocateur, convocateur, appelé aux côtés, appelé à l'aide.   celui qui plaide la cause d'un autre, un juge, un plaideur, un conseil pour la défense, un assistant légal, un avocat.  celui qui plaide avec un autre, un intercesseur.   Christ dans son élévation à la droite de Dieu, plaidant à Dieu le Père pour le pardon de nos péchés.    dans un sens plus large, un aide, un assistant, un adjoint.   le Saint Esprit destiné à prendre la place de Christ avec les apôtres (après son ascension au Père), pour les conduire à une plus profonde connaissance de la vérité de l'évangile, et leur donner, de la part du royaume divin, une force divine les rendant capables de vaincre les épreuves et persécutions",
+  "appelé à côté",
+  "paraclet, avocat, convocateur, appelé aux côtés, appelé à l'aide.   celui qui plaide la cause d'un autre, un juge, un plaideur, un conseil pour la défense, un assistant légal, un avocat.  celui qui plaide avec un autre, un intercesseur.   Christ dans son élévation à la droite de Dieu, plaidant à Dieu le Père pour le pardon de nos péchés.    dans un sens plus large, un aide, un assistant, un adjoint.   le Saint Esprit destiné à prendre la place de Christ avec les apôtres (après son ascension au Père), pour les conduire à une plus profonde connaissance de la vérité de l'évangile, et leur donner, de la part du royaume divin, une force divine les rendant capables de vaincre les épreuves et persécutions",
   "Nom masculin",
   "Un mot racine"
  ],
@@ -22945,10 +22945,10 @@ lemme={
   "Vient de  παρεισάγω"
  ],
  "παρεισδύω": [
-  "pénétrer à côté",
-  "glisser,il s'est glissé, entrer secrètement, se glisser furtivement.  voler (discrètement)",
+  "plonger envers le côté",
+  "glisser à côté, entrer secrètement, se glisser furtivement",
   "Verbe",
-  "Vient de  παρά  et un composé de  εἰς  et  δύνω, παρ + εισ+ δύω"
+  "Vient de  παρά  et un composé de  εἰς  et  δύνω , παρ + εισ + δύω"
  ],
  "παρεισέρχομαι": [
   "entrer à côté",
@@ -24025,8 +24025,8 @@ lemme={
   "Vient de  πίστις"
  ],
  "πιστικός": [
-  "croyable liquide",
-  "fidèle, appartenant à la croyance.   ayant le pouvoir de persuasion, habile pour produire la croyance.  vrai, fidèle, ce sur quoi on peut compter",
+  "croyalique",
+  "fidèlique, appartenant à la croyance, croyalique, de confiance, fidèle, potable, buvable,   ayant le pouvoir de persuasion, habile pour produire la croyance.  vrai, fidèle, ce sur quoi on peut compter",
   "Adjectif",
   "Vient de  πίστις"
  ],
@@ -25885,7 +25885,7 @@ lemme={
   "Vient de  πρῶτος  et  καθέδρα"
  ],
  "πρωτοκλισία": [
-  "première place à table, premières places aux tables, première place à table, premières places aux tables",
+  "première place de clinaison, premières places de clinaisons, première place de clinaison, premières places de clinaisons",
   "première place à table, la première place de repos, la place principale à table.  le rang relatif entre plusieurs places à table variait selon les coutumes des Perses, des Grecs, des Romains ;  la disposition que les Juifs avaient choisie du temps de Christ ne peut être déterminée avec précision",
   "Nom féminin",
   "Vient de  πρῶτος  et  κλισία"
@@ -28718,7 +28718,7 @@ lemme={
  ],
  "συναποθνῄσκω": [
   "mourir loin avec",
-  "mourir loin avec, mourir loin ensemble.  mourir avec quelqu'un",
+  "mourir loin avec, mourir loin ensemble, périr complètement ensemble, mourir avec quelqu'un",
   "Verbe",
   "Vient de  σύν  et  ἀποθνῄσκω"
  ],
@@ -30331,8 +30331,8 @@ lemme={
   "Vient de tribo (\"frotter\", parent de teiro, truo, et de  τράγος , τραῦμα)"
  ],
  "τριετία": [
-  "période de trois années",
-  "période de trois ans, durant trois années, un espace de trois années",
+  "trois années durant",
+  "trois années, trois annuel, période de trois ans, durant trois années, triennat, un espace de trois années",
   "Nom féminin",
   "Vient d'un composé de  τρεῖς  et  ἔτος"
  ],
@@ -33643,8 +33643,8 @@ lemme={
   "κημός : Muselière"
  ],
  "κλινάριον": [
-  "sommiers",
-  "sommiers, sommiers",
+  "châlits",
+  "châlits, sommiers",
   "Nom neutre",
   "κλινίδιον"
  ],
@@ -33805,8 +33805,8 @@ lemme={
   "Vient de  πρός  et  αἰτέω"
  ],
  "προσκλίνω": [
-  "rejoindre",
-  "rejoindre, rejoindre",
+  "cliner auprès",
+  "cliner auprès, cliner vers",
   "Verbe",
   "πρόσκλησις προσ + κλίνω"
  ],

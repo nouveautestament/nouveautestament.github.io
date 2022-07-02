@@ -168,6 +168,9 @@
 
 
 
+x = 0;
+
+
 
 
 function getdate()
@@ -193,10 +196,27 @@ function getdate()
 
 
 
-window.onload = function() { nameis = prompt("[ NOM ]"); if (nameis == "") nameis = "Anonyme" }
+window.onload = function() 
+{
+	
+	nameis = prompt("[ NOM ]");
+	
+	if (nameis == "")
+		nameis = "Anonyme"
+		
+
+	//FOCUS TAB
+	//window.onfocus	= function () {focust = 1; console.log('1')}
+	//window.onblur		= function () {focust = 0; console.log('0')}
+	
+		
+	window.addEventListener('blur', function () {focust = 0; console.log('0')}   );
+	window.addEventListener('focus', function () {focust = 1; console.log('1')}  );
+
+}
 
 
-	x = 0;
+	
 	//reader = new FileReader();
 	//reader.onload = function(event) { showMessage(reader.result) };
 	
@@ -232,6 +252,12 @@ window.onload = function() { nameis = prompt("[ NOM ]"); if (nameis == "") namei
 		//messages.textContent += `\n${message}`;
 		divsms.scrollTop = divsms.scrollHeight;
 		messageBox.value = '';
+		
+		
+		
+		//sound
+		if (focust == 0)
+			new Audio('sound1.mp3').play()
 	  
     }
 
