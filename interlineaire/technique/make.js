@@ -249,6 +249,7 @@ sebastien_te		= fichier.readFileSync('../../database/TE/NOUVELLE_DISPOSITION_TE.
 sebastien_fr		= fichier.readFileSync('../../database/FR/NOUVELLE_DISPOSITION.txt', 'utf8').split('\n')
 tauber_te			= fichier.readFileSync('../../database/TE/SBL_TAUBER_TE.txt', 'utf8')
 robinson_te			= fichier.readFileSync('../../database/TE/ROBINSON_ET_PIERPONT_TE.txt', 'utf8')
+wh_perseus			= fichier.readFileSync('../../database/TE/WH_PERSEUS_TE.txt', 'utf8')
 ieronymus_perseus	= fichier.readFileSync('../../database/TE/IERONYMUS_PERSEUS_TE.txt', 'utf8')
 ieronymus_proiel	= fichier.readFileSync('../../database/TE/IERONYMUS_PROIEL_TE.txt', 'utf8')
 
@@ -283,6 +284,7 @@ bible =
 ndfh				+
 tauber_te			+
 robinson_te			+
+wh_perseus			+
 ieronymus_perseus	+
 ieronymus_proiel
 
@@ -546,6 +548,76 @@ for (line = 0 ; line != bible.length ; line++)
 		
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	else if (traducteur == "WH_PERSEUS")
+	{
+		
+		wh_perseus = ""
+
+		textete = bible[line].replace(info[0]+" ","").split(' ')
+		
+		if (textete != "")
+		{
+		
+			//CREATION TR SPAN
+			for (s = 0 ; s != textete.length ; s++)
+			{
+				
+					
+					lemmep	= textete[s].split('=')[1]
+					
+					
+					if (textete[s].split('=')[2].match(/,/))
+					{
+						morphp1 = textete[s].split('=')[2].split(',')[0];
+						morphp2 = textete[s].split('=')[2].replace(morphp1+',',""); 
+					}
+
+					else
+					{
+						morphp1 = textete[s].split('=')[2];
+						morphp2 = '-';
+					}
+
+
+					wh_perseus +=``+
+					`<div class="int">`+
+					`<span class="el">`+textete[s].split('=')[0]+`</span>`+
+					`<span class="info">`+morphp1+`</span>`+
+					`<span class="subinfo">`+morphp2+`</span>`+
+					`<span class="lemme">`+textete[s].split('=')[1]+`</span>`+
+					`</div>`;
+
+
+			}
+			
+			
+			//add tr
+			data += `\n<tr><td class="td1">WH_PERSEUS</td><td class="td2">2014</td><td class="td3">`+wh_perseus+`</td></tr>`;
+		
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
