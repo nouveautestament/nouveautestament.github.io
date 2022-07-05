@@ -29665,8 +29665,8 @@ lemme={
   "Affinité incertaine"
  ],
  "τέ": [
-  "et aussi",
-  "et, ainsi .., non seulement ... mais aussi.  tous deux ... et.  comme ... ainsi",
+  "en outre",
+  "aussi-bien, et-aussi, en-sus, non seulement, mais aussi, tous deux, et comme, ainsi",
   "Particule",
   "Particule de connexion ou addition"
  ],
