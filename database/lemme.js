@@ -114,7 +114,7 @@ lemme={
   "Vient de  ἀγαθός"
  ],
  "ἀγαλλίασις": [
-  "allégresse",
+  "exultation",
   "allégresse , grande joie, joie extrême, allégresse Aux fêtes, le peuple était oint avec \"l'huile de joie\". Paul, dans Hébreux 1:9 fait allusion à cette cérémonie, et l'utilise comme emblème de la puissance divine et de la majesté à laquelle le Fils de Dieu a été élevé",
   "Nom féminin",
   "Vient de  ἀγαλλιάω"
@@ -3564,8 +3564,8 @@ lemme={
   "Vient de  ἀποδέχομαι"
  ],
  "ἀπόθεσις": [
-  "pose au loin",
-  "apothèse, chute finale, apothéose, rupture, purification , quitter, rejeter, quitter, évacuer",
+  "déposition",
+  "pose au loin, apothèse, chute finale, apothéose, rupture, purification , quitter, rejeter, quitter, évacuer",
   "Nom féminin",
   "Vient de  ἀποτίθημι"
  ],
@@ -3954,7 +3954,7 @@ lemme={
   "Vient de  ἀπό  et  τελέω"
  ],
  "ἀποτίθημι": [
-  "poser au loin",
+  "déposer",
   "mettre de côté, poser loin, dépouiller, rejeter, poser de côté ou au loin",
   "Verbe",
   "Vient de  ἀπό  et  τίθημι"
@@ -18853,7 +18853,7 @@ lemme={
   "Vient de  μάρτυς"
  ],
  "μαρτυρία": [
-  "déposition de témoignage, dépositions de témoignages, déposition de témoignage, dépositions de témoignages",
+  "témoignation, témoignations, témoignation, témoignations",
   "déposition de témoignage, témoignage, témoin, un témoignage.   rôle affecté aux prophètes de témoigner en ce qui concerne les événements futurs.   ce qui est témoigné, témoignage, c'est à dire devant un juge",
   "Nom féminin",
   "Vient de  μάρτυς"
@@ -24781,7 +24781,7 @@ lemme={
   "Vient de pos (quel) interrogatif, (peut-être le même que πού)"
  ],
  "Πούδης": [
-  "Pudens",
+  "Poudès",
   "Pudens, Pudens = \"timide, modeste\"   un chrétien, ami de Timothée à Rome, et peut-être un des soixante-dix disciples",
   "Nom propre masculin",
   "D'origine latine"

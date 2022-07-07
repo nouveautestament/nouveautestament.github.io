@@ -7,7 +7,7 @@ head_html = `<!DOCTYPE html>
 		<meta name="description" content="Nouveau Testament">
 		<meta name="keywords" content="Nouveau Testament">
 	
-		<title>NOUVEAU TESTAMENT</title>
+		<title>NOUVELLE DISPOSITION</title>
 `
 
 css_web = `
@@ -26,18 +26,16 @@ css_web = `
 
 		.chap {
 			font-size:20px;
-			float:left;
 			margin:10px;
 		}
 
 		.ver {
 			font-size:17px;
-			font-weight:bold;
 		}
 
 		.text {
 			font-size:17px;
-
+			line-height:1.5em;
 
 		}
 
@@ -69,7 +67,6 @@ css_papier = `
 
 		.ver {
 			font-size:11px;
-			font-weight:bold;
 		}
 
 		.text {
@@ -151,13 +148,13 @@ for (nb=0;nb!=line.length;nb++)
 		}
 
 
-		body_html_all	+= '<span class="ver"><b>'+verset+'</b></span> ';
+		body_html_all	+= '<br><span class="ver">'+verset+'</span> ';
 		body_html_all	+= '<span class="text">'+texte+'</span>\n';
 
-		body_html	+= '<span class="ver"><b>'+verset+'</b></span> ';
-		body_html	+= '<span class="text">'+texte+'</span>\n';
+		//body_html	+= '<br><span class="ver">'+verset+'</span> ';
+		//body_html	+= '<span class="text">'+texte+'</span>\n';
 
-		file2.appendFileSync(livre+'.html','<span class="ver"><b>'+verset+'</b></span> <span class="text">'+texte+'</span>\n', 'utf8');
+		file2.appendFileSync(livre+'.html','<br><span class="ver">'+verset+'</span> <span class="text">'+texte+'</span>\n', 'utf8');
 
 		if (livre == 27 && chapitre == 22 && verset == 21)
 			file2.appendFileSync(livreb+'.html','</body></html>', 'utf8');
