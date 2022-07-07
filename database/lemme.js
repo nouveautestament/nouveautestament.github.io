@@ -19519,8 +19519,8 @@ lemme={
   "Vient d'un composé de  μετά  et d'une forme de  αἴρω  ou peut-être plutôt ἀήρ (voir \"meteor\")"
  ],
  "μετοικεσία": [
-  "transhabitation de maison",
-  "déportation, changement de maison, enlèvement depuis une demeure vers une autre, spécialement une déportation",
+  "transhabitation",
+  "déportation, changement de maison, transmigration, enlèvement depuis une demeure vers une autre, spécialement une déportation",
   "Nom féminin",
   "Vient d'un dérivé d'un composé de  μετά  et  οἶκος"
  ],
