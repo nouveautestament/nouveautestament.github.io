@@ -180,8 +180,8 @@ lemme={
   "ἄγγος ἀγκάλη"
  ],
  "ἀγγελία": [
-  "message",
-  "message, annoncé, message, annonce, nouvelles.  une proclamation, un commandement, un ordre",
+  "messagerie",
+  "messagerie, annonciation, annoncé, message, annonce, nouvelle, proclamation, un commandement, un ordre",
   "Nom féminin",
   "Vient de  ἄγγελος"
  ],
@@ -22267,7 +22267,7 @@ lemme={
   "Vient de  παῖς  et d'une forme de  ἄγω"
  ],
  "παιδάριον": [
-  "petit jeune enfant",
+  "enfant petiot",
   "petit enfant, petit enfant, petiot, un petit garçon   Pour les Synonymes voir entrée  5868",
   "Nom neutre",
   "Vient d'un dérivé présumé de  παῖς"
@@ -22297,8 +22297,8 @@ lemme={
   "Vient de (\"la source\") et de  παιδίον"
  ],
  "παιδίον": [
-  "jeune enfant, jeunes enfants",
-  "petit enfant, un jeune enfant, un petit garçon, une petite fille.   enfants.  les petits.  un enfant.   un bébé (mâle) qui est né récemment.    un enfant un peu plus âgé, d'un enfant mâture ;    métaphorique enfant (ou comme un enfant) dans l'intellect    Pour les Synonymes voir entrée  5868",
+  "petit enfant, petits enfants",
+  "petit enfant, jeune enfant, petit garçon, une petite fille, petits enfants, un bébé (mâle) qui est né récemment.    un enfant un peu plus âgé, d'un enfant mâture ;    métaphorique enfant (ou comme un enfant) dans l'intellect    Pour les Synonymes voir entrée  5868",
   "Nom neutre",
   "Vient de dimin. de  παῖς"
  ],
@@ -24020,7 +24020,7 @@ lemme={
  ],
  "πιστεύω": [
   "croire",
-  "croire, foi, confier, celui qui croit, croyant, .., penser être vrai, être persuadé de, donner du crédit, placer sa confiance en.    de la chose crue.   faire crédit, avoir confiance.   référence morale ou religieuse.   utilisé dans le Nouveau Testament de la conviction et de la confiance vers lesquelles un homme est poussé par une certaine prérogative intérieure plus élevée et une loi pour son âme.  se confier dans Jésus ou Dieu comme capables d'obtenir ou de réaliser quelque chose : la foi qui sauve.  simple reconnaissance de quelque fait ou événement : la foi intellectuelle.     confier une chose à quelqu'un, sa fidélité",
+  "croire, avoir foi, se fier, avoir fidélité, penser être vrai, être persuadé de, donner du crédit, placer sa confiance en.    de la chose crue.   faire crédit, avoir confiance.   référence morale ou religieuse.   utilisé dans le Nouveau Testament de la conviction et de la confiance vers lesquelles un homme est poussé par une certaine prérogative intérieure plus élevée et une loi pour son âme.  se confier dans Jésus ou Dieu comme capables d'obtenir ou de réaliser quelque chose : la foi qui sauve.  simple reconnaissance de quelque fait ou événement : la foi intellectuelle.     confier une chose à quelqu'un, sa fidélité",
   "Verbe",
   "Vient de  πίστις"
  ],
