@@ -554,7 +554,7 @@ for (line = 0 ; line != bible.length ; line++)
 			'<tr>'+
 			'<td class="td1" nowrap><button onclick="addtrs(\''+id_trs+'\');this.style.background=\'#00eb00\'">NOUVELLE_DISPOSITION</button></td>'+
 			'<td class="td2">'+date+'</td>'+
-			'<td class="td3"><textarea id="'+id_trs+'" class="trs" style="">'+textefr.join(' ')+'</textarea></td></tr>'
+			'<td class="td3"><textarea id="'+id_trs+'" class="trs" style="">'+textefr.join(' ').replace(/;/g," ?")+'</textarea></td></tr>'
 		
 		}
 		

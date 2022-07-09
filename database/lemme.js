@@ -3924,7 +3924,7 @@ lemme={
   "Vient de  ἀπό  et dérivé présumé de  στόμα"
  ],
  "ἀποστρέφω": [
-  "détourner au loin",
+  "détourner",
   "détourner, remettre, rapporter, exciter, détourner, tourner, détourner.   enlever quelque chose à quelqu'un.  le détourner de l'allégeance à quelqu'un.   retourner, remettre, rapporter.   remettre une épée au fourreau.  Judas rapportant l'argent au temple.   déserter",
   "Verbe",
   "Vient de  ἀπό  et  στρέφω"
