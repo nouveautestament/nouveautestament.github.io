@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+
+
+		<title>AGORA</title>
+
+		<style>
+			html {
+				margin:0;
+				padding:0;
+				height:100%;
+			}
+
+			body {
+			
+				margin:0;
+				padding:0;
+				height:100%;
+				font-family:sans-serif;
+				color:black;
+				font-size:0.9em;
+			}
+
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				height:10%;
+				
+				color:white;
+				background-color:#172028;
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				background-color:#3f4346;
+			}
+		
+
+			#main {
+			
+				margin:0;
+				padding:0;
+				height:100%;
+				width:100%;
+			}
+			
+			#left {
+			
+				margin:0;
+				padding:0;
+				
+				width:70%;
+			
+				float:left;
+			}
+			
+			#inleft {
+			
+				padding-right:70px;
+				color:#313131;
+			}
+			
+			#right {
+			
+				margin:0;
+				padding:0;
+				
+				width:30%;
+				
+				float:left;
+			}
+
+			#titre1 {
+			
+				font-size:2em;
+				font-family:serif;
+			}
+			
+			#titre2 {
+			
+				font-size:1.7em;
+				font-family:serif;
+			}
+
+			.min {
+			
+				font-size: 0.8em;
+			}
+			
+			p {
+			
+				line-height: 1.5em;
+			}
+
+			table {border-spacing: 0px 0.2em;}
+
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			table td {
+			
+				padding: 0.2em;
+				
+			}
+
+			#messageBox {
+			
+
+				outline: none;
+				box-sizing: border-box;
+				padding: 1.5em;
+				width: 100%;
+				height:90%;
+				
+			}
+			
+			#divsms {
+				height:90%;
+				overflow: auto;
+			}
+			#tt {
+				height:10%;
+			}
+			
+		</style>
+	</head>
+
+<body>
+
+
+
+
+
+
+<div id="main">
+<!-- height: 500px; overflow-y: scroll; width:100%;padding: 10px; -->
+	<div id="divsms" style="">
+		<table  cellspacing="0" id="messages"></table>
+	</div>
+	<div id="tt">
+		<input autofocus type="text" id="messageBox" onkeypress="if (event.keyCode == 13) sender()" style="width:100%; padding:10px;"/>
+	</div>
+</div>	
+
+</body>
+
+<script>
+
+
+
+x = 0;
+
+
+
+
+function getdate()
+{
+
+    //Date object
+    var d = new Date();
+
+
+    // subtract local time zone offset : UTC time in msec
+    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+    // create new Date object for different city
+    // using supplied offset
+    var nd = new Date(utc + (3600000*'+2'));
+
+
+    return '['+nd.toLocaleString()+']';
+}
+
+
+
+
+
+
+window.onload = function() 
+{
+	
+	nameis = prompt("[ NOM ]");
+	
+	if (nameis == "")
+		nameis = "Anonyme"
+		
+
+	//FOCUS TAB
+	//window.onfocus	= function () {focust = 1; console.log('1')}
+	//window.onblur		= function () {focust = 0; console.log('0')}
+	
+		
+	window.addEventListener('blur', function () {focust = 0; console.log('0')}   );
+	window.addEventListener('focus', function () {focust = 1; console.log('1')}  );
+
+}
+
+
+	
+	//reader = new FileReader();
+	//reader.onload = function(event) { showMessage(reader.result) };
+	
+	refTable = document.getElementById("messages");
+	divsms = document.getElementById("divsms");
+	messageBox = document.getElementById('messageBox');
+	
+	let ws;
+	
+	function showMessage(message) {
+
+		
+		
+
+		split_user_sms = message.split(' -- ')
+		
+		superdate = split_user_sms[0]
+		username = split_user_sms[1]
+		sms	= message.replace(superdate+" -- "+username+" -- ","")
+		
+		row = refTable.insertRow(-1);
+		
+		cell_1 = row.insertCell();
+		cell_1.innerHTML = superdate;
+		cell_1.style.whiteSpace = "nowrap";
+		
+		cell_2 = row.insertCell();
+		cell_2.innerHTML = username;
+		
+		cell_2 = row.insertCell();
+		cell_2.innerHTML = sms;
+
+		
+		//messages.textContent += `\n${message}`;
+		divsms.scrollTop = divsms.scrollHeight;
+		messageBox.value = '';
+		
+		
+		
+		//sound
+		if (focust == 0)
+			new Audio('sound1.mp3').play()
+	  
+    }
+
+
+
+
+
+
+
+    function init() {
+	
+	
+      if (ws) {
+        ws.onerror = ws.onopen = ws.onclose = null;
+        ws.close();
+      }
+
+      ws = new WebSocket('wss://nouveautestament.alwaysdata.net');
+
+	  
+	ws.onopen = () => 
+	  {
+        console.log('connecté');
+		if (x == 0)
+		{
+			ws.send("getsms");
+			x = 1;
+		}
+      }
+    
+
+
+	ws.onmessage = ( data ) => 
+	{
+		
+		if (data.data != "")
+			showMessage(data.data)
+
+
+      }
+	 
+	 ws.onclose = function() 
+	 {
+	 
+		//document.getElementById("messages").innerHTML = ""
+		ws = null;
+		init();
+		
+	}
+    
+	
+	}
+
+    function sender() {
+      if (!ws) {
+        
+        return ;
+      }
+
+      ws.send		("sms -- "	+	getdate() + " -- " + nameis+" -- "+messageBox.value);
+      showMessage	(				getdate() + " -- " + nameis+" -- "+messageBox.value);
+    }
+
+    init();
+	
+</script>
+</html>

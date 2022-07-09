@@ -6840,8 +6840,8 @@ lemme={
   "Vient d'un mot Hébreu  01732"
  ],
  "δαιμονίζομαι": [
-  "faire démoniser",
-  "démoniser, être sous la puissance du démon. Dans le Nouveau Testament, ce sont les personnes affligées de maladies spéciales et sévères, du corps ou de l'esprit (paralysie, cécité, surdité, perte de parole, épilepsie, mélancolie, démence, etc.) et dont les Juifs pensaient que les démons étaient dans leurs corps, pour les affliger de la maladie, mais aussi pour enlever leur raison et agir à leur place ;  les guérir exigeait l'expulsion du démon",
+  "démoniser",
+  "être démonisé, démoniser, être sous la puissance du démon. Dans le Nouveau Testament, ce sont les personnes affligées de maladies spéciales et sévères, du corps ou de l'esprit (paralysie, cécité, surdité, perte de parole, épilepsie, mélancolie, démence, etc.) et dont les Juifs pensaient que les démons étaient dans leurs corps, pour les affliger de la maladie, mais aussi pour enlever leur raison et agir à leur place ;  les guérir exigeait l'expulsion du démon",
   "Verbe",
   "Vient de  δαίμων"
  ],
@@ -26929,7 +26929,7 @@ lemme={
   "Vient de selas (brillance, probablement parent de la variante de  αἱρέω , à travers l'idée de séduction)"
  ],
  "σεληνιάζομαι": [
-  "être lunatique",
+  "lunatiser",
   "être lunatique, être influencé par la lune, ou lunatique.  être épileptique.   l'épilepsie étant supposée influencée par les phases de la lune. Mais ce sens peut être mis en doute, selon la connaissance qu'avaient les Grecs de l'épilepsie",
   "Verbe",
   "Vient d'un dérivé présumé de  σελήνη"
