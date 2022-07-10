@@ -2136,7 +2136,7 @@ lemme={
   "Vient d'un composé de  ἀνά  et  λόγος"
  ],
  "ἀναλογίζομαι": [
-  "considérer",
+  "recalculer",
   "considérer, penser, considérer, réfléchir",
   "Verbe",
   "Vient de  ἀναλογία"
@@ -11580,8 +11580,8 @@ lemme={
   "Vient de  ἐπί  et  ἔοικα"
  ],
  "ἐπιζητέω": [
-  "chercher davantage",
-  "chercher au-dessus, rechercher, s'enquérir de, chercher sérieusement.  désirer, souhaiter, implorer.  demander, réclamer",
+  "surchercher",
+  "chercher au-dessus, chercher davantage, rechercher, s'enquérir de, chercher sérieusement.  désirer, souhaiter, implorer.  demander, réclamer",
   "Verbe",
   "Vient de  ἐπί  et  ζητέω"
  ],
@@ -15936,7 +15936,7 @@ lemme={
   "Vient de  κατά  et  νεύω"
  ],
  "κατανοέω": [
-  "intelliger contre",
+  "intelliger complètement",
   "intelliger de haut en bas, considérer, examiner, regarder, veiller, apercevoir, remarquer, observer, comprendre.  considérer attentivement, fixer les yeux ou l'esprit sur",
   "Verbe",
   "Vient de  κατά  et  νοέω"
