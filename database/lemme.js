@@ -24721,7 +24721,7 @@ lemme={
   "Vient de  ποταμός  et un dérivé de  φορέω"
  ],
  "ποταπός": [
-  "de quel, de quels, de quelle, de quelles",
+  "de quel sorte, de quels sortes, de quelle sorte, de quelles sortes",
   "quel, quelle, quelles, signifier, de quelle espèce, vient de quel pays, race ou tribu.  de quelle sorte ou qualité (de quelle manière).   de personnes.  de choses",
   "Adjectif",
   "Vient apparemment de  πότε  et de  ποῦ"
