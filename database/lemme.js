@@ -6300,7 +6300,7 @@ lemme={
   "Vient d'un mot Hébreu  05804"
  ],
  "γαζοφυλάκιον": [
-  "gazophylacium ",
+  "gazophylacium",
   "salle du trésor tenu sous garde, chambre gardée des trésors, dépôt du trésor, spécialement du trésor public, le trésor pièces construites dans les cours du temple, pour les offrandes sacrées et les choses utiles au service, mais aussi pour loger les sacrificateurs Néhémie 13.7 également lieu où étaient déposées les propriétés des veuves et orphelins. Dans le Nouveau Testament, réceptacles où pouvaient se déposer les offrandes volontaires des Juifs pour le service du temple ou pour aider les pauvres",
   "Nom neutre",
   "Vient de  γάζα  et  φυλακή"
@@ -6714,8 +6714,8 @@ lemme={
   "Vient de  γέμω"
  ],
  "γονεύς": [
-  "parents géniteurs",
-  "parents, pères, parent, les parents",
+  "parents",
+  "géniteurs, parents, pères et mères",
   "Nom masculin",
   "Vient de la base de  γίνομαι"
  ],
@@ -7212,7 +7212,7 @@ lemme={
   "Vient de  δεσμός  et  φύλαξ"
  ],
  "δεσμωτήριον": [
-  "détention ",
+  "détention",
   "machine à lien, prison, une geôle",
   "Nom neutre",
   "Vient d'un dérivé de  δεσμός  (équivalent à δεσμέω) + τήριον(lieu, instrument, machine)"
@@ -11940,8 +11940,8 @@ lemme={
   "Vient de  ἐπί  et  στόμα"
  ],
  "ἐπιστρέφω": [
-  "retourner au-dessus",
-  "retourner, se convertir, retourner, s'en retourner, ramener, revenir, passer, conversion, se détourner, d'une façon transitoire.   se tourner vers.   vers l'adoration du vrai Dieu.   retourner, revenir, ramener.   à l'amour et l'obéissance de Dieu.  à l'amour pour les enfants.  à l'amour de la sagesse et de la justice.    d'une façon non transitoire.   se tourner sur soi-même.  se détourner.  retourner, revenir",
+  "tourner sur",
+  "tourner au-dessus, retourner dessus, se convertir, s'en retourner, ramener, revenir, passer, conversion, se détourner, d'une façon transitoire.   se tourner vers.   vers l'adoration du vrai Dieu.   retourner, revenir, ramener.   à l'amour et l'obéissance de Dieu.  à l'amour pour les enfants.  à l'amour de la sagesse et de la justice.    d'une façon non transitoire.   se tourner sur soi-même.  se détourner.  retourner, revenir",
   "Verbe",
   "Vient de  ἐπί  et  στρέφω"
  ],
@@ -17245,7 +17245,7 @@ lemme={
  ],
  "κόπτω": [
   "couper",
-  "couper, couper,  découper, arracher.  se frapper la poitrine de chagrin",
+  "couper, frapper de coups, frapper de deuil, lamenter de coups, abattre en frappant, découper, arracher,  se frapper la poitrine de chagrin",
   "Verbe",
   "Un mot racine"
  ],
@@ -25135,8 +25135,8 @@ lemme={
   "Vient de  πρό  et  ἡγέομαι"
  ],
  "πρόθεσις": [
-  "position en avant",
-  "position en avant, la disposition d'une chose placée en vue, le pain de proposition.   douze pains de froment, correspondant au nombre des tribus d'Israël, lesquels pains étaient offerts à chaque Sabbat, et séparés en deux rangées, disposés pour sept jours sur une table placée dans le sanctuaire ou devant le tabernacle, et ensuite dans le temple.   un but, un dessein",
+  "proposition",
+  "position en avant, proposition, la disposition d'une chose placée en vue, le pain de proposition.   douze pains de froment, correspondant au nombre des tribus d'Israël, lesquels pains étaient offerts à chaque Sabbat, et séparés en deux rangées, disposés pour sept jours sur une table placée dans le sanctuaire ou devant le tabernacle, et ensuite dans le temple.   un but, un dessein",
   "Nom féminin",
   "Vient de  προτίθεμαι"
  ],
@@ -25747,8 +25747,8 @@ lemme={
   "Comparatif de  πρό"
  ],
  "προτίθεμαι": [
-  "placer en avant",
-  "placer en avant, placer devant, disposer, destiner.   destiné à être vu, exposé aux regards.  exposer à la vue du public    du corps d'un mort.  laisser disposé en l'état.    mettre devant soi, se proposer à soi-même.   former le projet, déterminer",
+  "proposer",
+  "poser au-devant, placer en avant, proposer, placer devant, disposer, destiner.   destiné à être vu, exposé aux regards.  exposer à la vue du public    du corps d'un mort.  laisser disposé en l'état.    mettre devant soi, se proposer à soi-même.   former le projet, déterminer",
   "Verbe",
   "Vient de  πρό  et  τίθημι"
  ],
