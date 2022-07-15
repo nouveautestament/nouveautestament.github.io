@@ -245,15 +245,14 @@ window.onload = function()
 		
 		cell_2 = row.insertCell();
 		cell_2.innerHTML = username;
+		cell_2.style.whiteSpace = "nowrap";
 		
-		cell_2 = row.insertCell();
-		cell_2.innerHTML = sms;
+		cell_3 = row.insertCell();
+		cell_3.innerHTML = sms;
 
 		
 		//messages.textContent += `\n${message}`;
 		divsms.scrollTop = divsms.scrollHeight;
-		messageBox.value = '';
-		
 		
 		
 		//sound
@@ -320,6 +319,7 @@ window.onload = function()
 
       ws.send		("sms -- "	+	getdate() + " -- " + nameis+" -- "+messageBox.value);
       showMessage	(				getdate() + " -- " + nameis+" -- "+messageBox.value);
+	  messageBox.value = '';
     }
 
     init();

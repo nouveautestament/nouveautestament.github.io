@@ -834,8 +834,8 @@ lemme={
   "Vient de  αἱρέω"
  ],
  "αἱρετίζω": [
-  "rendre hérésie",
-  "hérétiser, rendre hérésie, choisir,  appartenir à une secte",
+  "hérétiser",
+  "hérétiser, mettre en hérésie, rendre hérésie, choisir,  appartenir à une secte",
   "Verbe",
   "Vient d'un dérivé de  αἱρέω"
  ],
@@ -2226,14 +2226,14 @@ lemme={
   "Vient de  ἀνάξιος"
  ],
  "ἀνάπαυσις": [
-  "pause de bas en haut",
-  "haute pause, repos, cesser, interruption, cessation de travail ou d'affaires, relâche.  repos, récréation   Pour les Synonymes voir entrée  5810",
+  "repos",
+  "pause de bas en haut, haute pause, repos, cesser, interruption, cessation de travail ou d'affaires, relâche.  repos, récréation   Pour les Synonymes voir entrée  5810",
   "Nom féminin",
   "Vient de  ἀναπαύω"
  ],
  "ἀναπαύω": [
-  "pauser de bas en haut",
-  "pauser haut, se reposer, tranquiliser, tranquillisé, permettre à quelqu'un de cesser toute activité ou travail dans le but de reprendre des forces.  se reposer, donner du repos, prendre du repos.  rester tranquille, dans une attente calme et patiente",
+  "reposer",
+  "pauser de bas en haut, pauser haut, reposer, tranquiliser, tranquillisé, permettre à quelqu'un de cesser toute activité ou travail dans le but de reprendre des forces.  se reposer, donner du repos, prendre du repos.  rester tranquille, dans une attente calme et patiente",
   "Verbe",
   "Vient de  ἀνά  et  παύω"
  ],
@@ -3594,8 +3594,8 @@ lemme={
   "Vient de  ἀπό  et  θνῄσκω"
  ],
  "ἀποκαθίστημι": [
-  "rétablir complètement",
-  "rétablir , guéri , devenir , être rendu, restaurer à l'état initial.  être guéri, revenir à son état initial",
+  "reconstituer",
+  "rétablir, guérir , devenir , être rendu, restaurer à l'état initial.  être guéri, revenir à son état initial",
   "Verbe",
   "Vient de  ἀπό  et  καθίστημι"
  ],
@@ -5928,7 +5928,7 @@ lemme={
   "Vient de  βλάσφημος"
  ],
  "βλασφημία": [
-  "blasphème, blasphèmes, blasphème, blasphèmes",
+  "blasphémie, blasphémies, blasphémie, blasphémies",
   "blasphème , calomnie , blasphémer, injurieux, calomnie, discours injurieux.  discours impie et injurieux envers la divine majesté",
   "Nom féminin",
   "Vient de  βλάσφημος"
@@ -7704,8 +7704,8 @@ lemme={
   "Vient de  διά  et de la base de  πρίζω"
  ],
  "διαρπάζω": [
-  "piller complètement",
-  "piller, piller",
+  "ravir au-travers",
+  "ravir par, piller au-travers",
   "Verbe",
   "Vient de  διά  et  ἁρπάζω"
  ],
@@ -7986,7 +7986,7 @@ lemme={
   "Vient de  διά  et  ἔρχομαι"
  ],
  "διερωτάω": [
-  "solliciter à travers",
+  "interroger à travers",
   "informer, demander pour.   demander beaucoup, une chose après l'autre.  trouver suite à une demande, s'informer, s'enquérir",
   "Verbe",
   "Vient de  διά  et  ἐρωτάω"
@@ -9654,8 +9654,8 @@ lemme={
   "Vient de  ἐκ  et  ταράσσω"
  ],
  "ἐκτείνω": [
-  "étendre dehors",
-  "étendre , mettre , jeter, étendre, s'étendre grandement.   sur, vers, contre quelqu'un",
+  "étendre",
+  "étendre, tendre dehors, tendre hors, jeter, s'étendre grandement.   sur, vers, contre quelqu'un",
   "Verbe",
   "Vient de  ἐκ  et 'teino' (étendre)"
  ],
@@ -11250,7 +11250,7 @@ lemme={
   "Vient de  ἐπί  et  ἀναμιμνήσκω"
  ],
  "ἐπαναπαύομαι": [
-  "pauser de bas en haut sur",
+  "reposer sur",
   "reposer, faire reposer sur quelque chose.  se reposer sur quelque chose.  établir, fixer sa demeure sur",
   "Verbe",
   "Vient de  ἐπί  et  ἀναπαύω"
@@ -11382,8 +11382,8 @@ lemme={
   "Vient de  ἐπί  et de  ἐκεῖνος"
  ],
  "ἐπεκτείνομαι": [
-  "étendre dehors sur",
-  "porter vers,me portant vers, étendre vers.  s'étendre en avant, se porter vers",
+  "surétendre",
+  "étendre sur, porter vers, me portant vers, étendre vers.  s'étendre en avant, se porter vers",
   "Verbe",
   "Vient de  ἐπί  et  ἐκτείνω"
  ],
@@ -11406,13 +11406,13 @@ lemme={
   "Vient de  ἐπί  et  ἔρχομαι"
  ],
  "ἐπερωτάω": [
-  "demander sur",
-  "demander, firent cette question, interroger, proposer, poser, adresser, aborder quelqu'un avec une requête, poser une question, s'enquérir de, demander, interroger, questionner.  s'adresser à quelqu'un avec une requête ou une demande",
+  "surinterroger",
+  "interroger sur, sursolliciter, surdemander, presser de question, proposer, poser, adresser, aborder quelqu'un avec une requête, poser une question, s'enquérir de, demander, interroger, questionner.  s'adresser à quelqu'un avec une requête ou une demande",
   "Verbe",
   "Vient de  ἐπί  et  ἐρωτάω"
  ],
  "ἐπερώτημα": [
-  "interrogation",
+  "surinterrogation",
   "interrogation, une requête, une question.  une demande.  une recherche sérieuse et sincère.   désir ardent, impérieux, intense",
   "Nom neutre",
   "Vient de  ἐπερωτάω"
@@ -12366,7 +12366,7 @@ lemme={
   "Verbe primaire, utilisé seulement au présent et à l'imparfait, les autres temps étant eleuthomai (el-yoo'-thom-ahee), ou eltho (el'-tho)"
  ],
  "ἐρωτάω": [
-  "solliciter",
+  "interroger",
   "solliciter, adresser, interroger, prier, faire  une question, presser, interroger.  demander à   demander, supplier, prier.    Pour les Synonymes voir entrée  5802",
   "Verbe",
   "Vient apparemment de  ἐρεῶ  cf ἐρευνάω"
@@ -15774,19 +15774,19 @@ lemme={
   "Vient de  κατά  et d'un dérivé de  κρημνός"
  ],
  "κατάκριμα": [
-  "objet de condamnation",
-  "condamnation, sentence damnatoire, condamnation",
+  "objet de contre jugement",
+  "condamnation, sentence damnatoire",
   "Nom neutre",
   "Vient de  κατακρίνω"
  ],
  "κατακρίνω": [
-  "condamner",
-  "condamner, être condamné, être jugé, porter un jugement contre, juger digne de châtiment.   condamner.  par son propre et bon exemple, rendre la méchanceté d'un autre encore plus évidente",
+  "juger contre",
+  "juger de haut en bas, contre-juger, prononcer un jugement contre, porter un jugement contre, juger digne de châtiment.   condamner.  par son propre et bon exemple, rendre la méchanceté d'un autre encore plus évidente",
   "Verbe",
   "Vient de  κατά  et  κρίνω"
  ],
  "κατάκρισις": [
-  "condamnation",
+  "contre-jugement",
   "condamnation, condamnation",
   "Nom Féminin",
   "Vient de  κατακρίνω"
@@ -25729,8 +25729,8 @@ lemme={
   "Vient de  πρό  et  τάσσω"
  ],
  "προτείνω": [
-  "étendre en avant",
-  "étendre en avant, étendre, exposer.    celui qui est étendu et lié d'une courroie c'est à dire prêt à recevoir les coups de fouet, (en étant lié à une poutre ou un pilier)",
+  "tendre en avant",
+  "tendre au avant, tendre devant, étendre, exposer.    celui qui est étendu et lié d'une courroie c'est à dire prêt à recevoir les coups de fouet, (en étant lié à une poutre ou un pilier)",
   "Verbe",
   "Vient de  πρό  et teino (étendre)"
  ],
@@ -28687,8 +28687,8 @@ lemme={
   "Vient de  σύν  et d'un composé de  ἀνά  et  μίγνυμι"
  ],
  "συναναπαύομαι": [
-  "pauser de bas en haut ensemble",
-  "pauser haut avec, de quelque repos (au milieu de vous), prendre du repos ensemble.  dormir ensemble, être couché avec.   d'un mari et son épouse.  métaphorique reposer ou rafraîchir son esprit avec quelqu'un (c'est à dire donner et recevoir un rafraîchissement par relation mutuelle)",
+  "reposer avec",
+  "pauser de bas en haut ensemble, pauser haut avec, de quelque repos (au milieu de vous), prendre du repos ensemble.  dormir ensemble, être couché avec.   d'un mari et son épouse.  métaphorique reposer ou rafraîchir son esprit avec quelqu'un (c'est à dire donner et recevoir un rafraîchissement par relation mutuelle)",
   "Verbe",
   "Vient de  σύν  et  ἀναπαύω"
  ],
@@ -29089,7 +29089,7 @@ lemme={
   "Vient de  συντυγχάνω"
  ],
  "συνυποκρίνομαι": [
-  "agir ensemble hypocritement",
+  "hypocriter avec",
   "agir ensemble hypocritement, faire ensemble les hypocrites, dissimuler ensemble, dissimuler à quelqu'un.  agir d'une manière hypocrite avec",
   "Verbe",
   "Vient de  σύν  et  ὑποκρίνομαι"
@@ -30877,8 +30877,8 @@ lemme={
   "Vient de  ὑπέρ  et de  ἐκεῖνος"
  ],
  "ὑπερεκτείνω": [
-  "étendre dehors au-dessus",
-  "étendre dehors au-dessus, s'étendre au delà des limites prescrites, s'étendre au-delà de la mesure, dépasser largement",
+  "superétendre",
+  "étendre supérieurement, étendre au delà, étendre au-dessus s'étendre au-delà de la mesure, dépasser largement les limites prescrites",
   "Verbe",
   "Vient de  ὑπέρ  et  ἐκτείνω"
  ],
