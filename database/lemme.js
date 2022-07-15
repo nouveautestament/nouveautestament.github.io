@@ -16302,7 +16302,7 @@ lemme={
   "Vient de  κατά  et  ἔρχομαι  (incluant ses variantes)"
  ],
  "κατεσθίω": [
-  "manger de haut en bas",
+  "manger complètement",
   "manger de haut en bas, dévorer, consommer en mangeant, dévorer.   des oiseaux.  d'un dragon.  d'un homme dévorant le petit livre.   métaphorique.   dévorer : gaspiller, perte : de substance.  s'approprier avec énergie : la propriété d'une veuve.  dépouiller quelqu'un de ses biens.   ruiner (en infligeant des préjudices).   par le feu : dévorer, consumer, détruire.  de la consommation de la force du corps et de l'esprit par les émotions fortes",
   "Verbe",
   "Vient de  κατά  et  ἐσθίω  (incluant ses variantes)"
