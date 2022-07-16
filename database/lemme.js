@@ -3702,8 +3702,8 @@ lemme={
   "Vient de  ἀπό  et  κυλίω"
  ],
  "ἀπολαμβάνω": [
-  "recevoir loin",
-  "prendre, recevoir, retrouver, accueillir, recevoir.   ce qui est dû ou promis.   reprendre, recouvrer.   recevoir une rétribution.   prendre aux autres, prendre à part.  recevoir l'hospitalité de quelqu'un",
+  "recevoir",
+  "prendre de loin, recevoir, prendre depuis, reprendre, retrouver, accueillir, recevoir.   ce qui est dû ou promis.   reprendre, recouvrer.   recevoir une rétribution.   prendre aux autres, prendre à part.  recevoir l'hospitalité de quelqu'un",
   "Verbe",
   "Vient de  ἀπό  et  λαμβάνω"
  ],
@@ -25699,8 +25699,8 @@ lemme={
   "Vient de  πρός  et ψαύω:psauo (toucher)"
  ],
  "προσωποληπτέω": [
-  "recevoir selon la face",
-  "recevoir selon la face, faire acception de personnes, recevoir selon la face, considérer les personnes (c'est à dire la condition extérieure de l'homme).  avoir de la considération pour certaines personnes, faire une distinction, discerner",
+  "prendre selon la face",
+  "prendre selon la face, faire acception de personnes, recevoir selon la face, considérer les personnes (c'est à dire la condition extérieure de l'homme).  avoir de la considération pour certaines personnes, faire une distinction, discerner",
   "Verbe",
   "Vient de  προσωπολήπτης"
  ],
