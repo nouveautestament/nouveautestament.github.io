@@ -3966,8 +3966,8 @@ lemme={
   "Vient de  ἀπό  et tinasso (coudoyer)"
  ],
  "ἀποτίνω": [
-  "expier au loin",
-  "payer intégralement, je paierai, payer, rembourser",
+  "payer de retour",
+  "payer de retour, rembourser, expier de retour, payer intégralement, je paierai, payer",
   "Verbe",
   "Vient de  ἀπό  et  τίνω"
  ],
@@ -10032,8 +10032,8 @@ lemme={
   "Vient du même mot que  Ἑλληνιστής"
  ],
  "ἐλλογέω": [
-  "imputer",
-  "imputer , mettre au compte, compter, mettre sur le compte, mettre à la charge, imputer",
+  "mettre au compte",
+  "mettre au compte, imputer, compter, mettre sur le compte, mettre à la charge",
   "Verbe",
   "Vient de  ἐν  et  λόγος  (sens de compte)"
  ],
@@ -30037,8 +30037,8 @@ lemme={
   "Vient de  τιμωρέω"
  ],
  "τίνω": [
-  "expier",
-  "expier, payer pour faute, payer pour faute,  salaire d'une pénalité, souffrir le châtiment",
+  "payer",
+  "payer, expier, payer pour faute,  salaire d'une pénalité, souffrir le châtiment",
   "Verbe",
   "Renforcement pour tio (tee'-o, utilisé comme variante à certains temps)"
  ],
