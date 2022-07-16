@@ -3546,10 +3546,10 @@ lemme={
   "Vient de  ἀπό  et  δίδωμι"
  ],
  "ἀποδιορίζω": [
-  "nommer loin",
+  "délimiter en séparant",
   "provoquer des divisions, disjoindre, partager, séparer.  faire des divisions ou séparations",
   "Verbe",
-  "Vient de  ἀπό  et un composé de  Ἀλέξανδρος  et  ὁρίζω"
+  "ἀπό + διά + ὁρίζω et un composé de  Ἀλέξανδρος"
  ],
  "ἀποδοκιμάζω": [
   "éprouver en rejet",
@@ -5238,7 +5238,7 @@ lemme={
   "Vient de  ἀπό  et  ὁράω"
  ],
  "ἀφορίζω": [
-  "délimiter au loin",
+  "délimiter",
   "séparer, chasser, mettre à part, se tenir à l'écart, se démarquer des autres par des frontières, limiter, séparer.   mauvais sens : exclure comme déshonorant.  bon sens : désigner, mettre à part pour un but",
   "Verbe",
   "Vient de  ἀπό  et  ὁρίζω"
@@ -16278,7 +16278,7 @@ lemme={
   "Vient de  κατά  et  ἔναντι"
  ],
  "κατενώπιον": [
-  "face à face de haut en bas",
+  "en face à face au devant",
   "face à face de haut en bas, vis-à-vis de, devant la face de, dans la présence de, à la vue de, devant.   en référence à des lieux.  métaphorique.   devant Dieu comme juge",
   "Adverbe",
   "Vient de  κατά  et  ἐνώπιον"
@@ -21763,7 +21763,7 @@ lemme={
   "Vient de  ὀρθός"
  ],
  "ὁρίζω": [
-  "délimiter",
+  "limiter",
   "délimiter, marquer les frontières ou limites (d'un lieu ou chose).  déterminer, désigner.   ce qui a été déterminé, décrété  ordonner, nommer",
   "Verbe",
   "Vient de  ὅριον"
@@ -30919,8 +30919,8 @@ lemme={
   "Vient de  ὑπέρ  et  νικάω"
  ],
  "ὑπέρογκος": [
-  "au-dessus de masses",
-  "au-dessus de masse, exorbitant,enflés,trop,excessifs,démesurés, enflé, démesuré  métaphorique immodéré, extravagant",
+  "super-masses",
+  "au-dessus de masse, exorbitant, enflés, trop, excessifs, démesurés, enflé, démesuré  métaphorique immodéré, extravagant",
   "Adjectif",
   "Vient de  ὑπέρ  et  ὄγκος"
  ],
