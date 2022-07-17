@@ -7776,10 +7776,10 @@ lemme={
   "Vient de  διά  et  στρέφω"
  ],
  "διασώζω": [
-  "sauver complètement",
-  "guérir, sain, sains et saufs, sauver, préserver du danger, apporter la sécurité   sauver, c'est à dire guérir celui qui est malade.   sauver, éloigner de la mort.  sauver du danger, délivrer",
+  "sauver par le fait de",
+  "sauver par, sauver au-travers, préserver du danger, apporter la sécurité   sauver, c'est à dire guérir celui qui est malade.   sauver, éloigner de la mort.  sauver du danger, délivrer",
   "Verbe",
-  "Vient de  διά  et  σῴζω"
+  "διά + σῴζω"
  ],
  "διαταγή": [
   "commande traversante, commandes traversantes, commande traversante, commandes traversantes",
@@ -14460,7 +14460,7 @@ lemme={
   "Affinité incertaine"
  ],
  "Ἱεροσόλυμα": [
-  "Ierosoluma",
+  "Ierosolyma, Ierosolymas, Ierosolyma, Ierosolymas",
   "Jérusalem, Jérusalem = \"fondement de la paix\"   indique la cité elle-même ou ses habitants.  \"la Jérusalem actuelle\", avec ses institutions religieuses, c'est à dire le système Mosaïque, l'emplacement primaire (Galates 4.25).  \"la Jérusalem d'en haut\", celle qui existe aux cieux, selon le modèle sur lequel la Jérusalem terrestre est supposée construite (Galates 4.26).    métaphorique \"la cité de Dieu fondée par Christ\", portant maintenant la forme de l'église, mais qui aura la forme du parfait royaume Messianique après le retour de Christ.   \"la Jérusalem céleste\", la demeure céleste de Dieu, de Christ, des anges, des saints de l'Ancien et Nouveau Testament et des Chrétiens qui seront vivants au retour de Christ (Hébreux 12.22).  \"la nouvelle Jérusalem\", la splendide cité qui viendra des cieux après la rénovation du monde, la future demeure des bénis (Apocalypse 3.12)",
   "Nom propre locatif",
   "D'origine hébraïque  יְרוּשָׁלִַ͏ם Yeruwshalaim rarement Yeruwshalayim, autre forme de Ἱερουσαλήμ"
