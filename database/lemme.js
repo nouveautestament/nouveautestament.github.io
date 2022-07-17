@@ -1128,8 +1128,8 @@ lemme={
   "Accusatif du nom \"un comble\""
  ],
  "ἀκοή": [
-  "ouïe, ouïes, ouïe, ouïes",
-  "ouïe, écoute, oreille,entendre,prédication,renommée,bruits,parler,ouïe,agréable , annoncer , comprendre, le sens de l'ouïe.  l'organe de l'ouïe, l'oreille.  la chose entendue.   instruction, faite oralement.   de la prédication de l'évangile.   ouï-dire, bruit ou rumeur",
+  "écoute, écoutes, écoute, écoutes",
+  "ouïe, écoute, ouï-dire, entendre, prédication, renommée, bruits, parler, comprendre, le sens de l'ouïe.  l'organe de l'ouïe, l'oreille.  la chose entendue.   instruction, faite oralement.   de la prédication de l'évangile, bruit ou rumeur",
   "Nom féminin",
   "Vient de  ἀκούω"
  ],
@@ -7716,8 +7716,8 @@ lemme={
   "Vient de  διά  et  ῥήγνυμι"
  ],
  "διασαφέω": [
-  "expliquer pleinement",
-  "raconter, rendre clair ou simple, expliquer, déplier, déclarer.  de choses passées : déclarer, dire, raconter, annoncer, narrer",
+  "séparer au clair",
+  "mettre au clair, éclaircir au travers, clarifier par, rendre clair ou simple, expliquer, déplier, déclarer.  de choses passées : déclarer, dire, raconter, annoncer, narrer",
   "Verbe",
   "Vient de  διά  et saphes (clair)"
  ],
@@ -16080,7 +16080,7 @@ lemme={
   "Vient de  κατά  et d'un dérivé de  σκεῦος"
  ],
  "κατασκηνόω": [
-  "dresser la tente de haut en bas",
+  "dresser tente contre",
   "dresser la tente de haut en bas, planter sa tente, fixer sa demeure, demeurer",
   "Verbe",
   "Vient de  κατά  et  σκηνόω"
@@ -19411,8 +19411,8 @@ lemme={
   "Vient de  μετατίθημι"
  ],
  "μεταίρω": [
-  "lever avec au-delà",
-  "lever avec après, lever avec après, enlever d'un lieu vers un autre, transférer.  s'en aller, partir, quitter",
+  "lever au-delà",
+  "lever après, lever avec, enlever d'un lieu vers un autre, transférer.  s'en aller, partir, quitter",
   "Verbe",
   "Vient de  μετά  et  αἴρω"
  ],
