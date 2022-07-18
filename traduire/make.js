@@ -2605,8 +2605,9 @@ if (morph.split(',')[0] == 'verbe' || morph.includes('interjection,impératif'))
 		//CHECK I DOUBLE S
 		if (conjugaison.match(/ss$/i))
 		{	
-			console.log(conjugaison+' '+morph)
-			//conjugaison = conjugaison.replace(/ss$/,'is');
+			
+			conjugaison = conjugaison.replace(/ss$/,'s');
+			//console.log("DOUBLE SS" + conjugaison+' '+morph)
 		}
 
 

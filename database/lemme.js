@@ -2394,7 +2394,7 @@ lemme={
   "Vient de  ἀνά  et  φέρω"
  ],
  "ἀναφωνέω": [
-  "sonner de voix de bas en haut",
+  "voixer de bas en haut",
   "bruiter haut, écrier, crier d'une forte voix, s'écrier, s'exclamer",
   "Verbe",
   "Vient de  ἀνά  et  φωνέω"
@@ -3180,8 +3180,8 @@ lemme={
   "Vient probablement de  ἅπας"
  ],
  "ἀπαράβατος": [
-  "inchangeable",
-  "non transmissible, non violé, inviolable.  ne change pas, non transmissible à un successeur",
+  "intransgressible",
+  "intransgressable, non transgressable, non transmissible, inchangeable, non violé, inviolable.  ne change pas, non transmissible à un successeur",
   "Adjectif",
   "Vient de ἄλφα (négatif) et un dérivé de  παραβαίνω"
  ],
@@ -4800,7 +4800,7 @@ lemme={
   "Vient de ἄλφα (négatif) et un dérivé de  συγκρίνω"
  ],
  "ἀσύμφωνος": [
-  "sans consonances de voix",
+  "non consonants",
   "désaccord, désaccord de sons, dissonance, non harmonieux",
   "Adjectif",
   "Vient de ἄλφα (négatif) et  σύμφωνος"
@@ -5280,7 +5280,7 @@ lemme={
   "Vient d'un composé de  ἀπό  et  ὕπνος"
  ],
  "ἄφωνος": [
-  "sans son de voix, sans sons de voix",
+  "sans voix, sans voix",
   "aphone, muet, muette, langue non intelligible, sans voix, muet.  sans la faculté de la parole.   les idoles",
   "Adjectif",
   "Vient de ἄλφα (négatif) et  φωνή"
@@ -12090,7 +12090,7 @@ lemme={
   "Vient de  ἐπί  et  φέρω"
  ],
  "ἐπιφωνέω": [
-  "sonner sur",
+  "voixer sur",
   "crier, s'écrier, appeler, crier",
   "Verbe",
   "Vient de  ἐπί  et  φωνέω"
@@ -13482,7 +13482,7 @@ lemme={
   "Vient de (avec ὥρα incorporé) d'un dérivé de 'hemai' (se poser, parent du mot ἑδραῖος)"
  ],
  "ἡμέτερος": [
-  "nos, nos, notre, notres",
+  "nôtre, nôtres, nôtre, nôtres",
   "nos, notre, nôtres, notre, votre",
   "Pronom",
   "Vient de  θνητός"
@@ -22489,7 +22489,7 @@ lemme={
   "Un mot racine"
  ],
  "παραβαίνω": [
-  "marcher à côté",
+  "transgresser",
   "marcher à côté, aller sur le côté de.  passer sans toucher à une chose.  dépasser, négliger, violer, transgresser.  partir comme pour se détourner de.   partir, quitter, être détourné de.   celui qui abandonne sa confiance",
   "Verbe",
   "Vient de  παρά  et de  βάσις"
@@ -22579,10 +22579,10 @@ lemme={
   "Vient d'un composé de  παρά  et  διατρίβω"
  ],
  "παραδίδωμι": [
-  "livrer",
-  "livrer, se livrer, être donné, trahir, remettre, mûr, établir, transmettre, rendre, faire jeter, recommander, exposer, précipiter, enseigner, mettre dans les mains (d'un autre).  donner selon le pouvoir de quelqu'un.   livrer à quelqu'un une chose à garder, à utiliser, à prendre soin, à gérer.  livrer à la détention, à être jugé, condamné, puni, tourmenté, torturé, mis à mort.  livrer traîtreusement.   par trahison envers une cause.  obliger quelqu'un à être enseigné, modelé    commettre, recommander.  livrer verbalement.   des ordres, des commandements, des rites.  exposer par narration, rapporter.   permettre, accorder.   le fruit autorisé à sa maturité  se donner, s'exposer",
+  "transmettre",
+  "donner à côté, transmettre, livrer, être donné, trahir, remettre, mûr, établir, rendre, faire jeter, recommander, exposer, précipiter, enseigner, mettre dans les mains (d'un autre).  donner selon le pouvoir de quelqu'un.   livrer à quelqu'un une chose à garder, à utiliser, à prendre soin, à gérer.  livrer à la détention, à être jugé, condamné, puni, tourmenté, torturé, mis à mort.  livrer traîtreusement.   par trahison envers une cause.  obliger quelqu'un à être enseigné, modelé    commettre, recommander.  livrer verbalement.   des ordres, des commandements, des rites.  exposer par narration, rapporter.   permettre, accorder.   le fruit autorisé à sa maturité  se donner, s'exposer",
   "Verbe",
-  "Vient de  παρά  et  δίδωμι"
+  "παρά + δίδωμι et παράδοσις"
  ],
  "παράδοξος": [
   "paradoxales",
@@ -25681,7 +25681,7 @@ lemme={
   "Vient de  προσφέρω"
  ],
  "προσφωνέω": [
-  "sonner auprès",
+  "voixer auprès",
   "sonner auprès, sonner auprès",
   "Verbe",
   "Vient de  πρός  et  φωνέω"
@@ -28573,7 +28573,7 @@ lemme={
   "Vient de  σύν  et  φύω"
  ],
  "συμφωνέω": [
-  "sonner ensemble",
+  "voixer ensemble",
   "sonner ensemble, résonner ensemble, consoner, être d'accord ensemble.  être d'accord avec quelqu'un en faisant un marché, convenir d'un accord, marchander",
   "Verbe",
   "Vient de  σύμφωνος"
@@ -32179,13 +32179,13 @@ lemme={
   "Dérivé incertain"
  ],
  "φωνέω": [
-  "sonner de voix",
+  "voixer",
   "appeler, chanter, dire, crier, s'écrier, inviter, faire venir, demander, à haute voix, s'adresser, sonner, émettre un son, parler.   d'un coq : chanter.  d'un homme : crier, s'écrier, crier à haute voix, parler d'une voix forte.   appeler, s'appeler soi-même par sa propre voix ou celle d'un autre.  envoyer, convoquer.   appeler hors de (c'est à dire inviter quelqu'un à quitter un lieu et venir dans un autre).  inviter.  s'adresser à, aborder, appeler par un nom",
   "Verbe",
   "Vient de  φωνή"
  ],
  "φωνή": [
-  "son de voix, sons de voix, son de voix, sons de voix",
+  "voix, voix, voix, voix",
   "son, voix, cri, bruit, parole, retentissante, son, langue, langage, un son, un ton.   de choses inanimées, comme des instruments de musique.   une voix.   le son de paroles émises.   parole.   d'un langage, d'une langue",
   "Nom féminin",
   "Probablement parent de  φαίνω  à travers l'idée de révélation"
