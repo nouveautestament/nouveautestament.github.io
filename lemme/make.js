@@ -349,7 +349,7 @@ for (lem in lemme)
 	main += '<tr><td>Origine</td><td>'+origin+'</td></tr>'
 	
 	
-	originsplit = origin.split(/\s+/g)
+	originsplit = origin.replace(/[\(\)\[\]\⟦\⟧,;\.]/g," ").split(/\s+/g)
 	for (nos = 0 ; nos != originsplit.length ; nos++)
 	{
 		if (lemme[originsplit[nos]])

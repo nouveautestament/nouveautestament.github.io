@@ -168,8 +168,8 @@ lemme={
   "Vient d'un mot Hébreu  01904"
  ],
  "ἀγγαρεύω": [
-  "réquisitionner",
-  "soumettre à faire , forcer, envoyer un courrier, dépêcher un messager à cheval, forcer à aller",
+  "angarier",
+  "réquisitionner, soumettre à faire , forcer, envoyer un courrier, dépêcher un messager à cheval, forcer à aller",
   "Verbe",
   "D'origine étrangère, cf  0104"
  ],
@@ -180,13 +180,13 @@ lemme={
   "ἄγγος ἀγκάλη"
  ],
  "ἀγγελία": [
-  "messagerie",
+  "annonciation",
   "messagerie, annonciation, annoncé, message, annonce, nouvelle, proclamation, un commandement, un ordre",
   "Nom féminin",
   "Vient de  ἄγγελος"
  ],
  "ἄγγελος": [
-  "messager, messagers",
+  "ange, anges",
   "messager, ange, anges , messager , envoyés, messager, envoyé, un ange, un messager de Dieu",
   "Nom masculin",
   "Vient de aggello [ probablement dérivé de  ἄγω , cf ἀγέλη ] (apporter des nouvelles)"
@@ -4458,8 +4458,8 @@ lemme={
   "Vient d'un mot Hébreu  0775"
  ],
  "ἀρχάγγελος": [
-  "chef messager",
-  "archange, chef des anges. Les derniers livres de la Bible laissent entendre que les anges diffèrent par le rang et la dignité, car il y a les archanges (anges principaux) et les anges moins importants 1 Thessaloniciens 4.16 ;  Jude 9 ;  Apocalypse 12.7. Les chérubins et les séraphins paraissent appartenir aussi à l'ordre angélique",
+  "archange",
+  "archange, chef messager, chef d'annonce, chef des anges. Les derniers livres de la Bible laissent entendre que les anges diffèrent par le rang et la dignité, car il y a les archanges (anges principaux) et les anges moins importants 1 Thessaloniciens 4.16 ;  Jude 9 ;  Apocalypse 12.7. Les chérubins et les séraphins paraissent appartenir aussi à l'ordre angélique",
   "Nom masculin",
   "Vient de  ἄρχω  et  ἄγγελος"
  ],
@@ -6222,16 +6222,16 @@ lemme={
   "Vient de la base de  βιβρώσκω"
  ],
  "βυθίζω": [
-  "enfoncer",
+  "abîmer",
   "enfoncer , plonger, plonger dans les profondeurs, enfoncer, couler au fond",
   "Verbe",
-  "Vient de  βυθός"
+  "βυθός"
  ],
  "βυθός": [
   "abîme",
   "abîme, le fond ou la profondeur de la mer.  la mer elle-même, la mer profonde",
   "Nom masculin",
-  "Une variante de  βάθος"
+  "βυθίζω ( βάθος )"
  ],
  "βυρσεύς": [
   "tanneur",
@@ -22531,13 +22531,13 @@ lemme={
   "Vient de  παρά  et de  βουλεύω, peut-être παραβολεύομαι"
  ],
  "παραγγελία": [
-  "message d'à côté, messages d'à côté, message d'à côté, messages d'à côté",
+  "annonciation d'à côté, annonciations d'à côté, annonciation d'à côté, annonciations d'à côté",
   "commandement , ordre, précepte, expressément, une annonce, proclamer ou donner un message à  un ordre, un commandement",
   "Nom féminin",
   "Vient de  παραγγέλλω"
  ],
  "παραγγέλλω": [
-  "messager à côté",
+  "annoncer à côté",
   "ordonner, donner des instructions, des avertissements, prescrire, commander, recommander, défendre, exiger, demander, faire savoir, dire expressément, inviter, déclarer, transmettre un message qui provient d'un autre, déclarer, annoncer.  commander, ordonner, charger de faire   Pour les Synonymes voir entrée  5844",
   "Verbe",
   "Vient de  παρά  et de  ἄγγελος"
