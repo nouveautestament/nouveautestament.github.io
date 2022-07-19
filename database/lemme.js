@@ -19609,7 +19609,7 @@ lemme={
   "Vient de  μή  et  δέ"
  ],
  "μηδείς": [
-  "pas un, pas uns, pas une, pas unes",
+  "ne pas un, ne pas uns, ne pas une, ne pas unes",
   "pas un, pas un, personne, aucun, rien",
   "Adjectif",
   "Vient de  μή  et  εἷς"
