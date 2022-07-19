@@ -3726,7 +3726,7 @@ lemme={
   "Vient de  ἀπό  et leicho (lécher)"
  ],
  "ἀπόλλυμι": [
-  "perdre au loin",
+  "dépérir",
   "perdre complètement, mener à perte, périssable, détruire, dépérir, démolir entièrement, qui perdra son âme la trouvera, qui trouve une brebis perdu, il était perdu il est trouvé, mieux vaut perdre un oeil que tout son corps, le vin est perdu. métaphorique vouer à la misère éternelle en enfer",
   "Verbe",
   "Vient de  ἀπό  et de la base de  ὄλεθρος"
@@ -4104,7 +4104,7 @@ lemme={
   "Vient de  ἀπό  et de otheo ou otho (pousser)"
  ],
  "ἀπώλεια": [
-  "perte complète",
+  "déperdition",
   "perte, perdre, périr, pernicieux, dissolutions, ruine, destruction, perdition.   d'un navire.   perte, ruine, destruction.   d'argent, de biens.  la destruction qui consiste en misère éternelle en enfer",
   "Nom féminin",
   "Vient d'un dérivé présumé de  ἀπόλλυμι"
@@ -11028,7 +11028,7 @@ lemme={
   "Vient de  ἐκ  et  ὁδός"
  ],
  "ἐξολοθρεύω": [
-  "ruiner à l'excès",
+  "périr à l'excès",
   "exterminer,exterminé, arracher depuis un lieu, détruire entièrement, extirper, exterminer",
   "Verbe",
   "Vient de  ἐκ  et  ὀλοθρεύω"
@@ -21253,10 +21253,10 @@ lemme={
   "Un nombre primaire"
  ],
  "ὄλεθρος": [
-  "ruine",
+  "périssement",
   "ruine, ravage, destruction, ruine, détruire, mort.   pour la destruction de la chair, se dit des maux externes et des troubles par lesquels les convoitises de la chair sont vaincus et détruits",
   "Nom masculin",
-  "'ollumi' (détruire) ὀλοθρεύω"
+  "'ollumi' (détruire) ἀπόλλυμι ὀλοθρεύω"
  ],
  "ὀλιγόπιστος": [
   "de petite croyance, de petites croyances",
@@ -21283,13 +21283,13 @@ lemme={
   "Vient d'un composé de  ὀλίγος  et 'ora' (\"soin\")"
  ],
  "ὀλοθρευτής": [
-  "ruineur",
+  "périsseur",
   "exterminateur, un destructeur",
   "Nom masculin",
   "Vient de  ὀλοθρεύω"
  ],
  "ὀλοθρεύω": [
-  "ruiner",
+  "périr",
   "exterminer,exterminateur, détruire",
   "Verbe",
   "Vient de  ὄλεθρος"
@@ -28723,7 +28723,7 @@ lemme={
   "Vient de  σύν  et  ἀποθνῄσκω"
  ],
  "συναπόλλυμι": [
-  "perdre au loin avec",
+  "dépérir avec",
   "perdre complètement avec, périr avec, détruire ensemble.  périr ensemble (être tué avec)",
   "Verbe",
   "Vient de  σύν  et  ἀπόλλυμι"
@@ -30151,8 +30151,8 @@ lemme={
   "Apparemment un mot primaire"
  ],
  "τοσοῦτος": [
-  "aussi grand, aussi grands, aussi grande, aussi grandes",
-  "aussi grande, assez, tant, si longtemps, un tel prix, d'autant, nombreuses, égale, de quantité : si grand, si nombreux.  de temps : si long, si longtemps",
+  "tant, tants, tel, tels, telle, telles",
+  "aussi grand, tel, tant, assez, si longtemps, un tel prix, d'autant, nombreuses, égale, de quantité : si grand, si nombreux.  de temps : si long, si longtemps",
   "Adjectif",
   "Vient de tosos (tant de, vient apparemment de  ὁ  et  ὅς ) et  οὗτος  (incluant ses variations)"
  ],

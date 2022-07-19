@@ -482,7 +482,44 @@ else
 
 
 
+		// -----> τοσοῦτος 
+		//tant, tants, tel, tels, telle, telles
+		else if ( lemma == 'τοσοῦτος' )
+		{
 
+			if (morph.includes('neutre') && morph.includes('singulier'))
+			{
+				fr = fr[0].replace(/^ | $/,'');
+			}
+			else if (morph.includes('neutre') && morph.includes('pluriel'))
+			{
+				fr = fr[1].replace(/^ | $/,'');
+			}
+
+
+			else if (morph.includes('masculin') && morph.includes('singulier'))
+			{
+				fr = fr[2].replace(/^ | $/,'');
+			}
+			else if (morph.includes('masculin') && morph.includes('pluriel'))
+			{
+				fr = fr[3].replace(/^ | $/,'');
+			}
+
+
+			else if (morph.includes('féminin') && morph.includes('singulier'))
+			{
+				fr = fr[4].replace(/^ | $/,'');
+			}
+			else if (morph.includes('féminin') && morph.includes('pluriel'))
+			{
+				fr = fr[5].replace(/^ | $/,'');
+			}
+
+			else
+				console.log('NO MORPH --->'+morph+' '+lemma);
+
+		}
 
 
 
