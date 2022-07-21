@@ -2166,8 +2166,8 @@ lemme={
   "Vient de ἄλφα (négatif) et un dérivé présumé de  ἁμαρτάνω"
  ],
  "ἀναμένω": [
-  "attendre de bas en haut",
-  "attendre haut, attendre quelqu'un (avec notion de patience et confiance)",
+  "rester en attente",
+  "attendre, rester de retour, attendre haut, attendre quelqu'un (avec notion de patience et confiance)",
   "Verbe",
   "Vient de  ἀνά  et  μένω"
  ],
@@ -2178,8 +2178,8 @@ lemme={
   "Vient de  ἀνά  et  μιμνήσκομαι"
  ],
  "ἀνάμνησις": [
-  "anamnèse",
-  "anamnèse, mémoire , souvenir, souvenir, retour en arrière   Pour les Synonymes voir entrée  5809",
+  "remémoration",
+  "anamnèse, mémoration de bas en haut, souvenir, souvenir, retour en arrière   Pour les Synonymes voir entrée  5809",
   "Nom féminin",
   "Vient de  ἀναμιμνήσκω"
  ],
@@ -3192,10 +3192,10 @@ lemme={
   "Vient de ἄλφα (négatif) et un dérivé de  παρασκευάζω"
  ],
  "ἀπαρνέομαι": [
-  "nier au loin",
-  "renier , renoncer , nier, nier, renier.   affirmer un manque de liaison avec quelque chose.  oublier ses propres vues, ne plus voir l'intérêt des autres",
+  "dénier",
+  "nier de loin, renier, renoncer , nier, nier, renier.   affirmer un manque de liaison avec quelque chose.  oublier ses propres vues, ne plus voir l'intérêt des autres",
   "Verbe",
-  "Vient de  ἀπό  et  ἀρνέομαι"
+  "Vient de  ἀπό (depuis)  et  ἀρνέομαι (nier)"
  ],
  "ἀπάρτι": [
   "dorénavant",
@@ -3354,8 +3354,8 @@ lemme={
   "D'origine latine"
  ],
  "ἀπελπίζω": [
-  "attendre loin",
-  "espérer, rien de désespérant.  ne désespérer de rien.  ne pas causer le désespoir",
+  "désespérer",
+  "espérer de loin, désespérer, rien de désespérant.  ne désespérer de rien.  ne pas causer le désespoir",
   "Verbe",
   "Vient de  ἀπό  et  ἐλπίζω"
  ],
@@ -16398,10 +16398,10 @@ lemme={
   "κατοικέω"
  ],
  "κατοπτρίζομαι": [
-  "apparaître contre",
-  "apparaître de haut en bas, faire se réfléchir.  se regarder, se contempler dans un miroir. Il est à noter que les miroirs étaient faits de métal poli, et le reflet n'avait pas la vérité qu'apporte nos miroirs actuels",
+  "miroiter",
+  "faire mettre en miroir, faire se réfléchir.  se regarder, se contempler dans un miroir. Il est à noter que les miroirs étaient faits de métal poli, et le reflet n'avait pas la vérité qu'apporte nos miroirs actuels",
   "Verbe",
-  "Vient d'un composé de  κατά  et d'un dérivé de  ὀπτάνομαι  [cf ἔσοπτρον]"
+  "κάτοπτρον = miroir + ίζομαι = faire mettre ; de  κατά + d'un dérivé de ὀπτάνομαι  [ cf ἔσοπτρον ]"
  ],
  "κατόρθωμα": [
   "complètement droit",
@@ -19825,7 +19825,7 @@ lemme={
   "Vient de  μιμέομαι"
  ],
  "μιμνήσκομαι": [
-  "mémoriser",
+  "faire mémoire",
   "mémoriser, souvenir, se rappeler, se souvenir.   être rappelé ou revenir à l'esprit, se souvenir.  avoir en mémoire.  se rappeler d'une chose.  être attentif à",
   "Verbe",
   "Forme prolongée de  μνάομαι  (dont certains temps sont empruntés)"
@@ -19897,7 +19897,7 @@ lemme={
   "D'origine latine"
  ],
  "μνάομαι": [
-  "remémorer",
+  "mémoriser",
   "souvenir , se rappeler, mnémoniser, se souvenir, se rappeler.   être rappelé ou remis à l'esprit.  avoir en mémoire.  se rappeler d'une chose.  être attentif à",
   "Verbe",
   "Dérivé de  μένω  ou peut-être de  μασσάομαι  (à travers l'idée d'attacher dans l'esprit, ou de saisie mentale)"
@@ -19933,13 +19933,13 @@ lemme={
   "Vient de  μιμνήσκομαι"
  ],
  "μνημονεύω": [
-  "souvenir",
+  "mémorer",
   "rappeler, avoir en mémoire, se souvenir, avoir en vue, faire mention, être attentif à, se souvenir de, rappeler à l'esprit.   avoir en mémoire, garder à l'esprit.   faire mention de",
   "Verbe",
   "Vient d'un dérivé de  μνήμη"
  ],
  "μνημόσυνον": [
-  "souvenance",
+  "objet de mémoration",
   "mémorial, mémorial (par lequel la mémoire est préservée), un souvenir",
   "Nom neutre",
   "Vient de  μνημονεύω"
@@ -30067,7 +30067,7 @@ lemme={
   "D'origine latine mais signification incertaine"
  ],
  "τοί": [
-  "certes",
+  "enfin",
   "certes, néanmoins, certainement, vraiment",
   "Particule",
   "Probablement pour ὁ"
@@ -31117,13 +31117,13 @@ lemme={
   "Vient de  ὑπό  et  μένω"
  ],
  "ὑπομιμνῄσκω": [
-  "remémorer le dessous",
+  "faire mémoire du dessous",
   "remémorer le dessous, soumettre à mémoire, rappeler à quelqu'un, remettre en mémoire, rappeler à l'esprit d'un autre.  réprimander pour que quelqu'un se souvienne.  se rappeler, se souvenir de",
   "Verbe",
   "Vient de  ὑπό  et  μιμνήσκομαι"
  ],
  "ὑπόμνησις": [
-  "remémoration du dessous",
+  "mémoration du dessous",
   "remémoration du dessous, un souvenir.  un rappel, une remise en mémoire   Pour les Synonymes voir entrée  5809",
   "Nom féminin",
   "Vient de  ὑπομιμνῄσκω"
