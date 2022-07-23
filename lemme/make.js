@@ -469,6 +469,8 @@ for (lem in lemme)
 					'<td><b>Répétition</b></td>'+
 					'</tr>'
 		
+		//console.log(concordance.length)
+		
 		//uniq count
 		var uniqs = concordance.reduce((acc, val) => 
 		{
@@ -476,7 +478,7 @@ for (lem in lemme)
 			return acc;
 		}, {});
 		
-		
+		//console.log(uniqs)
 		
 		for (uc in uniqs)
 		{
@@ -486,7 +488,7 @@ for (lem in lemme)
 			
 		}
 		
-		
+		main += '<tr><td colspan="3">TOTAL</td><td>'+concordance.length+'</td></tr>'
 		main +=	'</table>';
 	}
 
