@@ -20049,7 +20049,7 @@ lemme={
  "μόνον": [
   "seulement",
   "seulement,mono,unique,réservé,de plus,se borner à, seulement, seul, ne ...que",
-  "Adverbe n",
+  "Adverbe",
   "Vient de  μόνος"
  ],
  "μόνος": [
@@ -25813,7 +25813,7 @@ lemme={
   "Vient de  προφήτης"
  ],
  "προφθάνω": [
-  "devancer avant",
+  "devancer d'avance",
   "prévenir, venir avant, anticiper",
   "Verbe",
   "Vient de  πρό  et  φθάνω"

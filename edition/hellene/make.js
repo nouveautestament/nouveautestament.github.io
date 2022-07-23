@@ -157,7 +157,7 @@ function super_alignement(a, b)
 				}
 				*/
 				
-				
+				/*
 				if (i == j && a[i-1] != b[j-1] && a[i-1].indexOf('εἱσ') != -1)
 				{
 					atest = a[i-1].replace(/[\[\]\·\;\.\,]/g,"")
@@ -178,7 +178,7 @@ function super_alignement(a, b)
 						
 						
 				}
-				
+				*/
 				
 				/*
 				if (i == j && (a[i-1].indexOf('[') != -1 || a[i-1].indexOf(']') != -1))
@@ -373,7 +373,37 @@ for (nb=0;nb!=ndh.length;nb++)
 			//console.log("na28:	"+tc_na28)
 			//console.log("ndh:	"+tc_ndh)
 			
+			
+			/*
+			if (tc_ndh.split(' ') == "" && tc_na28.split(' ') == "")
+			{
+				ndh_na28 = [ [], [] ]
+				console.log(lcv_split)
+			}
+
+
+			else if (tc_ndh.split(' ') == "" && tc_na28.split(' ') != "")
+			{
+				ndh_na28 = [ Array(tc_na28.split(' ').length).fill('xxx'), tc_na28.split(' ') ]
+			}
+
+
+
+			else if (tc_ndh.split(' ') != "" && tc_na28.split(' ') == "")
+			{
+				ndh_na28 = [  tc_ndh.split(' '), Array(tc_ndh.split(' ').length).fill('xxx') ]
+			}
+
+
+			else
+				
+			*/
+			
+			
 			ndh_na28 = super_alignement( tc_ndh.split(' ')  ,   tc_na28.split(' '))
+			
+			
+			
 			
 			//console.log(ndh_na28)
 			
@@ -383,6 +413,17 @@ for (nb=0;nb!=ndh.length;nb++)
 			
 			
 			texte = ndh_na28[0].join(' ')
+			
+			
+			// !!! Matthieu 17.21, supprimé dans le NA28 !!!
+			if (texte.indexOf('{  }') != -1)
+			{
+				texte = texte.replace('{  } ','')
+				//console.log(texte)
+			}
+				
+			
+			
 		}
 	
 
