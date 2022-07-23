@@ -522,8 +522,8 @@ lemme={
   "Vient de ἄλφα (négatif) et dérivé de  διακρίνω"
  ],
  "ἀδιάλειπτος": [
-  "incessant",
-  "sans cesse, continuel , continuellement, sans fin, sans cesse, continuel",
+  "incessante",
+  "sans cesse, inlaissante, continuel , continuellement, sans fin, sans cesse, continuel",
   "Adjectif",
   "Vient de ἄλφα (négatif) et un dérivé d'un composé de  διά  et  λείπω"
  ],
@@ -2040,13 +2040,13 @@ lemme={
   "Vient de  ἀνά  et un dérivé de  καινός"
  ],
  "ἀνακαινόω": [
-  "rénover de bas en haut",
+  "rénover",
   "rénover haut, renouveler, causer la croissance, remettre à neuf.   nouvelle force et vigueur qui sont données.  avoir un nouveau mode de vie, opposé à l'ancien état corrompu",
   "Verbe",
   "Vient de  ἀνά  et un dérivé de  καινός"
  ],
  "ἀνακαίνωσις": [
-  "rénovation de bas en haut",
+  "rénovation",
   "renouvellement haut, un renouveau, une rénovation, un changement complet vers le meilleur",
   "Nom féminin",
   "Vient de  ἀνακαινόω"
@@ -5058,7 +5058,7 @@ lemme={
   "Vient de  αὐτός  et  ἀρκέω"
  ],
  "αὐτοκατάκριτος": [
-  "condamné lui-même",
+  "auto-jugé-condamné",
   "condamné lui-même, se condamner soi-même",
   "Adjectif",
   "Vient de  αὐτός  et un dérivé de  κατακρίνω"
@@ -7422,7 +7422,7 @@ lemme={
   "Vient de  διά  et  γρηγορέω"
  ],
  "διάγω": [
-  "mener en séparant",
+  "conduire au travers",
   "mener (une vie) , vivre, mener à travers, conduire à travers.  passer, vivre",
   "Verbe",
   "Vient de  διά  et  ἄγω"
@@ -13890,8 +13890,8 @@ lemme={
   "Vient de  θεός  et  σέβομαι"
  ],
  "θεοστυγής": [
-  "haïssants Dieu",
-  "haïssant Dieu, haïssant Dieu, exceptionnellement impie et méchant",
+  "détestants Dieu",
+  "haïssant Dieu, exceptionnellement impie et méchant",
   "Adjectif",
   "Vient de  θεός  et de  στυγητός"
  ],
@@ -15384,7 +15384,7 @@ lemme={
   "Vient d'un comparatif de  καλός"
  ],
  "καλοδιδάσκαλος": [
-  "bonnes enseignantes",
+  "enseignantes bellement",
   "enseignant bonnement, qui enseigne ce qui est bon, un enseignant de bonnes choses",
   "Adjectif",
   "Vient de  καλός  et  διδάσκαλος"
@@ -16122,8 +16122,8 @@ lemme={
   "Vient de  κατά  et  στέλλω"
  ],
  "κατάστημα": [
-  "état",
-  "état, apparence, maintien, apparence",
+  "constitution",
+  "établissement, apparence, maintien, apparence",
   "Nom neutre",
   "Vient de  καθίστημι"
  ],
@@ -18042,7 +18042,7 @@ lemme={
   "Apparemment un mot primaire"
  ],
  "λείπω": [
-  "laisser",
+  "manquer",
   "laisser, quitter, laisser, quitter , laisser derrière, abandonner, être laissé de côté   traîner, être inférieur.  être destitué, manquer de.   être dans le besoin, faillir",
   "Verbe",
   "Un mot racine"
@@ -23299,7 +23299,7 @@ lemme={
   "Vient d'un dérivé de  πούς"
  ],
  "πειθαρχέω": [
-  "obéir à l'autorité",
+  "obéir à l'origine",
   "obéir à l'autorité, obéir à un souverain ou un supérieur",
   "Verbe",
   "Vient d'un composé de  πείθω  et  ἄρχω"
@@ -28039,8 +28039,8 @@ lemme={
   "Prolongation du mot stroo (stro'-o, utilisé comme variante à certains temps, probablement parent de  στερεός  à travers l'idée de position)"
  ],
  "στυγητός": [
-  "haïs",
-  "haï, haï, détesté",
+  "détestants",
+  "détesté, détestable, haï",
   "Adjectif",
   "Vient d'un dérivé du mot stugo (haïr)"
  ],
@@ -29389,7 +29389,7 @@ lemme={
   "Féminin d'un dérivé de  σωτήρ  comme substantif"
  ],
  "σωτήριος": [
-  "salut",
+  "salutaire",
   "de sauvetage, de salut, qui sauve, qui apporte le salut.  celui qui incarne ce salut, ou à travers qui Dieu veut l'accomplir.  l'espérance du salut futur",
   "Adjectif",
   "Vient du même mot que  σωτηρία  comme substantif"
@@ -31621,7 +31621,7 @@ lemme={
   "Vient de  φίλος  et  ἀδελφός"
  ],
  "φίλανδρος": [
-  "affectionnées aux hommes",
+  "amies des hommes",
   "affectionné à l'homme, amour pour l'homme",
   "Adjectif",
   "Vient de  φίλος  et  ἀνήρ"
