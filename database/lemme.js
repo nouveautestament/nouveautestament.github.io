@@ -22297,7 +22297,7 @@ lemme={
   "Vient de (\"la source\") et de  παιδίον"
  ],
  "παιδίον": [
-  "petit enfant, petits enfants",
+  "petit servant, petits servants",
   "petit enfant, jeune enfant, petit garçon, une petite fille, petits enfants, un bébé (mâle) qui est né récemment.    un enfant un peu plus âgé, d'un enfant mâture ;    métaphorique enfant (ou comme un enfant) dans l'intellect    Pour les Synonymes voir entrée  5868",
   "Nom neutre",
   "Vient de dimin. de  παῖς"
