@@ -1146,14 +1146,14 @@ lemme={
   "Une racine"
  ],
  "ἀκρασία": [
-  "intempérance",
-  "intempérance, incontinence, manque d'auto-contrôle, incontinence, intempérance",
+  "acrasie",
+  "non force, non vigueur, incontinence, intempérance, manque d'auto-contrôle",
   "Nom féminin",
   "Vient de  ἀκρατής"
  ],
  "ἀκρατής": [
-  "intempérants",
-  "intempérant, sans auto-contrôle, sans tempérance, incontinent",
+  "sans forces",
+  "incontinent, intempérant, sans auto-contrôle, sans tempérance",
   "Adjectif",
   "Vient de ἄλφα (négatif) et  κράτος"
  ],
@@ -2340,7 +2340,7 @@ lemme={
   "Vient de  ἀνά  et  στρέφω"
  ],
  "ἀναστροφή": [
-  "retournement de bas en haut, retournements de bas en haut, retournement de bas en haut, retournements de bas en haut",
+  "tournure de bas en haut, tournures de bas en haut, tournure de bas en haut, tournures de bas en haut",
   "anastrophe, conduite, vie, manière de vivre, manière de vivre, conduite, apparence, maintien",
   "Nom féminin",
   "Vient de  ἀναστρέφω"
@@ -4218,7 +4218,7 @@ lemme={
   "D'origine étrangère, forme grecque du mot Harethath"
  ],
  "ἀρετή": [
-  "vertu, vertus, vertue, vertues",
+  "vertu, vertus, vertu, vertus",
   "vertu, vertueux, une façon vertueuse de penser, ressentir, et agir.   vertu, bonté morale.   toute excellence morale, comme la modestie, la pureté..",
   "Nom féminin",
   "Vient du même mot que  ἄρσην"
@@ -4572,8 +4572,8 @@ lemme={
   "Vient de ἄλφα (négatif) et un dérivé de  σαλεύω"
  ],
  "ἄσβεστος": [
-  "inextinguible",
-  "inextinguible, qui ne s'éteint pas, inextinguible, qui ne s'éteint pas   le feu éternel qui punit les damnés",
+  "inéteignable",
+  "inéteignable, inextinguible, qui ne s'éteint pas, inextinguible, qui ne s'éteint pas   le feu éternel qui punit les damnés",
   "Adjectif",
   "Vient de ἄλφα (négatif) et un dérivé de  σβέννυμι"
  ],
@@ -8796,19 +8796,19 @@ lemme={
   "Vient de  ἐν  et  κόπτω"
  ],
  "ἐγκράτεια": [
-  "maîtrise intérieure",
+  "force intérieure",
   "maîtrise intérieure, contrôle de soi, vertu de ceux qui sont maîtres de leurs désirs et de leurs passions, en particulier des appétits des sens",
   "Nom féminin",
   "Vient de  ἐγκρατής"
  ],
  "ἐγκρατεύομαι": [
-  "maîtriser intérieur",
-  "abstenir,continence , abstinence, se contrôler, se contenir, être continent.   montrer sa maîtrise de soi, se conduire avec tempérance.  image des athlètes se préparant à des jeux et s'abstenant de certaines nourritures, de vin, et de contacts sexuels",
+  "avoir force intérieure",
+  "maîtriser intérieur, abstenir, continence, abstinence, se contrôler, se contenir, être continent.   montrer sa maîtrise de soi, se conduire avec tempérance.  image des athlètes se préparant à des jeux et s'abstenant de certaines nourritures, de vin, et de contacts sexuels",
   "Verbe",
   "Vient de  ἐγκρατής"
  ],
  "ἐγκρατής": [
-  "maîtrisant intérieur",
+  "fort d'intérieur",
   "tempérant, fort, robuste.  ayant du pouvoir sur.  maîtrise, contrôle, être bridé, se contenir",
   "Adjectif",
   "Vient de  ἐν  et  κράτος"
@@ -9204,7 +9204,7 @@ lemme={
   "Superlatif de 'hekas' (loin)"
  ],
  "ἑκάστοτε": [
-  "chaque moment",
+  "à chaque fois",
   "toujours, à chaque moment, toujours",
   "Adverbe",
   "Doit provenir de  ἕκαστος  et  τότε"
@@ -9222,8 +9222,8 @@ lemme={
   "Vient de  ἑκατόν  et  ἔτος"
  ],
  "ἑκατονταπλασίων": [
-  "centuple",
-  "centuple, centuple, une centaine de fois plus",
+  "au centuple, au centuples",
+  "au centuple, une centaine de fois plus",
   "Adjectif",
   "Vient de  ἑκατόν  et d'un dérivé présumé de  πλάσσω"
  ],
@@ -12027,7 +12027,7 @@ lemme={
   "survaloriser",
   "menacer, recommander sévèrement, reprendre, parler sévèrement,  repousser, recommander, réprimander, censurer, réprimer, montrer du respect, honorer.  élever le prix de.  adjuger, décerner, dans le sens de pénalité méritée.  taxer selon la faute, estimer, réprimander, réprouver, censurer sévèrement.    réprimander d'une manière tranchante",
   "Verbe",
-  "Vient de  ἐπί  et  τιμάω, ἐπι(sur) τιμάω(valoriser)"
+  "ἐπί + τιμάω"
  ],
  "ἐπιτιμία": [
   "survalorisation",
@@ -12156,7 +12156,7 @@ lemme={
   "Vient de  ἐπί  et d'un dérivé de  ὀπτάνομαι"
  ],
  "ἐπόπτης": [
-  "surveillants époptes",
+  "survoyants",
   "épopte, voyeur de première place, épopte, voyeur de première place, un inspecteur.  spectateur, témoin oculaire de quelque chose. C'était le nom donné à ceux qui avait atteint le troisième, donc le plus haut niveau, dans l'initiation aux mystères d'Éleusis, ville proche d'Athènes, dans un culte rendu à la déesse de la Végétation, Déméter",
   "Nom masculin",
   "Vient de  ἐπί  et d'un dérivé présumé de  ὀπτάνομαι"
@@ -12780,8 +12780,8 @@ lemme={
   "Vient du même mot que  εὐνοέω"
  ],
  "εὐνουχίζω": [
-  "castrer",
-  "castrer, se sont rendus (eunuques), châtrer, castrer un homme.  métaphorique se rendre soi-même eunuque, c'est à dire par abstinence, comme un eunuque s'abstient du mariage",
+  "rendre eunuques",
+  "rendre eunuque, castrer, châtrer, castrer un homme.  métaphorique se rendre soi-même eunuque, c'est à dire par abstinence, comme un eunuque s'abstient du mariage",
   "Verbe",
   "Vient de  εὐνοῦχος"
  ],
@@ -17328,7 +17328,7 @@ lemme={
   "Vient de  κόσμος  (sens primaire)"
  ],
  "κοσμοκράτωρ": [
-  "puissants du monde",
+  "forts du monde",
   "cosmocrate, seigneur du monde, prince de cet âge.   le diable et ses démons",
   "Nom masculin",
   "Vient de  κόσμος  et  κρατέω"
@@ -19975,7 +19975,7 @@ lemme={
   "Forme simple de  ἐμοί"
  ],
  "μοιχαλίς": [
-  "adultère, adultères, adultère, adultères",
+  "adultéresse, adultéresses, adultéresse, adultéresses",
   "adultère, une femme adultère.  l'alliance intime de Dieu avec le peuple d'Israël étant comme un mariage, ceux qui rechutent dans l'idolâtrie sont considérés comme commettant l'adultère ou se livrant à la prostitution.    fig. équiv. à être infidèle à Dieu, impur, apostat",
   "Nom féminin",
   "Forme prolongée du féminin de  μοιχός"
@@ -28243,7 +28243,7 @@ lemme={
   "Vient de  σύν  et  ζάω"
  ],
  "συζεύγνυμι": [
-  "joindre paire ensemble",
+  "conjoindre",
   "joindre ensemble, unir paire ensemble, attacher un joug à quelqu'un, mettre ensemble sous un joug.  joindre ensemble pour unir.   du lien du mariage",
   "Verbe",
   "Vient de  σύν  et de  ζεῦγος"
@@ -33325,8 +33325,8 @@ lemme={
   "βαρύ(lourd) βαρύς  + τερα monstre, énorme, (ἄβυσσος fois Ἀβιούδ) "
  ],
  "βέβαιος-τερος": [
-  "plus certain",
-  "plus certain, plus certain",
+  "plus ferme",
+  "plus ferme, plus certain",
   "Adjectif",
   "βεβαιό + τερον"
  ],
