@@ -4014,10 +4014,10 @@ lemme={
   "Vient de  ἀπό  et  φεύγω"
  ],
  "ἀποφθέγγομαι": [
-  "proférer au loin",
+  "déclarer un son au loin",
   "exprimer au loin, faire un son au loin, parler, prononcer, parler, prononcer, s'exprimer.    pas avec des paroles ordinaires, mais de celles \"destinées à élever, à édifier\"",
   "Verbe",
-  "Vient de  ἀπό  et  φθέγγομαι"
+  "φθόγγος ; de ἀπό et φθέγγομαι"
  ],
  "ἀποφορτίζομαι": [
   "décharger",
@@ -9552,8 +9552,8 @@ lemme={
   "Vient du même mot que  ἑκούσιος"
  ],
  "ἔκπαλαι": [
-  "depuis longtemps",
-  "depuis longtemps, autrefois, ce qui vient de l'ancien temps, d'autrefois.  depuis longtemps",
+  "depuis vieillement",
+  "hors vieillement, depuis longtemps, autrefois, ce qui vient de l'ancien temps, d'autrefois.  depuis longtemps",
   "Adverbe",
   "Vient de  ἐκ  et  πάλαι"
  ],
@@ -31549,10 +31549,10 @@ lemme={
   "Vient de  φθείρω"
  ],
  "φθέγγομαι": [
-  "prononcer un son",
+  "déclarer un son",
   "prononcer un son, émettre un son, un bruit ou un cri.   toute sorte de son ou voix, que ce soit humain, animal ou d'une chose telle que le tonnerre, un instrument de musique..",
   "Verbe",
-  "Probablement parent de  φέγγος  et ainsi de  φημί"
+  "φθόγγος ; probablement parent de φέγγος et φημί"
  ],
  "φθείρω": [
   "corrompre",
@@ -31609,13 +31609,13 @@ lemme={
   "Vient de Philadelphos (même mot que  φιλάδελφος )"
  ],
  "φιλαδελφία": [
-  "amitié fraternel",
+  "amitié fraternelle",
   "amitié fraternel, amour des frères ou des sœurs, amour fraternel.  dans le Nouveau Testament, l'amour que les chrétiens portent à chacun comme étant des frères",
   "Nom féminin",
   "Vient de  φιλάδελφος"
  ],
  "φιλάδελφος": [
-  "d'amitiés fraternels",
+  "d'amitiés fraternelles",
   "d'amitié fraternel, amour pour un frère ou une sœur.  dans un sens plus large, aimer quelqu'un comme un frère, amour pour un compagnon du même pays.    d'un Israélite.  d'un Chrétien aimant les autres Chrétiens",
   "Adjectif",
   "Vient de  φίλος  et  ἀδελφός"
