@@ -892,7 +892,7 @@ fichier	= require('fs');
 
 
 
-romain     =  fichier.readFileSync('../../database/RO/IERONYMUS.txt',	'utf8');
+romain     =  fichier.readFileSync('../../database/RO/VULGATE_WEB.txt',	'utf8');
 
 
 
@@ -996,14 +996,18 @@ for (line = 0 ; line != bible.length ; line++)
 	
 
 
-		
+		//AMIATINUS
 		data	+= 
 			'<tr><td nowrap class="amiatinus" onclick="eimiv='+verset+';view(\''+amiatinus_lc[xbook[livre]+':'+chapitre]+'\');">AMIATINUS</td>'+
-			'<td>'+date+'</td>'+
-			'<td>'+texte+'</td></tr>'
+			'<td>700</td>'+
+			'<td></td></tr>'
 		
-	
-
+		
+		//VULGATE_WEB
+		data	+= 
+			'<tr><td nowrap>VULGATE_WEB</td>'+
+			'<td>2022</td>'+
+			'<td>'+texte+'</td></tr>'
 	
 
 
