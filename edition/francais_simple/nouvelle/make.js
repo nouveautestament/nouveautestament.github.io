@@ -46,6 +46,7 @@ css_web = `
 		
 		html {
 			margin:30px;
+			background-color:#f1d7b7;
 		}
 
 

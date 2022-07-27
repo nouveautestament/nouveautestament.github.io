@@ -11076,8 +11076,8 @@ lemme={
   "Vient de  ἔξεστιν  (sens de capacité)"
  ],
  "ἐξουσιάζω": [
-  "dominer en autorité",
-  "dominer, asservir, avoir autorité, avoir le pouvoir ou l'autorité, user d'un pouvoir.   être le maître de quelqu'un, exercer l'autorité sur lui.  être maître de son corps.   avoir pleine et entière autorité sur son corps.  assujettir son corps à sa volonté    être mis sous le pouvoir de quelqu'un",
+  "autoriser",
+  "avoir autorité, avoir pouvoir, asservir,  ou l'autorité, user d'un pouvoir.   être le maître de quelqu'un, exercer l'autorité sur lui.  être maître de son corps.   avoir pleine et entière autorité sur son corps.  assujettir son corps à sa volonté    être mis sous le pouvoir de quelqu'un",
   "Verbe",
   "Vient de  ἐξουσία"
  ],
@@ -16284,7 +16284,7 @@ lemme={
   "Vient de  κατά  et  ἐνώπιον"
  ],
  "κατεξουσιάζω": [
-  "dominer de haut en bas",
+  "autoriser de haut en bas",
   "dominer de haut en bas, exercer l'autorité, manier le pouvoir",
   "Verbe",
   "Vient de  κατά  et  ἐξουσιάζω"
