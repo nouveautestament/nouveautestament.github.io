@@ -2041,7 +2041,7 @@ francais_c_n      =  fichier.readFileSync('../../database/fr/francais-c-n.txt', 
 francais_c        =  fichier.readFileSync('../../database/fr/francais-c.txt',        'utf8');
 semeur            =  fichier.readFileSync('../../database/fr/semeur.txt',            'utf8');
 parole_vivante    =  fichier.readFileSync('../../database/fr/parole-vivante.txt',    'utf8');
-
+nvg               =  fichier.readFileSync('../../database/fr/nvg.txt',               'utf8');
 
 
 bible = 
@@ -2092,7 +2092,8 @@ parole_de_vie     +
 francais_c_n      +
 francais_c        +
 semeur            +
-parole_vivante    
+parole_vivante    +
+nvg
 
 bible = bible.split(/\r?\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
 
