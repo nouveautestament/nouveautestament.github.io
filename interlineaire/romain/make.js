@@ -892,16 +892,16 @@ fichier	= require('fs');
 
 
 
-romain     =  fichier.readFileSync('../../database/RO/VULGATE_WEB.txt',	'utf8');
+vulgate_web		=  fichier.readFileSync('../../database/RO/VULGATE_WEB.txt',	'utf8');
+nova_vulgata	=  fichier.readFileSync('../../database/RO/NOVA_VULGATA.txt',	'utf8');
+
+bible = vulgate_web+nova_vulgata
 
 
+//bible = romain.split(/\r?\n/)
 
 
-
-bible = romain.split(/\r?\n/)
-
-
-//bible = bible.split(/\r?\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
+bible = bible.split(/\r?\n/).sort(new Intl.Collator('en',{numeric:true, sensitivity:'accent'}).compare)
 
 
 
@@ -989,6 +989,12 @@ for (line = 0 ; line != bible.length ; line++)
 <span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody>`;
 
 
+		//AMIATINUS
+		data	+= 
+			'<tr><td nowrap class="amiatinus" onclick="eimiv='+verset+';view(\''+amiatinus_lc[xbook[livre]+':'+chapitre]+'\');">AMIATINUS</td>'+
+			'<td>700</td>'+
+			'<td></td></tr>'
+
 }
 
 	
@@ -996,17 +1002,13 @@ for (line = 0 ; line != bible.length ; line++)
 	
 
 
-		//AMIATINUS
-		data	+= 
-			'<tr><td nowrap class="amiatinus" onclick="eimiv='+verset+';view(\''+amiatinus_lc[xbook[livre]+':'+chapitre]+'\');">AMIATINUS</td>'+
-			'<td>700</td>'+
-			'<td></td></tr>'
 		
 		
-		//VULGATE_WEB
+		
+		//ALL_VULGATE
 		data	+= 
-			'<tr><td nowrap>VULGATE_WEB</td>'+
-			'<td>2022</td>'+
+			'<tr><td nowrap>'+traducteur+'</td>'+
+			'<td>'+date+'</td>'+
 			'<td>'+texte+'</td></tr>'
 	
 
