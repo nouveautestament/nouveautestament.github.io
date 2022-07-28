@@ -8208,7 +8208,7 @@ lemme={
   "Vient de  δίς  et  χίλιοι"
  ],
  "διϋλίζω": [
-  "filtrer",
+  "filtrer au-travers",
   "filtrer, filtrer à travers, passer à travers un filtre, filtrer en faisant couler",
   "Verbe",
   "Vient de  διά  et hulizo (hoo-lid'-zo, filtrer)"
@@ -15270,7 +15270,7 @@ lemme={
   "Vient de  καί  et  ἐκεῖθεν"
  ],
  "κἀκεῖνος": [
-  "et celui-là, et ceux-là, et celle-là, et celles-là",
+  "et ce-là, et ces-là, et celui-là, et ceux-là, et celle-là, et celles-là",
   "et celui-là, et celles-là, aussi, et lui, lui aussi",
   "Pronom",
   "Vient de  καί  et  ἐκεῖνος"
