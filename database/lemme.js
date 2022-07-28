@@ -7176,13 +7176,13 @@ lemme={
   "Un mot racine"
  ],
  "δεσμεύω": [
-  "lier",
+  "attacher de lien",
   "lier, mettre dans les chaînes.  lier, relier",
   "Verbe",
   "Vient d'un dérivé (présumé) de  δεσμέω"
  ],
  "δεσμέω": [
-  "lier",
+  "attacher de lien",
   "lié, lier, lien",
   "Verbe",
   "Vient de  δεσμός"
@@ -7266,7 +7266,7 @@ lemme={
   "Verbe primaire"
  ],
  "δέω": [
-  "attacher de lien",
+  "lier",
   "lier, attacher, en prison, envelopper, dans les chaînes, lier, attacher.   lier, attacher avec de chaînes",
   "Verbe",
   "Une racine"
@@ -28375,16 +28375,16 @@ lemme={
   "Vient de  σύν  et bibazo (forcer, venant de  βάσις )"
  ],
  "συμβουλεύω": [
-  "délibérer ensemble",
-  "délibérer ensemble, conseiller, donner un conseil.  prendre conseil des autres, tenir conseil ensemble, se consulter, délibérer",
+  "conseiller",
+  "conseiller, délibérer ensemble, donner un conseil,  prendre conseil des autres, tenir conseil ensemble, se consulter, délibérer",
   "Verbe",
   "Vient de  σύν  et  βουλεύω"
  ],
  "συμβούλιον": [
-  "délibération ensemble",
-  "délibération ensemble, tenir conseil, le conseil, qui est donné, pris, entériné   consulter, délibérer.   un conseil.   une assemblée de conseillers ou personnes en consultation (les gouverneurs et procurateurs de provinces avaient un conseil d'assesseurs dont ils prenaient l'avis avant de rendre le jugement)",
+  "conseil",
+  "conseil, délibération ensemble, tenir conseil, le conseil, qui est donné, pris, entériné   consulter, délibérer.   un conseil.   une assemblée de conseillers ou personnes en consultation (les gouverneurs et procurateurs de provinces avaient un conseil d'assesseurs dont ils prenaient l'avis avant de rendre le jugement)",
   "Nom neutre",
-  "Vient d'un dérivé présumé de  σύμβουλος"
+  "σύμβουλος , Latin : CON-S-ILIUM = CON-S-EIL, CON-C-ILIUM = CON-C-ILE"
  ],
  "σύμβουλος": [
   "conseiller",
