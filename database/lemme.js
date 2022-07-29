@@ -2862,8 +2862,8 @@ lemme={
   "Vient d'un composé de  ἀντί  et  τίθημι"
  ],
  "ἀντικαθίστημι": [
-  "résister",
-  "résister, poser à la place d'une autre chose.  se placer dans 'opposition.   disposer des troupes, mettre une armée en ligne de bataille.  résister",
+  "constituer contre",
+  "établir contre, poser à la place d'une autre chose.  se placer dans 'opposition.   disposer des troupes, mettre une armée en ligne de bataille.  résister",
   "Verbe",
   "Vient de  ἀντί  et  καθίστημι"
  ],
@@ -3714,8 +3714,8 @@ lemme={
   "Vient de  ἀπό  et lauo (jouir de)"
  ],
  "ἀπολείπω": [
-  "laisser au loin",
-  "laisser loin,laisser, réservé, abandonner, rester, laisser, quitter, laisser derrière, abandonner.  déserter ou abandonner",
+  "délaisser",
+  "laisser de-loin, délaisser, réservé, abandonner, rester, laisser, quitter, laisser derrière, abandonner.  déserter ou abandonner",
   "Verbe",
   "Vient de  ἀπό  et  λείπω"
  ],
@@ -3900,7 +3900,7 @@ lemme={
   "Vient de  ἀπό  et  στέλλω"
  ],
  "ἀποστερέω": [
-  "spolier",
+  "dépriver",
   "dépouiller , faire tort, se priver, être privé, frustrer, frauder, voler, dépouiller",
   "Verbe",
   "Vient de  ἀπό  et stereo (priver)"
@@ -8754,7 +8754,7 @@ lemme={
   "Vient de  ἐν  et  καλέω"
  ],
  "ἐγκαταλείπω": [
-  "délaisser en contrebas",
+  "laisser totalement intérieurement",
   "abandonner, être abandonné, laissé, abandon, désert.   laisser sans aide.  totalement abandonné, absolument seul.   laisser derrière soi",
   "Verbe",
   "Vient de  ἐν  et  καταλείπω"
@@ -15840,7 +15840,7 @@ lemme={
   "Vient de  καταλείπω"
  ],
  "καταλείπω": [
-  "laisser en contrebas",
+  "laisser totalement",
   "quitter, laisser de haut en bas, lâcher, rester, abandonner, se réserver,  subsister, laisser derrière.   s'en aller de, quitter.   être laissé   inviter à rester.  abandonner, laisser de soi-même une personne ou une chose en cessant d'en prendre soin, laisser dans l'embarras.    être abandonné   faire laisser, réserver.  comme notre \"nous a quitté\" utilisé pour ceux qui ont été appelés au loin et sont partis sans nous.    en particulier pour les morts.   comme notre \"laisser\", laisser seul, ne tenir aucun compte de.   de ceux qui font voile de lieu en lieu, sans s'arrêter",
   "Verbe",
   "Vient de  κατά  et  λείπω"
@@ -22525,8 +22525,8 @@ lemme={
   "Vient de  παραβάλλω"
  ],
  "παραβουλεύομαι": [
-  "délibérer à côté",
-  "délibérer à côté, consulter de travers",
+  "laisser délibération de côté",
+  "délibérer de côté, consulter de travers",
   "Verbe",
   "Vient de  παρά  et de  βουλεύω, peut-être παραβολεύομαι"
  ],
@@ -31111,7 +31111,7 @@ lemme={
   "Une forme prolongée pour ὑπολείπω"
  ],
  "ὑπομένω": [
-  "résister en restant sous",
+  "résister",
   "résister, rester en dessous, persévérer, rester, être patient, patiemment, supporter, souffrir, soutenir, résister, rester sous,   s'attarder derrière.   rester c'est à dire demeurer, ne pas s'éloigner ou s'enfuir.   conserver : dans les épreuves et dans les peines, maintenir sa foi en Christ.  endurer, supporter bravement et calmement les mauvais traitements",
   "Verbe",
   "Vient de  ὑπό  et  μένω"
@@ -33745,7 +33745,7 @@ lemme={
   "πανταχοῦ"
  ],
  "παραβολεύομαι": [
-  "laisser à côté",
+  "laisser délibération de côté",
   "laisser à côté, laisser à côté",
   "Verbe",
   "παραβουλεύομαι"
