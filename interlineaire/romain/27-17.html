@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>ROMAIN</title>
+
+		<script src='panzoom.min.js'></script>
+		
+		<script>
+		
+			show = 0;
+			current = ""
+		
+			function view(link)
+			{
+			
+				document.getElementById('box').src = ""
+				classn = link.split('/')[0]
+			
+				if (classn != current)
+				{
+					
+					if (current != "")
+					{
+						//CLOSE
+						for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+						{
+							document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+						}
+					}
+					
+					//OPEN
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+					}
+					
+					document.getElementById('left').style.width = "50%";
+					document.getElementById('right').style.width = "50%";
+					
+					document.getElementById('box').src = '../../'+link;
+					
+					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
+					show = 1;
+					
+				}
+				
+				else if (classn == current)
+				{
+					
+					//CLOSE
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+					}
+					
+					document.getElementById('left').style.width = "100%";
+					document.getElementById('right').style.width = "0%";
+					show = 0;
+					
+					current = "";
+				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
+				}
+
+			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+		}
+		</script>
+
+
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+
+			#inleft {
+				
+				padding:5px;
+			}
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.amiatinus, .erasme_1527{
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html">JEAN</a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html"><b>[ APOCALYPSE ]</b></a></p><br><a href="27-1.html">CH1</a>&ensp;<a href="27-2.html">CH2</a>&ensp;<a href="27-3.html">CH3</a>&ensp;<a href="27-4.html">CH4</a>&ensp;<a href="27-5.html">CH5</a>&ensp;<a href="27-6.html">CH6</a>&ensp;<a href="27-7.html">CH7</a>&ensp;<a href="27-8.html">CH8</a>&ensp;<a href="27-9.html">CH9</a>&ensp;<a href="27-10.html">CH10</a>&ensp;<a href="27-11.html">CH11</a>&ensp;<a href="27-12.html">CH12</a>&ensp;<a href="27-13.html">CH13</a>&ensp;<a href="27-14.html">CH14</a>&ensp;<a href="27-15.html">CH15</a>&ensp;<a href="27-16.html">CH16</a>&ensp;<a href="27-17.html"><b>[ CH17 ]</b></a>&ensp;<a href="27-18.html">CH18</a>&ensp;<a href="27-19.html">CH19</a>&ensp;<a href="27-20.html">CH20</a>&ensp;<a href="27-21.html">CH21</a>&ensp;<a href="27-22.html">CH22</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>APOCALYPSE 17 1</b></a> 
+<a href="../hellene/27-17.html#V1">EL</a> 
+<a href="../romain/27-17.html#V1">RO</a> 
+<a href="../francais/27-17.html#V1">FR</a> 
+<a href="../technique/27-17.html#V1">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=1;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et venit unus de septem angelis, qui habebant septem phialas, et locutus est mecum dicens: “ Veni, ostendam tibi damnationem meretricis magnae, quae sedet super aquas multas,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et venit unus de septem angelis qui habebant septem fialas et locutus est mecum dicens veni ostendam tibi damnationem meretricis magnae quae sedet super aquas multas</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=1;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et uenit unus de septem angelis, qui habebant septem phialas, & locutus est mecum, dicens mihi: Veni ostendam tibi dannatione meretricis magnae, quae sedet super aquas multas,</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>APOCALYPSE 17 2</b></a> 
+<a href="../hellene/27-17.html#V2">EL</a> 
+<a href="../romain/27-17.html#V2">RO</a> 
+<a href="../francais/27-17.html#V2">FR</a> 
+<a href="../technique/27-17.html#V2">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=2;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> cum qua fornicati sunt reges terrae, et inebriati sunt, qui inhabitant terram, de vino prostitutionis eius ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> cum qua fornicati sunt reges terrae et inebriati sunt qui inhabitant terram de vino prostitutionis eius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=2;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> cum qua scortati sunt re ges terrae, & inebriati sunt qui in habitant terram de uino prostitutionis eius.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>APOCALYPSE 17 3</b></a> 
+<a href="../hellene/27-17.html#V3">EL</a> 
+<a href="../romain/27-17.html#V3">RO</a> 
+<a href="../francais/27-17.html#V3">FR</a> 
+<a href="../technique/27-17.html#V3">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=3;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et abstulit me in desertum in spiritu. Et vidi mulierem sedentem super bestiam coccineam, plenam nominibus blasphemiae, habentem capita septem et cornua decem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et abstulit me in desertum in spiritu et vidi mulierem sedentem super bestiam coccineam plenam nominibus blasphemiae habentem capita septem et cornua decem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=3;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et abstulit me spiritu in desertum. Et uidi muliere sedentem sup bestiam coccinam, plenam nominibus maledicentiae, habentem capita septem & cornua decem.</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>APOCALYPSE 17 4</b></a> 
+<a href="../hellene/27-17.html#V4">EL</a> 
+<a href="../romain/27-17.html#V4">RO</a> 
+<a href="../francais/27-17.html#V4">FR</a> 
+<a href="../technique/27-17.html#V4">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=4;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et mulier erat circumdata purpura et coccino, et inaurata auro et lapide pretioso et margaritis, habens poculum aureum in manu sua plenum abominationibus et immunditiis fornicationis eius;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et mulier erat circumdata purpura et coccino et inaurata auro et lapide pretioso et margaritis habens poculum aureum in manu sua plenum abominationum et inmunditia fornicationis eius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=4;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et mulier erat circundata purpura & coccino, & inaurata auro, & lapide precioso, et margaritis, habens poculum aureum in manu sua, plenum abominationibus et immum ditia libidinis suae.</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>APOCALYPSE 17 5</b></a> 
+<a href="../hellene/27-17.html#V5">EL</a> 
+<a href="../romain/27-17.html#V5">RO</a> 
+<a href="../francais/27-17.html#V5">FR</a> 
+<a href="../technique/27-17.html#V5">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=5;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> et in fronte eius nomen scriptum, mysterium: “ Babylon magna, mater fornicationum et abominationum terrae ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et in fronte eius nomen scriptum mysterium Babylon magna mater fornicationum et abominationum terrae</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=5;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et in fronte eius nomen scriptum mysterium Babylon magna mater scortationum, & abominationum terrae.</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>APOCALYPSE 17 6</b></a> 
+<a href="../hellene/27-17.html#V6">EL</a> 
+<a href="../romain/27-17.html#V6">RO</a> 
+<a href="../francais/27-17.html#V6">FR</a> 
+<a href="../technique/27-17.html#V6">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=6;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et vidi mulierem ebriam de sanguine sanctorum et de sanguine martyrum Iesu. Et miratus sum, cum vidissem illam, admiratione magna.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et vidi mulierem ebriam de sanguine sanctorum et de sanguine martyrum Iesu et miratus sum cum vidissem illam admiratione magna</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=6;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et uidi mulierem ebriam de sanguine sanctorum, & de sanguine martyrum Iesu Et miratus sum, cum uiderem il lam admiratione magna.</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>APOCALYPSE 17 7</b></a> 
+<a href="../hellene/27-17.html#V7">EL</a> 
+<a href="../romain/27-17.html#V7">RO</a> 
+<a href="../francais/27-17.html#V7">FR</a> 
+<a href="../technique/27-17.html#V7">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=7;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et dixit mihi angelus. “ Quare miraris? Ego tibi dicam mysterium mulieris et bestiae, quae portat eam, quae habet capita septem et decem cornua:</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et dixit mihi angelus quare miraris ego tibi dicam sacramentum mulieris et bestiae quae portat eam quae habet capita septem et decem cornua</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=7;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et dixit mihi angelus: quare miraris? Ego dicam tibi mysterium mulieris, & bestiae quae portat eam, quae habet capita septem, & cornua</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>APOCALYPSE 17 8</b></a> 
+<a href="../hellene/27-17.html#V8">EL</a> 
+<a href="../romain/27-17.html#V8">RO</a> 
+<a href="../francais/27-17.html#V8">FR</a> 
+<a href="../technique/27-17.html#V8">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=8;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> bestia, quam vidisti, fuit et non est, et ascensura est de abysso et in interitum ibit. Et mirabuntur inhabitantes terram, quorum non sunt scripta nomina in libro vitae a constitutione mundi, videntes bestiam, quia erat et non est et aderit.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> bestiam quam vidisti fuit et non est et ascensura est de abysso et in interitum ibit et mirabuntur inhabitantes terram quorum non sunt scripta nomina in libro vitae a constitutione mundi videntes bestiam quia erat et non est</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=8;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> dece Bestia quam uidisti, fuit, & no est & ascensura est de abysso, & in in teritum ibit, & mirabuntur inhabitantes terram, quorum nomina scripta non sunt in libro uitae, à codito mundo, uidentes bestiam, quae erat & non est.</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>APOCALYPSE 17 9</b></a> 
+<a href="../hellene/27-17.html#V9">EL</a> 
+<a href="../romain/27-17.html#V9">RO</a> 
+<a href="../francais/27-17.html#V9">FR</a> 
+<a href="../technique/27-17.html#V9">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=9;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hic est sensus, qui habet sapientiam. Septem capita, septem montes sunt, super quos mulier sedet. Et reges septem sunt:</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et hic est sensus qui habet sapientiam septem capita septem montes sunt super quos mulier sedet et reges septem sunt</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=9;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Hic est mens quae habet sapientiam Septem ca pita septem montes sunt, super quos mulier sedet, & reges septe sunt.</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>APOCALYPSE 17 10</b></a> 
+<a href="../hellene/27-17.html#V10">EL</a> 
+<a href="../romain/27-17.html#V10">RO</a> 
+<a href="../francais/27-17.html#V10">FR</a> 
+<a href="../technique/27-17.html#V10">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=10;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quinque ceciderunt, unus est, alius nondum venit; et, cum venerit, oportet illum breve tempus manere.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quinque ceciderunt unus est alius nondum venit et cum venerit oportet illum breve tempus manere</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=10;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Quinque ceciderunt, unus est, & alius nodum uenit. Et cum uenerit, oportet illum breue tem pus manere.</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>APOCALYPSE 17 11</b></a> 
+<a href="../hellene/27-17.html#V11">EL</a> 
+<a href="../romain/27-17.html#V11">RO</a> 
+<a href="../francais/27-17.html#V11">FR</a> 
+<a href="../technique/27-17.html#V11">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=11;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et bestia, quae erat et non est, et is octavus est et de septem est et in interitum vadit.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et bestia quae erat et non est et ipsa octava est et de septem est et in interitum vadit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=11;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et bestia quae erat, & non est, & ipse octauus est, & de septem est, & in interitum uadit.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>APOCALYPSE 17 12</b></a> 
+<a href="../hellene/27-17.html#V12">EL</a> 
+<a href="../romain/27-17.html#V12">RO</a> 
+<a href="../francais/27-17.html#V12">FR</a> 
+<a href="../technique/27-17.html#V12">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=12;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et decem cornua, quae vidisti, decem reges sunt, qui regnum nondum acceperunt, sed potestatem tamquam reges una hora accipiunt cum bestia.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et decem cornua quae vidisti decem reges sunt qui regnum nondum acceperunt sed potestatem tamquam reges una hora accipiunt post bestiam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=12;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et decem cornua quae uidisti, decem reges sunt, qui regnum nondum acceperunt, sed potesta tem tanquam reges una hora accipient cum bestia.</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>APOCALYPSE 17 13</b></a> 
+<a href="../hellene/27-17.html#V13">EL</a> 
+<a href="../romain/27-17.html#V13">RO</a> 
+<a href="../francais/27-17.html#V13">FR</a> 
+<a href="../technique/27-17.html#V13">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=13;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hi unum consilium habent et virtutem et potestatem suam bestiae tradunt.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hii unum consilium habent et virtutem et potestatem suam bestiae tradunt</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=13;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Hi unum con silium habent, & uirtutem & potestatem suam bestiae tradent.</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>APOCALYPSE 17 14</b></a> 
+<a href="../hellene/27-17.html#V14">EL</a> 
+<a href="../romain/27-17.html#V14">RO</a> 
+<a href="../francais/27-17.html#V14">FR</a> 
+<a href="../technique/27-17.html#V14">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=14;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hi cum Agno pugnabunt; et Agnus vincet illos, quoniam Dominus dominorum est et Rex regum, et qui cum illo sunt vocati et electi et fideles ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hii cum agno pugnabunt et agnus vincet illos quoniam Dominus dominorum est et rex regum et qui cum illo sunt vocati et electi et fideles</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=14;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Hi cum agno pugnabunt, & agnus uincet illos, quoniam dominus dominorum est, & rex regum: & qui cum illo sunt uocati, & electi & fideles.</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>APOCALYPSE 17 15</b></a> 
+<a href="../hellene/27-17.html#V15">EL</a> 
+<a href="../romain/27-17.html#V15">RO</a> 
+<a href="../francais/27-17.html#V15">FR</a> 
+<a href="../technique/27-17.html#V15">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=15;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et dicit mihi: “ Aquae, quas vidisti, ubi meretrix sedet, populi et turbae sunt et gentes et linguae.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et dixit mihi aquas quas vidisti ubi meretrix sedet populi sunt et gentes et linguae</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=15;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et dicit mihi: Aquae quas uidisti, ubi meretrix sedet, populi sunt & turbae, & gentes, & linguae.</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>APOCALYPSE 17 16</b></a> 
+<a href="../hellene/27-17.html#V16">EL</a> 
+<a href="../romain/27-17.html#V16">RO</a> 
+<a href="../francais/27-17.html#V16">FR</a> 
+<a href="../technique/27-17.html#V16">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=16;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et decem cornua, quae vidisti, et bestia, hi odient fornicariam et desolatam facient illam et nudam, et carnes eius manducabunt et ipsam igne concremabunt;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et decem cornua quae vidisti et bestiam hii odient fornicariam et desolatam facient illam et nudam et carnes eius manducabunt et ipsam igni concremabunt</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=16;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et decem cornua quae uidisti in bestia, hi odio prosequen tur meretricem, & desolatam facient illam & nudam, & carnes eius comedent, & ipsam igne concremabunt.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>APOCALYPSE 17 17</b></a> 
+<a href="../hellene/27-17.html#V17">EL</a> 
+<a href="../romain/27-17.html#V17">RO</a> 
+<a href="../francais/27-17.html#V17">FR</a> 
+<a href="../technique/27-17.html#V17">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=17;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Deus enim dedit in corda eorum, ut faciant, quod illi placitum est, et faciant unum consilium et dent regnum suum bestiae, donec consummentur verba Dei.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> Deus enim dedit in corda eorum ut faciant quod illi placitum est ut dent regnum suum bestiae donec consummentur verba Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=17;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Deus enim dedit in corda eorum, ut faciant quod placitum est illi, ut unam faciant uountatem, ut dent regnum suum bestiae, donec consummentur uerba dei.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>APOCALYPSE 17 18</b></a> 
+<a href="../hellene/27-17.html#V18">EL</a> 
+<a href="../romain/27-17.html#V18">RO</a> 
+<a href="../francais/27-17.html#V18">FR</a> 
+<a href="../technique/27-17.html#V18">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=18;view('amiatinus/27-APOCALYPSE/465.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et mulier, quam vidisti, est civitas magna, quae habet regnum super reges terrae ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et mulier quam vidisti est civitas magna quae habet regnum super reges terrae</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=18;view('erasme_1527/27-APOCALYPSE/547.jpg');">ERASME_1527</td><td>1527</td><td> Et mulier qua uidisti, est ciuitas magna, quae habet regnum super reges terrae.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+lcarray = {}
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+function make_url (pic)
+{
+
+
+if (elempic.src.indexOf("amiatinus") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  17   )  rep="00-INTRO"
+	if  (  pic  >=  18   &&  pic  <=  70   )  rep="01-MATTHIEU"
+	if  (  pic  >=  71   &&  pic  <=  106  )  rep="02-MARC"
+	if  (  pic  >=  107  &&  pic  <=  170  )  rep="03-LUC"
+	if  (  pic  >=  171  &&  pic  <=  216  )  rep="04-JEAN"
+	if  (  pic  >=  217  &&  pic  <=  277  )  rep="05-ACTES"
+	if  (  pic  >=  278  &&  pic  <=  305  )  rep="06-ROMAINS"
+	if  (  pic  >=  306  &&  pic  <=  328  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  329  &&  pic  <=  344  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  345  &&  pic  <=  352  )  rep="09-GALATES"
+	if  (  pic  >=  353  &&  pic  <=  360  )  rep="10-EPHESIENS"
+	if  (  pic  >=  361  &&  pic  <=  366  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  367  &&  pic  <=  372  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  373  &&  pic  <=  378  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  379  &&  pic  <=  381  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  382  &&  pic  <=  388  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  389  &&  pic  <=  393  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  394  &&  pic  <=  396  )  rep="17-TITE"
+	if  (  pic  >=  397  &&  pic  <=  398  )  rep="18-PHILEMON"
+	if  (  pic  >=  399  &&  pic  <=  416  )  rep="19-HEBREUX"
+	if  (  pic  >=  417  &&  pic  <=  423  )  rep="20-JACQUES"
+	if  (  pic  >=  424  &&  pic  <=  430  )  rep="21-1PIERRE"
+	if  (  pic  >=  431  &&  pic  <=  435  )  rep="22-2PIERRE"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="23-1JEAN"
+	if  (  pic  >=  442  &&  pic  <=  443  )  rep="24-2JEAN"
+	if  (  pic  >=  444  &&  pic  <=  444  )  rep="25-3JEAN"
+	if  (  pic  >=  445  &&  pic  <=  446  )  rep="26-JUDAS"
+	if  (  pic  >=  447  &&  pic  <=  473  )  rep="27-APOCALYPSE"
+	
+	return "../../amiatinus/"+rep+'/'+pic+".jpg";
+
+}	
+
+
+else if (elempic.src.indexOf("erasme") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  54   )  rep="00-INTRO"
+	if  (  pic  >=  55   &&  pic  <=  120  )  rep="01-MATTHIEU"
+	if  (  pic  >=  121  &&  pic  <=  161  )  rep="02-MARC"
+	if  (  pic  >=  162  &&  pic  <=  230  )  rep="03-LUC"
+	if  (  pic  >=  231  &&  pic  <=  281  )  rep="04-JEAN"
+	if  (  pic  >=  282  &&  pic  <=  349  )  rep="05-ACTES"
+	if  (  pic  >=  350  &&  pic  <=  375  )  rep="06-ROMAINS"
+	if  (  pic  >=  376  &&  pic  <=  400  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  401  &&  pic  <=  417  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  418  &&  pic  <=  426  )  rep="09-GALATES"
+	if  (  pic  >=  427  &&  pic  <=  435  )  rep="10-EPHESIENS"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  442  &&  pic  <=  447  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  448  &&  pic  <=  453  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  454  &&  pic  <=  456  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  457  &&  pic  <=  463  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  464  &&  pic  <=  468  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  469  &&  pic  <=  471  )  rep="17-TITE"
+	if  (  pic  >=  472  &&  pic  <=  473  )  rep="18-PHILEMON"
+	if  (  pic  >=  474  &&  pic  <=  493  )  rep="19-HEBREUX"
+	if  (  pic  >=  494  &&  pic  <=  500  )  rep="20-JACQUES"
+	if  (  pic  >=  501  &&  pic  <=  507  )  rep="21-1PIERRE"
+	if  (  pic  >=  508  &&  pic  <=  512  )  rep="22-2PIERRE"
+	if  (  pic  >=  513  &&  pic  <=  519  )  rep="23-1JEAN"
+	if  (  pic  >=  520  &&  pic  <=  521  )  rep="24-2JEAN"
+	if  (  pic  >=  522  &&  pic  <=  523  )  rep="25-3JEAN"
+	if  (  pic  >=  524  &&  pic  <=  525  )  rep="26-JUDAS"
+	if  (  pic  >=  526  &&  pic  <=  557  )  rep="27-APOCALYPSE"
+	if  (  pic  >=  558  &&  pic  <=  563  )  rep="28-END"	
+	
+	return "../../erasme_1527/"+rep+'/'+pic+".jpg";
+}
+	
+		
+	
+	
+		
+		
+}
+
+
+
+function page_left()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (pic > 1)
+	{
+		
+		pic--
+		
+		elempic.src = make_url(pic)
+		
+	}
+	
+	
+}
+
+
+
+function page_right()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (elempic.src.indexOf("erasme") != -1)
+	{
+		if (pic < 563)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+
+	else if (elempic.src.indexOf("amiatinus") != -1)
+	{
+		if (pic < 473)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+		
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			
+			if (elempic.src.indexOf("erasme") != -1)
+				view('erasme_1527')
+			else if (elempic.src.indexOf("amiatinus") != -1)
+				view('amiatinus')
+		
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+		
+		
+		else if (e.keyCode == '37') {
+			
+			
+			page_left()
+			
+			
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			page_right()
+			
+			
+		}
+		
+
+	}
+
+}
+
+
+</script>
+
+
+</html>
+

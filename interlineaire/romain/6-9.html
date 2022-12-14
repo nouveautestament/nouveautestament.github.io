@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>ROMAIN</title>
+
+		<script src='panzoom.min.js'></script>
+		
+		<script>
+		
+			show = 0;
+			current = ""
+		
+			function view(link)
+			{
+			
+				document.getElementById('box').src = ""
+				classn = link.split('/')[0]
+			
+				if (classn != current)
+				{
+					
+					if (current != "")
+					{
+						//CLOSE
+						for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+						{
+							document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+						}
+					}
+					
+					//OPEN
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+					}
+					
+					document.getElementById('left').style.width = "50%";
+					document.getElementById('right').style.width = "50%";
+					
+					document.getElementById('box').src = '../../'+link;
+					
+					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
+					show = 1;
+					
+				}
+				
+				else if (classn == current)
+				{
+					
+					//CLOSE
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+					}
+					
+					document.getElementById('left').style.width = "100%";
+					document.getElementById('right').style.width = "0%";
+					show = 0;
+					
+					current = "";
+				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
+				}
+
+			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+		}
+		</script>
+
+
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+
+			#inleft {
+				
+				padding:5px;
+			}
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.amiatinus, .erasme_1527{
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html">JEAN</a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html"><b>[ ROMAINS ]</b></a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="6-1.html">CH1</a>&ensp;<a href="6-2.html">CH2</a>&ensp;<a href="6-3.html">CH3</a>&ensp;<a href="6-4.html">CH4</a>&ensp;<a href="6-5.html">CH5</a>&ensp;<a href="6-6.html">CH6</a>&ensp;<a href="6-7.html">CH7</a>&ensp;<a href="6-8.html">CH8</a>&ensp;<a href="6-9.html"><b>[ CH9 ]</b></a>&ensp;<a href="6-10.html">CH10</a>&ensp;<a href="6-11.html">CH11</a>&ensp;<a href="6-12.html">CH12</a>&ensp;<a href="6-13.html">CH13</a>&ensp;<a href="6-14.html">CH14</a>&ensp;<a href="6-15.html">CH15</a>&ensp;<a href="6-16.html">CH16</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;<a href="#V22">V22</a>&ensp;<a href="#V23">V23</a>&ensp;<a href="#V24">V24</a>&ensp;<a href="#V25">V25</a>&ensp;<a href="#V26">V26</a>&ensp;<a href="#V27">V27</a>&ensp;<a href="#V28">V28</a>&ensp;<a href="#V29">V29</a>&ensp;<a href="#V30">V30</a>&ensp;<a href="#V31">V31</a>&ensp;<a href="#V32">V32</a>&ensp;<a href="#V33">V33</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>ROMAINS 9 1</b></a> 
+<a href="../hellene/6-9.html#V1">EL</a> 
+<a href="../romain/6-9.html#V1">RO</a> 
+<a href="../francais/6-9.html#V1">FR</a> 
+<a href="../technique/6-9.html#V1">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=1;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Veritatem dico in Christo, non mentior, testimonium mihi per hibente conscientia mea in Spiritu Sancto,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> veritatem dico in Christo non mentior testimonium mihi perhibente conscientia mea in Spiritu Sancto</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=1;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Veritatem dico in Christo, non mentior, attestante mihi simul consci entia mea, per spiritum sanctum,</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>ROMAINS 9 2</b></a> 
+<a href="../hellene/6-9.html#V2">EL</a> 
+<a href="../romain/6-9.html#V2">RO</a> 
+<a href="../francais/6-9.html#V2">FR</a> 
+<a href="../technique/6-9.html#V2">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=2;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quoniam tristitia est mihi magna, et continuus dolor cordi meo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quoniam tristitia est mihi magna et continuus dolor cordi meo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=2;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> quod do lor mihi sit magnus, & assiduus cru ciatus cordi meo.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>ROMAINS 9 3</b></a> 
+<a href="../hellene/6-9.html#V3">EL</a> 
+<a href="../romain/6-9.html#V3">RO</a> 
+<a href="../francais/6-9.html#V3">FR</a> 
+<a href="../technique/6-9.html#V3">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=3;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Optarem enim ipse ego anathema esse a Christo pro fratribus meis, cognatis meis secundum carnem,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> optabam enim ipse ego anathema esse a Christo pro fratribus meis qui sunt cognati mei secundum carnem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=3;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Optarim enim egoipse, anathema esse à Christo pro fratribus meis, cognatis meis secundum carnem,</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>ROMAINS 9 4</b></a> 
+<a href="../hellene/6-9.html#V4">EL</a> 
+<a href="../romain/6-9.html#V4">RO</a> 
+<a href="../francais/6-9.html#V4">FR</a> 
+<a href="../technique/6-9.html#V4">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=4;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> qui sunt Israelitae, quorum adoptio est filiorum et gloria et testamenta et legislatio et cultus et promissiones,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> qui sunt Israhelitae quorum adoptio est filiorum et gloria et testamenta et legislatio et obsequium et promissa</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=4;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> qui sunt Israëlitae quorum est adoptio, & gloria, & testamenta, & legis constitutio, & cul tus, & promissiones,</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>ROMAINS 9 5</b></a> 
+<a href="../hellene/6-9.html#V5">EL</a> 
+<a href="../romain/6-9.html#V5">RO</a> 
+<a href="../francais/6-9.html#V5">FR</a> 
+<a href="../technique/6-9.html#V5">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=5;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quorum sunt patres, et ex quibus Christus secundum carnem: qui est super omnia Deus benedictus in saecula. Amen.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quorum patres et ex quibus Christus secundum carnem qui est super omnia Deus benedictus in saecula amen</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=5;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> quorum sunt patres, & ii, ex quibus est Christus quantum attinet ad carne, qui est in omnibus deus laudandus in secula, amen.</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>ROMAINS 9 6</b></a> 
+<a href="../hellene/6-9.html#V6">EL</a> 
+<a href="../romain/6-9.html#V6">RO</a> 
+<a href="../francais/6-9.html#V6">FR</a> 
+<a href="../technique/6-9.html#V6">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=6;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Non autem quod exciderit verbum Dei. Non enim omnes, qui ex Israel, hi sunt Israel;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> non autem quod exciderit verbum Dei non enim omnes qui ex Israhel hii sunt Israhel</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=6;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Non autem haec loquor quod exciderit sermo dei. Non emomnes qui sunt ex Israel, sunt Israel:</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>ROMAINS 9 7</b></a> 
+<a href="../hellene/6-9.html#V7">EL</a> 
+<a href="../romain/6-9.html#V7">RO</a> 
+<a href="../francais/6-9.html#V7">FR</a> 
+<a href="../technique/6-9.html#V7">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=7;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> neque quia semen sunt Abrahae, omnes filii, sed: “ In Isaac vocabitur tibi semen ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> neque quia semen sunt Abrahae omnes filii sed in Isaac vocabitur tibi semen</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=7;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> neque quia sunt semen Abrahae, statim omnes filii, sed per Isaac no minabitur tibi semen:</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>ROMAINS 9 8</b></a> 
+<a href="../hellene/6-9.html#V8">EL</a> 
+<a href="../romain/6-9.html#V8">RO</a> 
+<a href="../francais/6-9.html#V8">FR</a> 
+<a href="../technique/6-9.html#V8">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=8;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Id est, non qui filii carnis, hi filii Dei, sed qui filii sunt promissionis, aestimantur semen;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> id est non qui filii carnis hii filii Dei sed qui filii sunt promissionis aestimantur in semine</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=8;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> hoc est, non qui filii carnis, ii flii dei: sed qui sunt filii promissionis, recensentur in se men.</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>ROMAINS 9 9</b></a> 
+<a href="../hellene/6-9.html#V9">EL</a> 
+<a href="../romain/6-9.html#V9">RO</a> 
+<a href="../francais/6-9.html#V9">FR</a> 
+<a href="../technique/6-9.html#V9">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=9;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> promissionis enim verbum hoc est: “ Secundum hoc tempus veniam, et erit Sarae filius ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> promissionis enim verbum hoc est secundum hoc tempus veniam et erit Sarrae filius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=9;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Promissionis en sermo hic est. In tepore hoc ueniam, & erit Sa rae filius.</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>ROMAINS 9 10</b></a> 
+<a href="../hellene/6-9.html#V10">EL</a> 
+<a href="../romain/6-9.html#V10">RO</a> 
+<a href="../francais/6-9.html#V10">FR</a> 
+<a href="../technique/6-9.html#V10">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=10;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Non solum autem, sed et Rebecca ex uno concubitum habens, Isaac patre nostro;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> non solum autem sed et Rebecca ex uno concubitum habens Isaac patre nostro</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=10;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Non solum autemhoc, sed & Rebecca ex uno coceperat Isaac patre nostro:</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>ROMAINS 9 11</b></a> 
+<a href="../hellene/6-9.html#V11">EL</a> 
+<a href="../romain/6-9.html#V11">RO</a> 
+<a href="../francais/6-9.html#V11">FR</a> 
+<a href="../technique/6-9.html#V11">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=11;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> cum enim nondum nati fuissent aut aliquid egissent bonum aut malum, ut secundum electionem propositum Dei maneret,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> cum enim nondum nati fuissent aut aliquid egissent bonum aut malum ut secundum electionem propositum Dei maneret</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=11;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> nondum enim natis pueris, cum neque boni quippiam fecissent neque mali, ut secundum electio nem propositum dei maneret:</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>ROMAINS 9 12</b></a> 
+<a href="../hellene/6-9.html#V12">EL</a> 
+<a href="../romain/6-9.html#V12">RO</a> 
+<a href="../francais/6-9.html#V12">FR</a> 
+<a href="../technique/6-9.html#V12">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=12;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> non ex operibus sed ex vocante dictum est ei: “ Maior serviet minori ”;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> non ex operibus sed ex vocante dictum est ei quia maior serviet minori</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=12;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> non ex operibus, sed ex uocante, dictum est illi: Maior seruiet minori.</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>ROMAINS 9 13</b></a> 
+<a href="../hellene/6-9.html#V13">EL</a> 
+<a href="../romain/6-9.html#V13">RO</a> 
+<a href="../francais/6-9.html#V13">FR</a> 
+<a href="../technique/6-9.html#V13">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=13;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> sicut scriptum est: “ Iacob dilexi, Esau autem odio habui ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sicut scriptum est Iacob dilexi Esau autem odio habui</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=13;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> sicut scriptum est: lacob dilexi, Eiau uero odio habui.</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>ROMAINS 9 14</b></a> 
+<a href="../hellene/6-9.html#V14">EL</a> 
+<a href="../romain/6-9.html#V14">RO</a> 
+<a href="../francais/6-9.html#V14">FR</a> 
+<a href="../technique/6-9.html#V14">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=14;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quid ergo dicemus? Numquid iniustitia apud Deum? Absit!</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quid ergo dicemus numquid iniquitas apud Deum absit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=14;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Quid igitur dicem?? Num iniustitia est apud deum? Ab sit.</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>ROMAINS 9 15</b></a> 
+<a href="../hellene/6-9.html#V15">EL</a> 
+<a href="../romain/6-9.html#V15">RO</a> 
+<a href="../francais/6-9.html#V15">FR</a> 
+<a href="../technique/6-9.html#V15">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=15;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Moysi enim dicit: “ Miserebor, cuius misereor, et misericordiam praestabo, cui misericordiam praesto ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> Mosi enim dicit miserebor cuius misereor et misericordiam praestabo cuius miserebor</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=15;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Nam Mosi dicit: Miserebor, cu iuscumque misereor: & comiserabor quencumque commiseror.</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>ROMAINS 9 16</b></a> 
+<a href="../hellene/6-9.html#V16">EL</a> 
+<a href="../romain/6-9.html#V16">RO</a> 
+<a href="../francais/6-9.html#V16">FR</a> 
+<a href="../technique/6-9.html#V16">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=16;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Igitur non volentis neque currentis sed miserentis Dei.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> igitur non volentis neque currentis sed miserentis Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=16;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Itaque no uolentis est, neque currentis, sed miserentis dei.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>ROMAINS 9 17</b></a> 
+<a href="../hellene/6-9.html#V17">EL</a> 
+<a href="../romain/6-9.html#V17">RO</a> 
+<a href="../francais/6-9.html#V17">FR</a> 
+<a href="../technique/6-9.html#V17">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=17;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit enim Scriptura pharaoni: “ In hoc ipsum excitavi te, ut ostendam in te virtutem meam, et ut annuntietur nomen meum in universa terra ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit enim scriptura Pharaoni quia in hoc ipsum excitavi te ut ostendam in te virtutem meam et ut adnuntietur nomen meum in universa terra</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=17;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Dicit em scriptura Pha raoni: In hoc ipsum te exci taui, ut ostendam in te potentiam meam, & ut annuncietur nomen meum in tota terra.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>ROMAINS 9 18</b></a> 
+<a href="../hellene/6-9.html#V18">EL</a> 
+<a href="../romain/6-9.html#V18">RO</a> 
+<a href="../francais/6-9.html#V18">FR</a> 
+<a href="../technique/6-9.html#V18">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=18;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Ergo, cuius vult, miseretur et, quem vult, indurat.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> ergo cuius vult miseretur et quem vult indurat</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=18;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Itaque cui uult, misere tur, quem autem uult, indurat.</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>ROMAINS 9 19</b></a> 
+<a href="../hellene/6-9.html#V19">EL</a> 
+<a href="../romain/6-9.html#V19">RO</a> 
+<a href="../francais/6-9.html#V19">FR</a> 
+<a href="../technique/6-9.html#V19">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=19;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dices itaque mihi: “ Quid ergo adhuc queritur? Voluntati enim eius quis restitit? ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicis itaque mihi quid adhuc queritur voluntati enim eius quis resistit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=19;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Dices ergo mihi: Quid adhuc coqueri tur? Nam uoluntati illius quis restitit?</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>ROMAINS 9 20</b></a> 
+<a href="../hellene/6-9.html#V20">EL</a> 
+<a href="../romain/6-9.html#V20">RO</a> 
+<a href="../francais/6-9.html#V20">FR</a> 
+<a href="../technique/6-9.html#V20">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=20;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> O homo, sed tu quis es, qui respondeas Deo? Numquid dicet figmentum ei, qui se finxit: “ Quid me fecisti sic? ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> o homo tu quis es qui respondeas Deo numquid dicit figmentum ei qui se finxit quid me fecisti sic</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=20;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Atqui o homo, tu quis es, qui ex aduerso respondes deo? Num dicet figmentum, ei qui finxit cur me finxisti ad hunc modum?</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>ROMAINS 9 21</b></a> 
+<a href="../hellene/6-9.html#V21">EL</a> 
+<a href="../romain/6-9.html#V21">RO</a> 
+<a href="../francais/6-9.html#V21">FR</a> 
+<a href="../technique/6-9.html#V21">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=21;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> An non habet potestatem figulus luti ex eadem massa facere aliud quidem vas in honorem, aliud vero in ignominiam?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> an non habet potestatem figulus luti ex eadem massa facere aliud quidem vas in honorem aliud vero in contumeliam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=21;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> An non habet potestate figulus luti, ut ex eadem massa, fingat aliud qui dem uas in honorem, aliud uero in ignominiam?</td></tr></tbody></table>
+<br><br><div id="V22"></div><a href="#banniere"><b>ROMAINS 9 22</b></a> 
+<a href="../hellene/6-9.html#V22">EL</a> 
+<a href="../romain/6-9.html#V22">RO</a> 
+<a href="../francais/6-9.html#V22">FR</a> 
+<a href="../technique/6-9.html#V22">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=22;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quod si volens Deus ostendere iram et notam facere potentiam suam, sustinuit in multa patientia vasa irae aptata in interitum;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quod si volens Deus ostendere iram et notam facere potentiam suam sustinuit in multa patientia vasa irae aptata in interitum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=22;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Quod si deus uolens ostendere iram, & notam fa cere potentiam suam, tulit multa animi lenitate uasa irae, apparata in interitum,</td></tr></tbody></table>
+<br><br><div id="V23"></div><a href="#banniere"><b>ROMAINS 9 23</b></a> 
+<a href="../hellene/6-9.html#V23">EL</a> 
+<a href="../romain/6-9.html#V23">RO</a> 
+<a href="../francais/6-9.html#V23">FR</a> 
+<a href="../technique/6-9.html#V23">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=23;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> et ut ostenderet divitias gloriae suae in vasa misericordiae, quae praeparavit in gloriam,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> ut ostenderet divitias gloriae suae in vasa misericordiae quae praeparavit in gloriam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=23;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> & ut notas faceret diuitias gloriae suae, erga uasa miseri cordiae, quae praeparauerat in gloriam.</td></tr></tbody></table>
+<br><br><div id="V24"></div><a href="#banniere"><b>ROMAINS 9 24</b></a> 
+<a href="../hellene/6-9.html#V24">EL</a> 
+<a href="../romain/6-9.html#V24">RO</a> 
+<a href="../francais/6-9.html#V24">FR</a> 
+<a href="../technique/6-9.html#V24">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=24;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quos et vocavit nos non solum ex Iudaeis sed etiam ex gentibus?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quos et vocavit nos non solum ex Iudaeis sed etiam ex gentibus</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=24;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Quos & uocauit nimirum nos, non solum ex ludaeis, uerumetiam ex gentibus.</td></tr></tbody></table>
+<br><br><div id="V25"></div><a href="#banniere"><b>ROMAINS 9 25</b></a> 
+<a href="../hellene/6-9.html#V25">EL</a> 
+<a href="../romain/6-9.html#V25">RO</a> 
+<a href="../francais/6-9.html#V25">FR</a> 
+<a href="../technique/6-9.html#V25">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=25;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Sicut et in Osee dicit: “ Vocabo Non plebem meam Plebem meam et Non dilectam Dilectam.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sicut in Osee dicit vocabo non plebem meam plebem meam et non misericordiam consecutam misericordiam consecutam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=25;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Queadmodum & Osee dicit: Vocabo populum qui meus non erat, populum meum: & eam quae dilecta no erat, dilectam.</td></tr></tbody></table>
+<br><br><div id="V26"></div><a href="#banniere"><b>ROMAINS 9 26</b></a> 
+<a href="../hellene/6-9.html#V26">EL</a> 
+<a href="../romain/6-9.html#V26">RO</a> 
+<a href="../francais/6-9.html#V26">FR</a> 
+<a href="../technique/6-9.html#V26">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=26;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et erit: in loco, ubi dictum est eis: “Non plebs mea vos”, ibi vocabuntur Filii Dei vivi ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et erit in loco ubi dictum est eis non plebs mea vos ibi vocabuntur filii Dei vivi</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=26;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> et erit in loco, ubi dictum fuerat eis: Non populus meus uos, ibi uocabuntu filii dei uiuentis.</td></tr></tbody></table>
+<br><br><div id="V27"></div><a href="#banniere"><b>ROMAINS 9 27</b></a> 
+<a href="../hellene/6-9.html#V27">EL</a> 
+<a href="../romain/6-9.html#V27">RO</a> 
+<a href="../francais/6-9.html#V27">FR</a> 
+<a href="../technique/6-9.html#V27">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=27;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Isaias autem clamat pro Israel: “ Si fuerit numerus filiorum Israel tamquam arena maris, reliquiae salvae fient.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> Esaias autem clamat pro Israhel si fuerit numerus filiorum Israhel tamquam harena maris reliquiae salvae fient</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=27;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Esaias aute cla mat sup Israel: Si fuerit numerus fliorum Israel, ut arena maris, reli quiae saluae erunt.</td></tr></tbody></table>
+<br><br><div id="V28"></div><a href="#banniere"><b>ROMAINS 9 28</b></a> 
+<a href="../hellene/6-9.html#V28">EL</a> 
+<a href="../romain/6-9.html#V28">RO</a> 
+<a href="../francais/6-9.html#V28">FR</a> 
+<a href="../technique/6-9.html#V28">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=28;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Verbum enim consummans et brevians faciet Dominus super terram ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> verbum enim consummans et brevians in aequitate quia verbum breviatum faciet Dominus super terram</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=28;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Sermonem enim perficiens & abbreuians cum iusticia, quoniam sermonem abbreuiatum faciet dominus in terra.</td></tr></tbody></table>
+<br><br><div id="V29"></div><a href="#banniere"><b>ROMAINS 9 29</b></a> 
+<a href="../hellene/6-9.html#V29">EL</a> 
+<a href="../romain/6-9.html#V29">RO</a> 
+<a href="../francais/6-9.html#V29">FR</a> 
+<a href="../technique/6-9.html#V29">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=29;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et sicut praedixit Isaias: “ Nisi Dominus Sabaoth reliquisset nobis semen, sicut Sodoma facti essemus et sicut Gomorra similes fuissemus ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et sicut praedixit Esaias nisi Dominus Sabaoth reliquisset nobis semen sicut Sodoma facti essemus et sicut Gomorra similes fuissemus</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=29;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Et que admodum prius dixit Esaias: Nisi dominus Sabaoth reliquisset nobis semen, ut Sodoma facti fuisse mus, & Gomorrhae assimilati fuis semus.</td></tr></tbody></table>
+<br><br><div id="V30"></div><a href="#banniere"><b>ROMAINS 9 30</b></a> 
+<a href="../hellene/6-9.html#V30">EL</a> 
+<a href="../romain/6-9.html#V30">RO</a> 
+<a href="../francais/6-9.html#V30">FR</a> 
+<a href="../technique/6-9.html#V30">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=30;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quid ergo dicemus? Quod gentes, quae non sectabantur iustitiam, apprehenderunt iustitiam, iustitiam autem, quae ex fide est;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quid ergo dicemus quod gentes quae non sectabantur iustitiam adprehenderunt iustitiam iustitiam autem quae ex fide est</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=30;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Quid igitur dicemus? Quod gentes quae non sectabantur iusticiam, apprehenderunt iusticiam, iusticiam autem eam quae est ex fide.</td></tr></tbody></table>
+<br><br><div id="V31"></div><a href="#banniere"><b>ROMAINS 9 31</b></a> 
+<a href="../hellene/6-9.html#V31">EL</a> 
+<a href="../romain/6-9.html#V31">RO</a> 
+<a href="../francais/6-9.html#V31">FR</a> 
+<a href="../technique/6-9.html#V31">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=31;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Israel vero sectans legem iustitiae in legem non pervenit.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> Israhel vero sectans legem iustitiae in legem iustitiae non pervenit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=31;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Contra, Israel, qui sectabatur lege iusticiae, ad lege iusticiae no peruenit.</td></tr></tbody></table>
+<br><br><div id="V32"></div><a href="#banniere"><b>ROMAINS 9 32</b></a> 
+<a href="../hellene/6-9.html#V32">EL</a> 
+<a href="../romain/6-9.html#V32">RO</a> 
+<a href="../francais/6-9.html#V32">FR</a> 
+<a href="../technique/6-9.html#V32">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=32;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quare? Quia non ex fide sed quasi ex operibus; offenderunt in lapidem offensionis,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quare quia non ex fide sed quasi ex operibus offenderunt in lapidem offensionis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=32;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Propter quid? Quia no ex fide, sed tanquam ex operibus legis. Impe gerunt enm in lapidem offendiculi.</td></tr></tbody></table>
+<br><br><div id="V33"></div><a href="#banniere"><b>ROMAINS 9 33</b></a> 
+<a href="../hellene/6-9.html#V33">EL</a> 
+<a href="../romain/6-9.html#V33">RO</a> 
+<a href="../francais/6-9.html#V33">FR</a> 
+<a href="../technique/6-9.html#V33">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=33;view('amiatinus/06-ROMAINS/295.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> sicut scriptum est: “ Ecce pono in Sion lapidem offensionis et petram scandali; et, qui credit in eo, non confundetur ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sicut scriptum est ecce pono in Sion lapidem offensionis et petram scandali et omnis qui credit in eum non confundetur</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=33;view('erasme_1527/06-ROMAINS/363.jpg');">ERASME_1527</td><td>1527</td><td> Quemadmodum scriptum est: Ecce pono in Sion lapidem offendiculi, & petram offensionis: & omnis qui credit in eo, non pudesiet.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+lcarray = {}
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+function make_url (pic)
+{
+
+
+if (elempic.src.indexOf("amiatinus") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  17   )  rep="00-INTRO"
+	if  (  pic  >=  18   &&  pic  <=  70   )  rep="01-MATTHIEU"
+	if  (  pic  >=  71   &&  pic  <=  106  )  rep="02-MARC"
+	if  (  pic  >=  107  &&  pic  <=  170  )  rep="03-LUC"
+	if  (  pic  >=  171  &&  pic  <=  216  )  rep="04-JEAN"
+	if  (  pic  >=  217  &&  pic  <=  277  )  rep="05-ACTES"
+	if  (  pic  >=  278  &&  pic  <=  305  )  rep="06-ROMAINS"
+	if  (  pic  >=  306  &&  pic  <=  328  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  329  &&  pic  <=  344  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  345  &&  pic  <=  352  )  rep="09-GALATES"
+	if  (  pic  >=  353  &&  pic  <=  360  )  rep="10-EPHESIENS"
+	if  (  pic  >=  361  &&  pic  <=  366  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  367  &&  pic  <=  372  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  373  &&  pic  <=  378  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  379  &&  pic  <=  381  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  382  &&  pic  <=  388  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  389  &&  pic  <=  393  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  394  &&  pic  <=  396  )  rep="17-TITE"
+	if  (  pic  >=  397  &&  pic  <=  398  )  rep="18-PHILEMON"
+	if  (  pic  >=  399  &&  pic  <=  416  )  rep="19-HEBREUX"
+	if  (  pic  >=  417  &&  pic  <=  423  )  rep="20-JACQUES"
+	if  (  pic  >=  424  &&  pic  <=  430  )  rep="21-1PIERRE"
+	if  (  pic  >=  431  &&  pic  <=  435  )  rep="22-2PIERRE"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="23-1JEAN"
+	if  (  pic  >=  442  &&  pic  <=  443  )  rep="24-2JEAN"
+	if  (  pic  >=  444  &&  pic  <=  444  )  rep="25-3JEAN"
+	if  (  pic  >=  445  &&  pic  <=  446  )  rep="26-JUDAS"
+	if  (  pic  >=  447  &&  pic  <=  473  )  rep="27-APOCALYPSE"
+	
+	return "../../amiatinus/"+rep+'/'+pic+".jpg";
+
+}	
+
+
+else if (elempic.src.indexOf("erasme") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  54   )  rep="00-INTRO"
+	if  (  pic  >=  55   &&  pic  <=  120  )  rep="01-MATTHIEU"
+	if  (  pic  >=  121  &&  pic  <=  161  )  rep="02-MARC"
+	if  (  pic  >=  162  &&  pic  <=  230  )  rep="03-LUC"
+	if  (  pic  >=  231  &&  pic  <=  281  )  rep="04-JEAN"
+	if  (  pic  >=  282  &&  pic  <=  349  )  rep="05-ACTES"
+	if  (  pic  >=  350  &&  pic  <=  375  )  rep="06-ROMAINS"
+	if  (  pic  >=  376  &&  pic  <=  400  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  401  &&  pic  <=  417  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  418  &&  pic  <=  426  )  rep="09-GALATES"
+	if  (  pic  >=  427  &&  pic  <=  435  )  rep="10-EPHESIENS"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  442  &&  pic  <=  447  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  448  &&  pic  <=  453  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  454  &&  pic  <=  456  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  457  &&  pic  <=  463  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  464  &&  pic  <=  468  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  469  &&  pic  <=  471  )  rep="17-TITE"
+	if  (  pic  >=  472  &&  pic  <=  473  )  rep="18-PHILEMON"
+	if  (  pic  >=  474  &&  pic  <=  493  )  rep="19-HEBREUX"
+	if  (  pic  >=  494  &&  pic  <=  500  )  rep="20-JACQUES"
+	if  (  pic  >=  501  &&  pic  <=  507  )  rep="21-1PIERRE"
+	if  (  pic  >=  508  &&  pic  <=  512  )  rep="22-2PIERRE"
+	if  (  pic  >=  513  &&  pic  <=  519  )  rep="23-1JEAN"
+	if  (  pic  >=  520  &&  pic  <=  521  )  rep="24-2JEAN"
+	if  (  pic  >=  522  &&  pic  <=  523  )  rep="25-3JEAN"
+	if  (  pic  >=  524  &&  pic  <=  525  )  rep="26-JUDAS"
+	if  (  pic  >=  526  &&  pic  <=  557  )  rep="27-APOCALYPSE"
+	if  (  pic  >=  558  &&  pic  <=  563  )  rep="28-END"	
+	
+	return "../../erasme_1527/"+rep+'/'+pic+".jpg";
+}
+	
+		
+	
+	
+		
+		
+}
+
+
+
+function page_left()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (pic > 1)
+	{
+		
+		pic--
+		
+		elempic.src = make_url(pic)
+		
+	}
+	
+	
+}
+
+
+
+function page_right()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (elempic.src.indexOf("erasme") != -1)
+	{
+		if (pic < 563)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+
+	else if (elempic.src.indexOf("amiatinus") != -1)
+	{
+		if (pic < 473)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+		
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			
+			if (elempic.src.indexOf("erasme") != -1)
+				view('erasme_1527')
+			else if (elempic.src.indexOf("amiatinus") != -1)
+				view('amiatinus')
+		
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+		
+		
+		else if (e.keyCode == '37') {
+			
+			
+			page_left()
+			
+			
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			page_right()
+			
+			
+		}
+		
+
+	}
+
+}
+
+
+</script>
+
+
+</html>
+

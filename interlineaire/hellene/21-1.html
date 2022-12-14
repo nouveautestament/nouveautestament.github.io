@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>HELLENE</title>
+
+		<script src='panzoom.min.js'></script>
+		<script src='sinaiticus.js'></script>
+		<script src='alexandrinus.js'></script>
+		<script src='vaticanus.js'></script>
+		<script src='ephraemi_rescriptus.js'></script>
+		<script src='bezae.js'></script>
+		<script src='washingtonianus.js'></script>
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+			
+
+			#inleft {
+				
+				padding:5px;
+			}
+
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus, .westcott_hort, .tischendorf {
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+			rtxt {
+				color: green;
+			}
+			
+			wits {
+				color: red;
+			}
+			
+			table b {
+				display: block;
+				color: orange;
+				margin-bottom: 3px;
+			}
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/index.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html">JEAN</a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html"><b>[ 1PIERRE ]</b></a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="21-1.html"><b>[ CH1 ]</b></a>&ensp;<a href="21-2.html">CH2</a>&ensp;<a href="21-3.html">CH3</a>&ensp;<a href="21-4.html">CH4</a>&ensp;<a href="21-5.html">CH5</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;<a href="#V22">V22</a>&ensp;<a href="#V23">V23</a>&ensp;<a href="#V24">V24</a>&ensp;<a href="#V25">V25</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>1PIERRE 1 1</b></a> 
+<a href="../hellene/21-1.html#V1">EL</a> 
+<a href="../romain/21-1.html#V1">RO</a> 
+<a href="../francais/21-1.html#V1">FR</a> 
+<a href="../technique/21-1.html#V1">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>¶ 1,1⸆<rtxt>και</rtxt><wits> א<sup>*</sup> sy </wits><b>|</b>⸂<rtxt>και Ασιας και Βιθυνιας</rtxt><wits> 1243. 1611. 1852. 2492 l s sy </wits><b>¦</b><rtxt>και Βιθυνιας</rtxt><wits> א<sup>*</sup> 048 vg<sup>vg-ms</sup> </wits><b>¦</b><rtxt>Ασιας</rtxt><wits> B<sup>*</sup> </wits><b>¦</b><rtxt>—</rtxt><wits> 1175 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=1;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>Πετρος αποστολος Ι̅Υ̅ Χ̅Υ̅ εκλεκτοις παρεπιδημοις διασπορας Ποντου Γαλατιας Καππαδοκιας Ασιας</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=1;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>Πετρος αποστολος Ι̅Υ̅ Χ̅Υ̅ εκλεκτοις παρεπιδημοις διασπορας Ποντου Γαλατιας Καππαδοκιας Ασιας και Βιθυνιας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=1;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Πετρος αποστολος Ι̅Υ̅ Χ̅Υ̅ εκλεκτοις και παρεπιδημοις διασπορας Ποντου Γαλατειας Καππαδοκειας και Βιθυνιας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=1;view('sinaiticus/239.jpg');">SINAITICUS_B</a></td><td>360</td><td>Πετρος αποστολος Ι̅Υ̅ Χ̅Υ̅ εκλεκτοις παρεπιδημοις διασπορας Ποντου Γαλατειας Καππαδοκειας Ασιας και Βιθυνιας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=1;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Πετρος αποστολος Ι̅Υ̅ Χ̅Υ̅ εκλεκτοις παρεπιδημοις διασπορας Ποντου Γαλατιας Καππαδοκιας Ασιας και Βιθυνιας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=1;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>↔</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Πέτρος ἀπόστολος Ἰησοῦ Χριστοῦ ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας καὶ Βιθυνίας</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Πέτρος ἀπόστολος Ἰησοῦ Χριστοῦ ἐκλεκτοῖς ⸆ παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, ⸂Ἀσίας καὶ Βιθυνίας⸃</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=1;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ΠΕΤΡΟΣ ἀπόστολος Ἰησοῦ Χριστοῦ ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Πέτρος ἀπόστολος Ἰησοῦ Χριστοῦ ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=1;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>Πέτροσ ἀπόστολοσ Ἰησοῦ Χριστοῦ ἐκλεκτοῖσ παρεπιδήμοισ διασπορᾶσ Πόντου, Γαλατίασ, Καππαδοκίασ, Ἀσίασ, καὶ Βιθυνίασ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Πέτρος, ἀπόστολος Ἰησοῦ χριστοῦ, ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Πέτροσ ἀπόστολος Ἰησοῦ Χριστοῦ, ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Πέτρος, ἀπόστολος Ἰησοῦ Χριστοῦ, ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Πέτρος, ἀπόστολος Ἰησοῦ Χριστοῦ, ἐκλεκτοῖς παρεπιδήμοις διασπορᾶς Πόντου, Γαλατίας, Καππαδοκίας, Ἀσίας, καὶ Βιθυνίας,</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>1PIERRE 1 2</b></a> 
+<a href="../hellene/21-1.html#V2">EL</a> 
+<a href="../romain/21-1.html#V2">RO</a> 
+<a href="../francais/21-1.html#V2">FR</a> 
+<a href="../technique/21-1.html#V2">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=2;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>κατα προγνωσιν Θ̅Υ̅ πατρος εν αγιασμω πνευματος εις υπακοην και ραντισμον αιματος Ι̅Υ̅ Χ̅Υ̅ χαρις υμιν και ειρηνη πληθυνθειη</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=2;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>κατα προγνωσιν Θ̅Υ̅ πατρος εν αγιασμω Π̅Ν̅Σ̅ εις υπακοην και ραντισμον αιματος Ι̅Υ̅ Χ̅Υ̅ χαρις υμιν και ειρηνη πληθυνθιη</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=2;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>κατα προγνωσιˉ Θ̅Υ̅ Π̅Ρ̅Σ̅ εν αγιασμω Π̅Ν̅Σ̅ εις υπακοην και ραντισμον αιματος Ι̅Υ̅ Χ̅Υ̅ χαρις υμιν και ειρηνη πλ*</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=2;view('alexandrinus/162.jpg');">ALEXANDRINUS_B</a></td><td>390</td><td>κατα προγνωσιˉ Θ̅Υ̅ Π̅Ρ̅Σ̅ εν αγιασμω Π̅Ν̅Σ̅ εις υπακοην και ραντισμον αιματος Ι̅Υ̅ Χ̅Υ̅ χαρις υμιν και ειρηνη πληθυνθειη</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=2;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>↔ Π̅Ν̅Σ̅ εις υπακοην και ραντισμον αιματος Ι̅Υ̅ Χ̅Υ̅ χαρις υμιν και ειρηνη πληθυνθειη</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>κατὰ πρόγνωσιν θεοῦ πατρὸς ἐν ἁγιασμῷ πνεύματος εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ, χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>κατὰ πρόγνωσιν θεοῦ πατρὸς ἐν ἁγιασμῷ πνεύματος εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ, χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=2;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>κατὰ πρόγνωσιν θεοῦ πατρός, ἐν ἁγιασμῷ πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>κατὰ πρόγνωσιν θεοῦ πατρός, ἐν ἁγιασμῷ πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=2;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>κατὰ πρόγνωσιν θεοῦ πατρόσ, ἐν ἁγιασμῷ πνεύματοσ, εἰσ ὑπακοὴν καὶ ῥαντισμὸν αἵματοσ Ἰησοῦ Χριστοῦ· χάρισ ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>κατὰ πρόγνωσιν θεοῦ πατρός, ἐν ἁγιασμῷ πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>κατὰ πρόγνωσιν Θεοῦ πατρὸς ἐν ἁγιασμῷ πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>κατὰ πρόγνωσιν Θεοῦ πατρός, ἐν ἁγιασμῷ Πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη πληθυνθείη.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Κατὰ πρόγνωσιν Θεοῦ Πατρός, ἐν ἁγιασμῷ Πνεύματος, εἰς ὑπακοὴν καὶ ῥαντισμὸν αἵματος Ἰησοῦ Χριστοῦ: χάρις ὑμῖν, καὶ εἰρήνη, πληθυνθείη.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>1PIERRE 1 3</b></a> 
+<a href="../hellene/21-1.html#V3">EL</a> 
+<a href="../romain/21-1.html#V3">RO</a> 
+<a href="../francais/21-1.html#V3">FR</a> 
+<a href="../technique/21-1.html#V3">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 3°<rtxt><wits> 𝔓⁷² </wits><b>|</b>⸉<rtxt><wits> 𝔓⁷² 048. 33. 442. 1175. 1611. 1852. 2344 Byz<sup>pt</sup>; ClCl<sup>lat</sup> </wits><b>|</b>°¹<rtxt><wits> 𝔓⁷² </wits><b>|</b>⸀<rtxt>ζωης</rtxt><wits> 1852 l vg<sup>mss</sup> sy<sup>h</sup> bo; Hier </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=3;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>Ευλογητος ο Θ̅Σ̅ και πατηρ του Κ̅Υ̅ ημων Ι̅Υ̅ Χ̅Υ̅· ο κατα το πολυ αυτου ελεος αναγεννησας ημας εις ελπιδα ζωσαˉ δι αναστασεως Ι̅Υ̅ Χ̅Υ̅ εκ νεκρων</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=3;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ευλογητος ο Θ̅Σ̅ και πατηρ του Κ̅Υ̅ ημωˉ Ι̅Υ̅ Χ̅Υ̅ ο κατα το πολυ αυτου ελεος αναγεννησας ημας εις ελπιδα ζωσαν δια αναστασεως Ι̅Υ̅ Χ̅Υ̅ εκ νεκρων</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=3;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ευλογητος ο Θ̅Σ̅ και Π̅Η̅Ρ̅ του Κ̅Υ̅ ημων Ι̅Υ̅ Χ̅Υ̅ ο κατα το πολυ αυτου ελεος αναγεννησας ημας εις ελπιδα ζωσαν δι αναστασεως Ι̅Υ̅ Χ̅Υ̅ εκ νεκρων</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=3;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Ευλογητος ο Θ̅Σ̅ και Π̅Η̅Ρ̅ του Κ̅Υ̅ ημων Ι̅Υ̅ Χ̅Υ̅ ο κατα το πολυ αυτου ελεος αναγεννησας ημας εις ελπιδα ζωσαν δι αναστασεως Ι̅Υ̅ Χ̅Υ̅ εκ νεκρων</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δι᾽ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ ὁ κατὰ °τὸ πολὺ ⸉αὐτοῦ ἔλεος⸊ ἀναγεννήσας °¹ἡμᾶς εἰς ἐλπίδα ⸀ζῶσαν δι᾿ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=3;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν διʼ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δι’ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=3;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>Εὐλογητὸσ ὁ θεὸσ καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεοσ ἀναγεννήσασ ἡμᾶσ εἰσ ἐλπίδα ζῶσαν δι’ ἀναστάσεωσ Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Εὐλογητὸς ὁ θεὸς καὶ πατὴρ τοῦ κυρίου ἡμῶν Ἰησοῦ χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δι’ ἀναστάσεως Ἰησοῦ χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Εὐλογητὸς ὁ Θεὸς καὶ πατὴρ τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὑτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δἰ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Εὐλογητὸς ὁ Θεὸς καὶ πατὴρ τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν δι᾽ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Εὐλογητὸς ὁ Θεὸς καὶ Πατὴρ τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος ἀναγεννήσας ἡμᾶς εἰς ἐλπίδα ζῶσαν διʼ ἀναστάσεως Ἰησοῦ Χριστοῦ ἐκ νεκρῶν,</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>1PIERRE 1 4</b></a> 
+<a href="../hellene/21-1.html#V4">EL</a> 
+<a href="../romain/21-1.html#V4">RO</a> 
+<a href="../francais/21-1.html#V4">FR</a> 
+<a href="../technique/21-1.html#V4">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 4⸂<rtxt>αμαραντον και αμιαντον</rtxt><wits> א </wits><b>¦</b><rtxt>αμιαντον</rtxt><wits> 1852 </wits><b>|</b>⸄<rtxt>εν τοις ουρανοις</rtxt><wits> Ψ 1448. 1611. 1852 </wits><b>¦</b><rtxt>εν ουρανω</rtxt><wits> א </wits><b>|</b>⸀<rtxt>ημας</rtxt><wits> 𝔓⁷²<sup>vid</sup> 5. 2492<sup>*</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=4;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>εις κληρονομιαν αφθαρτον και αμιαντον και αμαραˉτον τετηρημενην εˉ ουρανοις εις υμας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=4;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>εις κληρονομιαν αφθαρτον και αμαραντον και αμιαˉτον τετηρημενοˉ εν ουρανω εις υμας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=4;view('sinaiticus/239.jpg');">SINAITICUS_B</a></td><td>360</td><td>εις κληρονομιαν αφθαρτον και αμαραντον και αμιαˉτον τετηρημενηˉ εν ουρανω εις υμας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=4;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>εις κληρονομιαν αφθαρτον και αμιαντοˉ και αμαραντον τετηρημενηˉ εν Ο̅Υ̅Ν̅Ο̅Ι̅Σ̅ εις υμας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=4;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>εις κληρονομιαν αφθαρτον και αμιαντον και αμαραντον τετηρημενην εν Ο̅Υ̅Ν̅Ο̅Ι̅Σ̅ εις υμας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ⸂ἀμίαντον καὶ ἀμάραντον⸃ τετηρημένην ⸄ἐν οὐρανοῖς⸅ εἰς ⸀ὑμᾶς</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=4;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=4;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>εἰσ κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖσ εἰσ ὑμᾶσ</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ἡμᾶς</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>εἰς κληρονομίαν ἄφθαρτον καὶ ἀμίαντον καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Εἰς κληρονομίαν ἄφθαρτον, καὶ ἀμίαντον, καὶ ἀμάραντον, τετηρημένην ἐν οὐρανοῖς εἰς ὑμᾶς,</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>1PIERRE 1 5</b></a> 
+<a href="../hellene/21-1.html#V5">EL</a> 
+<a href="../romain/21-1.html#V5">RO</a> 
+<a href="../francais/21-1.html#V5">FR</a> 
+<a href="../technique/21-1.html#V5">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 5°<rtxt><wits> 𝔓⁷² sa<sup>ms</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=5;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>τους εν δυναμει Θ̅Υ̅ φρουρουμενους δια πιστεως εις σωτηριαν ετοιμην αποκαλυφθηναι εν καιρω εσχατω</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=5;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>τους εν δυναμι Θ̅Υ̅ φρουρουμενους δια πιστεως εις σωτηριαν ετοιμως αποκαλυφθηναι εν καιρω εσχατω</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=5;view('sinaiticus/239.jpg');">SINAITICUS_B</a></td><td>360</td><td>τους εν δυναμι Θ̅Υ̅ φρουρουμενους δια πιστεως εις σωτηριαν ετοιμην αποκαλυφθηναι εν καιρω εσχατω</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=5;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>τους εν δυναμει Θ̅Υ̅ φρουρουμενους δια πιστεως εις σωτηριαν ετοιμην αποκαλυφθηναι εν καιρω εσχατω</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=5;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>τους εν δυναμει Θ̅Υ̅ φρουρουμενους δια πιστεως εις σωτηριαν ετοιμην αποκαλυφθηναι εν καιρω εσχατω</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>τοὺς ἐν δυνάμει θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>τοὺς ἐν δυνάμει °θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=5;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>τοὺς ἐν δυνάμει θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>τοὺς ἐν δυνάμει θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=5;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>τοὺσ ἐν δυνάμει θεοῦ φρουρουμένουσ διὰ πίστεωσ εἰσ σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>τοὺς ἐν δυνάμει θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>τοὺς ἐν δυνάμει Θεοῦ φρουρουμένους διὰ πίστεως, εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>τοὺς ἐν δυνάμει Θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Τοὺς ἐν δυνάμει Θεοῦ φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι ἐν καιρῷ ἐσχάτῳ.</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>1PIERRE 1 6</b></a> 
+<a href="../hellene/21-1.html#V6">EL</a> 
+<a href="../romain/21-1.html#V6">RO</a> 
+<a href="../francais/21-1.html#V6">FR</a> 
+<a href="../technique/21-1.html#V6">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 6⸂<rtxt>ω</rtxt><wits> 1175. 1243. 1739. 2492 </wits><b>¦</b><rtxt>—</rtxt><wits> 𝔓⁷² C² </wits><b>|</b>°<rtxt><wits> א<sup>*</sup> B 1448. 1611 sy<sup>h</sup>; Cl </wits><b>|</b>⸀<rtxt>λυπηθεντες</rtxt><wits> 𝔓⁷² א² A B C P Ψ 5. 33. 81. 1611. 1739 Byz co; Cl Or Did </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> א<sup>*</sup> 048<sup>vid</sup>. 307. 436. 442. 642. 1175. 1243. 1448. 1735. 1852. 2344. 2492 </wits><b>|</b>⸁<rtxt>πολλοις</rtxt><wits> 𝔓⁷² bo </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=6;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>εν ω αγαλλιασθε ολιγον αρτι ει δεον λυπηθεντες εν ποικιλοις πειρασμοις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=6;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Εν ω αγαλλιασθε ολιγοˉ αρτι ει δεον λυπηθεντας εν ποικιλοις πιρασμοις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=6;view('sinaiticus/239.jpg');">SINAITICUS_B</a></td><td>360</td><td>Εν ω αγαλλιασθε ολιγοˉ αρτι ει δεον εστιν λυπηθεντες εν ποικιλοις πιρασμοις</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=6;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Εν ω αγαλλιασθε ολιγον αρτι ει δεον εστιν λυπηθεντες εν ποικιλοις πειρασμοις</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=6;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Εν ω αγαλλιασθε ολιγον αρτι ει δεον εστιν λυπηθεντες εν ποικιλαις πειρασμοις</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=6;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_B</a></td><td>410</td><td>Αγαλλιασθε ολιγον αρτι ει δεον εστιν λυπηθεντες εν ποικιλαις πειρασμοις</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον ἐστίν, λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸂ἐν ᾧ⸃ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον °ἐστίν, ⸀λυπηθέντας ἐν ⸁ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=6;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι εἰ δέον λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι εἰ ⸀δέον λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=6;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι εἰ δέον λυπηθέντεσ ἐν ποικίλοισ πειρασμοῖσ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον ἐστίν, λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἐν ᾧ ἀγαλλιᾶσθε ὀλίγον ἄρτι, εἰ δέον ἐστὶ, λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον ἐστί, λυπηθέντες ἐν ποικίλοις πειρασμοῖς,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἐν ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι, εἰ δέον ἐστὶν, λυπηθέντες ἐν ποικίλοις πειρασμοῖς:</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>1PIERRE 1 7</b></a> 
+<a href="../hellene/21-1.html#V7">EL</a> 
+<a href="../romain/21-1.html#V7">RO</a> 
+<a href="../francais/21-1.html#V7">FR</a> 
+<a href="../technique/21-1.html#V7">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 7⸀<rtxt>δοκιμον</rtxt><wits> 𝔓⁷² 1852 </wits><b>|</b>⸉<rtxt>της πιστεως υμων</rtxt><wits> 𝔓⁷² 436; Cl </wits><b>|</b>⸁<rtxt>χρυσου</rtxt><wits> B </wits><b>|</b>⸂<rtxt>και δια πυρος</rtxt><wits> 𝔓⁷² 442. 1243. 1739. 2492 vg<sup>mss</sup>; Cl Or </wits><b>¦</b><rtxt>και δια πυρος δε</rtxt><wits> 1175 </wits><b>|</b>⸄<rtxt>τιμην και δοξαν</rtxt><wits> 442. 1739 Byz<sup>pt</sup> </wits><b>¦</b><rtxt>τιμην και εις δοξαν</rtxt><wits> P 1448 Byz<sup>pt</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=7;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>ινα το δοκιμιον υμωˉ της πιστεως πολυτειμοτερον χρυσου του απολλυμενου δια πυρος δε δοκιμαζομενου ευρεθη· εις επαινον και δοξαν και τειμην εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=7;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>ινα το δοκιμιον υμωˉ της πιστεως πολυτιμοτερον χρυσου του απολλυμενου δια πυρος δε δοκιμαζομενου ευρεθη· εις επαινον και δοξαν και τιμην εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=7;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>ινα το δοκιμιον υμων της πιστεως πολυτιμοτερον χρυσιου του απολλυμενου δια πυρος δε δοκιμαζομενου ευρεθη εις επενοˉ και δοξαν και τιμηˉ εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=7;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>ινα το δοκιμιον υμων της πιστεως πολυτιμοτερον χρυσιου του απολλυμενου δια πυρος δε δοκιμαζομενου ευρεθη εις επαινον και δοξαν και τιμην εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=7;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>ινα το δοκιμιον υμων της πιστεως πολυτιμοτερον χρυσιου του απολλυμενου δια πυρος δε δοκιμαζομενου ευρεθη εις επαινον και δοξαˉ και τιμην εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολυτιμότερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου εὑρεθῇ εἰς ἔπαινον καὶ δόξαν καὶ τιμὴν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἵνα τὸ ⸀δοκίμιον ⸉ὑμῶν τῆς πίστεως⸊ πολυτιμότερον ⸁χρυσίου τοῦ ἀπολλυμένου, ⸂διὰ πυρὸς δὲ⸃ δοκιμαζομένου εὑρεθῇ εἰς ἔπαινον καὶ ⸄δόξαν καὶ τιμὴν⸅ ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=7;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολυτιμότερον χρυσίου τοῦ ἀπολλυμένου διὰ πυρὸς δὲ δοκιμαζομένου εὑρεθῇ εἰς ἔπαινον καὶ δόξαν καὶ τιμὴν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως ⸀πολυτιμότερον χρυσίου τοῦ ἀπολλυμένου διὰ πυρὸς δὲ δοκιμαζομένου εὑρεθῇ εἰς ἔπαινον καὶ ⸂δόξαν καὶ τιμὴν⸃ ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=7;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆσ πίστεωσ πολυτιμότερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸσ δὲ δοκιμαζομένου, εὑρεθῇ εἰσ ἔπαινον καὶ δόξαν καὶ τιμὴν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολὺ τιμιώτερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου, εὑρεθῇ εἰς ἔπαινον καὶ τιμὴν καὶ εἰς δόξαν ἐν ἀποκαλύψει Ἰησοῦ χριστοῦ·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολὺ_τιμιώτερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου, εὑρεθῇ εἰς ἔπαινον καὶ τιμὴν καὶ δόξαν, ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ·</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως πολὺ τιμιώτερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου, εὑρεθῇ εἰς ἔπαινον καὶ τιμὴν καὶ δόξαν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἵνα τὸ δοκίμιον ὑμῶν τῆς πίστεως, πολυτιμιώτερον χρυσίου τοῦ ἀπολλυμένου, διὰ πυρὸς δὲ δοκιμαζομένου, εὑρεθῇ εἰς ἔπαινον καὶ τιμὴν καὶ δόξαν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ:</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>1PIERRE 1 8</b></a> 
+<a href="../hellene/21-1.html#V8">EL</a> 
+<a href="../romain/21-1.html#V8">RO</a> 
+<a href="../francais/21-1.html#V8">FR</a> 
+<a href="../technique/21-1.html#V8">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 8⸀<rtxt>ειδοτες</rtxt><wits> A P Ψ 5. 33. 81. 307. 436. 442. 642. 1243. 1448. 1611. 1735. 2344. 2492 Byz bo; Cl Aug </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁷² א B C 048<sup>vid</sup>. 1175. 1739. 1852 lat sy sa; Ir<sup>lat</sup> </wits><b>|</b>⸁<rtxt>αγαλλιατε</rtxt><wits> B C<sup>*</sup><sup>vid</sup> 1175. 1852; Or </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=8;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>ον ουχ ιδοντες αγαπατε εις ον αρτι μη ορωντες πιστευοντες δε αγαλλιατε χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=8;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>ον ουκ ιδοντες αγαπατε εις ον αρτι μη ορωντες πιστευοντες δε αγαλλιατε χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=8;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>ον ουκ ιδοντες αγαπατε εις ον αρτι μη ορωντες πιστευοντες δε αγαλλιασθαι χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=8;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>ον ουκ ειδοτες αγαπατε εις οˉ αρτι μη ορωντες πιστευοˉτες δε αγαλλιασθε χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=8;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>ον ουκ ειδοντες αγαπατε εις ον αρτι μη ορωντες πιστευοντες δε αγαλ[λιατε] χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=8;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_B</a></td><td>410</td><td>ον ουκ ειδοντες αγαπατε εις ον αρτι μη ορωντες πιστευοντες δε αγαλλιασθε χαρα ανεκλαλητω και δεδοξασμενη</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ὃν οὐκ ἰδόντες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δὲ ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ὃν οὐκ ⸀ἰδόντες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δὲ ⸁ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=8;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ὃν οὐκ ἰδόντες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες πιστεύοντες δὲ ἀγαλλιᾶτε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ὃν οὐκ ⸀ἰδόντες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες πιστεύοντες δὲ ⸀ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=8;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ὃν οὐκ ἰδόντεσ ἀγαπᾶτε, εἰσ ὃν ἄρτι μὴ ὁρῶντεσ πιστεύοντεσ δὲ ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ὃν οὐκ εἰδότες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δέ, ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ὃν οὐκ εἰδότες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δὲ, ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ὃν οὐκ ἰδόντες ἀγαπᾶτε, εἰς ὃν ἄρτι μὴ ὁρῶντες, πιστεύοντες δέ, ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ὃν οὐκ ἰδόντες, ἀγαπᾶτε· εἰς ὃν, ἄρτι μὴ ὁρῶντες, πιστεύοντες δὲ, ἀγαλλιᾶσθε χαρᾷ ἀνεκλαλήτῳ καὶ δεδοξασμένῃ:</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>1PIERRE 1 9</b></a> 
+<a href="../hellene/21-1.html#V9">EL</a> 
+<a href="../romain/21-1.html#V9">RO</a> 
+<a href="../francais/21-1.html#V9">FR</a> 
+<a href="../technique/21-1.html#V9">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 9°<rtxt><wits> B sa; Cl Ath Hier Aug </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=9;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>κομιζομενοι το τελος της πιστεως σωτηριαν ψυχων</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=9;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>κομιζομενοι το τελος της πιστεως υμων σωτηριαν ψυχων</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=9;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>κομιζομενοι το τελος της πιστεως υμων σωτηριαν ψυχων</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=9;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>κομιζομενοι το τελος της πιστεως υμωˉ σωτιριαν ψυχων</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως °ὑμῶν σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=9;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως ⸀ὑμῶν σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=9;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>κομιζόμενοι τὸ τέλοσ τῆσ πίστεωσ ὑμῶν σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν, σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν, σωτηρίαν ψυχῶν·</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν, σωτηρίαν ψυχῶν.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Κομιζόμενοι τὸ τέλος τῆς πίστεως ὑμῶν, σωτηρίαν ψυχῶν.</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>1PIERRE 1 10</b></a> 
+<a href="../hellene/21-1.html#V10">EL</a> 
+<a href="../romain/21-1.html#V10">RO</a> 
+<a href="../francais/21-1.html#V10">FR</a> 
+<a href="../technique/21-1.html#V10">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=10;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>Περι ης σωτηριας εξεζητησαν και εξηραυνησαν προφηται οι περι της εις υμας χαριτος προφητευσαˉτες</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=10;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>Περι ης σωτηριας εξεζητησαν και εξηρευνησαν προφηται οι περι της εις υμας χαριτος προφητευσαˉτες</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=10;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Περι ης σωτηριας εξεζητησαν και εξηραυνησαν προφηται οι περι της εις υμας χαριτος προφητευσαντες</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=10;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Περι ης σωτηριας εξεζητησαˉ και εξηραυνησαν προφηται οι περι της εις υμας χαριτος προφητευσαντες</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=10;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Περι ης σωτηριας εξεζητησαν και εξηρευνησαν προφηται οι περι της εις υμας χαριτος προφητευσαντες</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=10;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=10;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>περὶ ἧσ σωτηρίασ ἐξεζήτησαν καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆσ εἰσ ὑμᾶσ χάριτοσ προφητεύσαντεσ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηρεύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηρεύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηρεύνησαν προφῆται οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Περὶ ἧς σωτηρίας ἐξεζήτησαν καὶ ἐξηρεύνησαν προφῆται, οἱ περὶ τῆς εἰς ὑμᾶς χάριτος προφητεύσαντες:</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>1PIERRE 1 11</b></a> 
+<a href="../hellene/21-1.html#V11">EL</a> 
+<a href="../romain/21-1.html#V11">RO</a> 
+<a href="../francais/21-1.html#V11">FR</a> 
+<a href="../technique/21-1.html#V11">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 11⸂<rtxt>ἐδηλοῦτο</rtxt><wits> Ψ 33. 642. 1175. 1243. 1852. 2344. 2492 vg sy<sup>h</sup> </wits><b>¦</b><rtxt>εδηλουν το</rtxt><wits> 5 </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> B² 81. 307. 436. 442. 1448. 1611. 1735. 1739 Byz <rtxt> (sine <i>acc.</i></rtxt> <wits> 𝔓⁷² א A B<sup>*</sup> C P 048)</wits> r s vg<sup>mss</sup> </wits><b>|</b>°<rtxt><wits> B </wits><b>|</b>⸀<rtxt>προμαρτυρουμενον</rtxt><wits> 𝔓⁷² A P; Cyr </wits><b>¦</b><rtxt>προμαρτυρουμενοι</rtxt><wits> 1175 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=11;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>εραυνωντες εις τινα η ποιον καιρον εδηλου το εν αυτοις πνευμα προμαρτυρομενον τα εις χρειστοˉ παθηματα και τας μετα ταυτα δοξας</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=11;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>ερευνωντες εις τινα η ποιον καιρον εδηλου το εν αυτοις πνευμα προμαρτυρομενον τα εις χριστοˉ παθηματα και τας μετα ταυτα δοξας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=11;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>εραυνωντες εις τινα η ποιον καιροˉ εδηλου το εν αυτοις Π̅Ν̅Α̅ Χ̅Υ̅ προμαρτυρομενον τα εις Χ̅Ν̅ παθηματα και τας μετα ταυτα δοξας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=11;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>ερευνωˉτες εις τινα η ποιον καιρον εδηλου το εν αυτοις Π̅Ν̅Α̅ Χ̅Υ̅ προμαρτυρουμενον τα εις Χ̅Ν̅ παθηματα και τας μετα ταυτα δοξας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=11;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>ερευνωντες εις τινα η ποιον καιρον εδηλου το εν αυτοις Π̅Ν̅Α̅ Χ̅Υ̅ προμαρτυρομενον τα εις Χ̅Ν̅ παθηματα και τας μετα ταυτα δοξας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἐραυνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα καὶ τὰς μετὰ ταῦτα δόξας.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἐραυνῶντες εἰς τίνα ἢ ποῖον καιρὸν ⸂ἐδήλου τὸ⸃ ἐν αὐτοῖς πνεῦμα °Χριστοῦ ⸀προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα καὶ τὰς μετὰ ταῦτα δόξας.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=11;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἐραυνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα καὶ τὰς μετὰ ταῦτα δόξας·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἐραυνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα καὶ τὰς μετὰ ταῦτα δόξας·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=11;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἐραυνῶντεσ εἰσ τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖσ πνεῦμα Χριστοῦ προμαρτυρόμενον τὰ εἰσ Χριστὸν παθήματα καὶ τὰσ μετὰ ταῦτα δόξασ·</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἐρευνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα χριστοῦ, προμαρτυρόμενον τὰ εἰς χριστὸν παθήματα, καὶ τὰς μετὰ ταῦτα δόξας.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἐρευνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ, προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα, καὶ τὰς μετὰ ταῦτα δόξας,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἐρευνῶντες εἰς τίνα ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς Πνεῦμα Χριστοῦ, προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα, καὶ τὰς μετὰ ταῦτα δόξας.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἐρευνῶντες εἰς τίνα, ἢ ποῖον καιρὸν ἐδήλου τὸ ἐν αὐτοῖς Πνεῦμα Χριστοῦ, προμαρτυρόμενον τὰ εἰς Χριστὸν παθήματα, καὶ τὰς μετὰ ταῦτα δόξας.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>1PIERRE 1 12</b></a> 
+<a href="../hellene/21-1.html#V12">EL</a> 
+<a href="../romain/21-1.html#V12">RO</a> 
+<a href="../francais/21-1.html#V12">FR</a> 
+<a href="../technique/21-1.html#V12">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 12°<rtxt><wits> 𝔓⁷² A B Ψ 33. 436. 1735<sup>c</sup>. 1852. 2344 lat; Did Cyr </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=12;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>οις απεκαλυφθη οτι ουχ εαυτοις υμιν δε διηκονουν αυτα α νυν ανηγγελη υμιν δια των ευαγγελισαμενων υμας πνευματι αγιω αποσταλεντι απ ουρανου εις α επιθυμουσιν αγγελοι παρακυψαι</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=12;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Οις απεκαλυφθη οτι ουχ εαυτοις υμιν δε διηκονουˉ αυτα α νυν ανηγγελη υμιν δια των ευαγγελισαμενωˉ υμας εν Π̅Ν̅Ι̅ αγιω αποσταλεντι απ ουρανου εις α επιθυμουσιν αγγελοι παρακυψαι</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=12;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Οις απεκαλυφθη οτι ουχ εαυτοις υμιν δε διηκονουˉ αυτα α νυν ανηγγελη υμιν δια των ευαγγελισαμενων υμας Π̅Ν̅Ι̅ αγιω αποσταλεντι απ Ο̅Υ̅Ν̅Ο̅Υ̅ εις α επιθυμουσιν αγγελοι παρακυψαι</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=12;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Οις απεκαλυφθη οτι ουχ εαυτοις υμιν δε διηκονουν αυτα νυν ανηγγελη υμιν δια των ευαγγελισαμενωˉ υμας εν Π̅Ν̅Ι̅ αγιω αποσταλεντι απ Ο̅Υ̅Ν̅Ο̅Υ̅ εις α επιθυμουσιν αγγελοι παρακυψαι</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=12;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_B</a></td><td>410</td><td>Οις απεκαλυφθη οτι ουκ αυτοις υμιν δε διηκονουν αυτα νυν ανηγγελη υμιν δια των ευαγγελισαμενωˉ υμας εν Π̅Ν̅Ι̅ αγιω αποσταλεντι απ Ο̅Υ̅Ν̅Ο̅Υ̅ εις α επιθυμουσιν αγγελοι παρακυψαι</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ὑμῖν δὲ διηκόνουν αὐτὰ ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπ᾽ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ὑμῖν δὲ διηκόνουν αὐτὰ ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς °ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπ᾿ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=12;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς ὑμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς πνεύματι ἁγίῳ ἀποσταλέντι ἀπʼ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς ὑμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ⸀ὑμᾶς πνεύματι ἁγίῳ ἀποσταλέντι ἀπ’ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=12;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>οἷσ ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖσ ὑμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶσ ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπ’ οὐρανοῦ, εἰσ ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ὑμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπ’ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ἡμῖν δὲ διηκόνουν αὐτὰ, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν πνεύματι ἁγίῳ ἀποσταλέντι ἀπʼ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς, ἡμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν Πνεύματι Ἁγίῳ ἀποσταλέντι ἀπ᾽ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Οἷς ἀπεκαλύφθη, ὅτι οὐχ ἑαυτοῖς, ἡμῖν δὲ διηκόνουν αὐτά, ἃ νῦν ἀνηγγέλη ὑμῖν διὰ τῶν εὐαγγελισαμένων ὑμᾶς ἐν Πνεύματι Ἁγίῳ ἀποσταλέντι ἀπʼ οὐρανοῦ· εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι παρακύψαι.</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>1PIERRE 1 13</b></a> 
+<a href="../hellene/21-1.html#V13">EL</a> 
+<a href="../romain/21-1.html#V13">RO</a> 
+<a href="../francais/21-1.html#V13">FR</a> 
+<a href="../technique/21-1.html#V13">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=13;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>Διο αναζωσαμενοι τας οσφυας της διανοιας υμων νεφοντες τελειως ελπισατε επι τηˉ φερομενην υμιν χαριˉ· εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=13;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>Διο αναζωσαμενοι τας οσφυας της διανοιας υμων νηφοντες τελειως ελπισατε επι τηˉ φερομενην υμιν χαριˉ· εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=13;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>Διο αναζωσαμενοι τας οσφυας της διανοιας υμων νηφοντες τελιως ελπισατε επι την φερομενην υμιν χαριν εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=13;view('alexandrinus/162.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Διο αναζωσαμενοι τας οσφυας της διαοιας υμων νηφοντες τελειως ελπισατε επι την φερομενην υμιν χαριν εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=13;view('alexandrinus/162.jpg');">ALEXANDRINUS_B</a></td><td>390</td><td>Διο αναζωσαμενοι τας οσφυας της διανοιας υμων νηφοντες τελειως ελπισατε επι την φερομενην υμιν χαριν εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=13;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Διο αναζωσαμενοι τας οσφυας της διανοιας υμων νηφοντες τελειως ελπισατε επι την φερομενην υμιν χαριν εν αποκαλυψει Ι̅Υ̅ Χ̅Υ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν νήφοντες τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν νήφοντες τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=13;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες τελείως, ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες τελείως, ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=13;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>Διὸ ἀναζωσάμενοι τὰσ ὀσφύασ τῆσ διανοίασ ὑμῶν, νήφοντεσ, τελείωσ ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες, τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ χριστοῦ·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες, τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες, τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Διὸ ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες, τελείως ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ Χριστοῦ·</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>1PIERRE 1 14</b></a> 
+<a href="../hellene/21-1.html#V14">EL</a> 
+<a href="../romain/21-1.html#V14">RO</a> 
+<a href="../francais/21-1.html#V14">FR</a> 
+<a href="../technique/21-1.html#V14">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 14⸂<rtxt>εν τη διανοια</rtxt><wits> 1175 </wits><b>¦</b><rtxt>εν αγνοια</rtxt><wits> 81. 1243. 2492 </wits><b>¦</b><rtxt>αγνοια</rtxt><wits> 𝔓⁷² </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=14;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>ως τεκνα υπακοης μη συσχηματιζομεναι ταις προτερον εν τη αγνοια υμων επιθυμιαις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=14;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>ως τεκνα υπακοης μη συσχηματιζομενοι ταις προτερον εν τη αγνοια υμωˉ επιθυμιαις</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=14;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>ως τεκνα υπακοης μη συσχηματιζομενοι ταις προτερον εν τη αγνοια υμωˉ επιθυμιαις</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=14;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>ως τεκνα υπακοης μη συνσχηματιζομενοι ταις προτερον εν τη αγνοια υμωˉ επιθυμιαις</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ὡς τέκνα ὑπακοῆς μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ὡς τέκνα ὑπακοῆς μὴ συσχηματιζόμενοι ταῖς πρότερον ⸂ἐν τῇ ἀγνοίᾳ⸃ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=14;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ὡς τέκνα ὑπακοῆς, μὴ συνσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=14;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ὡσ τέκνα ὑπακοῆσ, μὴ συσχηματιζόμενοι ταῖσ πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαισ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις:</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>1PIERRE 1 15</b></a> 
+<a href="../hellene/21-1.html#V15">EL</a> 
+<a href="../romain/21-1.html#V15">RO</a> 
+<a href="../francais/21-1.html#V15">FR</a> 
+<a href="../technique/21-1.html#V15">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=15;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>αλλα κατα τοˉ καλεσαντα υμας αγιοˉ· και αυτοι αγιοι εν παση αναστροφη γενηθητε</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=15;view('sinaiticus/239.jpg');">SINAITICUS_A</a></td><td>360</td><td>αλλα κατα τον καλεσαντα υμας αγιον και αυτοι αγιοι εν παση αναστροφη γενηθητε</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=15;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>αλλα κατα τον καλεσαντα υμας αγιον και αυτοι αγιοι εν παση αναστροφη γενηθητε</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=15;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>αλλα κατα τον καλεσαντα υμας αγιον και αυτοι αγιοι εν παση αναστροφη γενηθητε</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=15;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=15;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶσ ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ενʼ πάσῃ ἀναστροφῇ γενήθητε,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἀλλὰ κατὰ τὸν καλέσαντα ὑμᾶς ἅγιον, καὶ αὐτοὶ ἅγιοι ἐν πάσῃ ἀναστροφῇ γενήθητε·</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>1PIERRE 1 16</b></a> 
+<a href="../hellene/21-1.html#V16">EL</a> 
+<a href="../romain/21-1.html#V16">RO</a> 
+<a href="../francais/21-1.html#V16">FR</a> 
+<a href="../technique/21-1.html#V16">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 16⸂<rtxt>διο γεγραπται</rtxt><wits> א C </wits><b>¦</b><rtxt>—</rtxt><wits> 33. 1243 </wits><b>|</b>⸆<rtxt>οτι</rtxt><wits> B Ψ 1735 </wits><b>|</b>⸀<rtxt>γενεσθε</rtxt><wits> P 442. 1739. 1852<sup>*</sup> Byz<sup>pt</sup> </wits><b>¦</b><rtxt>γινεσθε</rtxt><wits> 436. 1448 Byz<sup>pt</sup> </wits><b>|</b>⸁<rtxt>διοτι</rtxt><wits> 𝔓⁷² א 81. 1175; Cl </wits><b>¦</b><rtxt>καθως</rtxt><wits> t sy<sup>p</sup> </wits><b>|</b>⸇<rtxt>ειμι</rtxt><wits> 𝔓⁷² A<sup>c</sup> C P Ψ 5. 33. 81. 307. 436. 442. 642. 1243. 1448. 1611. 1739. 1852. 2344. 2492 Byz latt sy<sup>h</sup> </wits><b>¦</b><rtxt>λεγει κυριος ειμι</rtxt><wits> 1175 </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> א A<sup>*</sup> B 1735; Cl </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=16;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>διοτι γεγραπται οτι Αγιοι εσεσθε οτι εγω αγιος</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=16;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>διο γεγραπται Αγιοι εσεσθαι διοτι εγω αγιος</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=16;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>διοτι γεγραπται Αγιοι εσεσθαι οτι εγω αγιος *</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=16;view('alexandrinus/163.jpg');">ALEXANDRINUS_B</a></td><td>390</td><td>διοτι γεγραπται Αγιοι εσεσθαι οτι εγω αγιος ειμι</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=16;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>διο γεγραπται Αγιοι εσεσθε οτι εγω αγιος ειμι</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>διότι γέγραπται· ἅγιοι ἔσεσθε, ὅτι ἐγὼ ἅγιος.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸂διότι γέγραπται⸃· ⸆ ἅγιοι ⸀ἔσεσθε, ⸁ὅτι ἐγὼ ἅγιος ⸇.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=16;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>διότι γέγραπται [ὅτι] Ἅγιοι ἔσεσθε, ὅτι ἐγὼ ἅγιος.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>διότι γέγραπται ⸀ὅτι Ἅγιοι ⸀ἔσεσθε, ὅτι ἐγὼ ⸀ἅγιος.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=16;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>διότι γέγραπται ἅγιοι ἔσεσθε, διότι ἐγὼ ἅγιοσ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>διότι γέγραπται, Ἅγιοι γίνεσθε, ὅτι ἐγὼ ἅγιός εἰμι.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>διότι γέγραπται, Ἅγιοι γένεσθε, ὅτι ἐγὼ ἅγιός εἰμι.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>διότι γέγραπται, Ἅγιοι γένεσθε, ὅτι ἐγὼ ἅγιός εἰμι.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Διότι γέγραπται, Ἅγιοι γένεσθε· ὅτι ἐγὼ ἅγιος εἰμι.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>1PIERRE 1 17</b></a> 
+<a href="../hellene/21-1.html#V17">EL</a> 
+<a href="../romain/21-1.html#V17">RO</a> 
+<a href="../francais/21-1.html#V17">FR</a> 
+<a href="../technique/21-1.html#V17">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 17⸀<rtxt>καλεισθε</rtxt><wits> 5 </wits><b>¦</b><rtxt>καλειτε</rtxt><wits> 𝔓⁷² </wits><b>|</b>⸆<rtxt>ουν</rtxt><wits> 𝔓⁷² </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=17;view('vaticanus/200.jpg');">VATICANUS_A</a></td><td>330</td><td>Και ει πατερα επικαλεισθε τον απροσωπολημπτως κρινοντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονον αναστραφητε</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=17;view('vaticanus/200.jpg');">VATICANUS_B</a></td><td>330</td><td>Και ει πατερα επικαλεισθε τον απροσωποληπτως κρινοντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονον αναστραφητε</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=17;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και ει πατερα επικαλεισθαι τον απροσωπολημπτως κρινοντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονοˉ αναστρεφομενοι</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=17;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>Και ει πατερα επικαλεισθαι τον απροσωπολημπτως κρινοντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονοˉ αναστραφητε</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=17;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και ει Π̅Ρ̅Α̅ επικαλεισθε τον απροσωπολημπτως κρινοντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονον αναστραφητε</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=17;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Και ει Π̅Ρ̅Α̅ επικαλεισθε τον απροσωπολημτως κρινουντα κατα το εκαστου εργον εν φοβω τον της παροικιας υμων χρονον αναστραφητε</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήμπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ εἰ πατέρα ⸀ἐπικαλεῖσθε τὸν ἀπροσωπολήμπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ ⸆ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=17;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήμπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήμπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=17;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήμπτωσ κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆσ παροικίασ ὑμῶν χρόνον ἀναστράφητε,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ εἰ πατέρα ἐπικαλεῖσθε τὸν ἀπροσωπολήπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ εἰ Πατέρα ἐπικαλεῖσθε, τὸν ἀπροσωπολήπτως κρίνοντα κατὰ τὸ ἑκάστου ἔργον, ἐν φόβῳ τὸν τῆς παροικίας ὑμῶν χρόνον ἀναστράφητε:</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>1PIERRE 1 18</b></a> 
+<a href="../hellene/21-1.html#V18">EL</a> 
+<a href="../romain/21-1.html#V18">RO</a> 
+<a href="../francais/21-1.html#V18">FR</a> 
+<a href="../technique/21-1.html#V18">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 18⸉<rtxt><wits> C Ψ 1175. 1243. 1611. 1739. 1852. 2492 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=18;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>ειδοτες οτι ου φθαρτοις αργυριω η χρυσιω ελυτρωθητε εκ της ματαιας υμων αναστροφης πατροπαραδοτου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=18;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>ειδοτες οτι ου φθαρτου αργυριου η χρυσιω ελωυτρωθητε εκ της ματαιας υμων αναστροφης πατροπαραδοτου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=18;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>ειδοτες οτι ου φθαρτοις αργυριω η χρυσιω ελυτρωθητε εκ της ματαιας υμων αναστροφης πατροπαραδοτου</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=18;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>ειδοτες οτι ου φθαρτοις αργυριω η χρυσιω ελυτρωθητε εκ της ματαιας υμων αναστροφης πατροπαραδοτου</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=18;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>ειδοτες οτι ου φθαρτοις αργυριω η χρυσιω ελυτρωθητε εκ της ματαιας υμων πατροπαραδοτου αναστροφης</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ⸉ἀναστροφῆς πατροπαραδότου⸊</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=18;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=18;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>εἰδότεσ ὅτι οὐ φθαρτοῖσ, ἀργυρίῳ ἢ χρυσίῳ ἐλυτρώθητε ἐκ τῆσ ματαίασ ὑμῶν ἀναστροφῆσ πατροπαραδότου,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>εἰδότες ὅτι οὐ φθαρτοῖς ἀργυρίῳ ἢ χρυσίῳ ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Εἰδότες ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ, ἐλυτρώθητε ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου·</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>1PIERRE 1 19</b></a> 
+<a href="../hellene/21-1.html#V19">EL</a> 
+<a href="../romain/21-1.html#V19">RO</a> 
+<a href="../francais/21-1.html#V19">FR</a> 
+<a href="../technique/21-1.html#V19">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 19⸆<rtxt>τω</rtxt><wits> C 1175. 1243. 2492 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=19;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>αλλα τιμιω αιματι ως αμνου αμωμου και ασπιλου Χ̅Υ̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=19;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>αλλα τιμιω αιματι ως αμνου αμωμου και ασπιλου Χ̅Υ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=19;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>αλλα τιμιω αιματι ως αμνου αμωμου και ασπιλου Χ̅Υ̅</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=19;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>αλλα τω τιμιω αιματι ως αμνου αμωμου και ασπιλου Χ̅Υ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἀλλὰ ⸆ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=19;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=19;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἀλλὰ τιμίῳ αἵματι ὡσ ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου χριστοῦ,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ ἀμώμου καὶ ἀσπίλου Χριστοῦ,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἀλλὰ τιμίῳ αἵματι ὡς ἀμνοῦ, ἀμώμου καὶ ἀσπίλου Χριστοῦ:</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>1PIERRE 1 20</b></a> 
+<a href="../hellene/21-1.html#V20">EL</a> 
+<a href="../romain/21-1.html#V20">RO</a> 
+<a href="../francais/21-1.html#V20">FR</a> 
+<a href="../technique/21-1.html#V20">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 20⸂<rtxt>εσχατων των χρονων</rtxt><wits> P 436. 442. 1448. 1735. 1852 Byz; <wits> (ClCl<sup>lat</sup>)</wits> </wits><b>¦</b><rtxt>εσχατων χρονων</rtxt><wits> 𝔓⁷² </wits><b>¦</b><rtxt>εσχατου του χρονου</rtxt><wits> א<sup>*</sup> Ψ </wits><b>¦</b><rtxt>εσχατων των ημερων</rtxt><wits> 1175 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=20;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>προεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου των χρονων δι υμας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=20;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>ανεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου του χρονου δι υμα〚ς〛</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=20;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>προεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου των χρονων δι υμας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=20;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>προεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου των χρονων δι ημας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=20;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>προσεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου των χρονων δι υμας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=20;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_B</a></td><td>410</td><td>προεγνωσμενου μεν προ καταβολης κοσμου φανερωθεντος δε επ εσχατου των χρονων δι υμας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ᾽ ἐσχάτου τῶν χρόνων δι᾽ ὑμᾶς</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ᾿ ⸂ἐσχάτου τῶν χρόνων⸃ δι᾿ ὑμᾶς</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=20;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπʼ ἐσχάτου τῶν χρόνων διʼ ὑμᾶς</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ’ ⸀ἐσχάτου τῶν χρόνων δι’ ὑμᾶς</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=20;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>προεγνωσμένου μὲν πρὸ καταβολῆσ κόσμου, φανερωθέντοσ δὲ ἐπ’ ἐσχάτου τῶν χρόνων δι’ ὑμᾶσ</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ’ ἐσχάτων τῶν χρόνων δι’ ὑμᾶς,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπʼ ἐσχάτων τῶν χρόνων δἰ ὑμᾶς</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπ᾽ ἐσχάτων τῶν χρόνων δι᾽ ὑμᾶς,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Προεγνωσμένου μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ ἐπʼ ἐσχάτων τῶν χρόνων διʼ ὑμᾶς,</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>1PIERRE 1 21</b></a> 
+<a href="../hellene/21-1.html#V21">EL</a> 
+<a href="../romain/21-1.html#V21">RO</a> 
+<a href="../francais/21-1.html#V21">FR</a> 
+<a href="../technique/21-1.html#V21">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 21⸀<rtxt>πιστευοντας</rtxt><wits> 𝔓⁷² א C P Ψ 5. 81. 307<sup>*</sup>. 436. 442. 642. 1175. 1243. 1448. 1611. 1739. 1852. 2492 Byz </wits><b>¦</b><rtxt>πιστευσαντας</rtxt><wits> 33. 2344 </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> A B 307<sup>c</sup>. 1735 vg </wits><b>|</b>⸆<rtxt>την</rtxt><wits> 𝔓⁷² 1243. 2492 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=21;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>τους δι αυτου πιστους εις Θ̅Ν̅ τον εγειραντα αυτον εκ νεκρων και δοξαν αυτω δοντα ωστε την πιστιν υμων και ελπιδα ειναι εις Θ̅Ν̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=21;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>τους δι αυτου πιστευοˉτας εις Θ̅Ν̅ τον εγειροντα αυτον εκ νεκρων και δοξαν αυτω δοντα ωστε την πιστιˉ υμων και ελπιδα ειναι εις Θ̅Ν̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=21;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>τους δι αυτου πιστευοˉτας εις Θ̅Ν̅ τον εγειραντα αυτον εκ νεκρων και δοξαν αυτω δοντα ωστε την πιστιˉ υμων και ελπιδα ειναι εις Θ̅Ν̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=21;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>τους δι αυτου πιστους εις Θ̅Ν̅ τον εγειραντα αυτον εκ νεκρωˉ και δοξαν αυτω δοντα ωστε την πιστιν υμων και ελπιδα ειναι εις Θ̅Ν̅</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=21;view('ephraemi_rescriptus/177.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>τους δι αυτου πιστευοντας εις Θ̅Ν̅ τον εγειραντα αυτον εκ νεκρων και δοξαν αυτω δοντα ωστε την πιστιν υμων και ελπιδα ειναι εις Θ̅Ν̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>τοὺς δι᾽ αὐτοῦ πιστοὺς εἰς θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς θεόν.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>τοὺς δι᾿ αὐτοῦ ⸀πιστοὺς εἰς θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ⸆ ἐλπίδα εἶναι εἰς θεόν.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=21;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>τοὺς διʼ αὐτοῦ πιστοὺς εἰς θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς θεόν.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>τοὺς δι’ αὐτοῦ ⸀πιστοὺς εἰς θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς θεόν.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=21;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>τοὺσ δι’ αὐτοῦ πιστοὺσ εἰσ θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰσ θεόν.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>τοὺς δι’ αὐτοῦ πιστεύοντας εἰς θεόν, τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν, καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς θεόν.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>τοὺς δἰ αὐτοῦ πιστεύοντας εἰς Θεὸν τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν, καὶ δόξαν αὐτῷ δόντα, ὥςτε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς Θεόν.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>τοὺς δι᾽ αὐτοῦ πιστεύοντας εἰς Θεόν, τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν, καὶ δόξαν αὐτῷ δόντα, ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς Θεόν.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Τοὺς διʼ αὐτοῦ πιστεύοντας εἰς Θεὸν, τὸν ἐγείραντα αὐτὸν ἐκ νεκρῶν, καὶ δόξαν αὐτῷ δόντα· ὥστε τὴν πίστιν ὑμῶν καὶ ἐλπίδα εἶναι εἰς Θεόν.</td></tr></tbody></table>
+<br><br><div id="V22"></div><a href="#banniere"><b>1PIERRE 1 22</b></a> 
+<a href="../hellene/21-1.html#V22">EL</a> 
+<a href="../romain/21-1.html#V22">RO</a> 
+<a href="../francais/21-1.html#V22">FR</a> 
+<a href="../technique/21-1.html#V22">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 22⸆<rtxt>δια πνευματος</rtxt><wits> P 5. 307. 442. 642. 1175. 1448<sup>c</sup>. 1611. 1735 Byz l<sup>vid</sup> vg<sup>vg-ms</sup>; Prisc Spec </wits><b>|</b>⸂<rtxt>◆ καρδιας</rtxt><wits> A B 1852 vg </wits><b>¦</b><rtxt>καρδιας αληθινης</rtxt><wits> א² vg<sup>vg-ms</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=22;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>Τας ψυχας υμων ηγνικοτες εν τη υπακοη της αληθειας εις φιλαδελφιαν ανυποκριτον εκ καρδιας αλληλους αγαπησατε εκτενως</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=22;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>Τας ψυχας υμωˉ ηγνικοτες εν τη υπακοη της αληθιας εις φιλαδελφιαν ανυποκριτον εκ καθαρας καρδιας αλληλους αγαπησατε εκτενως</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=22;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>Τας ψυχας υμωˉ ηγνικοτες εν τη υπακοη της αληθιας εις φιλαδελφιαν ανυποκριτον εκ καρδιας αληθινης αλληλους αγαπησατε εκτενως</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=22;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Τας ψυχας υμωˉ ηγνικοτες εν τη υπακοη της αληθειας εις φιλαδελφιαν ανυποκριτον εκ καρδιας αλληλους αγαπησατε εκτενως</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=22;view('ephraemi_rescriptus/178.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Τας ψυχας υμων ηγνικοτες εν τη υπακοη της αληθειας εις φιλαδελφιαν ανυποκριτον εκ καθαρας καρδιας αλληλους αγαπησατε εκτενως</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας εἰς φιλαδελφίαν ἀνυπόκριτον ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας ⸆ εἰς φιλαδελφίαν ἀνυπόκριτον ἐκ ◆⸂καθαρᾶς καρδίας⸃ ἀλλήλους ἀγαπήσατε ἐκτενῶς</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=22;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας εἰς φιλαδελφίαν ἀνυπόκριτον ἐκ καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ⸀ἀληθείας εἰς φιλαδελφίαν ἀνυπόκριτον ⸀ἐκ καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=22;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>Τὰσ ψυχὰσ ὑμῶν ἡγνικότεσ ἐν τῇ ὑπακοῇ τῆσ ἀληθείασ εἰσ φιλαδελφίαν ἀνυπόκριτον, ἐκ καρδίασ ἀλλήλουσ ἀγαπήσατε ἐκτενῶσ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας διὰ πνεύματος εἰς φιλαδελφίαν ἀνυπόκριτον, ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας διὰ πνεύματος εἰς φιλαδελφίαν ἀνυπόκριτον, ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας διὰ Πνεύματος εἰς φιλαδελφίαν ἀνυπόκριτον, ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Τὰς ψυχὰς ὑμῶν ἡγνικότες ἐν τῇ ὑπακοῇ τῆς ἀληθείας διὰ Πνεύματος εἰς φιλαδελφίαν ἀνυπόκριτον, ἐκ καθαρᾶς καρδίας ἀλλήλους ἀγαπήσατε ἐκτενῶς:</td></tr></tbody></table>
+<br><br><div id="V23"></div><a href="#banniere"><b>1PIERRE 1 23</b></a> 
+<a href="../hellene/21-1.html#V23">EL</a> 
+<a href="../romain/21-1.html#V23">RO</a> 
+<a href="../francais/21-1.html#V23">FR</a> 
+<a href="../technique/21-1.html#V23">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 23⸀<rtxt>φθορας</rtxt><wits> א A C </wits><b>|</b>⸉<rtxt><wits> Ψ 307 </wits><b>|</b>⸆<rtxt>εις τον (— <wits> 5)</wits> αιωνα</rtxt><wits> P 5. 307. 442. 642. 1175. 1448<sup>c</sup>. 1611. 2492 Byz l t vg<sup>cl</sup><font size="-1">.</font><sup>ww</sup>; Prisc Did<sup>pt</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=23;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>αναγεγεννημενοι ουκ εκ σπορας φθαρτης αλλα αφθαρτου δια λογου ζωντος Θ̅Υ̅ και μενοˉτος</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=23;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>αναγεγεννημενοι ουκ εκ φθορας φθαρτης αλλα αφθαρτου δια λογου ζωντος Θ̅Υ̅ και μενοντος</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=23;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>αναγεγεννημενοι ουκ εκ φθορας φθαρτης αλλα αφθαρτου δια λογου ζωντος Θ̅Υ̅ και μενοντος</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=23;view('ephraemi_rescriptus/178.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>αναγεγεννημενοι ουκ εκ φθορας φθαρτης αλλ αφθαρτου δια λογου ζωντος Θ̅Υ̅ και μενοντος</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς ἀλλ᾽ ἀφθάρτου διὰ λόγου ζῶντος θεοῦ καὶ μένοντος.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἀναγεγεννημένοι οὐκ ἐκ ⸀σπορᾶς φθαρτῆς ἀλλ᾿ ἀφθάρτου διὰ λόγου ⸉ζῶντος θεοῦ⸊ καὶ μένοντος ⸆.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=23;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος θεοῦ καὶ μένοντος·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος θεοῦ καὶ ⸀μένοντος·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=23;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶσ φθαρτῆσ ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντοσ θεοῦ καὶ μένοντοσ·</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς, ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος θεοῦ καὶ μένοντος εἰς τὸν αἰῶνα.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς, ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος Θεοῦ καὶ μένοντος εἰς τὸν αἰῶνα.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς, ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος Θεοῦ καὶ μένοντος εἰς τὸν αἰῶνα.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἀναγεγεννημένοι, οὐκ ἐκ σπορᾶς φθαρτῆς, ἀλλὰ ἀφθάρτου, διὰ λόγου ζῶντος Θεοῦ, καὶ μένοντος εἰς τὸν αἰῶνα.</td></tr></tbody></table>
+<br><br><div id="V24"></div><a href="#banniere"><b>1PIERRE 1 24</b></a> 
+<a href="../hellene/21-1.html#V24">EL</a> 
+<a href="../romain/21-1.html#V24">RO</a> 
+<a href="../francais/21-1.html#V24">FR</a> 
+<a href="../technique/21-1.html#V24">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 24⸀<rtxt>οτι</rtxt><wits> 𝔓⁷² </wits><b>¦</b><rtxt>διο</rtxt><wits> Ψ 1852 </wits><b>|</b>⸁<rtxt>ωσει</rtxt><wits> א<sup>*</sup> </wits><b>¦</b><rtxt>—</rtxt><wits> א² A Ψ 33. 307. 1611. 1735. 1739. 2492 l vg<sup>mss</sup> sy; Aug </wits><b>|</b>⸀¹<rtxt>αυτου</rtxt><wits> א<sup>*</sup> </wits><b>¦</b><rtxt>ανθρωπου</rtxt><wits> P Ψ 442. 642. 1448. 2344. 2492 Byz; Aug<sup>pt</sup> </wits><b>|</b>°<rtxt><wits> 𝔓⁷² </wits><b>|</b>⸆<rtxt>αυτου</rtxt><wits> C P 307. 442. 642. 1175. 1243. 1448. 1739. 1852. 2492 Byz </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=24;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>διοτι πασα σαρξ ως χορτος και πασα δοξα αυτης ως ανθος χορτου εξηρανθη ο χορτος και το ανθος εξεπεσεν</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=24;view('vaticanus/201.jpg');">VATICANUS_B</a></td><td>330</td><td>διοτι πασα σαρξ ως χορτος και πασα δοξα αυτης ως ανθος χορτου εξηρανθη ο χορτος και το ανθος εξεπεσε</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=24;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>Διοτι Πασα σαρξ ωσι χορτος και πασα η δοξα αυτου ως ανθος χορτου Εξηρανθη ο χορτος και το ανθος εξεπεσεν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=24;view('sinaiticus/240.jpg');">SINAITICUS_B</a></td><td>360</td><td>Διοτι Πασα σαρξ ωσει χορτος και πασα δοξα αυτης ως ανθος χορτου Εξηρανθη ο χορτος και το ανθος εξεπεσεν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=24;view('sinaiticus/240.jpg');">SINAITICUS_C</a></td><td>360</td><td>Διοτι Πασα σαρξ χορτος και πασα δοξα αυτης ως ανθος χορτου Εξηρανθη ο χορτος και το ανθος εξεπεσεν</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=24;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Διοτι Πασα σαρξ χορτος και πασα δοξα αυτης ως ανθος χορτου Εξηρανθη ο χορτος και το ανθος εξεπεσεν</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=24;view('ephraemi_rescriptus/178.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>Διοτι Πασα σαρξ ως χορτος και πασα δοξα αυτης ως ανθος χορτου Εξηρανθη ο χορτος και το ανθος αυτου εξεπεσεν</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>διότι πᾶσα σὰρξ ὡς χόρτος καὶ πᾶσα δόξα αὐτῆς ὡς ἄνθος χόρτου· ἐξηράνθη ὁ χόρτος καὶ τὸ ἄνθος ἐξέπεσεν·</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸀διότι πᾶσα σὰρξ ⸁ὡς χόρτος καὶ πᾶσα δόξα ⸀¹αὐτῆς ὡς ἄνθος °χόρτου· ἐξηράνθη ὁ χόρτος καὶ τὸ ἄνθος ⸆ ἐξέπεσεν·</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=24;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>διότι πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα αὐτῆς ὡς ἄνθος χόρτου· ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος ἐξέπεσεν·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>διότι πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ⸀αὐτῆς ὡς ἄνθος χόρτου· ἐξηράνθη ὁ χόρτος, καὶ τὸ ⸀ἄνθος ἐξέπεσεν·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=24;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>διότι πᾶσα σὰρξ ὡσ χόρτοσ, καὶ πᾶσα δόξα αὐτῆσ ὡσ ἄνθοσ χόρτου· ἐξηράνθη ὁ χόρτοσ, καὶ τὸ ἄνθοσ ἐξέπεσεν·</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Διότι, Πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. Ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος αὐτοῦ ἐξέπεσεν·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>διότι πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος αὐτοῦ ἐξέπεσε·</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>διότι πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος αὐτοῦ ἐξέπεσε·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Διότι πᾶσα σὰρξ ὡς χόρτος, καὶ πᾶσα δόξα ἀνθρώπου ὡς ἄνθος χόρτου. Ἐξηράνθη ὁ χόρτος, καὶ τὸ ἄνθος αὐτοῦ ἐξέπεσεν:</td></tr></tbody></table>
+<br><br><div id="V25"></div><a href="#banniere"><b>1PIERRE 1 25</b></a> 
+<a href="../hellene/21-1.html#V25">EL</a> 
+<a href="../romain/21-1.html#V25">RO</a> 
+<a href="../francais/21-1.html#V25">FR</a> 
+<a href="../technique/21-1.html#V25">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 25⸋<rtxt><wits> A </wits><b>|</b>⸉<rtxt>εις υμας ευαγγελισθεν</rtxt><wits> 𝔓⁷² </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=25;view('vaticanus/201.jpg');">VATICANUS_A</a></td><td>330</td><td>το δε ρημα Κ̅Υ̅ μενει εις τον αιωνα τουτο δε εστιν το ρημα το ευαγγελισθεˉ εις υμας</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=25;view('vaticanus/201.jpg');">VATICANUS_B</a></td><td>330</td><td>το δε ρημα Κ̅Υ̅ μενει εις τον αιωνα τουτο δε εστι το ρημα το ευαγγελισθεˉ εις υμας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=25;view('sinaiticus/240.jpg');">SINAITICUS_A</a></td><td>360</td><td>το δε ρημα Κ̅Υ̅ μενει εις τον αιωνα Τουτο δε εστιν το ρημα το ευαγγελισθεν εις υμας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=25;view('alexandrinus/163.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>το δε ρημα Κ̅Υ̅ μενει εις τον αιωνα Τουτο δε εστιˉ ευαγγελισθεν εις υμας</td></tr><tr><td nowrap class="ephraemi_rescriptus" onclick="eimiv=25;view('ephraemi_rescriptus/178.jpg');">EPHRAEMI_RESCRIPTUS_A</a></td><td>410</td><td>το δε ρημα Κ̅Υ̅ μενει εις τον αιωνα Τουτο δε εστιν το ρημα το ευαγγελισθεν εις υμας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>τὸ δὲ ῥῆμα κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>τὸ δὲ ῥῆμα κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστιν ⸋τὸ ῥῆμα τὸ⸌ ⸉εὐαγγελισθὲν εἰς ὑμᾶς⸊.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=25;view('westcott_hort/483.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>τὸ δὲ ῥῆμα Κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>τὸ δὲ ῥῆμα κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=25;view('tischendorf/1782.jpg');">TISCHENDORF</a></td><td>1872</td><td>τὸ δὲ ῥῆμα κυρίου μένει εἰσ τὸν αἰῶνα. τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰσ ὑμᾶσ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>τὸ δὲ ῥῆμα κυρίου μένει εἰς τὸν αἰῶνα. Τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>τὸ δὲ ῥῆμα Κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστι τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>τὸ δὲ ῥῆμα Κυρίου μένει εἰς τὸν αἰῶνα. τοῦτο δέ ἐστι τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Τὸ δὲ ῥῆμα Κυρίου μένει εἰς τὸν αἰῶνα. Τοῦτο δέ ἐστιν τὸ ῥῆμα τὸ εὐαγγελισθὲν εἰς ὑμᾶς.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+
+show	= 0;
+current	= ""
+
+			
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+nbmakelc	= 0;
+lcarray 	= {}
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+function show_number(link)
+{
+	classn = link.split('/')[0]
+	page = link.match(/[0-9]+/)
+	
+	boxes = document.querySelectorAll('.bb'); boxes.forEach(box => {box.remove();});
+	
+
+	if (classn == "sinaiticus")
+	{
+		for (b=0 ; b!=sinaiticus.length ; b++)
+		{
+			splitsin = sinaiticus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+
+
+	if (classn == "alexandrinus")
+	{
+		for (b=0 ; b!=alexandrinus.length ; b++)
+		{
+			splitsin = alexandrinus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}	
+	
+	if (classn == "vaticanus")
+	{
+		for (b=0 ; b!=vaticanus.length ; b++)
+		{
+			splitsin = vaticanus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+	
+	
+	if (classn == "ephraemi_rescriptus")
+	{
+		for (b=0 ; b!=ephraemi_rescriptus.length ; b++)
+		{
+			splitsin = ephraemi_rescriptus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+	
+	
+
+	if (classn == "bezae")
+	{
+		for (b=0 ; b!=bezae.length ; b++)
+		{
+			splitsin = bezae[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+
+
+	if (classn == "washingtonianus")
+	{
+		for (b=0 ; b!=washingtonianus.length ; b++)
+		{
+			splitsin = washingtonianus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}	
+	
+	
+}
+
+		
+
+
+function view(link)
+{
+
+	//clean
+	document.getElementById('box').src = ""
+
+	
+	//get info
+	classn = link.split('/')[0]
+	page = link.match(/[0-9]+/)
+	
+	if (classn != current)
+	{
+		
+		show_number(link)
+		
+		
+		
+		
+		if (current != "")
+		{
+			//CLOSE
+			for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+			{
+				document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+			}
+		}
+		
+		//OPEN
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+		}
+		
+		document.getElementById('left').style.width = "50%";
+		document.getElementById('right').style.width = "50%";
+		
+		document.getElementById('box').src = '../../'+link;
+		
+		current = classn;
+		show = 1;
+		
+		//resize
+		//pvx = document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth
+		//panzoom(element).zoomAbs(0,0,0.1);
+		
+	}
+	
+	else if (classn == current)
+	{
+		
+		//CLOSE
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+		}
+		
+		document.getElementById('left').style.width = "100%";
+		document.getElementById('right').style.width = "0%";
+		show = 0;
+		
+		current = "";
+	
+	}
+
+	window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+}
+
+
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.2,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			if (elempic.src.indexOf('sinaiticus') != -1)
+				view('sinaiticus')
+			
+			else if (elempic.src.indexOf('alexandrinus') != -1)
+				view('alexandrinus')
+			
+			else if (elempic.src.indexOf('vaticanus') != -1)
+				view('vaticanus')
+			
+			else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+				view('ephraemi_rescriptus')
+
+			else if (elempic.src.indexOf('bezae') != -1)
+				view('bezae')
+
+			else if (elempic.src.indexOf('washingtonianus') != -1)
+				view('washingtonianus')
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+				view('westcott_hort')
+			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+				view('tischendorf')
+			
+			
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+
+		
+		else if (e.keyCode == '37') {
+			
+			if (pic > 0)
+			{
+					pic--
+				
+				
+				if (elempic.src.indexOf('sinaiticus') != -1)
+				{
+					elempic.src = "../../sinaiticus/"+pic+".jpg";
+					show_number("sinaiticus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('alexandrinus') != -1)
+				{
+					elempic.src = "../../alexandrinus/"+pic+".jpg";
+					show_number("alexandrinus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('vaticanus') != -1 && pic > 0)
+				{
+					elempic.src = "../../vaticanus/"+pic+".jpg";
+					show_number("vaticanus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+				{
+					elempic.src = "../../ephraemi_rescriptus/"+pic+".jpg";
+					show_number("ephraemi_rescriptus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('bezae') != -1)
+				{
+					elempic.src = "../../bezae/"+pic+".jpg";
+					show_number("bezae/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('washingtonianus') != -1 && pic > 0)
+				{
+					elempic.src = "../../washingtonianus/"+pic+".jpg";
+					show_number("washingtonianus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('westcott_hort') != -1)
+				{
+					elempic.src = "../../westcott_hort/"+pic+".jpg";
+					show_number("westcott_hort/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('tischendorf') != -1)
+				{
+					elempic.src = "../../tischendorf/"+pic+".jpg";
+					show_number("tischendorf/"+pic+".jpg")
+				}
+				
+			}
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			if (elempic.src.indexOf('sinaiticus') != -1)
+			{
+				if (pic < 296)
+					pic++
+				
+				elempic.src = "../../sinaiticus/"+pic+".jpg";
+				show_number("sinaiticus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('alexandrinus') != -1)
+			{
+				if (pic < 295)
+					pic++
+				
+				elempic.src = "../../alexandrinus/"+pic+".jpg";
+				show_number("alexandrinus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('vaticanus') != -1)
+			{
+				if (pic < 295)
+					pic++
+				
+				elempic.src = "../../vaticanus/"+pic+".jpg";
+				show_number("vaticanus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+			{
+				if (pic < 285)
+					pic++
+				
+				elempic.src = "../../ephraemi_rescriptus/"+pic+".jpg";
+				show_number("ephraemi_rescriptus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('bezae') != -1)
+			{
+				if (pic < 416)
+					pic++
+				
+				elempic.src = "../../bezae/"+pic+".jpg";
+				show_number("bezae/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('washingtonianus') != -1)
+			{
+				if (pic < 388)
+					pic++
+				
+				elempic.src = "../../washingtonianus/"+pic+".jpg";
+				show_number("washingtonianus/"+pic+".jpg")
+			}
+			
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+			{
+				if (pic < 547)
+					pic++
+				
+				elempic.src = "../../westcott_hort/"+pic+".jpg";
+				show_number("westcott_hort/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+			{
+				if (pic < 2014)
+					pic++
+				
+				elempic.src = "../../tischendorf/"+pic+".jpg";
+				show_number("tischendorf/"+pic+".jpg")
+			}
+			
+		}
+		
+
+
+	}
+
+}
+
+
+
+
+
+
+</script>
+
+
+</html>
+

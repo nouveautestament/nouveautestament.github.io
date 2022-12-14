@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>HELLENE</title>
+
+		<script src='panzoom.min.js'></script>
+		<script src='sinaiticus.js'></script>
+		<script src='alexandrinus.js'></script>
+		<script src='vaticanus.js'></script>
+		<script src='ephraemi_rescriptus.js'></script>
+		<script src='bezae.js'></script>
+		<script src='washingtonianus.js'></script>
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+			
+
+			#inleft {
+				
+				padding:5px;
+			}
+
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.sinaiticus, .alexandrinus, .vaticanus, .ephraemi_rescriptus, .bezae, .washingtonianus, .westcott_hort, .tischendorf {
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+			rtxt {
+				color: green;
+			}
+			
+			wits {
+				color: red;
+			}
+			
+			table b {
+				display: block;
+				color: orange;
+				margin-bottom: 3px;
+			}
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/index.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html"><b>[ JEAN ]</b></a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="4-1.html">CH1</a>&ensp;<a href="4-2.html"><b>[ CH2 ]</b></a>&ensp;<a href="4-3.html">CH3</a>&ensp;<a href="4-4.html">CH4</a>&ensp;<a href="4-5.html">CH5</a>&ensp;<a href="4-6.html">CH6</a>&ensp;<a href="4-7.html">CH7</a>&ensp;<a href="4-8.html">CH8</a>&ensp;<a href="4-9.html">CH9</a>&ensp;<a href="4-10.html">CH10</a>&ensp;<a href="4-11.html">CH11</a>&ensp;<a href="4-12.html">CH12</a>&ensp;<a href="4-13.html">CH13</a>&ensp;<a href="4-14.html">CH14</a>&ensp;<a href="4-15.html">CH15</a>&ensp;<a href="4-16.html">CH16</a>&ensp;<a href="4-17.html">CH17</a>&ensp;<a href="4-18.html">CH18</a>&ensp;<a href="4-19.html">CH19</a>&ensp;<a href="4-20.html">CH20</a>&ensp;<a href="4-21.html">CH21</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;<a href="#V22">V22</a>&ensp;<a href="#V23">V23</a>&ensp;<a href="#V24">V24</a>&ensp;<a href="#V25">V25</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>JEAN 2 1</b></a> 
+<a href="../hellene/4-2.html#V1">EL</a> 
+<a href="../romain/4-2.html#V1">RO</a> 
+<a href="../francais/4-2.html#V1">FR</a> 
+<a href="../technique/4-2.html#V1">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>¶ 2,1⸂<rtxt>τριτη ημερα</rtxt><wits> B Θ <i>f</i>¹³ </wits><b>|</b>⸆<rtxt>τη</rtxt><wits> 𝔓⁷⁵ </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=1;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>Και τη τριτη ημερα γαμος εγενετο εν Κανα της Γαλειλαιας και ην η μητηρ του Ι̅Υ̅ εκει</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=1;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>Και τη τριτη ημερα γαμος εγενετο εν Κανα της Γαλιλαιας και ην η μητηρ του Ι̅Υ̅ εκει</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=1;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και τη ημερα τη τριτη γαμος εγενετο εν Κανα της Γαλιλαιας και ην η μητηρ του Ι̅Υ̅ εκει</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=1;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και τη ημερα τη τριτη γαμος εγενετο εν Κανα της Γαλιλαιας και ην η Μ̅Η̅Ρ̅ του Ι̅Υ̅ εκει</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=1;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και τη ημερα τη γ̅ γαμος εγινετο εν Κανα της Γαλιλεας και ην η Μ̅Η̅Ρ̅ του Ι̅Υ̅ εκι</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανὰ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Καὶ τῇ ⸂ἡμέρᾳ τῇ τρίτῃ⸃ γάμος ἐγένετο ἐν ⸆ Κανὰ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=1;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανὰ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Καὶ τῇ ⸂ἡμέρᾳ τῇ τρίτῃ⸃ γάμος ἐγένετο ἐν Κανὰ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=1;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμοσ ἐγένετο ἐν Κανὰ τῆσ Γαλιλαίασ, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανᾷ τῆς Γαλιλαίας· καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ τῇ ἡμέρᾳ τῇ τρίτῃ γάμος ἐγένετο ἐν Κανᾷ τῆς Γαλιλαίας· καὶ ἦν ἡ μήτηρ τοῦ Ἰησοῦ ἐκεῖ:</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>JEAN 2 2</b></a> 
+<a href="../hellene/4-2.html#V2">EL</a> 
+<a href="../romain/4-2.html#V2">RO</a> 
+<a href="../francais/4-2.html#V2">FR</a> 
+<a href="../technique/4-2.html#V2">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 2°<rtxt><wits> 𝔓⁶⁶<sup>*</sup> 579 it vg<sup>mss</sup> bo<sup>ms</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=2;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>εκληθη δε και ο Ι̅Σ̅ και οι μαθηται αυτου εις τον γαμον</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=2;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>εκληθη δε και ο Ι̅Σ̅ και οι μαθηται αυτου εις τον γαμον</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=2;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>εκληθη δε και ο Ι̅Σ̅ και οι μαθηται αυτου εις τον γαμον</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=2;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>εκληθη δε και ο Ι̅Σ̅ εκι και οι μαθηται αυτου εις τον γαμον</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἐκλήθη δὲ °καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=2;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=2;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦσ καὶ οἱ μαθηταὶ αὐτοῦ εἰσ τὸν γάμον.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἐκλήθη δὲ καὶ ὁ Ἰησοῦς καὶ οἱ μαθηταὶ αὐτοῦ εἰς τὸν γάμον.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἐκλήθη δὲ, καὶ ὁ Ἰησοῦς, καὶ οἱ μαθηταὶ, αὐτοῦ εἰς τὸν γάμον.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>JEAN 2 3</b></a> 
+<a href="../hellene/4-2.html#V3">EL</a> 
+<a href="../romain/4-2.html#V3">RO</a> 
+<a href="../francais/4-2.html#V3">FR</a> 
+<a href="../technique/4-2.html#V3">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 3⸂<rtxt>οινον ουκ ειχον οτι συνετελεσθη ο οινος του γαμου· ειτα</rtxt><wits> א<sup>*</sup> a j sy<sup>hmg</sup> <wits> (b ff² r¹)</wits> </wits><b>|</b>⸄<rtxt>οινος ουκ εστιν</rtxt><wits> א<sup>*</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=3;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και υστερησαντος οινου λεγει η μητηρ του Ι̅Υ̅ προς αυτον Οινον ουκ εχουσιˉ</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=3;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>και υστερησαντος οινου λεγει η μητηρ του Ι̅Υ̅ προς αυτον Οινον ουκ εχουσι</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=3;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και οινο̣ν ουχ ε̣ι〚χον ο〛τ̣ι̣ συνετ̣ελεσθη ο οινος του γαμου ειτα λεγει η μητηρ του Ι̅Υ̅ προς αυτον Οινος ουκ εστιν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=3;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Και υστερησαντος οινου λεγει η μητηρ του Ι̅Υ̅ προς αυτον Οινος ουκ εστιν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=3;view('sinaiticus/96.jpg');">SINAITICUS_C</a></td><td>360</td><td>Και υστερησαντος οινου λεγει η μητηρ του Ι̅Υ̅ προς αυτον Οινον ουκ εχουσιν</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=3;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και υστερησαντος οινου λεγει η Μ̅Η̅Ρ̅ του Ι̅Υ̅ προς αυτον Οινον ουκ εχουσιν</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=3;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και υστερησαντος οινου λεγι η Μ̅Η̅Ρ̅ του Ι̅Υ̅ προς αυτον Οινον ουκ εχουσιν</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ ὑστερήσαντος οἴνου λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν· οἶνον οὐκ ἔχουσιν.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ ⸂ὑστερήσαντος οἴνου⸃ λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν· ⸄οἶνον οὐκ ἔχουσιν⸅.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=3;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ ὑστερήσαντος οἴνου λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν Οἶνον οὐκ ἔχουσιν.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ ὑστερήσαντος οἴνου λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν· Οἶνον οὐκ ἔχουσιν.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=3;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ οἶνον οὐκ εἶχον, ὅτι συνετελέσθη ὁ οἶνοσ τοῦ γάμου. εἶτα λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸσ αὐτόν· οἶνοσ οὐκ ἔστιν.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ ὑστερήσαντος οἴνου, λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν, Οἶνον οὐκ ἔχουσιν.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>καὶ ὑστερήσαντος οἴνου, λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτὸν, Οἶνον οὐκ ἔχουσι.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ ὑστερήσαντος οἴνου, λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν, Οἶνον οὐκ ἔχουσι.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ ὑστερήσαντος οἴνου, λέγει ἡ μήτηρ τοῦ Ἰησοῦ πρὸς αὐτόν, Οἶνον οὐκ ἔχουσιν.</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>JEAN 2 4</b></a> 
+<a href="../hellene/4-2.html#V4">EL</a> 
+<a href="../romain/4-2.html#V4">RO</a> 
+<a href="../francais/4-2.html#V4">FR</a> 
+<a href="../technique/4-2.html#V4">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 4°<rtxt><wits> 𝔓⁷⁵ א<sup>*</sup><font size="-1">.</font>²<sup>b</sup> Γ Ψ <i>f</i>¹ 565. 579. 700. 1424. <i>l</i> 844. <i>l</i> 2211 𝔐 a j sy<sup>p</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶ א²<sup>a</sup> A B K L W<sup>s</sup> Δ Θ 0127 <i>f</i>¹³ 33. 892. 1241 sy<sup>h</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=4;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και λεγει αυτη ο Ι̅Σ̅ Τι εμοι και σοι γυναι ουπω ηκει η ωρα μου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=4;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Λεγει αυτη ο Ι̅Σ̅ Τι εμοι και σοι γυναι Ουπω ηκει η ωρα μου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=4;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Και λεγει αυτη ο Ι̅Σ̅ Τι εμοι και σοι γυναι Ουπω ηκει η ωρα μου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=4;view('sinaiticus/96.jpg');">SINAITICUS_C</a></td><td>360</td><td>Λεγει αυτη ο Ι̅Σ̅ Τι εμοι και σοι γυναι Ουπω ηκει η ωρα μου</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=4;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και λεγει αυτη ο Ι̅Σ̅ Τι εμοι και σοι γυναι Ουπω ηκει η ωρα μου</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=4;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και λεγι αυτη ο Ι̅Σ̅ Τι εμοι και συ γυναι Ουπω ηκι η ωρα μου</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>[καὶ] λέγει αὐτῇ ὁ Ἰησοῦς· τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>°[καὶ] λέγει αὐτῇ ὁ Ἰησοῦς· τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=4;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ λέγει αὐτῇ ὁ Ἰησοῦς Τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>⸀καὶ λέγει αὐτῇ ὁ Ἰησοῦς· Τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=4;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>λέγει αὐτῇ ὁ Ἰησοῦσ· τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Λέγει αὐτῇ ὁ Ἰησοῦς, Τί ἐμοὶ καὶ σοί, γύναι; Οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Λέγει αὐτῇ ὁ Ἰησοῦς, Τί ἐμοὶ καὶ σοὶ γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>λέγει αὐτῇ ὁ Ἰησοῦς, Τί ἐμοὶ καὶ σοί, γύναι; οὔπω ἥκει ἡ ὥρα μου.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Λέγει αὐτῇ ὁ Ἰησοῦς, Τί ἐμοὶ καὶ σοί; Γύναι, οὔπω ἥκει ἡ ὥρα μου.</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>JEAN 2 5</b></a> 
+<a href="../hellene/4-2.html#V5">EL</a> 
+<a href="../romain/4-2.html#V5">RO</a> 
+<a href="../francais/4-2.html#V5">FR</a> 
+<a href="../technique/4-2.html#V5">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 5⸂<rtxt>οτι ο αν</rtxt><wits> א 0127. 892 </wits><b>¦</b><rtxt>ο τι α</rtxt><wits> 33 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=5;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>λεγει η μητηρ αυτου τοις διακονοις Ο τι αν λεγη υμιˉ ποιησατε</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=5;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Λεγει η μητηρ αυτου τοις διακονοις οτι ο αν λεγη υμιˉ ποιησατε</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=5;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Λεγει η Μ̅Η̅Ρ̅ αυτου τοις διακονοις Ο τι αν λεγη υμιν ποιησατε</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=5;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Λεγι η Μ̅Η̅Ρ̅ αυτου τοις διακονοις Ο τι εαν λεγη υμιν ποιησατε</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις· ὅ τι ἂν λέγῃ ὑμῖν ποιήσατε.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις· ⸂ὅ τι ἂν⸃ λέγῃ ὑμῖν ποιήσατε.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=5;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις Ὅτι ἂν λέγῃ ὑμῖν ποιήσατε.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις· ⸂Ὅ τι⸃ ἂν λέγῃ ὑμῖν ποιήσατε.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=5;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖσ διακόνοισ· ὅ τι ἂν λέγῃ ὑμῖν, ποιήσατε.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις, Ὅ τι ἂν λέγῃ ὑμῖν, ποιήσατε.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις, Ὅ, τι ἂν λέγῃ ὑμῖν ποιήσατε.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις, Ὅ τι ἂν λέγῃ ὑμῖν, ποιήσατε.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Λέγει ἡ μήτηρ αὐτοῦ τοῖς διακόνοις, Ὅ τι ἂν λέγῃ ὑμῖν, ποιήσατε.</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>JEAN 2 6</b></a> 
+<a href="../hellene/4-2.html#V6">EL</a> 
+<a href="../romain/4-2.html#V6">RO</a> 
+<a href="../francais/4-2.html#V6">FR</a> 
+<a href="../technique/4-2.html#V6">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 6°<rtxt><wits> א<sup>*</sup> a e </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=6;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>ησαν δε εκει λιθιναι υδριαι εξ κατα τον καθαρισμον των Ιουδαιων κειμεναι χωρουσαι ανα μετρητας δυο η τρις</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=6;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>ησαν δε εκει λιθιναι υδριαι εξ κατα τον καθαρισμον των Ιουδαιων κειμεναι χωρουσαι ανα μετρητας δυο η τρεις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=6;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ησαν δε εκει λιθιναι υδριαι εξ κατα τον καθαρισμον των Ιουδαιων χωρουσαι ανα μετρητας δυο η τρεις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=6;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Ησαν δε εκει λιθιναι υδριαι εξ κατα τον καθαρισμον των Ιουδαιων κιμεναι χωρουσαι ανα μετρητας δυο η τρεις</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=6;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ησαν δε εκει υδριαι λιθινε εξ κειμεναι κατα τον καθαρισμον των Ιουδαιων χωρουσαι ανα μετρητας δυο η τρις</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=6;view('washingtonianus/131.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Ησαν δε εκι υδριε λιθινε εξ κατα τον καθαρισμον των Ιουδεων κιμεναι χωρουσαι ανα μετρητας β̅ η̅ τ̅ρ̅ι̅σ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἦσαν δὲ ἐκεῖ λίθιναι ὑδρίαι ἓξ κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων κείμεναι, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἦσαν δὲ ἐκεῖ λίθιναι ὑδρίαι ἓξ κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων °κείμεναι, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=6;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἦσαν δὲ ἐκεῖ λίθιναι ὑδρίαι ἓξ κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων κείμεναι, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἦσαν δὲ ἐκεῖ ⸂λίθιναι ὑδρίαι⸃ ἓξ ⸂κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων κείμεναι⸃, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=6;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἦσαν δὲ ἐκεῖ λίθιναι ὑδρίαι ἓξ κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων κείμεναι, χωροῦσαι ἀνὰ μετρητὰσ δύο ἢ τρεῖσ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἦσαν δὲ ἐκεῖ ὑδρίαι λίθιναι ἓξ κείμεναι κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἦσαν δὲ ἐκεῖ ὑδρίαι λίθιναι ἓξ κείμεναι κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἦσαν δὲ ἐκεῖ ὑδρίαι λίθιναι ἓξ κείμεναι κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἦσαν δὲ ἐκεῖ ὑδρίαι λίθιναι ἓξ, κείμεναι κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων, χωροῦσαι ἀνὰ μετρητὰς δύο ἢ τρεῖς.</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>JEAN 2 7</b></a> 
+<a href="../hellene/4-2.html#V7">EL</a> 
+<a href="../romain/4-2.html#V7">RO</a> 
+<a href="../francais/4-2.html#V7">FR</a> 
+<a href="../technique/4-2.html#V7">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 7⸆<rtxt>και</rtxt><wits> א W<sup>s</sup> <wits> (e ff² l)</wits> vg<sup>vg-ms</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=7;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>λεγει αυτοις ο Ι̅Σ̅ Γεμισατε τας υδριας υδατος και εγεμισαˉ αυτας εως ανω</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=7;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και λεγει αυτοις ο Ι̅Σ̅ Γεμισατε τας υδριας υδατος Και εγεμισαν αυτας εως ανω</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=7;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Λεγει αυτοις ο Ι̅Σ̅ Γεμισατε τας υδριας υδατος Και εγεμισαν αυτας εως ανω</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=7;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και Λεγι αυτοις ο Ι̅Σ̅ Γεμισατε τας υδριας υδατος Και εγεμισαν αυτας εως ανω</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>λέγει αὐτοῖς ὁ Ἰησοῦς· γεμίσατε τὰς ὑδρίας ὕδατος. καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸆ λέγει αὐτοῖς ὁ Ἰησοῦς· γεμίσατε τὰς ὑδρίας ὕδατος. καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=7;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>λέγει αὐτοῖς ὁ Ἰησοῦς Γεμίσατε τὰς ὑδρίας ὕδατος· καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>λέγει αὐτοῖς ὁ Ἰησοῦς· Γεμίσατε τὰς ὑδρίας ὕδατος· καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=7;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>λέγει αὐτοῖσ ὁ Ἰησοῦσ· γεμίσατε τὰσ ὑδρίασ ὕδατοσ. καὶ ἐγέμισαν αὐτὰσ ἕωσ ἄνω.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Λέγει αὐτοῖς ὁ Ἰησοῦς, Γεμίσατε τὰς ὑδρίας ὕδατος. Καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Λέγει αὐτοῖς ὁ Ἰησοῦς, Γεμίσατε τὰς ὑδρίας ὕδατος. Καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>λέγει αὐτοῖς ὁ Ἰησοῦς, Γεμίσατε τὰς ὑδρίας ὕδατος. καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Λέγει αὐτοῖς ὁ Ἰησοῦς, Γεμίσατε τὰς ὑδρίας ὕδατος. Καὶ ἐγέμισαν αὐτὰς ἕως ἄνω.</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>JEAN 2 8</b></a> 
+<a href="../hellene/4-2.html#V8">EL</a> 
+<a href="../romain/4-2.html#V8">RO</a> 
+<a href="../francais/4-2.html#V8">FR</a> 
+<a href="../technique/4-2.html#V8">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=8;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και λεγει αυτοις Αντλησατε νυν και φερετε τω αρχιτρικλεινω οι δε ηνεγκαν</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=8;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>και λεγει αυτοις Αντλησατε νυν και φερετε τω αρχιτρικλινω οι δε ηνεγκαν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=8;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και λεγει αυτοις Αντλησατε νυν και φερετε τω αρχιτρικλινω οι δε ηνεγκαν</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=8;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και λεγει αυτοις Αντλησατε νυˉ και φερετε τω αρχιτρικλινω Και ηνεγκαν</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=8;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και λεγι αυτοις Αντλησατε νυν και φερετε τω αρχιτρικλινω οι δε ηνεγκαν</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ λέγει αὐτοῖς· ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· οἱ δὲ ἤνεγκαν.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ λέγει αὐτοῖς· ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· οἱ δὲ ἤνεγκαν.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=8;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ λέγει αὐτοῖς Ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· οἱ δὲ ἤνεγκαν.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ λέγει αὐτοῖς· Ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· ⸂οἱ δὲ⸃ ἤνεγκαν.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=8;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ λέγει αὐτοῖσ· ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ. οἱ δὲ ἤνεγκαν.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ λέγει αὐτοῖς, Ἀντλήσατε νῦν, καὶ φέρετε τῷ ἀρχιτρικλίνῳ. Καὶ ἤνεγκαν.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Καὶ λέγει αὐτοῖς, Ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ. Καὶ ἤνεγκαν.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ λέγει αὐτοῖς, Ἀντλήσατε νῦν, καὶ φέρετε τῷ ἀρχιτρικλίνῳ. καὶ ἤνεγκαν.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ λέγει αὐτοῖς, Ἀντλήσατε νῦν, καὶ φέρετε τῷ ἀρχιτρικλίνῳ. Καὶ ἤνεγκαν.</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>JEAN 2 9</b></a> 
+<a href="../hellene/4-2.html#V9">EL</a> 
+<a href="../romain/4-2.html#V9">RO</a> 
+<a href="../francais/4-2.html#V9">FR</a> 
+<a href="../technique/4-2.html#V9">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=9;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>ως δε εγευσατο ο αρχιτρικλεινος το υδωρ οινον γεγενημενον και ουκ ηδει ποθεˉ εστιν οι δε διακονοι ηδεισαν οι ηντληκοτες το υδωρ φωνει τοˉ νυμφιον ο αρχιτρικλεινος</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=9;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>ως δε εγευσατο ο αρχιτρικλινος το υδωρ οινον γεγενημενον και ουκ ηδει ποθεˉ εστιν οι δε διακονοι ηδεισαν οι ηντληκοτες το υδωρ φωνει τοˉ νυμφιον ο αρχιτρικλινος</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=9;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ως δε εγευσατο ο αρχιτ̣λικινος το υδωρ οινον γεγενημενον και ουκ ηδει ποθεν εστιν οι δε διακονοι ηδεισαν οι ηντληκοτες το υδωρ φωνει τον νυμφιον ο αρχιτρικλινος</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=9;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Ως δε εγευσατο ο αρχιτρικλινος το υδωρ οινον γεγενημενον και ουκ ηδει ποθεν εστιν οι δε διακονοι ηδεισαν οι ηντληκοτες το υδωρ φωνει τον νυμφιον ο αρχιτρικλινος</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=9;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ως δε εγευσατο ο αρχιτρικλινος το υδωρ οινον γεγενημενον και ουκ ηδει ποθεν εστιν οι δε διακονοι ηδεισαν οι ηντληκοτες το υδωρ φωνει τον νυμφιον ο αρχιτρικλεινος</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=9;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Ως δε εγευσατο ο αρχιτρικλινος το υδωρ οινον γεγενημενοˉ και ουκ ηδι ποθεν εστιν οι δε διακονοι ηδισαν οι ηντληκοτες το υδωρ φωνι τον νυμφιον ο αρχιτρικλινος</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=9;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=9;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ὡσ δὲ ἐγεύσατο ὁ ἀρχιτρίκλινοσ τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότεσ τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινοσ</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν - οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ - φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστὶν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ· φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν (οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ), φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν: (οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ·) φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος,</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>JEAN 2 10</b></a> 
+<a href="../hellene/4-2.html#V10">EL</a> 
+<a href="../romain/4-2.html#V10">RO</a> 
+<a href="../francais/4-2.html#V10">FR</a> 
+<a href="../technique/4-2.html#V10">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 10⸉<rtxt>2–4 1</rtxt><wits> 𝔓⁷⁵ 892 a e </wits><b>|</b>⸆<rtxt>τοτε</rtxt><wits> א² A K N Γ Δ Θ <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 700. 892. 1241. 1424 𝔐 lat sy </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵ א<sup>*</sup> B L W<sup>s</sup> Ψ 083. 0127. 579. <i>l</i> 844. <i>l</i> 2211 a e ff² l </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=10;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και λεγει αυτω Πας ανθρωπος πρωτον τοˉ καλον οινον τιθησιν και οταν μεθυσθωσι τον ελασσω συ τετηρηκας τον καλον οινοˉ εως αρτι</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=10;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>και λεγει αυτω Πας ανθρωπος πρωτον τοˉ καλον οινον τιθησι και οταν μεθυσθωσι τον ελασσω συ τετηρηκας τον καλον οινοˉ εως αρτι</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=10;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και λεγει Πας ανθρωπος πρωτον τον καλον οινον τιθησιν και οταν μεθυσθωσιˉ τον ελασσω συ δε τετηρηκας τον καλον οινον εως αρτι</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=10;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>και λεγει Πας ανθρωπος πρωτον τον καλον οινον τιθησιν και οταν μεθυσθωσιˉ τοτε τον ελασσω συ δε τετηρηκας τον καλον οινον εως αρτι</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=10;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>και λεγει αυτω Πας Α̅Ν̅Ο̅Σ̅ πρωτον τον καλον οινοˉ τιθησιν και οταν μεθυσθωσιν τοτε τον ελασσω συ τετηρηκας τον καλον οινοˉ εως αρτι</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=10;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>και λεγι αυτω Πας Α̅Ν̅Ο̅Σ̅ πρωτον τον καλον οινον τιθησιν και οταν μεθυσθωσιν τον ελασσω συ τετηρηκας τον καλον οινον εως αρτι</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ λέγει αὐτῷ· πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησιν καὶ ὅταν μεθυσθῶσιν τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ λέγει αὐτῷ· πᾶς ἄνθρωπος ⸉πρῶτον τὸν καλὸν οἶνον⸊ τίθησιν καὶ ὅταν μεθυσθῶσιν ⸆ τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι. </td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=10;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ λέγει αὐτῷ Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησιν, καὶ ὅταν μεθυσθῶσιν τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ λέγει αὐτῷ· Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησιν, καὶ ὅταν ⸀μεθυσθῶσιν τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=10;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ λέγει αὐτῷ· πᾶσ ἄνθρωποσ πρῶτον τὸν καλὸν οἶνον τίθησιν, καὶ ὅταν μεθυσθῶσιν τὸν ἐλάσσω· σὺ τετήρηκασ τὸν καλὸν οἶνον ἕωσ ἄρτι.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>καὶ λέγει αὐτῷ, Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησιν, καὶ ὅταν μεθυσθῶσιν, τότε τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>καὶ λέγει αὐτῷ, Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησι, καὶ ὅταν μεθυσθῶσι, τότε τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ λέγει αὐτῷ, Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησι, καὶ ὅταν μεθυσθῶσι, τότε τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ λέγει αὐτῷ, Πᾶς ἄνθρωπος πρῶτον τὸν καλὸν οἶνον τίθησιν· καὶ ὅταν μεθυσθῶσιν, τότε τὸν ἐλάσσω: σὺ τετήρηκας τὸν καλὸν οἶνον ἕως ἄρτι.</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>JEAN 2 11</b></a> 
+<a href="../hellene/4-2.html#V11">EL</a> 
+<a href="../romain/4-2.html#V11">RO</a> 
+<a href="../francais/4-2.html#V11">FR</a> 
+<a href="../technique/4-2.html#V11">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 11⸂<rtxt>εποιησεν την αρχην</rtxt><wits> א<font size="-1">(</font><sup>*</sup><font size="-1">)</font><font size="-1">.</font>¹ K W<sup>s</sup> Γ Δ <i>f</i>¹³ 700. 892 𝔐 sy<sup>h</sup> </wits><b>¦</b><rtxt>την αρχην εποιησεν</rtxt><wits> 1241. 1424 </wits><b>¦</b><rtxt>πρωτην αρχην εποιησεν</rtxt><wits> 𝔓⁶⁶<sup>*</sup> f q </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<sup>c</sup><font size="-1">.</font>⁷⁵<sup>vid</sup> A B L N Θ Ψ 083 <i>f</i>¹ 33. 565. 579. <i>l</i> 844. <i>l</i> 2211; Eus </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=11;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>Ταυτην εποιησεν αρχην των σημιων ο Ι̅Σ̅ εν Κανα της Γαλειλαιας και εφανερωσεν την δοξαν αυτου και επιστευσαν εις αυτον οι μαθηται αυτου</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=11;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>Ταυτην εποιησεν αρχην των σημειων ο Ι̅Σ̅ εν Κανα της Γαλιλαιας και εφανερωσε την δοξαν αυτου και επιστευσαν εις αυτον οι μαθηται αυτου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=11;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ταυτην εποιησεν την αρχην των σημιων ο Ι̅Σ̅ εν Κανα της Γαλιλαιας πρωτην και εφανερωσεν τηˉ δοξαν και επιστευσαν οι μαθηται αυτου εις αυτον</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=11;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Ταυτην εποιησεν την αρχην των σημιων ο Ι̅Σ̅ εν Κανα της Γαλιλαιας και εφανερωσεν τηˉ δοξαν αυτου και επιστευσαν εις αυτον οι μαθηται αυτου</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=11;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ταυτην εποιησεν αρχην των σημειωˉ ο Ι̅Σ̅ εγ Κανα της Γαλιλαιας και εφανερωσεν την δοξαν αυτου και επιστευσαˉ εις αυτον οι μαθηται αυτου</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=11;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Ταυτην εποιησεν την αρχην των σημιων ο Ι̅Σ̅ εν Κανα της Γαλιλεας και εφανερωσεν την δοξαν αυτου και επιστευσαν εις αυτον οι μαθητε αυτου</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Ταύτην ἐποίησεν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανὰ τῆς Γαλιλαίας καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Ταύτην ⸂ἐποίησεν ἀρχὴν⸃ τῶν σημείων ὁ Ἰησοῦς ἐν Κανὰ τῆς Γαλιλαίας καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=11;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Ταύτην ἐποίησεν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανὰ τῆς Γαλιλαίας καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ταύτην ⸀ἐποίησεν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανὰ τῆς Γαλιλαίας καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=11;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ταύτην ἐποίησεν ἀρχὴν τῶν σημείων ὁ Ἰησοῦσ ἐν Κανὰ τῆσ Γαλιλαίασ καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰσ αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ταύτην ἐποίησεν τὴν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ· καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ταύτην ἐποίησε τὴν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἐφανέρωσε τὴν δόξαν αὑτοῦ· καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ταύτην ἐποίησε τὴν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἐφανέρωσε τὴν δόξαν αὐτοῦ· καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ταύτην ἐποίησεν τὴν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανᾷ τῆς Γαλιλαίας, καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ· καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>JEAN 2 12</b></a> 
+<a href="../hellene/4-2.html#V12">EL</a> 
+<a href="../romain/4-2.html#V12">RO</a> 
+<a href="../francais/4-2.html#V12">FR</a> 
+<a href="../technique/4-2.html#V12">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 12⸂<rtxt>2–5</rtxt><wits> 𝔓⁶⁶<sup>*</sup><font size="-1">.</font>⁷⁵ B Ψ 0162. (579) c </wits><b>¦</b><rtxt>αυτου</rtxt><wits> א it ly </wits><b>¦</b><rtxt>2–4</rtxt><wits> L; Or<sup>s</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<sup>c</sup> A N Γ Δ Θ <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 700. 892. 1424. (K W<sup>s</sup>) 𝔐 lat sy sa bo </wits><b>|</b>⸀<rtxt>εμεινεν</rtxt><wits> 𝔓⁶⁶<sup>c</sup> A <i>f</i>¹ 565. <rtxt> (εμενεν</rtxt> <wits> 1241)</wits> b sa<sup>mss</sup> ly bo </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=12;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>Μετα τουτο κατεβη εις Καφαρναουμ αυτος και η μητηρ αυτου και οι αδελφοι και οι μαθηται αυτου και εκει εμειναν ου πολλας ημερας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=12;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Μετα τουτο κατεβη εις Καφαρναουμ αυτος και η μητηρ αυτου και οι αδελφοι αυτου και εκει εμιναν ου πολλας ημερας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=12;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Μετα τουτο κατεβη εις Καπερναουμ αυτος και η Μ̅Η̅Ρ̅ αυτου και οι αδελφοι αυτου και οι μαθηται αυτου και εκει εμεινεν ου πολλας ημερας</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=12;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Μετα τουτο κατεβη αυτος και οι μαθητε αυτου και η Μ̅Η̅Ρ̅ και οι αδελφοι αυτου και εμιναν ου πολλας ημερας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Μετὰ τοῦτο κατέβη εἰς Καφαρναοὺμ αὐτὸς καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ [αὐτοῦ] καὶ οἱ μαθηταὶ αὐτοῦ καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Μετὰ τοῦτο κατέβη εἰς Καφαρναοὺμ αὐτὸς καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ ⸂[αὐτοῦ] καὶ οἱ μαθηταὶ αὐτοῦ⸃ καὶ ἐκεῖ ⸀ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=12;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ΜΕΤΑ ΤΟΥΤΟ κατέβη εἰς Καφαρναοὺμ αὐτὸς καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ καὶ οἱ μαθηταὶ αὐτοῦ, καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Μετὰ τοῦτο κατέβη εἰς Καφαρναοὺμ αὐτὸς καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ⸀ἀδελφοὶ καὶ οἱ μαθηταὶ αὐτοῦ, καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=12;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>Μετὰ τοῦτο κατέβη εἰσ Καφαρναοὺμ αὐτὸσ καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ καὶ οἱ μαθηταὶ αὐτοῦ, καὶ ἐκεῖ ἔμειναν οὐ πολλὰσ ἡμέρασ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Μετὰ τοῦτο κατέβη εἰς Καπερναούμ, αὐτὸς καὶ ἡ μήτηρ αὐτοῦ, καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ οἱ μαθηταὶ αὐτοῦ· καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Μετὰ τοῦτο κατέβη εἰς Καπερναοὺμ αὐτὸς καὶ ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ καὶ οἱ μαθηταὶ αὐτοῦ, καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Μετὰ τοῦτο κατέβη εἰς Καπερναούμ, αὐτὸς καὶ ἡ μήτηρ αὐτοῦ, καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ οἱ μαθηταὶ αὐτοῦ· καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Μετὰ τοῦτο κατέβη εἰς Καπερναούμ, αὐτὸς, καὶ ἡ μήτηρ αὐτοῦ, καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ οἱ μαθηταὶ αὐτοῦ: καὶ ἐκεῖ ἔμειναν οὐ πολλὰς ἡμέρας.</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>JEAN 2 13</b></a> 
+<a href="../hellene/4-2.html#V13">EL</a> 
+<a href="../romain/4-2.html#V13">RO</a> 
+<a href="../francais/4-2.html#V13">FR</a> 
+<a href="../technique/4-2.html#V13">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 13⸂<rtxt>εγγυς δε</rtxt><wits> א </wits><b>¦</b><rtxt>και εγγυς δε</rtxt><wits> 𝔓⁶⁶<sup>*</sup> </wits><b>|</b>⸄<rtxt>1 2</rtxt><wits> <i>f</i>¹³ </wits><b>¦</b><rtxt>3 4 1 2</rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵ (A) L N 1241. 1424 b j r¹ vg<sup>cl</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=13;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>Και εγγυς ην το πασχα των Ιουδαιωˉ και ανεβη εις Ιεροσολυμα ο Ι̅Σ̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=13;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>εγγυς δε ην το Πασχα των Ιουδαιων και ανεβη ις Ιεροσολυμα ο Ι̅Σ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=13;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και εγγυς ην το Πασχα των Ιουδαιων και ανεβη ο Ι̅Σ̅ εις Ιεροσολυμα Ι̅Σ̅</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=13;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και εγγυς ην το Πασχα των Ιουδεων και ανεβη εις Ιεροσολυμα ο Ι̅Σ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸂Καὶ ἐγγὺς⸃ ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη ⸄εἰς Ἱεροσόλυμα ὁ Ἰησοῦς⸅.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=13;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἰεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=13;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>Καὶ ἐγγὺσ ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰσ Ἱεροσόλυμα ὁ Ἰησοῦσ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ ἐγγὺς ἦν τὸ Πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ ἐγγὺς ἦν τὸ πάσχα τῶν Ἰουδαίων, καὶ ἀνέβη εἰς Ἱεροσόλυμα ὁ Ἰησοῦς,</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>JEAN 2 14</b></a> 
+<a href="../hellene/4-2.html#V14">EL</a> 
+<a href="../romain/4-2.html#V14">RO</a> 
+<a href="../francais/4-2.html#V14">FR</a> 
+<a href="../technique/4-2.html#V14">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 14⸆<rtxt>τας</rtxt><wits> 𝔓⁷⁵ ly </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=14;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και ευρεν εν τω ιερω τους πωλουˉτας βοας και προβατα και περιστερας και τους κερματιστας καθημενους</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=14;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Και ευρεˉ εν τω ιερω τους πωλουντας και τα προβατα και βοας και περιστερας και τους κερματιστας καθημενους</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=14;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Και ευρεˉ εν τω ιερω τους πωλουντας βοας και προβατα και περιστερας και τους κερματιστας καθημενους</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=14;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και ευρεν εν τω ιερω τους πωλουντας βοας και προβατα και περιστερας και τους κερματιστας καθημενους</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=14;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και ευρεν εν τω ιερω τους πωλουντας βοας και προβατα κε περιστερας και τους κολλυβιστας καθημενους</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστερὰς καὶ τοὺς κερματιστὰς καθημένους,</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας ⸆ βόας καὶ πρόβατα καὶ περιστερὰς καὶ τοὺς κερματιστὰς καθημένους,</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=14;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστερὰς καὶ τοὺς κερματιστὰς καθημένους,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστερὰς καὶ τοὺς κερματιστὰς καθημένους,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=14;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ εὗρεν ἐν τῷ ἱερῷ τοὺσ πωλοῦντασ βόασ καὶ πρόβατα καὶ περιστερὰσ καὶ τοὺσ κερματιστὰσ καθημένουσ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστεράς, καὶ τοὺς κερματιστὰς καθημένους.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστερὰς, καὶ τοὺς κερματιστὰς καθημένους.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστεράς, καὶ τοὺς κερματιστὰς καθημένους.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς πωλοῦντας βόας καὶ πρόβατα καὶ περιστεράς, καὶ τοὺς κερματιστὰς καθημένους:</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>JEAN 2 15</b></a> 
+<a href="../hellene/4-2.html#V15">EL</a> 
+<a href="../romain/4-2.html#V15">RO</a> 
+<a href="../francais/4-2.html#V15">FR</a> 
+<a href="../technique/4-2.html#V15">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 15⸆<rtxt>ως</rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵ L N W<sup>s</sup> 0162 <i>f</i>¹ 33. 565. 892. 1241 lat; Or<sup>s</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> א A B K P Γ Δ Θ Ψ <i>f</i>¹³ 579. 700. 1424 𝔐 l sy co; Or </wits><b>|</b>⸂<rtxt>τα κερματα</rtxt><wits> 𝔓⁶⁶<sup>c</sup><font size="-1">.</font>⁷⁵ B L W<sup>s</sup> 083. 0162. 33. 579 b q; Or<sup>s</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<sup>*</sup> א A K N P Γ Δ Θ Ψ <i>f</i>¹³ 700. 892. 1241. 1424. (<i>f</i>¹ 565) 𝔐 sy </wits><b>|</b>⸀<rtxt>ανεστρεψεν</rtxt><wits> 𝔓⁷⁵ A K L N P Γ Δ Ψ <i>f</i>¹ 33. 565. 579. 700. 892. 1241. 1424 𝔐; Or<sup>s</sup> </wits><b>¦</b><rtxt>κατεστρεψεν</rtxt><wits> 𝔓⁵⁹<sup>vid</sup> א <i>f</i>¹³ </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶ B W<sup>s</sup> Θ 0162 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=15;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και ποιησας φραγελλιον εκ σχοινιων παντας εξεβαλεν εκ του ιερου τα τε προβατα και τους βοας και των κολλυβιστων εξεχεεν τα κερματα και τας τραπεζας ανετρεψεν</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=15;view('vaticanus/121.jpg');">VATICANUS_B</a></td><td>330</td><td>και ποιησας φραγελλιον εκ σχοινιων παντας εξεβαλεν εκ του ιερου τα τε προβατα και τους βοας και των κολλυβιστων εξεχεεν τα κερματα και τας τραπεζας ανετρεψε</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=15;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>εποιησεν φραγελλιον εκ σχοινιων και παντας εξεβαλεν εκ του ιερου τα προβατα και τους βοας και τωˉ κολλυβιστων εξεχεεν το κερμα και τας τραπεζας κατεστρεψεν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=15;view('sinaiticus/96.jpg');">SINAITICUS_B</a></td><td>360</td><td>Και ποιησας φραγελλιον εκ σχοινιων παντας εξεβαλεν εκ του ιερου τα και προβατα και τους βοας και τωˉ κολλυβιστων εξεχεεν το κερμα και τας τραπεζας κατεστρεψεν</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=15;view('sinaiticus/96.jpg');">SINAITICUS_C</a></td><td>360</td><td>Και ποιησας φραγελλιον εκ σχοινιων παντας εξεβαλεν εκ του ιερου τα προβατα και τους βοας και τωˉ κολλυβιστων εξεχεεν το κερμα και τας τραπεζας κατεστρεψεν</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=15;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Και ποιησας φραγελλιον εκ σχοινιων παντας εξεβαλεν εκ του ιερου τα τε προβατα και τους βοας και των κολλυβιστων εξεχεεν το κερμα και τας τραπεζας ανεστρεψεν</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=15;view('washingtonianus/132.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και ποιησας ως φραγελλιον εχ σχοινιων παντας εξεβαλεν εκ του ιερου τα τε προβατα και τους βοας και των κολλυβιστων εξεχεεˉ τα κερματα και τας τραπεζας ανετρεψεν</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ ποιήσας φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ τά τε πρόβατα καὶ τοὺς βόας, καὶ τῶν κολλυβιστῶν ἐξέχεεν τὰ κέρματα καὶ τὰς τραπέζας ἀνέτρεψεν,</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ ποιήσας ⸆ φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ τά τε πρόβατα καὶ τοὺς βόας, καὶ τῶν κολλυβιστῶν ἐξέχεεν ⸂τὸ κέρμα⸃ καὶ τὰς τραπέζας ⸀ἀνέτρεψεν,</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=15;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ ποιήσας φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ τά τε πρόβατα καὶ τοὺς βόας, καὶ τῶν κολλυβιστῶν ἐξέχεεν τὰ κέρματα καὶ τὰς τραπέζας ἀνέτρεψεν,</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ ποιήσας φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ τά τε πρόβατα καὶ τοὺς βόας, καὶ τῶν κολλυβιστῶν ἐξέχεεν ⸂τὰ κέρματα⸃ καὶ τὰς τραπέζας ⸀ἀνέστρεψεν,</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=15;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ ποιήσασ φραγέλλιον ἐκ σχοινίων πάντασ ἐξέβαλεν ἐκ τοῦ ἱεροῦ, τά τε πρόβατα καὶ τοὺσ βόασ, καὶ τῶν κολλυβιστῶν ἐξέχεεν τὸ κέρμα καὶ τὰσ τραπέζασ ἀνέστρεψεν,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Καὶ ποιήσας φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ, τά τε πρόβατα καὶ τοὺς βόας· καὶ τῶν κολλυβιστῶν ἐξέχεεν τὸ κέρμα, καὶ τὰς τραπέζας ἀνέστρεψεν·</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>καὶ ποιήσας φραγέλλιον ἐκ σχοινίων, πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ, τά τε πρόβατα καὶ τοὺς βόας· καὶ τῶν κολλυβιστῶν ἐξέχεε τὸ κέρμα, καὶ τὰς τραπέζας ἀνέστρεψε·</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ ποιήσας φραγέλλιον ἐκ σχοινίων πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ, τά τε πρόβατα καὶ τοὺς βόας· καὶ τῶν κολλυβιστῶν ἐξέχεε τὸ κέρμα, καὶ τὰς τραπέζας ἀνέστρεψε·</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ ποιήσας φραγέλλιον ἐκ σχοινίων, πάντας ἐξέβαλεν ἐκ τοῦ ἱεροῦ, τά τε πρόβατα, καὶ τοὺς βόας· καὶ τῶν κολλυβιστῶν ἐξέχεεν τὸ κέρμα, καὶ τὰς τραπέζας ἀνέστρεψεν·</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>JEAN 2 16</b></a> 
+<a href="../hellene/4-2.html#V16">EL</a> 
+<a href="../romain/4-2.html#V16">RO</a> 
+<a href="../francais/4-2.html#V16">FR</a> 
+<a href="../technique/4-2.html#V16">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 16⸆<rtxt>και</rtxt><wits> 𝔓⁶⁶ A W<sup>s</sup> Θ <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 700. 1241 it vg<sup>cl</sup> sy bo<sup>ms</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁷⁵ א B K L N P Γ Δ Ψ 0162. 579. 892. 1424 𝔐 lat; Or<sup>s</sup> </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=16;view('vaticanus/121.jpg');">VATICANUS_A</a></td><td>330</td><td>και τοις τας περιστερας πωλουσιν ειπεν Αρατε ταυτα εντευθεν μη ποιειτε τον οικοˉ του πατρος μου οικοˉ εμποριου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=16;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>και τοις τας περιστερας πωλουσιν ειπεν Αρατε ταυτα εντευθεν μη ποιειται τον οικον του πατρος μου οικον εμποριου</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=16;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>και τοις τας περιστερας πωλουσιν ειπεν Αρατε ταυτα εντευθεˉ και μη ποιειτε τον οικον του Π̅Ρ̅Σ̅ μου οικον εμποριου</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=16;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>και τοις πωλουσιν τας περιστερας ειπεν Αρατε ταυτα εντευθεν και μοη ποιειτε τον οικον του Π̅Ρ̅Σ̅ μου οικον ενποριου</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=16;view('washingtonianus/133.jpg');">WASHINGTONIANUS_B</a></td><td>420</td><td>και τοις πωλουσιν τας περιστερας ειπεν Αρατε ταυτα εντευθεν και μη ποιειτε τον οικον του Π̅Ρ̅Σ̅ μου οικον ενποριου</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν· ἄρατε ταῦτα ἐντεῦθεν, μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν· ἄρατε ταῦτα ἐντεῦθεν, ⸆ μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=16;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν Ἄρατε ταῦτα ἐντεῦθεν, μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν· Ἄρατε ταῦτα ἐντεῦθεν, μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=16;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ τοῖσ τὰσ περιστερὰσ πωλοῦσιν εἶπεν· ἄρατε ταῦτα ἐντεῦθεν, μὴ ποιεῖτε τὸν οἶκον τοῦ πατρόσ μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν, Ἄρατε ταῦτα ἐντεῦθεν· μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν, Ἄρατε ταῦτα ἐντεῦθεν· μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου, οἶκον ἐμπορίου.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν, Ἄρατε ταῦτα ἐντεῦθεν· μὴ ποιεῖτε τὸν οἶκον τοῦ πατρός μου οἶκον ἐμπορίου.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ τοῖς τὰς περιστερὰς πωλοῦσιν εἶπεν, Ἄρατε ταῦτα ἐντεῦθεν· μὴ ποιεῖτε τὸν οἶκον τοῦ Πατρός μου οἶκον ἐμπορίου.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>JEAN 2 17</b></a> 
+<a href="../hellene/4-2.html#V17">EL</a> 
+<a href="../romain/4-2.html#V17">RO</a> 
+<a href="../francais/4-2.html#V17">FR</a> 
+<a href="../technique/4-2.html#V17">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 17⸀<rtxt>εμνησθησαν δε</rtxt><wits> A K N P Γ Δ Θ 050 <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 700. 892. 1241. 1424 𝔐 c r¹ vg sy<sup>h</sup> </wits><b>¦</b><rtxt>και εμνησθησαν</rtxt><wits> W<sup>s</sup> it bo<sup>ms</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵ א B L Ψ 579 co </wits><b>|</b>⸆<rtxt>οτι</rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵ W<sup>s</sup> 050 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=17;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>Εμνησθησαν οι μαθηται αυτου οτι εστιν γεγραμμενον Ο ζηλος του οικου σου καταφαγεται με</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=17;view('vaticanus/122.jpg');">VATICANUS_B</a></td><td>330</td><td>Εμνησθησαν οι μαθηται αυτου οτι εστι γεγραμμενον Ο ζηλος του οικου σου καταφαγεται με</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=17;view('sinaiticus/96.jpg');">SINAITICUS_A</a></td><td>360</td><td>Εμνησθησαν οι μαθηται αυτου οτι γεγραμμενον εστιν Ο ζηλος του οικου σου καταφαγεται με</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=17;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Εμνησθησαν δε οι μαθηται αυτου οτι γεγραμμενον εστιν Ο ζηλος του οικου σου καταφαγεται με</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=17;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Και εμνησθησαν οι μαθηται αυτου οτι γεγραμμενον εστιν οτι Ο ζηλος του οικου σου καταφαγετε μαι</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν· ὁ ζῆλος τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>⸀ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν· ⸆ ὁ ζῆλος τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=17;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν Ὁ ζῆλος τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>⸀ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν· Ὁ ζῆλος τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=17;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν· ὁ ζῆλοσ τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἐμνήσθησαν δὲ οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν, Ὁ ζῆλος τοῦ οἴκου σου καταφάγεταί με.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἐμνήσθησαν δὲ οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστὶν, Ὁ ζῆλος τοῦ οἴκου σου κατέφαγέ με.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἐμνήσθησαν δὲ οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν, Ὁ ζῆλος τοῦ οἴκου σου κατέφαγέ με.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἐμνήσθησαν δὲ οἱ μαθηταὶ αὐτοῦ ὅτι γεγραμμένον ἐστίν, Ὁ ζῆλος τοῦ οἴκου σου κατέφάγέ με.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>JEAN 2 18</b></a> 
+<a href="../hellene/4-2.html#V18">EL</a> 
+<a href="../romain/4-2.html#V18">RO</a> 
+<a href="../francais/4-2.html#V18">FR</a> 
+<a href="../technique/4-2.html#V18">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 18°<rtxt><wits> 𝔓⁷⁵ L </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=18;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>απεκριθησαν ουν οι Ιουδαιοι και ειπαν αυτω Τι σημειον δεικνυεις ημιν οτι ταυτα ποιεις</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=18;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Απεκριθησαν ουˉ οι Ιουδαιοι και ειπον αυτω Τι σημιον δικνυεις ημιˉ οτι ταυτα ποιεις</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=18;view('alexandrinus/92.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Απεκριθησαν ουν οι Ιουδαιοι και ειποˉ αυτω Τι σημειον διγνυεις ημιν οτι ταυτα ποιεις</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=18;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Απεκριθησαˉ ουν οι Ιουδεοι και ειπαν αυτω Τι σημιον δικνυεις ημιν οτι ταυτα ποιεις</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπαν αὐτῷ· τί σημεῖον δεικνύεις ἡμῖν ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπαν αὐτῷ· τί σημεῖον δεικνύεις °ἡμῖν ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=18;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπαν αὐτῷ Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπαν αὐτῷ· Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=18;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπαν αὐτῷ· τί σημεῖον δεικνύεισ ἡμῖν, ὅτι ταῦτα ποιεῖσ;</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπον αὐτῷ, Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπον αὐτῷ, Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπον αὐτῷ, Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἀπεκρίθησαν οὖν οἱ Ἰουδαῖοι καὶ εἶπον αὐτῷ, Τί σημεῖον δεικνύεις ἡμῖν, ὅτι ταῦτα ποιεῖς;</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>JEAN 2 19</b></a> 
+<a href="../hellene/4-2.html#V19">EL</a> 
+<a href="../romain/4-2.html#V19">RO</a> 
+<a href="../francais/4-2.html#V19">FR</a> 
+<a href="../technique/4-2.html#V19">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 19°<rtxt><wits> B </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=19;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>απεκριθη Ι̅Σ̅ και ειπεν αυτοις Λυσατε τον ναον τουτον και τρισιν ημεραις εγερω αυτον</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=19;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Απεκριθη ο Ι̅Σ̅ και ειπεν αυτοις Λυσατε τον ναον τουτον και εν τρισιν ημεραις εγερω αυτον</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=19;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Απεκριθη Ι̅Σ̅ και ειπεν αυτοις Λυσατε τον ναον τουτον και εν τρισιν ημεραις εγερω αυτον</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=19;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Απεκριθη Ι̅Σ̅ και ειπεν αυτοις Λυσαται τον ναον τουτον και εν τρισιν ημερες εγερω αυτον</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς· λύσατε τὸν ναὸν τοῦτον καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς· λύσατε τὸν ναὸν τοῦτον καὶ °ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=19;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς Λύσατε τὸν ναὸν τοῦτον καὶ [ἐν] τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς· Λύσατε τὸν ναὸν τοῦτον καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=19;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἀπεκρίθη Ἰησοῦσ καὶ εἶπεν αὐτοῖσ· λύσατε τὸν ναὸν τοῦτον, καὶ ἐν τρισὶν ἡμέραισ ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς, Λύσατε τὸν ναὸν τοῦτον, καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἀπεκρίθη ὁ Ἰησοῦς καὶ εἶπεν αὐτοῖς, Λύσατε τὸν ναὸν τοῦτον, καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἀπεκρίθη ὁ Ἰησοῦς καὶ εἶπεν αὐτοῖς, Λύσατε τὸν ναὸν τοῦτον, καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἀπεκρίθη Ἰησοῦς καὶ εἶπεν αὐτοῖς, Λύσατε τὸν ναὸν τοῦτον, καὶ ἐν τρισὶν ἡμέραις ἐγερῶ αὐτόν.</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>JEAN 2 20</b></a> 
+<a href="../hellene/4-2.html#V20">EL</a> 
+<a href="../romain/4-2.html#V20">RO</a> 
+<a href="../francais/4-2.html#V20">FR</a> 
+<a href="../technique/4-2.html#V20">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=20;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>ειπαν ουν οι Ιουδαιοι Τεσσερακοντα και εξ ετεσιν οικοδομηθη ο ναος ουτος και συ εν τρισιν ημεραις εγερεις αυτον</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=20;view('vaticanus/122.jpg');">VATICANUS_B</a></td><td>330</td><td>ειπαν ουν οι Ιουδαιοι Τεσσαρακοντα και εξ ετεσιν ωκοδομηθη ο ναος ουτος και συ εν τρισιν ημεραις εγερεις αυτον</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=20;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ειπον ουν οι Ιουδαιοι Τεσσερακοντα και εξ ετεσιˉ οικοδομηθη ο ναος ουτος και συ τρισιν ημεραις εγερεις αυτον</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=20;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ειπον ουν οι Ιουδαιοι Τεσσερακοντα και εξ ετεσιν ωκοδομηθη ο ναος ουτος και συ εν τρισιν ημεραις εγερεις αυτον</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=20;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Ειπαν ουν οι Ιουδεοι μ̅ κ̅α̅ι̅ ̅ ετεσιν ο ναος ουτος οικοδομηθη και συ εν τρισιν ημερες γιρις αυτον</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>εἶπαν οὖν οἱ Ἰουδαῖοι· τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>εἶπαν οὖν οἱ Ἰουδαῖοι· τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=20;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>εἶπαν οὖν οἱ Ἰουδαῖοι Τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>εἶπαν οὖν οἱ Ἰουδαῖοι· Τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=20;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>εἶπαν οὖν οἱ Ἰουδαῖοι· τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸσ οὗτοσ, καὶ σὺ ἐν τρισὶν ἡμέραισ ἐγερεῖσ αὐτόν;</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Εἶπον οὖν οἱ Ἰουδαῖοι, Τεσσαράκοντα καὶ ἓξ ἔτεσιν ᾠκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Εἶπον οὖν οἱ Ἰουδαῖοι, Τεσσαράκοντα καὶ ἓξ ἔτεσιν ᾠκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>εἶπον οὖν οἱ Ἰουδαῖοι, Τεσσαράκοντα καὶ ἓξ ἔτεσιν ᾠκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Εἶπον οὖν οἱ Ἰουδαῖοι, Τεσσαράκοντα καὶ ἕξ ἔτεσιν ᾠκοδομήθη ὁ ναὸς οὗτος, καὶ σὺ ἐν τρισὶν ἡμέραις ἐγερεῖς αὐτόν;</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>JEAN 2 21</b></a> 
+<a href="../hellene/4-2.html#V21">EL</a> 
+<a href="../romain/4-2.html#V21">RO</a> 
+<a href="../francais/4-2.html#V21">FR</a> 
+<a href="../technique/4-2.html#V21">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=21;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>εκεινος δε ελεγεν περι του ναου του σωματος αυτου</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=21;view('vaticanus/122.jpg');">VATICANUS_B</a></td><td>330</td><td>εκεινος δε ελεγε περι του ναου του σωματος αυτου</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=21;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Εκεινος δε ελεγεν περι του ναου του σωματος</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=21;view('sinaiticus/97.jpg');">SINAITICUS_B</a></td><td>360</td><td>Εκεινος δε ελεγεν περι του ναου του σωματος αυτου</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=21;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Εκεινος δε ελεγεν περι του ναου του σωματος αυτου</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=21;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Αυτος δε ελεγεν περι του ναου του σωματος αυτου</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=21;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=21;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ἐκεῖνοσ δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματοσ αὐτοῦ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ἐκεῖνος δὲ ἔλεγε περὶ τοῦ ναοῦ τοῦ σώματος αὑτοῦ.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ἐκεῖνος δὲ ἔλεγε περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ἐκεῖνος δὲ ἔλεγεν περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ.</td></tr></tbody></table>
+<br><br><div id="V22"></div><a href="#banniere"><b>JEAN 2 22</b></a> 
+<a href="../hellene/4-2.html#V22">EL</a> 
+<a href="../romain/4-2.html#V22">RO</a> 
+<a href="../francais/4-2.html#V22">FR</a> 
+<a href="../technique/4-2.html#V22">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 22⸀<rtxt>ηνεστη</rtxt><wits> W<sup>s</sup> </wits><b>|</b>⸁<rtxt>ω</rtxt><wits> A K N P W<sup>s</sup> Γ Δ Θ Ψ <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 579. 700. 892. 1241. 1424 𝔐 </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵<sup>vid</sup> א B L 050. 083 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=22;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>οτε ουν ηγερθη εκ νεκρων εμνησθησαˉ οι μαθηται αυτου οτι τουτο ελεγεν και επιστευσαν τη γραφη και τω λογω ον ειπεν ο Ι̅Σ̅</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=22;view('vaticanus/122.jpg');">VATICANUS_B</a></td><td>330</td><td>οτε ουν ηγερθη εκ νεκρων εμνησθησαˉ οι μαθηται αυτου οτι τουτο ελεγε και επιστευσαν τη γραφη και τω λογω ον ειπεν ο Ι̅Σ̅</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=22;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Οτε ουν ηγερθη εκ νεκρων εμνησθησαν οι μαθηται αυτου οτι τουτο ελεγεν και επιστευσαν τη γραφη και τω λογω ον ειπεν ο Ι̅Σ̅</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=22;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Οτε ουν ηγερθη εκ νεκρων εμνησθησαν οι μαθηται αυτου οτι τουτο ελεγεν και επιστευσαν τη γραφη και τω λογω ω ειπεν ο Ι̅Σ̅</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=22;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Οτε ουν ηνεστη εκ νεκρων εμνησθησαˉ αυτω οτι τουτο ελεγεν και επιστευσαν τη γραφη και τω λογω ω ειπεν ο Ι̅Σ̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν, καὶ ἐπίστευσαν τῇ γραφῇ καὶ τῷ λόγῳ ὃν εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>ὅτε οὖν ⸀ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν, καὶ ἐπίστευσαν τῇ γραφῇ καὶ τῷ λόγῳ ⸁ὃν εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=22;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν, καὶ ἐπίστευσαν τῇ γραφῇ καὶ τῷ λόγῳ ὃν εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν, καὶ ἐπίστευσαν τῇ γραφῇ καὶ τῷ λόγῳ ⸀ὃν εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=22;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν, καὶ ἐπίστευσαν τῇ γραφῇ καὶ τῷ λόγῳ ὃν εἶπεν ὁ Ἰησοῦσ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν· καὶ ἐπίστευσαν τῇ γραφῇ, καὶ τῷ λόγῳ ᾧ εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν αὐτοῖς, καὶ ἐπίστευσαν τῇ γραφῇ, καὶ τῷ λόγῳ ᾧ εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν αὐτοῖς· καὶ ἐπίστευσαν τῇ γραφῇ, καὶ τῷ λόγῳ ᾧ εἶπεν ὁ Ἰησοῦς.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ὅτε οὖν ἠγέρθη ἐκ νεκρῶν, ἐμνήσθησαν οἱ μαθηταὶ αὐτοῦ ὅτι τοῦτο ἔλεγεν αὐτοῖς· καὶ ἐπίστευσαν τῇ γραφῇ, καὶ τῷ λόγῳ ᾧ εἶπεν ὁ Ἰησοῦς.</td></tr></tbody></table>
+<br><br><div id="V23"></div><a href="#banniere"><b>JEAN 2 23</b></a> 
+<a href="../hellene/4-2.html#V23">EL</a> 
+<a href="../romain/4-2.html#V23">RO</a> 
+<a href="../francais/4-2.html#V23">FR</a> 
+<a href="../technique/4-2.html#V23">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 23°<rtxt><wits> B </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=23;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>Ως δε ην εν τοις Ιεροσολυμοις εν τω πασχα τη εορτη πολλοι επιστευσαν εις το ονομα αυτου θεωρουντες αυτου τα σημεια α εποιει</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=23;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Ως δε ην εν τοις Ιεροσολυμοις εν τω Πασχα εν τη εορτη πολλοι επιστευσαν εις το ονομα αυτου θεωρουντες αυτου τα σημια α εποιει</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=23;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Ως δε ην εν τοις Ιεροσολυμοις εν τω Πασχα εν τη εορτη πολλοι επιστευσαν εις το ονομα αυτου θεωρουˉτες αυτου τα σημεια α εποιει</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=23;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Ως δε ην εν τοις Ιεροσολυμοις εν τω Πασχα εν τη εορτη πολλοι επιστευσαν εις το ονομα αυτου θεωρουντες αυτου τα σημια α εποιει</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>Ὡς δὲ ἦν ἐν τοῖς Ἱεροσολύμοις ἐν τῷ πάσχα ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει·</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>Ὡς δὲ ἦν ἐν τοῖς Ἱεροσολύμοις ἐν τῷ πάσχα °ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει·</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=23;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>Ὡς δὲ ἦν ἐν τοῖς Ἰεροσολύμοις ἐν τῷ πάσχα ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει·</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>Ὡς δὲ ἦν ἐν τοῖς Ἱεροσολύμοις ἐν τῷ πάσχα ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει·</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=23;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>Ὡσ δὲ ἦν ἐν τοῖσ Ἱεροσολύμοισ ἐν τῷ πάσχα ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰσ τὸ ὄνομα αὐτοῦ, θεωροῦντεσ αὐτοῦ τὰ σημεῖα ἃ ἐποίει·</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Ὡς δὲ ἦν ἐν τοῖς Ἱεροσολύμοις ἐν τῷ Πάσχα, ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>Ὡς δὲ ἦν ἐν Ἱεροσολύμοις ἐν τῷ πάσχα ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>Ὡς δὲ ἦν ἐν Ἱεροσολύμοις ἐν τῷ πάσχα, ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Ὡς δὲ ἦν ἐν Ἱεροσολύμοις ἐν τῷ πάσχα, ἐν τῇ ἑορτῇ, πολλοὶ ἐπίστευσαν εἰς τὸ ὄνομα αὐτοῦ, θεωροῦντες αὐτοῦ τὰ σημεῖα ἃ ἐποίει.</td></tr></tbody></table>
+<br><br><div id="V24"></div><a href="#banniere"><b>JEAN 2 24</b></a> 
+<a href="../hellene/4-2.html#V24">EL</a> 
+<a href="../romain/4-2.html#V24">RO</a> 
+<a href="../francais/4-2.html#V24">FR</a> 
+<a href="../technique/4-2.html#V24">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap>APPARAT_CRITIQUE</td><td>2016</td><td>• 24⸀<rtxt>ο Ιησους</rtxt><wits> א A K N P W<sup>s</sup> Γ Δ Θ Ψ <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 579. 700. 892. 1424 𝔐; Or<sup>s</sup> </wits><b>¦</b><rtxt>—</rtxt><wits> 083 e f bo<sup>ms</sup> </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> 𝔓⁶⁶<font size="-1">.</font>⁷⁵<sup>vid</sup> B L 050. 1241; Or<sup>lem</sup> </wits><b>|</b>⸁<rtxt>εαυτον</rtxt><wits> 𝔓⁶⁶ א² A<sup>c</sup> K N P W<sup>s</sup> Γ Δ Θ Ψ 050. 083 <i>f</i>¹<font size="-1">.</font>¹³ 33. 565. 892. 1241. 1424 𝔐 sy; Or<sup>s</sup> </wits><b>¦</b><rtxt>—</rtxt><wits> 𝔓⁷⁵ 579 </wits><b>¦</b><rtxt><i>txt</i></rtxt><wits> א<sup>*</sup> A<sup>*</sup> B L 700 </wits></td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=24;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>αυτος δε Ι̅Σ̅ ουκ επιστευεν αυτον αυτοις δια το αυτον γινωσκειˉ παντας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=24;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευεν αυτον αυτοις δια το γιγνωσκιν παντας</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=24;view('sinaiticus/97.jpg');">SINAITICUS_B</a></td><td>360</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευεν εαυτον αυτοις δια το γιγνωσκιν παντας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=24;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευεˉ αυτον 〚ε〛αυτοις δια το αυτοˉ γινωσκειν παντας</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=24;view('alexandrinus/93.jpg');">ALEXANDRINUS_B</a></td><td>390</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευεˉ εαυτον αυτοις δια το αυτοˉ γινωσκειν παντας</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=24;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευσεν ο εαυτοˉ αυτοις δια το αυτον γινωσκιν παντας</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=24;view('washingtonianus/133.jpg');">WASHINGTONIANUS_B</a></td><td>420</td><td>Αυτος δε ο Ι̅Σ̅ ουκ επιστευσεν εαυτοˉ αυτοις δια το αυτον γινωσκιν παντας</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>αὐτὸς δὲ Ἰησοῦς οὐκ ἐπίστευεν αὐτὸν αὐτοῖς διὰ τὸ αὐτὸν γινώσκειν πάντας</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>αὐτὸς δὲ ⸀Ἰησοῦς οὐκ ἐπίστευεν ⸁αὐτὸν αὐτοῖς διὰ τὸ αὐτὸν γινώσκειν πάντας</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=24;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>αὐτὸς δὲ Ἰησοῦς οὐκ ἐπίστευεν αὑτὸν αὐτοῖς διὰ τὸ αὐτὸν γινώσκειν πάντας</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>αὐτὸς ⸀δὲ Ἰησοῦς οὐκ ἐπίστευεν ⸀αὑτὸν αὐτοῖς διὰ τὸ αὐτὸν γινώσκειν πάντας</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=24;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>αὐτὸσ δὲ Ἰησοῦσ οὐκ ἐπίστευεν αὐτὸν αὐτοῖσ διὰ τὸ αὐτὸν γινώσκειν πάντασ,</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>Αὐτὸς δὲ ὁ Ἰησοῦς οὐκ ἐπίστευεν ἑαυτὸν αὐτοῖς, διὰ τὸ αὐτὸν γινώσκειν πάντας,</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>αὐτὸς δὲ ὁ Ἰησοῦς οὐκ ἐπίστευεν ἑαυτὸν αὐτοῖς, διὰ τὸ αὐτὸν γινώσκειν πάντας,</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>αὐτὸς δὲ ὁ Ἰησοῦς οὐκ ἐπίστευεν ἑαυτὸν αὐτοῖς, διὰ τὸ αὐτὸν γινώσκειν πάντας,</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Αὐτὸς δὲ ὁ Ἰησοῦς οὐκ ἐπίστευεν ἑαυτὸν αὐτοῖς, διὰ τὸ αὐτὸν γινώσκειν πάντας,</td></tr></tbody></table>
+<br><br><div id="V25"></div><a href="#banniere"><b>JEAN 2 25</b></a> 
+<a href="../hellene/4-2.html#V25">EL</a> 
+<a href="../romain/4-2.html#V25">RO</a> 
+<a href="../francais/4-2.html#V25">FR</a> 
+<a href="../technique/4-2.html#V25">TE</a>
+<table cellspacing="0"><tbody>
+<tr><td nowrap class="vaticanus" onclick="eimiv=25;view('vaticanus/122.jpg');">VATICANUS_A</a></td><td>330</td><td>και οτι ου χρειαν ειχεν ινα τις μαρτυρηση περι του ανθρωπου αυτος γαρ εγινωσκεν τι ην εν τω ανθρωπω</td></tr><tr><td nowrap class="vaticanus" onclick="eimiv=25;view('vaticanus/122.jpg');">VATICANUS_B</a></td><td>330</td><td>και οτι ου χρειαν ειχεν ινα τις μαρτυρηση περι του ανθρωπου αυτος γαρ εγινωσκε τι ην εν τω ανθρωπω</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=25;view('sinaiticus/97.jpg');">SINAITICUS_A</a></td><td>360</td><td>και οτι χριαν ουκ ειχεˉ ινα τις μαρτυρηση περι του ανθρωπου αυτος γαρ εγινωσκεν τι ην εν τι ην εν τω ανθρωπω</td></tr><tr><td nowrap class="sinaiticus" onclick="eimiv=25;view('sinaiticus/97.jpg');">SINAITICUS_B</a></td><td>360</td><td>και οτι χριαν ουκ ειχεˉ ινα τις μαρτυρηση περι του ανθρωπου αυτος γαρ εγινωσκεν τι ην εν τω ανθρωπω</td></tr><tr><td nowrap class="alexandrinus" onclick="eimiv=25;view('alexandrinus/93.jpg');">ALEXANDRINUS_A</a></td><td>390</td><td>και ου χριαν ειχεν ινα τις μαρτυρηση περι του Α̅Ν̅Ο̅Υ̅ αυτος γαρ εγινωσκεν τι ην εν τω Α̅Ν̅Ω̅</td></tr><tr><td nowrap class="washingtonianus" onclick="eimiv=25;view('washingtonianus/133.jpg');">WASHINGTONIANUS_A</a></td><td>420</td><td>και οτι ου χριαν ειχεν ινα τις μαρτυρηση περι του Α̅Ν̅Ο̅Υ̅ αυτος γαρ εγιγνωσκεν τι ην εν τω Α̅Ν̅Ω̅</td></tr><tr><td nowrap>NOUVELLE_DISPOSITION</td><td>2022</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>NESTLE_ALAND_28</td><td>2016</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap class="westcott_hort" onclick="eimiv=25;view('westcott_hort/197.jpg');">WESTCOTT_HORT</a></td><td>1885</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου, αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>SBL</td><td>2011</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου, αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap class="tischendorf" onclick="eimiv=25;view('tischendorf/758.jpg');">TISCHENDORF</a></td><td>1872</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τισ μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸσ γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>ROBINSON_ET_PIERPONT</td><td>2019</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>STEPHANUS</td><td>1550</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τὶς μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸς γὰρ ἐγίνωσκε τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>SCRIVENER</td><td>1894</td><td>καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου· αὐτὸς γὰρ ἐγίνωσκε τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr><tr><td nowrap>KING_JAMES</td><td>2020</td><td>Καὶ ὅτι οὐ χρείαν εἶχεν ἵνα τις μαρτυρήσῃ περὶ τοῦ ἀνθρώπου: αὐτὸς γὰρ ἐγίνωσκεν τί ἦν ἐν τῷ ἀνθρώπῳ.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+
+show	= 0;
+current	= ""
+
+			
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+nbmakelc	= 0;
+lcarray 	= {}
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+function show_number(link)
+{
+	classn = link.split('/')[0]
+	page = link.match(/[0-9]+/)
+	
+	boxes = document.querySelectorAll('.bb'); boxes.forEach(box => {box.remove();});
+	
+
+	if (classn == "sinaiticus")
+	{
+		for (b=0 ; b!=sinaiticus.length ; b++)
+		{
+			splitsin = sinaiticus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+
+
+	if (classn == "alexandrinus")
+	{
+		for (b=0 ; b!=alexandrinus.length ; b++)
+		{
+			splitsin = alexandrinus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}	
+	
+	if (classn == "vaticanus")
+	{
+		for (b=0 ; b!=vaticanus.length ; b++)
+		{
+			splitsin = vaticanus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+	
+	
+	if (classn == "ephraemi_rescriptus")
+	{
+		for (b=0 ; b!=ephraemi_rescriptus.length ; b++)
+		{
+			splitsin = ephraemi_rescriptus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+	
+	
+
+	if (classn == "bezae")
+	{
+		for (b=0 ; b!=bezae.length ; b++)
+		{
+			splitsin = bezae[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}
+
+
+	if (classn == "washingtonianus")
+	{
+		for (b=0 ; b!=washingtonianus.length ; b++)
+		{
+			splitsin = washingtonianus[b].split(':')
+			if (splitsin[3] == page)
+			{
+				//console.log(splitsin)
+				putn = document.createElement('div')
+				putn.className = "bb"
+				putn.textContent = xbook[splitsin[0]]+' '+splitsin[1]+' '+splitsin[2];
+				putn.style.cssText = `	position: absolute;
+										left:	`+splitsin[4]+`px;
+										top:	`+splitsin[5]+`px;
+										padding: 10px;
+										color:white;
+										font-size: 45px;
+										display: inline-block;
+										white-space: nowrap;
+										background: rgba(78, 78, 78,.7);`
+				putn.setAttribute("onmouseover", "this.style.opacity=0;");						
+				putn.setAttribute("onmouseout", "this.style.opacity=1;");						
+										
+				document.getElementById('inright').appendChild(putn)
+			}
+		}
+	}	
+	
+	
+}
+
+		
+
+
+function view(link)
+{
+
+	//clean
+	document.getElementById('box').src = ""
+
+	
+	//get info
+	classn = link.split('/')[0]
+	page = link.match(/[0-9]+/)
+	
+	if (classn != current)
+	{
+		
+		show_number(link)
+		
+		
+		
+		
+		if (current != "")
+		{
+			//CLOSE
+			for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+			{
+				document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+			}
+		}
+		
+		//OPEN
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+		}
+		
+		document.getElementById('left').style.width = "50%";
+		document.getElementById('right').style.width = "50%";
+		
+		document.getElementById('box').src = '../../'+link;
+		
+		current = classn;
+		show = 1;
+		
+		//resize
+		//pvx = document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth
+		//panzoom(element).zoomAbs(0,0,0.1);
+		
+	}
+	
+	else if (classn == current)
+	{
+		
+		//CLOSE
+		for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+		{
+			document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+		}
+		
+		document.getElementById('left').style.width = "100%";
+		document.getElementById('right').style.width = "0%";
+		show = 0;
+		
+		current = "";
+	
+	}
+
+	window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+}
+
+
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.2,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			if (elempic.src.indexOf('sinaiticus') != -1)
+				view('sinaiticus')
+			
+			else if (elempic.src.indexOf('alexandrinus') != -1)
+				view('alexandrinus')
+			
+			else if (elempic.src.indexOf('vaticanus') != -1)
+				view('vaticanus')
+			
+			else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+				view('ephraemi_rescriptus')
+
+			else if (elempic.src.indexOf('bezae') != -1)
+				view('bezae')
+
+			else if (elempic.src.indexOf('washingtonianus') != -1)
+				view('washingtonianus')
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+				view('westcott_hort')
+			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+				view('tischendorf')
+			
+			
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+
+		
+		else if (e.keyCode == '37') {
+			
+			if (pic > 0)
+			{
+					pic--
+				
+				
+				if (elempic.src.indexOf('sinaiticus') != -1)
+				{
+					elempic.src = "../../sinaiticus/"+pic+".jpg";
+					show_number("sinaiticus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('alexandrinus') != -1)
+				{
+					elempic.src = "../../alexandrinus/"+pic+".jpg";
+					show_number("alexandrinus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('vaticanus') != -1 && pic > 0)
+				{
+					elempic.src = "../../vaticanus/"+pic+".jpg";
+					show_number("vaticanus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+				{
+					elempic.src = "../../ephraemi_rescriptus/"+pic+".jpg";
+					show_number("ephraemi_rescriptus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('bezae') != -1)
+				{
+					elempic.src = "../../bezae/"+pic+".jpg";
+					show_number("bezae/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('washingtonianus') != -1 && pic > 0)
+				{
+					elempic.src = "../../washingtonianus/"+pic+".jpg";
+					show_number("washingtonianus/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('westcott_hort') != -1)
+				{
+					elempic.src = "../../westcott_hort/"+pic+".jpg";
+					show_number("westcott_hort/"+pic+".jpg")
+				}
+				
+				else if (elempic.src.indexOf('tischendorf') != -1)
+				{
+					elempic.src = "../../tischendorf/"+pic+".jpg";
+					show_number("tischendorf/"+pic+".jpg")
+				}
+				
+			}
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			if (elempic.src.indexOf('sinaiticus') != -1)
+			{
+				if (pic < 296)
+					pic++
+				
+				elempic.src = "../../sinaiticus/"+pic+".jpg";
+				show_number("sinaiticus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('alexandrinus') != -1)
+			{
+				if (pic < 295)
+					pic++
+				
+				elempic.src = "../../alexandrinus/"+pic+".jpg";
+				show_number("alexandrinus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('vaticanus') != -1)
+			{
+				if (pic < 295)
+					pic++
+				
+				elempic.src = "../../vaticanus/"+pic+".jpg";
+				show_number("vaticanus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('ephraemi_rescriptus') != -1)
+			{
+				if (pic < 285)
+					pic++
+				
+				elempic.src = "../../ephraemi_rescriptus/"+pic+".jpg";
+				show_number("ephraemi_rescriptus/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('bezae') != -1)
+			{
+				if (pic < 416)
+					pic++
+				
+				elempic.src = "../../bezae/"+pic+".jpg";
+				show_number("bezae/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('washingtonianus') != -1)
+			{
+				if (pic < 388)
+					pic++
+				
+				elempic.src = "../../washingtonianus/"+pic+".jpg";
+				show_number("washingtonianus/"+pic+".jpg")
+			}
+			
+			
+			else if (elempic.src.indexOf('westcott_hort') != -1)
+			{
+				if (pic < 547)
+					pic++
+				
+				elempic.src = "../../westcott_hort/"+pic+".jpg";
+				show_number("westcott_hort/"+pic+".jpg")
+			}
+			
+			else if (elempic.src.indexOf('tischendorf') != -1)
+			{
+				if (pic < 2014)
+					pic++
+				
+				elempic.src = "../../tischendorf/"+pic+".jpg";
+				show_number("tischendorf/"+pic+".jpg")
+			}
+			
+		}
+		
+
+
+	}
+
+}
+
+
+
+
+
+
+</script>
+
+
+</html>
+

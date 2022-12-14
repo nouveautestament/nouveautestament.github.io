@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>ROMAIN</title>
+
+		<script src='panzoom.min.js'></script>
+		
+		<script>
+		
+			show = 0;
+			current = ""
+		
+			function view(link)
+			{
+			
+				document.getElementById('box').src = ""
+				classn = link.split('/')[0]
+			
+				if (classn != current)
+				{
+					
+					if (current != "")
+					{
+						//CLOSE
+						for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+						{
+							document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+						}
+					}
+					
+					//OPEN
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+					}
+					
+					document.getElementById('left').style.width = "50%";
+					document.getElementById('right').style.width = "50%";
+					
+					document.getElementById('box').src = '../../'+link;
+					
+					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
+					show = 1;
+					
+				}
+				
+				else if (classn == current)
+				{
+					
+					//CLOSE
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+					}
+					
+					document.getElementById('left').style.width = "100%";
+					document.getElementById('right').style.width = "0%";
+					show = 0;
+					
+					current = "";
+				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
+				}
+
+			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+		}
+		</script>
+
+
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+
+			#inleft {
+				
+				padding:5px;
+			}
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.amiatinus, .erasme_1527{
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html">JEAN</a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html"><b>[ HEBREUX ]</b></a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="19-1.html">CH1</a>&ensp;<a href="19-2.html">CH2</a>&ensp;<a href="19-3.html">CH3</a>&ensp;<a href="19-4.html">CH4</a>&ensp;<a href="19-5.html">CH5</a>&ensp;<a href="19-6.html">CH6</a>&ensp;<a href="19-7.html">CH7</a>&ensp;<a href="19-8.html">CH8</a>&ensp;<a href="19-9.html">CH9</a>&ensp;<a href="19-10.html"><b>[ CH10 ]</b></a>&ensp;<a href="19-11.html">CH11</a>&ensp;<a href="19-12.html">CH12</a>&ensp;<a href="19-13.html">CH13</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;<a href="#V22">V22</a>&ensp;<a href="#V23">V23</a>&ensp;<a href="#V24">V24</a>&ensp;<a href="#V25">V25</a>&ensp;<a href="#V26">V26</a>&ensp;<a href="#V27">V27</a>&ensp;<a href="#V28">V28</a>&ensp;<a href="#V29">V29</a>&ensp;<a href="#V30">V30</a>&ensp;<a href="#V31">V31</a>&ensp;<a href="#V32">V32</a>&ensp;<a href="#V33">V33</a>&ensp;<a href="#V34">V34</a>&ensp;<a href="#V35">V35</a>&ensp;<a href="#V36">V36</a>&ensp;<a href="#V37">V37</a>&ensp;<a href="#V38">V38</a>&ensp;<a href="#V39">V39</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>HEBREUX 10 1</b></a> 
+<a href="../hellene/19-10.html#V1">EL</a> 
+<a href="../romain/19-10.html#V1">RO</a> 
+<a href="../francais/19-10.html#V1">FR</a> 
+<a href="../technique/19-10.html#V1">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=1;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Umbram enim habens lex bonorum futurorum, non ip sam imaginem rerum, per singulos annos iisdem ipsis hostiis, quas offerunt indesinenter, numquam potest accedentes perfectos facere.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> umbram enim habens lex bonorum futurorum non ipsam imaginem rerum per singulos annos hisdem ipsis hostiis quas offerunt indesinenter numquam potest accedentes perfectos facere</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=1;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Nam lex umbram obtinens futurorum bonorum, non ipsam imaginem rerum, his hostiis quas singulis annis easdem continenter offerunt, nunquam potest accedentes perfectos reddere.</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>HEBREUX 10 2</b></a> 
+<a href="../hellene/19-10.html#V2">EL</a> 
+<a href="../romain/19-10.html#V2">RO</a> 
+<a href="../francais/19-10.html#V2">FR</a> 
+<a href="../technique/19-10.html#V2">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=2;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Alioquin nonne cessassent offerri, ideo quod nullam haberent ultra conscientiam peccatorum cultores semel mundati?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> alioquin non cessassent offerri ideo quod nullam haberent ultra conscientiam peccati cultores semel mundati</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=2;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Alioqui nonne desiissent offerri? propterea, quod nullam iam habuissent conscientiam peccatorum, qui sacrificassent, ac semel purgati essent.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>HEBREUX 10 3</b></a> 
+<a href="../hellene/19-10.html#V3">EL</a> 
+<a href="../romain/19-10.html#V3">RO</a> 
+<a href="../francais/19-10.html#V3">FR</a> 
+<a href="../technique/19-10.html#V3">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=3;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Sed in ipsis commemoratio peccatorum per singulos annos fit.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sed in ipsis commemoratio peccatorum per singulos annos fit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=3;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Atqui in istis commemoratio fit peccatorum quotannis.</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>HEBREUX 10 4</b></a> 
+<a href="../hellene/19-10.html#V4">EL</a> 
+<a href="../romain/19-10.html#V4">RO</a> 
+<a href="../francais/19-10.html#V4">FR</a> 
+<a href="../technique/19-10.html#V4">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=4;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Impossibile enim est sanguinem taurorum et hircorum auferre peccata.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> inpossibile enim est sanguine taurorum et hircorum auferri peccata</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=4;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Non enim potest sanguis taurorum & hircorum auferre peccata.</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>HEBREUX 10 5</b></a> 
+<a href="../hellene/19-10.html#V5">EL</a> 
+<a href="../romain/19-10.html#V5">RO</a> 
+<a href="../francais/19-10.html#V5">FR</a> 
+<a href="../technique/19-10.html#V5">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=5;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Ideo ingrediens mundum dicit: “ Hostiam et oblationem noluisti, corpus autem aptasti mihi;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> ideo ingrediens mundum dicit hostiam et oblationem noluisti corpus autem aptasti mihi</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=5;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Quapropter cum ingressurus est mun dum, dicit: Sacrificium & oblatio nem noluisti. Corpus autem apta sti mihi,</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>HEBREUX 10 6</b></a> 
+<a href="../hellene/19-10.html#V6">EL</a> 
+<a href="../romain/19-10.html#V6">RO</a> 
+<a href="../francais/19-10.html#V6">FR</a> 
+<a href="../technique/19-10.html#V6">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=6;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> holocautomata et sacrificia pro peccato non tibi placuerunt.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> holocaustomata et pro peccato non tibi placuit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=6;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> holocautomata & pro peccato non comprobasti.</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>HEBREUX 10 7</b></a> 
+<a href="../hellene/19-10.html#V7">EL</a> 
+<a href="../romain/19-10.html#V7">RO</a> 
+<a href="../francais/19-10.html#V7">FR</a> 
+<a href="../technique/19-10.html#V7">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=7;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Tunc dixi: Ecce venio, in capitulo libri scriptum est de me, ut faciam, Deus, voluntatem tuam ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> tunc dixi ecce venio in capitulo libri scriptum est de me ut faciam Deus voluntatem tuam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=7;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Tunc dixi: Ecce adsum, in capite libri scriptum est de me, ut faciam deus uoluntatem tuam.</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>HEBREUX 10 8</b></a> 
+<a href="../hellene/19-10.html#V8">EL</a> 
+<a href="../romain/19-10.html#V8">RO</a> 
+<a href="../francais/19-10.html#V8">FR</a> 
+<a href="../technique/19-10.html#V8">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=8;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Superius dicens: “ Hostias et oblationes et holocautomata et sacrificia pro peccato noluisti, nec placuerunt tibi ”, quae secundum legem offeruntur,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> superius dicens quia hostias et oblationes et holocaustomata et pro peccato noluisti nec placita sunt tibi quae secundum legem offeruntur</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=8;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Superius cum dicit, sacrificium, & oblationem, & holocautomata, & pro peccato noluisti, neque comprobasti, quae iuxta legem offeruntur,</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>HEBREUX 10 9</b></a> 
+<a href="../hellene/19-10.html#V9">EL</a> 
+<a href="../romain/19-10.html#V9">RO</a> 
+<a href="../francais/19-10.html#V9">FR</a> 
+<a href="../technique/19-10.html#V9">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=9;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> tunc dixit: “ Ecce venio, ut faciam voluntatem tuam ”. Aufert primum, ut secundum statuat;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> tunc dixit ecce venio ut faciam Deus voluntatem tuam aufert primum ut sequens statuat</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=9;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> tunc dixit: Ecce adsum, ut faciam deus uoluntatem tuam: tollit prius, ut posterius statuat:</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>HEBREUX 10 10</b></a> 
+<a href="../hellene/19-10.html#V10">EL</a> 
+<a href="../romain/19-10.html#V10">RO</a> 
+<a href="../francais/19-10.html#V10">FR</a> 
+<a href="../technique/19-10.html#V10">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=10;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> in qua voluntate sanctificati sumus per oblationem corporis Christi Iesu in semel.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> in qua voluntate sanctificati sumus per oblationem corporis Christi Iesu in semel</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=10;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> per quam uoluntatem sanctificati sumus per oblationem corporis Iesu Christi semel peractam.</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>HEBREUX 10 11</b></a> 
+<a href="../hellene/19-10.html#V11">EL</a> 
+<a href="../romain/19-10.html#V11">RO</a> 
+<a href="../francais/19-10.html#V11">FR</a> 
+<a href="../technique/19-10.html#V11">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=11;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et omnis quidem sacerdos stat cotidie ministrans et easdem saepe offerens hostias, quae numquam possunt auferre peccata.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et omnis quidem sacerdos praesto est cotidie ministrans et easdem saepe offerens hostias quae numquam possunt auferre peccata</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=11;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Et omnis quidem sacerdos assistit quo tidie, sacra peragens, & easdem saepius offerens hostias, quae nunquàm possint auferre peccata.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>HEBREUX 10 12</b></a> 
+<a href="../hellene/19-10.html#V12">EL</a> 
+<a href="../romain/19-10.html#V12">RO</a> 
+<a href="../francais/19-10.html#V12">FR</a> 
+<a href="../technique/19-10.html#V12">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=12;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hic autem, una pro peccatis oblata hostia, in sempiternum consedit in dextera Dei,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hic autem unam pro peccatis offerens hostiam in sempiternum sedit in dextera Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=12;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Hic uero, una pro peccatis oblata uicti ma, perpetuo sedet ad dexteram dei,</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>HEBREUX 10 13</b></a> 
+<a href="../hellene/19-10.html#V13">EL</a> 
+<a href="../romain/19-10.html#V13">RO</a> 
+<a href="../francais/19-10.html#V13">FR</a> 
+<a href="../technique/19-10.html#V13">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=13;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> de cetero exspectans, donec ponantur inimici eius scabellum pedum eius;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> de cetero expectans donec ponantur inimici eius scabillum pedum eius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=13;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> id quod superest expectans, donec reddantur inimici ipsius, scabellum pedum eius.</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>HEBREUX 10 14</b></a> 
+<a href="../hellene/19-10.html#V14">EL</a> 
+<a href="../romain/19-10.html#V14">RO</a> 
+<a href="../francais/19-10.html#V14">FR</a> 
+<a href="../technique/19-10.html#V14">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=14;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> una enim oblatione consummavit in sempiternum eos, qui sanctificantur.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> una enim oblatione consummavit in sempiternum sanctificatos</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=14;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Vnica enim oblatione perfectos effecit in perpetuum, eos qui sanctificantur.</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>HEBREUX 10 15</b></a> 
+<a href="../hellene/19-10.html#V15">EL</a> 
+<a href="../romain/19-10.html#V15">RO</a> 
+<a href="../francais/19-10.html#V15">FR</a> 
+<a href="../technique/19-10.html#V15">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=15;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Testificatur autem nobis et Spiritus Sanctus; postquam enim dixit:</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> contestatur autem nos et Spiritus Sanctus postquam enim dixit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=15;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Testificatur aute nobis & ipse spiritus sanctus, nimirum cum praedixerit,</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>HEBREUX 10 16</b></a> 
+<a href="../hellene/19-10.html#V16">EL</a> 
+<a href="../romain/19-10.html#V16">RO</a> 
+<a href="../francais/19-10.html#V16">FR</a> 
+<a href="../technique/19-10.html#V16">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=16;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> “ Hoc est testamentum, quod testabor ad illos post dies illos, dicit Dominus, dando leges meas in cordibus eorum, et in mente eorum superscribam eas;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hoc autem testamentum quod testabor ad illos post dies illos dicit Dominus dando leges meas in cordibus eorum et in mente eorum superscribam eas</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=16;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Hoc est testamentum, quod condam erga illos, post dies illos, dicit dominus, dans leges meas in corde illorum, & in mentibus illorum inscribam eas,</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>HEBREUX 10 17</b></a> 
+<a href="../hellene/19-10.html#V17">EL</a> 
+<a href="../romain/19-10.html#V17">RO</a> 
+<a href="../francais/19-10.html#V17">FR</a> 
+<a href="../technique/19-10.html#V17">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=17;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> et peccatorum eorum et iniquitatum eorum iam non recordabor amplius ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et peccatorum et iniquitatium eorum iam non recordabor amplius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=17;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> & peccatorum atque iniquitatum illorum no recor dabor amplius.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>HEBREUX 10 18</b></a> 
+<a href="../hellene/19-10.html#V18">EL</a> 
+<a href="../romain/19-10.html#V18">RO</a> 
+<a href="../francais/19-10.html#V18">FR</a> 
+<a href="../technique/19-10.html#V18">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=18;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Ubi autem horum remissio, iam non oblatio pro peccato.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> ubi autem horum remissio iam non oblatio pro peccato</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=18;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Porrò ubi horum est remissio, non est amplius oblatio pro peccato.</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>HEBREUX 10 19</b></a> 
+<a href="../hellene/19-10.html#V19">EL</a> 
+<a href="../romain/19-10.html#V19">RO</a> 
+<a href="../francais/19-10.html#V19">FR</a> 
+<a href="../technique/19-10.html#V19">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=19;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Habentes itaque, fratres, fiduciam in introitum Sanctorum in sanguine Iesu,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> habentes itaque fratres fiduciam in introitu sanctorum in sanguine Christi</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=19;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Cum igitur fratres, habeamus libertatem adeun di in sancta per sanguinem Iesu,</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>HEBREUX 10 20</b></a> 
+<a href="../hellene/19-10.html#V20">EL</a> 
+<a href="../romain/19-10.html#V20">RO</a> 
+<a href="../francais/19-10.html#V20">FR</a> 
+<a href="../technique/19-10.html#V20">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=20;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quam initiavit nobis viam novam et viventem per velamen, id est carnem suam,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quam initiavit nobis viam novam et viventem per velamen id est carnem suam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=20;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> ea uia quam dedicauit nobis recentem ac uiuentem, per uelametum, hoc est, per carnem suam,</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>HEBREUX 10 21</b></a> 
+<a href="../hellene/19-10.html#V21">EL</a> 
+<a href="../romain/19-10.html#V21">RO</a> 
+<a href="../francais/19-10.html#V21">FR</a> 
+<a href="../technique/19-10.html#V21">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=21;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> et sacerdotem magnum super domum Dei,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et sacerdotem magnum super domum Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=21;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> cumque habeamus sacerdotem magnum praefectum domui dei,</td></tr></tbody></table>
+<br><br><div id="V22"></div><a href="#banniere"><b>HEBREUX 10 22</b></a> 
+<a href="../hellene/19-10.html#V22">EL</a> 
+<a href="../romain/19-10.html#V22">RO</a> 
+<a href="../francais/19-10.html#V22">FR</a> 
+<a href="../technique/19-10.html#V22">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=22;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> accedamus cum vero corde in plenitudine fidei, aspersi corda a conscientia mala et abluti corpus aqua munda;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> accedamus cum vero corde in plenitudine fidei aspersi corda a conscientia mala et abluti corpus aqua munda</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=22;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> accedamus cum uero corde, in certitudine fidei, aspersi cordibus, ac depulsa con scientia mala, & abluti corpore, aqua pura,</td></tr></tbody></table>
+<br><br><div id="V23"></div><a href="#banniere"><b>HEBREUX 10 23</b></a> 
+<a href="../hellene/19-10.html#V23">EL</a> 
+<a href="../romain/19-10.html#V23">RO</a> 
+<a href="../francais/19-10.html#V23">FR</a> 
+<a href="../technique/19-10.html#V23">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=23;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> teneamus spei confessionem indeclinabilem, fidelis enim est, qui repromisit;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> teneamus spei nostrae confessionem indeclinabilem fidelis enim est qui repromisit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=23;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> teneamus confessionem spei, non uacillantem, fidelis enim qui promisit,</td></tr></tbody></table>
+<br><br><div id="V24"></div><a href="#banniere"><b>HEBREUX 10 24</b></a> 
+<a href="../hellene/19-10.html#V24">EL</a> 
+<a href="../romain/19-10.html#V24">RO</a> 
+<a href="../francais/19-10.html#V24">FR</a> 
+<a href="../technique/19-10.html#V24">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=24;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> et consideremus invicem in provocationem caritatis et bonorum operum,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et consideremus invicem in provocationem caritatis et bonorum operum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=24;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> & consideremus nos inuicem, in hoc, ut prouocemus ad charitatem & bona opera,</td></tr></tbody></table>
+<br><br><div id="V25"></div><a href="#banniere"><b>HEBREUX 10 25</b></a> 
+<a href="../hellene/19-10.html#V25">EL</a> 
+<a href="../romain/19-10.html#V25">RO</a> 
+<a href="../francais/19-10.html#V25">FR</a> 
+<a href="../technique/19-10.html#V25">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=25;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> non deserentes congregationem nostram, sicut est consuetudinis quibusdam, sed exhortantes, et tanto magis quanto videtis appropinquantem diem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> non deserentes collectionem nostram sicut est consuetudinis quibusdam sed consolantes et tanto magis quanto videritis adpropinquantem diem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=25;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> no deserentes aggregatione nostri mutuam, sicuti mos est nonnullis, sed adhortantes inuicem, idque hoc magis, quod uidetis appropinquantem diem.</td></tr></tbody></table>
+<br><br><div id="V26"></div><a href="#banniere"><b>HEBREUX 10 26</b></a> 
+<a href="../hellene/19-10.html#V26">EL</a> 
+<a href="../romain/19-10.html#V26">RO</a> 
+<a href="../francais/19-10.html#V26">FR</a> 
+<a href="../technique/19-10.html#V26">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=26;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Voluntarie enim peccantibus nobis, post acceptam notitiam veritatis, iam non relinquitur pro peccatis hostia,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> voluntarie enim peccantibus nobis post acceptam notitiam veritatis iam non relinquitur pro peccatis hostia</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=26;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Nam si uolentes peccauerimus post acceptam cognitione ue ritatis, non ultra pro peccatis reliqua est hostia,</td></tr></tbody></table>
+<br><br><div id="V27"></div><a href="#banniere"><b>HEBREUX 10 27</b></a> 
+<a href="../hellene/19-10.html#V27">EL</a> 
+<a href="../romain/19-10.html#V27">RO</a> 
+<a href="../francais/19-10.html#V27">FR</a> 
+<a href="../technique/19-10.html#V27">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=27;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> terribilis autem quaedam exspectatio iudicii, et ignis aemulatio, quae consumptura est adversarios.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> terribilis autem quaedam expectatio iudicii et ignis aemulatio quae consumptura est adversarios</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=27;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> sed formidabilis quaedam expectatio iudicii, & ignis uehementia, qui deuoraturus est aduersarios.</td></tr></tbody></table>
+<br><br><div id="V28"></div><a href="#banniere"><b>HEBREUX 10 28</b></a> 
+<a href="../hellene/19-10.html#V28">EL</a> 
+<a href="../romain/19-10.html#V28">RO</a> 
+<a href="../francais/19-10.html#V28">FR</a> 
+<a href="../technique/19-10.html#V28">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=28;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Irritam quis faciens legem Moysis, sine ulla miseratione duobus vel tribus testibus moritur;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> irritam quis faciens legem Mosi sine ulla miseratione duobus vel tribus testibus moritur</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=28;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Qui aspernatus fuerit Moysi legem, absque misericordia, sub duobus aut tribus testibus mo ritur.</td></tr></tbody></table>
+<br><br><div id="V29"></div><a href="#banniere"><b>HEBREUX 10 29</b></a> 
+<a href="../hellene/19-10.html#V29">EL</a> 
+<a href="../romain/19-10.html#V29">RO</a> 
+<a href="../francais/19-10.html#V29">FR</a> 
+<a href="../technique/19-10.html#V29">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=29;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quanto deteriora putatis merebitur supplicia, qui Filium Dei conculcaverit et sanguinem testamenti communem duxerit, in quo sanctificatus est, et Spiritui gratiae contumeliam fecerit?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quanto magis putatis deteriora mereri supplicia qui Filium Dei conculcaverit et sanguinem testamenti pollutum duxerit in quo sanctificatus est et Spiritui gratiae contumeliam fecerit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=29;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Quanto putatis peioribus afficietur suppliciis, qui filium dei con culcarit, & sanguinem testamenti, ceu rem prophanam habuerit, per quem fuerat sanctificatus, & spiritum gratiae contumelia affecerit</td></tr></tbody></table>
+<br><br><div id="V30"></div><a href="#banniere"><b>HEBREUX 10 30</b></a> 
+<a href="../hellene/19-10.html#V30">EL</a> 
+<a href="../romain/19-10.html#V30">RO</a> 
+<a href="../francais/19-10.html#V30">FR</a> 
+<a href="../technique/19-10.html#V30">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=30;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Scimus enim eum, qui dixit: “ Mihi vindicta, ego retribuam ”; et iterum: “ Iudicabit Dominus populum suum ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> scimus enim qui dixit mihi vindictam ego reddam et iterum quia iudicabit Dominus populum suum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=30;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Nouimus em eum qui dixit: Meum est ulcisci, ego rependam, dicit dis. Et rursum: Dominus iudicabit po pulum suum.</td></tr></tbody></table>
+<br><br><div id="V31"></div><a href="#banniere"><b>HEBREUX 10 31</b></a> 
+<a href="../hellene/19-10.html#V31">EL</a> 
+<a href="../romain/19-10.html#V31">RO</a> 
+<a href="../francais/19-10.html#V31">FR</a> 
+<a href="../technique/19-10.html#V31">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=31;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Horrendum est incidere in manus Dei viventis.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> horrendum est incidere in manus Dei viventis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=31;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Horrendum est incidere in manus dei uiuetis.</td></tr></tbody></table>
+<br><br><div id="V32"></div><a href="#banniere"><b>HEBREUX 10 32</b></a> 
+<a href="../hellene/19-10.html#V32">EL</a> 
+<a href="../romain/19-10.html#V32">RO</a> 
+<a href="../francais/19-10.html#V32">FR</a> 
+<a href="../technique/19-10.html#V32">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=32;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Rememoramini autem pristinos dies, in quibus illuminati magnum certamen sustinuistis passionum,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> rememoramini autem pristinos dies in quibus inluminati magnum certamen sustinuistis passionum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=32;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Redeant au tem uobis in memoriam superiores dies, in quibus illuminati, ingens cer tamen sustinuistis afflictionum,</td></tr></tbody></table>
+<br><br><div id="V33"></div><a href="#banniere"><b>HEBREUX 10 33</b></a> 
+<a href="../hellene/19-10.html#V33">EL</a> 
+<a href="../romain/19-10.html#V33">RO</a> 
+<a href="../francais/19-10.html#V33">FR</a> 
+<a href="../technique/19-10.html#V33">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=33;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> in altero quidem opprobriis et tribulationibus spectaculum facti, in altero autem socii taliter conversantium effecti;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et in altero quidem obprobriis et tribulationibus spectaculum facti in altero autem socii taliter conversantium effecti</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=33;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> partim quidem, dum & probris & pressuris affecti, spectaculo fuistis ommi bus, partim dum consortes ita conuersantium facti estis.</td></tr></tbody></table>
+<br><br><div id="V34"></div><a href="#banniere"><b>HEBREUX 10 34</b></a> 
+<a href="../hellene/19-10.html#V34">EL</a> 
+<a href="../romain/19-10.html#V34">RO</a> 
+<a href="../francais/19-10.html#V34">FR</a> 
+<a href="../technique/19-10.html#V34">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=34;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> nam et vinctis compassi estis et rapinam bonorum vestrorum cum gaudio suscepistis, cognoscentes vos habere meliorem substantiam et manentem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> nam et vinctis conpassi estis et rapinam bonorum vestrorum cum gaudio suscepistis cognoscentes vos habere meliorem et manentem substantiam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=34;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Siquidem & afflictionum, quae ex uinculis meis cotigerunt participes, fuistis, & direptionem facultatum uestrarum cum gaudio accepistis, scientes uos habere in uobis, potiorem substantiam in coelis ac manente.</td></tr></tbody></table>
+<br><br><div id="V35"></div><a href="#banniere"><b>HEBREUX 10 35</b></a> 
+<a href="../hellene/19-10.html#V35">EL</a> 
+<a href="../romain/19-10.html#V35">RO</a> 
+<a href="../francais/19-10.html#V35">FR</a> 
+<a href="../technique/19-10.html#V35">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=35;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Nolite itaque abicere confidentiam vestram, quae magnam habet remunerationem;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> nolite itaque amittere confidentiam vestram quae magnam habet remunerationem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=35;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Ne abieceritis igitur fiduciam uestram, quae magnam habet praemii retributionem.</td></tr></tbody></table>
+<br><br><div id="V36"></div><a href="#banniere"><b>HEBREUX 10 36</b></a> 
+<a href="../hellene/19-10.html#V36">EL</a> 
+<a href="../romain/19-10.html#V36">RO</a> 
+<a href="../francais/19-10.html#V36">FR</a> 
+<a href="../technique/19-10.html#V36">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=36;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> patientia enim vobis necessaria est, ut voluntatem Dei facientes reportetis promissionem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> patientia enim vobis necessaria est ut voluntatem Dei facientes reportetis promissionem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=36;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Nam patientia uobis est opus, ut ubi uoluntatem dei peregeritis, reportetis pro missione.</td></tr></tbody></table>
+<br><br><div id="V37"></div><a href="#banniere"><b>HEBREUX 10 37</b></a> 
+<a href="../hellene/19-10.html#V37">EL</a> 
+<a href="../romain/19-10.html#V37">RO</a> 
+<a href="../francais/19-10.html#V37">FR</a> 
+<a href="../technique/19-10.html#V37">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=37;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Adhuc enim modicum quantulum, qui venturus est, veniet et non tardabit.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> adhuc enim modicum quantulum qui venturus est veniet et non tardabit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=37;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> Adhuc em perpuullum teporis, & qui uenturus est ueniet, & no tardabit.</td></tr></tbody></table>
+<br><br><div id="V38"></div><a href="#banniere"><b>HEBREUX 10 38</b></a> 
+<a href="../hellene/19-10.html#V38">EL</a> 
+<a href="../romain/19-10.html#V38">RO</a> 
+<a href="../francais/19-10.html#V38">FR</a> 
+<a href="../technique/19-10.html#V38">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=38;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Iustus autem meus ex fide vivet; quod si subtraxerit se, non sibi complacet in eo anima mea.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> iustus autem meus ex fide vivit quod si subtraxerit se non placebit animae meae</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=38;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> lustus autem ex fide ui cturus est. & si se subduxerit, non probabitur anio meo.</td></tr></tbody></table>
+<br><br><div id="V39"></div><a href="#banniere"><b>HEBREUX 10 39</b></a> 
+<a href="../hellene/19-10.html#V39">EL</a> 
+<a href="../romain/19-10.html#V39">RO</a> 
+<a href="../francais/19-10.html#V39">FR</a> 
+<a href="../technique/19-10.html#V39">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=39;view('amiatinus/19-HEBREUX/409.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Nos autem non sumus subtractionis in perditionem, sed fidei in acquisitionem animae.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> nos autem non sumus subtractionis in perditionem sed fidei in adquisitionem animae</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=39;view('erasme_1527/19-HEBREUX/485.jpg');">ERASME_1527</td><td>1527</td><td> At nos non sumus qui subducamus nos in perdi tionem, sed ad fidem pertinemus in acquisitionem animae.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+lcarray = {}
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+function make_url (pic)
+{
+
+
+if (elempic.src.indexOf("amiatinus") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  17   )  rep="00-INTRO"
+	if  (  pic  >=  18   &&  pic  <=  70   )  rep="01-MATTHIEU"
+	if  (  pic  >=  71   &&  pic  <=  106  )  rep="02-MARC"
+	if  (  pic  >=  107  &&  pic  <=  170  )  rep="03-LUC"
+	if  (  pic  >=  171  &&  pic  <=  216  )  rep="04-JEAN"
+	if  (  pic  >=  217  &&  pic  <=  277  )  rep="05-ACTES"
+	if  (  pic  >=  278  &&  pic  <=  305  )  rep="06-ROMAINS"
+	if  (  pic  >=  306  &&  pic  <=  328  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  329  &&  pic  <=  344  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  345  &&  pic  <=  352  )  rep="09-GALATES"
+	if  (  pic  >=  353  &&  pic  <=  360  )  rep="10-EPHESIENS"
+	if  (  pic  >=  361  &&  pic  <=  366  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  367  &&  pic  <=  372  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  373  &&  pic  <=  378  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  379  &&  pic  <=  381  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  382  &&  pic  <=  388  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  389  &&  pic  <=  393  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  394  &&  pic  <=  396  )  rep="17-TITE"
+	if  (  pic  >=  397  &&  pic  <=  398  )  rep="18-PHILEMON"
+	if  (  pic  >=  399  &&  pic  <=  416  )  rep="19-HEBREUX"
+	if  (  pic  >=  417  &&  pic  <=  423  )  rep="20-JACQUES"
+	if  (  pic  >=  424  &&  pic  <=  430  )  rep="21-1PIERRE"
+	if  (  pic  >=  431  &&  pic  <=  435  )  rep="22-2PIERRE"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="23-1JEAN"
+	if  (  pic  >=  442  &&  pic  <=  443  )  rep="24-2JEAN"
+	if  (  pic  >=  444  &&  pic  <=  444  )  rep="25-3JEAN"
+	if  (  pic  >=  445  &&  pic  <=  446  )  rep="26-JUDAS"
+	if  (  pic  >=  447  &&  pic  <=  473  )  rep="27-APOCALYPSE"
+	
+	return "../../amiatinus/"+rep+'/'+pic+".jpg";
+
+}	
+
+
+else if (elempic.src.indexOf("erasme") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  54   )  rep="00-INTRO"
+	if  (  pic  >=  55   &&  pic  <=  120  )  rep="01-MATTHIEU"
+	if  (  pic  >=  121  &&  pic  <=  161  )  rep="02-MARC"
+	if  (  pic  >=  162  &&  pic  <=  230  )  rep="03-LUC"
+	if  (  pic  >=  231  &&  pic  <=  281  )  rep="04-JEAN"
+	if  (  pic  >=  282  &&  pic  <=  349  )  rep="05-ACTES"
+	if  (  pic  >=  350  &&  pic  <=  375  )  rep="06-ROMAINS"
+	if  (  pic  >=  376  &&  pic  <=  400  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  401  &&  pic  <=  417  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  418  &&  pic  <=  426  )  rep="09-GALATES"
+	if  (  pic  >=  427  &&  pic  <=  435  )  rep="10-EPHESIENS"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  442  &&  pic  <=  447  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  448  &&  pic  <=  453  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  454  &&  pic  <=  456  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  457  &&  pic  <=  463  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  464  &&  pic  <=  468  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  469  &&  pic  <=  471  )  rep="17-TITE"
+	if  (  pic  >=  472  &&  pic  <=  473  )  rep="18-PHILEMON"
+	if  (  pic  >=  474  &&  pic  <=  493  )  rep="19-HEBREUX"
+	if  (  pic  >=  494  &&  pic  <=  500  )  rep="20-JACQUES"
+	if  (  pic  >=  501  &&  pic  <=  507  )  rep="21-1PIERRE"
+	if  (  pic  >=  508  &&  pic  <=  512  )  rep="22-2PIERRE"
+	if  (  pic  >=  513  &&  pic  <=  519  )  rep="23-1JEAN"
+	if  (  pic  >=  520  &&  pic  <=  521  )  rep="24-2JEAN"
+	if  (  pic  >=  522  &&  pic  <=  523  )  rep="25-3JEAN"
+	if  (  pic  >=  524  &&  pic  <=  525  )  rep="26-JUDAS"
+	if  (  pic  >=  526  &&  pic  <=  557  )  rep="27-APOCALYPSE"
+	if  (  pic  >=  558  &&  pic  <=  563  )  rep="28-END"	
+	
+	return "../../erasme_1527/"+rep+'/'+pic+".jpg";
+}
+	
+		
+	
+	
+		
+		
+}
+
+
+
+function page_left()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (pic > 1)
+	{
+		
+		pic--
+		
+		elempic.src = make_url(pic)
+		
+	}
+	
+	
+}
+
+
+
+function page_right()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (elempic.src.indexOf("erasme") != -1)
+	{
+		if (pic < 563)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+
+	else if (elempic.src.indexOf("amiatinus") != -1)
+	{
+		if (pic < 473)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+		
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			
+			if (elempic.src.indexOf("erasme") != -1)
+				view('erasme_1527')
+			else if (elempic.src.indexOf("amiatinus") != -1)
+				view('amiatinus')
+		
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+		
+		
+		else if (e.keyCode == '37') {
+			
+			
+			page_left()
+			
+			
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			page_right()
+			
+			
+		}
+		
+
+	}
+
+}
+
+
+</script>
+
+
+</html>
+

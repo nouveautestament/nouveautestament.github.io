@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>ROMAIN</title>
+
+		<script src='panzoom.min.js'></script>
+		
+		<script>
+		
+			show = 0;
+			current = ""
+		
+			function view(link)
+			{
+			
+				document.getElementById('box').src = ""
+				classn = link.split('/')[0]
+			
+				if (classn != current)
+				{
+					
+					if (current != "")
+					{
+						//CLOSE
+						for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+						{
+							document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+						}
+					}
+					
+					//OPEN
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+					}
+					
+					document.getElementById('left').style.width = "50%";
+					document.getElementById('right').style.width = "50%";
+					
+					document.getElementById('box').src = '../../'+link;
+					
+					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
+					show = 1;
+					
+				}
+				
+				else if (classn == current)
+				{
+					
+					//CLOSE
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+					}
+					
+					document.getElementById('left').style.width = "100%";
+					document.getElementById('right').style.width = "0%";
+					show = 0;
+					
+					current = "";
+				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
+				}
+
+			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+		}
+		</script>
+
+
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+
+			#inleft {
+				
+				padding:5px;
+			}
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.amiatinus, .erasme_1527{
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html"><b>[ JEAN ]</b></a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html">1JEAN</a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="4-1.html">CH1</a>&ensp;<a href="4-2.html">CH2</a>&ensp;<a href="4-3.html">CH3</a>&ensp;<a href="4-4.html">CH4</a>&ensp;<a href="4-5.html">CH5</a>&ensp;<a href="4-6.html">CH6</a>&ensp;<a href="4-7.html">CH7</a>&ensp;<a href="4-8.html">CH8</a>&ensp;<a href="4-9.html">CH9</a>&ensp;<a href="4-10.html">CH10</a>&ensp;<a href="4-11.html">CH11</a>&ensp;<a href="4-12.html">CH12</a>&ensp;<a href="4-13.html"><b>[ CH13 ]</b></a>&ensp;<a href="4-14.html">CH14</a>&ensp;<a href="4-15.html">CH15</a>&ensp;<a href="4-16.html">CH16</a>&ensp;<a href="4-17.html">CH17</a>&ensp;<a href="4-18.html">CH18</a>&ensp;<a href="4-19.html">CH19</a>&ensp;<a href="4-20.html">CH20</a>&ensp;<a href="4-21.html">CH21</a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;<a href="#V22">V22</a>&ensp;<a href="#V23">V23</a>&ensp;<a href="#V24">V24</a>&ensp;<a href="#V25">V25</a>&ensp;<a href="#V26">V26</a>&ensp;<a href="#V27">V27</a>&ensp;<a href="#V28">V28</a>&ensp;<a href="#V29">V29</a>&ensp;<a href="#V30">V30</a>&ensp;<a href="#V31">V31</a>&ensp;<a href="#V32">V32</a>&ensp;<a href="#V33">V33</a>&ensp;<a href="#V34">V34</a>&ensp;<a href="#V35">V35</a>&ensp;<a href="#V36">V36</a>&ensp;<a href="#V37">V37</a>&ensp;<a href="#V38">V38</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>JEAN 13 1</b></a> 
+<a href="../hellene/4-13.html#V1">EL</a> 
+<a href="../romain/4-13.html#V1">RO</a> 
+<a href="../francais/4-13.html#V1">FR</a> 
+<a href="../technique/4-13.html#V1">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=1;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Ante diem autem festum Paschae, sciens Iesus quia venit eius hora, ut transeat ex hoc mundo ad Patrem, cum dilexisset suos, qui erant in mundo, in finem dilexit eos.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> ante diem autem festum paschae sciens Iesus quia venit eius hora ut transeat ex hoc mundo ad Patrem cum dilexisset suos qui erant in mundo in finem dilexit eos</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=1;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Ante festum autem paschae sciens Iesus, quod uenisset hora ipsius, ut transiret ex hoc mundo ad patrem, cum dilexisset suos qui erant in mundo, usque ad finem dilexit eos.</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>JEAN 13 2</b></a> 
+<a href="../hellene/4-13.html#V2">EL</a> 
+<a href="../romain/4-13.html#V2">RO</a> 
+<a href="../francais/4-13.html#V2">FR</a> 
+<a href="../technique/4-13.html#V2">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=2;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et in cena, cum Diabolus iam misisset in corde, ut traderet eum Iudas Simonis Iscariotis,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et cena facta cum diabolus iam misisset in corde ut traderet eum Iudas Simonis Scariotis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=2;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Et coena facta, cum diabolus iam immisisset in cor ludae Simonis lscariotae ut proderet eum,</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>JEAN 13 3</b></a> 
+<a href="../hellene/4-13.html#V3">EL</a> 
+<a href="../romain/4-13.html#V3">RO</a> 
+<a href="../francais/4-13.html#V3">FR</a> 
+<a href="../technique/4-13.html#V3">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=3;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> sciens quia omnia dedit ei Pater in manus, et quia a Deo exivit et ad Deum vadit,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sciens quia omnia dedit ei Pater in manus et quia a Deo exivit et ad Deum vadit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=3;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> sciens Iesus quid omnia dedisset sibi pater in manus, & quod à deo exisset, & ad deum iret,</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>JEAN 13 4</b></a> 
+<a href="../hellene/4-13.html#V4">EL</a> 
+<a href="../romain/4-13.html#V4">RO</a> 
+<a href="../francais/4-13.html#V4">FR</a> 
+<a href="../technique/4-13.html#V4">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=4;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> surgit a cena et ponit vestimenta sua et, cum accepisset linteum, praecinxit se.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> surgit a cena et ponit vestimenta sua et cum accepisset linteum praecinxit se</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=4;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> surgit à coena, & ponit uestimenta: & cum accepisset lin teum, praecinxit se.</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>JEAN 13 5</b></a> 
+<a href="../hellene/4-13.html#V5">EL</a> 
+<a href="../romain/4-13.html#V5">RO</a> 
+<a href="../francais/4-13.html#V5">FR</a> 
+<a href="../technique/4-13.html#V5">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=5;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Deinde mittit aquam in pelvem et coepit lavare pedes discipulorum et extergere linteo, quo erat praecinctus.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> deinde mittit aquam in pelvem et coepit lavare pedes discipulorum et extergere linteo quo erat praecinctus</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=5;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Deinde misit aquam in peluim, & coepit lauare pedes discipulorum, & extergere linteo, quo erat praecinctus.</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>JEAN 13 6</b></a> 
+<a href="../hellene/4-13.html#V6">EL</a> 
+<a href="../romain/4-13.html#V6">RO</a> 
+<a href="../francais/4-13.html#V6">FR</a> 
+<a href="../technique/4-13.html#V6">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=6;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Venit ergo ad Simonem Petrum. Dicit ei: “ Domine, tu mihi lavas pedes? ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> venit ergo ad Simonem Petrum et dicit ei Petrus Domine tu mihi lavas pedes</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=6;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Venit ergo ad Simonem Petrum. & dicit ei Petrus: Domine, tu mihi lauas pedes?</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>JEAN 13 7</b></a> 
+<a href="../hellene/4-13.html#V7">EL</a> 
+<a href="../romain/4-13.html#V7">RO</a> 
+<a href="../francais/4-13.html#V7">FR</a> 
+<a href="../technique/4-13.html#V7">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=7;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Respondit Iesus et dixit ei: “ Quod ego facio, tu nescis modo, scies autem postea ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> respondit Iesus et dicit ei quod ego facio tu nescis modo scies autem postea</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=7;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Respondit Iesus, & dixit ei: Quod ego facio, tu nescis nunc, scies autem postea.</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>JEAN 13 8</b></a> 
+<a href="../hellene/4-13.html#V8">EL</a> 
+<a href="../romain/4-13.html#V8">RO</a> 
+<a href="../francais/4-13.html#V8">FR</a> 
+<a href="../technique/4-13.html#V8">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=8;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit ei Petrus: “ Non lavabis mihi pedes in aeternum! ”. Respondit Iesus ei: “ Si non lavero te, non habes partem mecum ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit ei Petrus non lavabis mihi pedes in aeternum respondit Iesus ei si non lavero te non habes partem mecum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=8;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Dicit ei Petrus: Non lauabis meos pedes in aeternum. Respondit ei Iesus: Si non lauero te, non habes partem mecum.</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>JEAN 13 9</b></a> 
+<a href="../hellene/4-13.html#V9">EL</a> 
+<a href="../romain/4-13.html#V9">RO</a> 
+<a href="../francais/4-13.html#V9">FR</a> 
+<a href="../technique/4-13.html#V9">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=9;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit ei Simon Petrus: “ Domine, non tantum pedes meos sed et manus et caput! ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit ei Simon Petrus Domine non tantum pedes meos sed et manus et caput</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=9;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Dicit ei Simon Pe trus: Domine, no tantum pedes meos, sed & manus & caput.</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>JEAN 13 10</b></a> 
+<a href="../hellene/4-13.html#V10">EL</a> 
+<a href="../romain/4-13.html#V10">RO</a> 
+<a href="../francais/4-13.html#V10">FR</a> 
+<a href="../technique/4-13.html#V10">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=10;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit ei Iesus: “ Qui lotus est, non indiget nisi ut pedes lavet, sed est mundus totus; et vos mundi estis sed non omnes ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit ei Iesus qui lotus est non indiget ut lavet sed est mundus totus et vos mundi estis sed non omnes</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=10;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Dicit ei Iesus: Qui lotus est non opus habet, nisi ut pedes lauet, sed est mundus totus. Et uos mundi estis, sed no omnes.</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>JEAN 13 11</b></a> 
+<a href="../hellene/4-13.html#V11">EL</a> 
+<a href="../romain/4-13.html#V11">RO</a> 
+<a href="../francais/4-13.html#V11">FR</a> 
+<a href="../technique/4-13.html#V11">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=11;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Sciebat enim quisnam esset, qui traderet eum; propterea dixit: “ Non estis mundi omnes ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> sciebat enim quisnam esset qui traderet eum propterea dixit non estis mundi omnes</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=11;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Sciebat enim quis nam esset qui proderet ipsum, propterea dixit: non estis mundi omnes.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>JEAN 13 12</b></a> 
+<a href="../hellene/4-13.html#V12">EL</a> 
+<a href="../romain/4-13.html#V12">RO</a> 
+<a href="../francais/4-13.html#V12">FR</a> 
+<a href="../technique/4-13.html#V12">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=12;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Postquam ergo lavit pedes eorum et accepit vestimenta sua, cum recubuisset iterum, dixit eis: “ Scitis quid fecerim vobis?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> postquam ergo lavit pedes eorum et accepit vestimenta sua cum recubuisset iterum dixit eis scitis quid fecerim vobis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=12;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Postquam ergo lauisset pedes eorum, receptisque uestibus suis accubuisset, iterum dixit eis: Scitis quid fecerim uobis?</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>JEAN 13 13</b></a> 
+<a href="../hellene/4-13.html#V13">EL</a> 
+<a href="../romain/4-13.html#V13">RO</a> 
+<a href="../francais/4-13.html#V13">FR</a> 
+<a href="../technique/4-13.html#V13">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=13;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Vos vocatis me: “Magister” et: “Domine”, et bene dicitis; sum etenim.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> vos vocatis me magister et Domine et bene dicitis sum etenim</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=13;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Vos uocatis me magistrum ac dominum, & bene dicitis, sum etenim.</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>JEAN 13 14</b></a> 
+<a href="../hellene/4-13.html#V14">EL</a> 
+<a href="../romain/4-13.html#V14">RO</a> 
+<a href="../francais/4-13.html#V14">FR</a> 
+<a href="../technique/4-13.html#V14">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=14;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Si ergo ego lavi vestros pedes, Dominus et Magister, et vos debetis alter alterius lavare pedes.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> si ergo ego lavi vestros pedes Dominus et magister et vos debetis alter alterius lavare pedes</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=14;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Si ergo ego laui pedes uestros do minus & magister, uos quoque debetis inuicem alii aliorum lauare pedes.</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>JEAN 13 15</b></a> 
+<a href="../hellene/4-13.html#V15">EL</a> 
+<a href="../romain/4-13.html#V15">RO</a> 
+<a href="../francais/4-13.html#V15">FR</a> 
+<a href="../technique/4-13.html#V15">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=15;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Exemplum enim dedi vobis, ut, quemadmodum ego feci vobis, et vos faciatis.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> exemplum enim dedi vobis ut quemadmodum ego feci vobis ita et vos faciatis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=15;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Exemplum enim praebui uobis, ut quemadmodum ego fe ci uobis, ita & uos faciatis.</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>JEAN 13 16</b></a> 
+<a href="../hellene/4-13.html#V16">EL</a> 
+<a href="../romain/4-13.html#V16">RO</a> 
+<a href="../francais/4-13.html#V16">FR</a> 
+<a href="../technique/4-13.html#V16">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=16;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Amen, amen dico vobis: Non est servus maior domino suo, neque apostolus maior eo, qui misit illum.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> amen amen dico vobis non est servus maior domino suo neque apostolus maior eo qui misit illum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=16;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Amen amen dico uobis, non est seruus maior domino suo, neque lega tus maior est eo qui legauit ipsum.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>JEAN 13 17</b></a> 
+<a href="../hellene/4-13.html#V17">EL</a> 
+<a href="../romain/4-13.html#V17">RO</a> 
+<a href="../francais/4-13.html#V17">FR</a> 
+<a href="../technique/4-13.html#V17">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=17;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Si haec scitis, beati estis, si facitis ea.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> si haec scitis beati eritis si feceritis ea</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=17;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Si haec nouistis, beati estis si feceritis ea.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>JEAN 13 18</b></a> 
+<a href="../hellene/4-13.html#V18">EL</a> 
+<a href="../romain/4-13.html#V18">RO</a> 
+<a href="../francais/4-13.html#V18">FR</a> 
+<a href="../technique/4-13.html#V18">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=18;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Non de omnibus vobis dico, ego scio, quos elegerim, sed ut impleatur Scriptura: “Qui manducat meum panem, levavit contra me calcaneum suum”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> non de omnibus vobis dico ego scio quos elegerim sed ut impleatur scriptura qui manducat mecum panem levavit contra me calcaneum suum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=18;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Non de omibus uobis lo quor. ego scio quos elegerim. Sed ut adimpleatur scriptura: Qui edit mecum panem, sustulit aduer sum me calcaneum suum.</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>JEAN 13 19</b></a> 
+<a href="../hellene/4-13.html#V19">EL</a> 
+<a href="../romain/4-13.html#V19">RO</a> 
+<a href="../francais/4-13.html#V19">FR</a> 
+<a href="../technique/4-13.html#V19">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=19;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Amodo dico vobis priusquam fiat, ut credatis, cum factum fuerit, quia ego sum.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> amodo dico vobis priusquam fiat ut credatis cum factum fuerit quia ego sum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=19;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Nunc dico uobis priusquam fiat: ut cum factum fuerit, credatis, quod ego sim.</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>JEAN 13 20</b></a> 
+<a href="../hellene/4-13.html#V20">EL</a> 
+<a href="../romain/4-13.html#V20">RO</a> 
+<a href="../francais/4-13.html#V20">FR</a> 
+<a href="../technique/4-13.html#V20">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=20;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Amen, amen dico vobis: Qui accipit, si quem misero, me accipit; qui autem me accipit, accipit eum, qui me misit ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> amen amen dico vobis qui accipit si quem misero me accipit qui autem me accipit accipit eum qui me misit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=20;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Amen amen dico uobis, qui recipit quen cunque misero, me recipit. Qui autem me recipit, recipit eum qui me misit.</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>JEAN 13 21</b></a> 
+<a href="../hellene/4-13.html#V21">EL</a> 
+<a href="../romain/4-13.html#V21">RO</a> 
+<a href="../francais/4-13.html#V21">FR</a> 
+<a href="../technique/4-13.html#V21">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=21;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Cum haec dixisset Iesus, turbatus est spiritu et protestatus est et dixit: “ Amen, amen dico vobis: Unus ex vobis tradet me ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> cum haec dixisset Iesus turbatus est spiritu et protestatus est et dixit amen amen dico vobis quia unus ex vobis tradet me</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=21;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Cum haec dixisset Iesus, turbat? est spiritu, & testificatu? est, dixitque: Amen ame dico uobis, quod unus ex uobis proditurus est me.</td></tr></tbody></table>
+<br><br><div id="V22"></div><a href="#banniere"><b>JEAN 13 22</b></a> 
+<a href="../hellene/4-13.html#V22">EL</a> 
+<a href="../romain/4-13.html#V22">RO</a> 
+<a href="../francais/4-13.html#V22">FR</a> 
+<a href="../technique/4-13.html#V22">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=22;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Aspiciebant ad invicem discipuli, haesitantes de quo diceret.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> aspiciebant ergo ad invicem discipuli haesitantes de quo diceret</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=22;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Aspi ciebant ergo se inuicem discipuli, haesitantes de quo diceret.</td></tr></tbody></table>
+<br><br><div id="V23"></div><a href="#banniere"><b>JEAN 13 23</b></a> 
+<a href="../hellene/4-13.html#V23">EL</a> 
+<a href="../romain/4-13.html#V23">RO</a> 
+<a href="../francais/4-13.html#V23">FR</a> 
+<a href="../technique/4-13.html#V23">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=23;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Erat recumbens unus ex discipulis eius in sinu Iesu, quem diligebat Iesus.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> erat ergo recumbens unus ex discipulis eius in sinu Iesu quem diligebat Iesus</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=23;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Erat autem unus ex discipulis Iesu recumbens in sinu ipsius, nimirum is que diligebat Iesus.</td></tr></tbody></table>
+<br><br><div id="V24"></div><a href="#banniere"><b>JEAN 13 24</b></a> 
+<a href="../hellene/4-13.html#V24">EL</a> 
+<a href="../romain/4-13.html#V24">RO</a> 
+<a href="../francais/4-13.html#V24">FR</a> 
+<a href="../technique/4-13.html#V24">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=24;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Innuit ergo huic Simon Petrus, ut interrogaret: “ Quis est, de quo dicit? ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> innuit ergo huic Simon Petrus et dicit ei quis est de quo dicit</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=24;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Innuit ergo huic Simon Petrus, ut sciscitaretur, quis esset de quo loqueretur.</td></tr></tbody></table>
+<br><br><div id="V25"></div><a href="#banniere"><b>JEAN 13 25</b></a> 
+<a href="../hellene/4-13.html#V25">EL</a> 
+<a href="../romain/4-13.html#V25">RO</a> 
+<a href="../francais/4-13.html#V25">FR</a> 
+<a href="../technique/4-13.html#V25">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=25;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Cum ergo recumberet ille ita supra pectus Iesu, dicit ei: “ Domine, quis est? ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> itaque cum recubuisset ille supra pectus Iesu dicit ei Domine quis est</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=25;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Itaque cum recubuisset ille super pectus Iesu, dicit ei: Domie, quis est?</td></tr></tbody></table>
+<br><br><div id="V26"></div><a href="#banniere"><b>JEAN 13 26</b></a> 
+<a href="../hellene/4-13.html#V26">EL</a> 
+<a href="../romain/4-13.html#V26">RO</a> 
+<a href="../francais/4-13.html#V26">FR</a> 
+<a href="../technique/4-13.html#V26">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=26;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Respondet Iesus: “ Ille est, cui ego intinctam buccellam porrexero ”. Cum ergo intinxisset buccellam, dat Iudae Simonis Iscariotis.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> respondit Iesus ille est cui ego intinctum panem porrexero et cum intinxisset panem dedit Iudae Simonis Scariotis</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=26;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Respon det Iesus: Ille est, cui ego intinctum panem porrexero. Et cum intinxisset panem, dedit ludae Simonis Iscariotae.</td></tr></tbody></table>
+<br><br><div id="V27"></div><a href="#banniere"><b>JEAN 13 27</b></a> 
+<a href="../hellene/4-13.html#V27">EL</a> 
+<a href="../romain/4-13.html#V27">RO</a> 
+<a href="../francais/4-13.html#V27">FR</a> 
+<a href="../technique/4-13.html#V27">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=27;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et post buccellam tunc introivit in illum Satanas. Dicit ergo ei Iesus: “ Quod facis, fac citius ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et post buccellam tunc introivit in illum Satanas dicit ei Iesus quod facis fac citius</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=27;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Et post offulam ingressus est in eum satanas. Dicit igitur ei Iesus: Quod facis, fac citius.</td></tr></tbody></table>
+<br><br><div id="V28"></div><a href="#banniere"><b>JEAN 13 28</b></a> 
+<a href="../hellene/4-13.html#V28">EL</a> 
+<a href="../romain/4-13.html#V28">RO</a> 
+<a href="../francais/4-13.html#V28">FR</a> 
+<a href="../technique/4-13.html#V28">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=28;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hoc autem nemo scivit discumbentium ad quid dixerit ei;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hoc autem nemo scivit discumbentium ad quid dixerit ei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=28;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Hoc autem nemo intelligebat discumbentium ad quid dixis set ei.</td></tr></tbody></table>
+<br><br><div id="V29"></div><a href="#banniere"><b>JEAN 13 29</b></a> 
+<a href="../hellene/4-13.html#V29">EL</a> 
+<a href="../romain/4-13.html#V29">RO</a> 
+<a href="../francais/4-13.html#V29">FR</a> 
+<a href="../technique/4-13.html#V29">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=29;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quidam enim putabant quia loculos habebat Iudas, quia dicit ei Iesus: “ Eme ea, quae opus sunt nobis ad diem festum ”, aut egenis ut aliquid daret.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quidam enim putabant quia loculos habebat Iudas quia dicit ei Iesus eme ea quae opus sunt nobis ad diem festum aut egenis ut aliquid daret</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=29;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Quidam enim putabant, quia loculos habebat ludas, quod dixisset ei Iesus, eme ea, quae opus sunt nobis ad diem festum, aut egenis ut aliquid daret.</td></tr></tbody></table>
+<br><br><div id="V30"></div><a href="#banniere"><b>JEAN 13 30</b></a> 
+<a href="../hellene/4-13.html#V30">EL</a> 
+<a href="../romain/4-13.html#V30">RO</a> 
+<a href="../francais/4-13.html#V30">FR</a> 
+<a href="../technique/4-13.html#V30">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=30;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Cum ergo accepisset ille buccellam, exivit continuo; erat autem nox.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> cum ergo accepisset ille buccellam exivit continuo erat autem nox</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=30;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Cum ergo accepisset ille offulam, exiuit continuo. Erat autem nox.</td></tr></tbody></table>
+<br><br><div id="V31"></div><a href="#banniere"><b>JEAN 13 31</b></a> 
+<a href="../hellene/4-13.html#V31">EL</a> 
+<a href="../romain/4-13.html#V31">RO</a> 
+<a href="../francais/4-13.html#V31">FR</a> 
+<a href="../technique/4-13.html#V31">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=31;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Cum ergo exisset, dicit Iesus: “ Nunc clarificatus est Filius hominis, et Deus clarificatus est in eo;</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> cum ergo exisset dicit Iesus nunc clarificatus est Filius hominis et Deus clarificatus est in eo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=31;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Cum ergo exisset, dixit Iesus: Nunc glorificatus est filius hominis, & deus glorificatus est per eum.</td></tr></tbody></table>
+<br><br><div id="V32"></div><a href="#banniere"><b>JEAN 13 32</b></a> 
+<a href="../hellene/4-13.html#V32">EL</a> 
+<a href="../romain/4-13.html#V32">RO</a> 
+<a href="../francais/4-13.html#V32">FR</a> 
+<a href="../technique/4-13.html#V32">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=32;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> si Deus clarificatus est in eo, et Deus clarificabit eum in semetipso et continuo clarificabit eum.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> si Deus clarificatus est in eo et Deus clarificabit eum in semet ipso et continuo clarificabit eum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=32;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Si deus glorificatus est per eum, & deus glorificabit eum per se, & continuo glorifica bit eum.</td></tr></tbody></table>
+<br><br><div id="V33"></div><a href="#banniere"><b>JEAN 13 33</b></a> 
+<a href="../hellene/4-13.html#V33">EL</a> 
+<a href="../romain/4-13.html#V33">RO</a> 
+<a href="../francais/4-13.html#V33">FR</a> 
+<a href="../technique/4-13.html#V33">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=33;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Filioli, adhuc modicum vobiscum sum; quaeretis me, et sicut dixi Iudaeis: Quo ego vado, vos non potestis venire, et vobis dico modo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> filioli adhuc modicum vobiscum sum quaeretis me et sicut dixi Iudaeis quo ego vado vos non potestis venire et vobis dico modo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=33;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Filioli, adhuc paulisper uobiscum sum. Quaeretis me, & sicut dixi Iudaeis, quò ego uado, uos no potestis uenire: ita & uobis di co nunc.</td></tr></tbody></table>
+<br><br><div id="V34"></div><a href="#banniere"><b>JEAN 13 34</b></a> 
+<a href="../hellene/4-13.html#V34">EL</a> 
+<a href="../romain/4-13.html#V34">RO</a> 
+<a href="../francais/4-13.html#V34">FR</a> 
+<a href="../technique/4-13.html#V34">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=34;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Mandatum novum do vobis, ut diligatis invicem; sicut dilexi vos, ut et vos diligatis invicem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> mandatum novum do vobis ut diligatis invicem sicut dilexi vos ut et vos diligatis invicem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=34;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Praeceptum nouum do uobis, ut diligatis uos mutuo, sicut dilexi uos, ut & uos diligatis uos mutuo</td></tr></tbody></table>
+<br><br><div id="V35"></div><a href="#banniere"><b>JEAN 13 35</b></a> 
+<a href="../hellene/4-13.html#V35">EL</a> 
+<a href="../romain/4-13.html#V35">RO</a> 
+<a href="../francais/4-13.html#V35">FR</a> 
+<a href="../technique/4-13.html#V35">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=35;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> In hoc cognoscent omnes quia mei discipuli estis: si dilectionem habueritis ad invicem ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> in hoc cognoscent omnes quia mei discipuli estis si dilectionem habueritis ad invicem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=35;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> In hoc cognoscent ommres, quod discipuli mei sitis, si charitatem habueritis inter uos mutua.</td></tr></tbody></table>
+<br><br><div id="V36"></div><a href="#banniere"><b>JEAN 13 36</b></a> 
+<a href="../hellene/4-13.html#V36">EL</a> 
+<a href="../romain/4-13.html#V36">RO</a> 
+<a href="../francais/4-13.html#V36">FR</a> 
+<a href="../technique/4-13.html#V36">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=36;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit ei Simon Petrus: “ Domine, quo vadis? ”. Respondit Iesus: “ Quo vado, non potes me modo sequi, sequeris autem postea ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit ei Simon Petrus Domine quo vadis respondit Iesus quo ego vado non potes me modo sequi sequeris autem postea</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=36;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Dicit ei Simon Petrus: Domine, quò uadis? Respondit ei Iesus: Quò ego uado, non potes me nunc sequi, sequeris aute postea.</td></tr></tbody></table>
+<br><br><div id="V37"></div><a href="#banniere"><b>JEAN 13 37</b></a> 
+<a href="../hellene/4-13.html#V37">EL</a> 
+<a href="../romain/4-13.html#V37">RO</a> 
+<a href="../francais/4-13.html#V37">FR</a> 
+<a href="../technique/4-13.html#V37">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=37;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Dicit ei Petrus: “ Domine, quare non possum te sequi modo? Animam meam pro te ponam ”.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> dicit ei Petrus quare non possum sequi te modo animam meam pro te ponam</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=37;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Dicit ei Petrus: Domine, quare non possum te sequi nunc? Ani, mam meam pro te ponam.</td></tr></tbody></table>
+<br><br><div id="V38"></div><a href="#banniere"><b>JEAN 13 38</b></a> 
+<a href="../hellene/4-13.html#V38">EL</a> 
+<a href="../romain/4-13.html#V38">RO</a> 
+<a href="../francais/4-13.html#V38">FR</a> 
+<a href="../technique/4-13.html#V38">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=38;view('amiatinus/04-JEAN/201.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Respondet Iesus: “ Animam tuam pro me pones? Amen, amen dico tibi: Non cantabit gallus, donec me ter neges.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> respondit Iesus animam tuam pro me ponis amen amen dico tibi non cantabit gallus donec me ter neges</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=38;view('erasme_1527/04-JEAN/263.jpg');">ERASME_1527</td><td>1527</td><td> Respondit ei Iesus: Animam tuam pro me pones? Amen amen dico tibi, Non canet gallus, donec ter me negaueris.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+lcarray = {}
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+function make_url (pic)
+{
+
+
+if (elempic.src.indexOf("amiatinus") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  17   )  rep="00-INTRO"
+	if  (  pic  >=  18   &&  pic  <=  70   )  rep="01-MATTHIEU"
+	if  (  pic  >=  71   &&  pic  <=  106  )  rep="02-MARC"
+	if  (  pic  >=  107  &&  pic  <=  170  )  rep="03-LUC"
+	if  (  pic  >=  171  &&  pic  <=  216  )  rep="04-JEAN"
+	if  (  pic  >=  217  &&  pic  <=  277  )  rep="05-ACTES"
+	if  (  pic  >=  278  &&  pic  <=  305  )  rep="06-ROMAINS"
+	if  (  pic  >=  306  &&  pic  <=  328  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  329  &&  pic  <=  344  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  345  &&  pic  <=  352  )  rep="09-GALATES"
+	if  (  pic  >=  353  &&  pic  <=  360  )  rep="10-EPHESIENS"
+	if  (  pic  >=  361  &&  pic  <=  366  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  367  &&  pic  <=  372  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  373  &&  pic  <=  378  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  379  &&  pic  <=  381  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  382  &&  pic  <=  388  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  389  &&  pic  <=  393  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  394  &&  pic  <=  396  )  rep="17-TITE"
+	if  (  pic  >=  397  &&  pic  <=  398  )  rep="18-PHILEMON"
+	if  (  pic  >=  399  &&  pic  <=  416  )  rep="19-HEBREUX"
+	if  (  pic  >=  417  &&  pic  <=  423  )  rep="20-JACQUES"
+	if  (  pic  >=  424  &&  pic  <=  430  )  rep="21-1PIERRE"
+	if  (  pic  >=  431  &&  pic  <=  435  )  rep="22-2PIERRE"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="23-1JEAN"
+	if  (  pic  >=  442  &&  pic  <=  443  )  rep="24-2JEAN"
+	if  (  pic  >=  444  &&  pic  <=  444  )  rep="25-3JEAN"
+	if  (  pic  >=  445  &&  pic  <=  446  )  rep="26-JUDAS"
+	if  (  pic  >=  447  &&  pic  <=  473  )  rep="27-APOCALYPSE"
+	
+	return "../../amiatinus/"+rep+'/'+pic+".jpg";
+
+}	
+
+
+else if (elempic.src.indexOf("erasme") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  54   )  rep="00-INTRO"
+	if  (  pic  >=  55   &&  pic  <=  120  )  rep="01-MATTHIEU"
+	if  (  pic  >=  121  &&  pic  <=  161  )  rep="02-MARC"
+	if  (  pic  >=  162  &&  pic  <=  230  )  rep="03-LUC"
+	if  (  pic  >=  231  &&  pic  <=  281  )  rep="04-JEAN"
+	if  (  pic  >=  282  &&  pic  <=  349  )  rep="05-ACTES"
+	if  (  pic  >=  350  &&  pic  <=  375  )  rep="06-ROMAINS"
+	if  (  pic  >=  376  &&  pic  <=  400  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  401  &&  pic  <=  417  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  418  &&  pic  <=  426  )  rep="09-GALATES"
+	if  (  pic  >=  427  &&  pic  <=  435  )  rep="10-EPHESIENS"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  442  &&  pic  <=  447  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  448  &&  pic  <=  453  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  454  &&  pic  <=  456  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  457  &&  pic  <=  463  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  464  &&  pic  <=  468  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  469  &&  pic  <=  471  )  rep="17-TITE"
+	if  (  pic  >=  472  &&  pic  <=  473  )  rep="18-PHILEMON"
+	if  (  pic  >=  474  &&  pic  <=  493  )  rep="19-HEBREUX"
+	if  (  pic  >=  494  &&  pic  <=  500  )  rep="20-JACQUES"
+	if  (  pic  >=  501  &&  pic  <=  507  )  rep="21-1PIERRE"
+	if  (  pic  >=  508  &&  pic  <=  512  )  rep="22-2PIERRE"
+	if  (  pic  >=  513  &&  pic  <=  519  )  rep="23-1JEAN"
+	if  (  pic  >=  520  &&  pic  <=  521  )  rep="24-2JEAN"
+	if  (  pic  >=  522  &&  pic  <=  523  )  rep="25-3JEAN"
+	if  (  pic  >=  524  &&  pic  <=  525  )  rep="26-JUDAS"
+	if  (  pic  >=  526  &&  pic  <=  557  )  rep="27-APOCALYPSE"
+	if  (  pic  >=  558  &&  pic  <=  563  )  rep="28-END"	
+	
+	return "../../erasme_1527/"+rep+'/'+pic+".jpg";
+}
+	
+		
+	
+	
+		
+		
+}
+
+
+
+function page_left()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (pic > 1)
+	{
+		
+		pic--
+		
+		elempic.src = make_url(pic)
+		
+	}
+	
+	
+}
+
+
+
+function page_right()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (elempic.src.indexOf("erasme") != -1)
+	{
+		if (pic < 563)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+
+	else if (elempic.src.indexOf("amiatinus") != -1)
+	{
+		if (pic < 473)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+		
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			
+			if (elempic.src.indexOf("erasme") != -1)
+				view('erasme_1527')
+			else if (elempic.src.indexOf("amiatinus") != -1)
+				view('amiatinus')
+		
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+		
+		
+		else if (e.keyCode == '37') {
+			
+			
+			page_left()
+			
+			
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			page_right()
+			
+			
+		}
+		
+
+	}
+
+}
+
+
+</script>
+
+
+</html>
+

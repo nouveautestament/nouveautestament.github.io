@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+
+
+		<title>GUÉMATRIE</title>
+
+		<style>
+
+			html, body {
+			
+				margin:0;
+				padding:0;
+				
+				font-family:sans-serif;
+				color:black;
+			}
+
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				background-color:#3f4346;
+			}
+		
+
+			#main {
+			
+				margin:60px auto;
+				padding:0;
+				
+				width:80%;
+			}
+			
+			#left {
+			
+				margin:0;
+				padding:0;
+				
+				width:70%;
+			
+				float:left;
+			}
+			
+			#inleft {
+			
+				padding-right:70px;
+				color:#313131;
+			}
+			
+			#right {
+			
+				margin:0;
+				padding:0;
+				
+				width:30%;
+				
+				float:left;
+			}
+
+			#titre1 {
+			
+				font-size:2em;
+				font-family:serif;
+			}
+			
+			#titre2 {
+			
+				font-size:1.7em;
+				font-family:serif;
+			}
+
+			.min {
+			
+				font-size: 0.8em;
+			}
+			
+			p {
+			
+				line-height: 1.5em;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../index.html">INDEX</a><!--
+	--><a class="blocban" href="../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../interlineaire/hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../interlineaire/romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../interlineaire/francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../interlineaire/technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../dictionnaire/index.html">BAILLY</a><!--
+	--><a class="blocban" href="../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+
+
+
+<div id="main">
+
+<br>
+<textarea style=" min-width:300px;" onkeyup="go()" id="nom"></textarea>
+<br>
+<button onclick="go()" id="buton">CALCULER</button>
+
+<br><br>
+<table border="1">
+<tr>
+<td><b>LANGUE</b></td>
+<td><b>NUMÉROTATION</b></td>
+<td><b>SOMME</b></td>
+</tr>
+
+<tr>
+<td>HÉBREU 1</td>
+<td><span id="reponsehe1"></span></td>
+<td><span id="sommehe1"></span></td>
+</tr>
+
+<tr>
+<td>HÉBREU 2</td>
+<td><span id="reponsehe2"></span></td>
+<td><span id="sommehe2"></span></td>
+</tr>
+
+<tr>
+<td>HELLÈNE 1</td>
+<td><span id="reponsegr1"></span></td>
+<td><span id="sommegr1"></span></td>
+</tr>
+
+<tr>
+<td>HELLÈNE 2</td>
+<td><span id="reponsegr2"></span></td>
+<td><span id="sommegr2"></span></td>
+</tr>
+
+<tr>
+<td>ROMAIN</td>
+<td><span id="reponsero"></span></td>
+<td><span id="sommero"></span></td>
+</tr>
+
+<tr>
+<td>FRANÇAIS</td>
+<td><span id="reponsefr"></span></td>
+<td><span id="sommefr"></span></td>
+</tr>
+
+</table>
+
+
+
+<br>
+<br>
+<table cellspacing="7">
+<tr><td>λατεινοσ</td><td>Latinus (habitant du Latium)<td>666</td></tr>
+<tr><td>VICARIUS FILII DEI</td><td>Vicaire de Fils de Dieu</td><td>666</td></tr>
+<tr><td>קסר נרון</td><td>QSAR NERON<td>666</td></tr>
+<tr><td>קסר נרו</td><td>QSAR NERO<td>616</td></tr>
+<tr><td>μαομετισ</td><td>Mahomet<td>666</td></tr>
+<tr><td>XOF</td><td>Franc CFA</td><td>666</td></tr>
+<tr><td>דייוויד רוקפלר</td><td>DAVID ROCKEFELLER<td>666</td></tr>
+<tr><td>רוקפלר</td><td>ROCKEFELLER<td>616</td></tr>
+</table>
+<br>
+<br>
+
+<table cellspacing="3">
+<tr><td>Liste Hébreu </td><td> <a href="nombre-bete-he-sort-uniq.txt">he-sort-uniq.txt</a> </td></tr>
+<tr><td>Liste Hellène</td><td> <a href="nombre-bete-el-sort-uniq.txt">el-sort-uniq.txt</a> </td></tr>
+</table>
+
+
+
+<br>
+
+</div>
+
+<script>
+
+
+
+hebreu1 = {
+
+//Hebreu 1
+'א' :'1',
+'ב' :'2',
+'ג' :'3',
+'ד' :'4',
+'ה' :'5',
+'ו' :'6',
+'ז' :'7',
+'ח' :'8',
+'ט' :'9',
+'י' :'10',
+'כ' :'20',
+'ל' :'30',
+'מ' :'40',
+'נ' :'50',
+'ס' :'60',
+'ע' :'70',
+'פ' :'80',
+'צ' :'90',
+'ק' :'100',
+'ר' :'200',
+'ש' :'300',
+'ת' :'400',
+
+'ך' :'20', /* ou 500 */
+'ם' :'40', /* ou 600 */
+'ן' :'50', /* ou 700 */
+'ף' :'80', /* ou 800 */
+'ץ' :'90', /* ou 900 */
+
+}
+
+
+hebreu2 = {
+
+//Hebreu 2
+'א' :'1',
+'ב' :'2',
+'ג' :'3',
+'ד' :'4',
+'ה' :'5',
+'ו' :'6',
+'ז' :'7',
+'ח' :'8',
+'ט' :'9',
+'י' :'10',
+'כ' :'20',
+'ל' :'30',
+'מ' :'40',
+'נ' :'50',
+'ס' :'60',
+'ע' :'70',
+'פ' :'80',
+'צ' :'90',
+'ק' :'100',
+'ר' :'200',
+'ש' :'300',
+'ת' :'400',
+
+'ך' :'500', /* ou 20 */
+'ם' :'600', /* ou 40 */
+'ן' :'700', /* ou 50 */
+'ף' :'800', /* ou 80 */
+'ץ' :'900', /* ou 90 */
+
+}
+
+romain = {
+
+//Romain
+
+'I':'1',
+'i':'1',
+
+//'II':'2',
+//'III':'3',
+//'IV':'4',
+
+'V':'5',
+'U':'5',
+'v':'5',
+'u':'5',
+
+//'VI':'6',
+//'VII':'7',
+//'VIII':'8',
+//'IX':'9',
+
+'X':'10',
+'L':'50',
+'C':'100',
+'D':'500',
+'M':'1000',
+
+'x':'10',
+'l':'50',
+'c':'100',
+'d':'500',
+'m':'1000',
+
+
+
+
+}
+
+hellene1 = {
+
+//Hellene Grec 1
+'Α':'1',
+'α':'1',
+
+'Β':'2',
+'β':'2',
+
+'Γ':'3',
+'γ':'3',
+
+'Δ':'4',
+'δ':'4',
+
+'Ε':'5',
+'ε':'5',
+
+'ϝ':'6', // diagamma ou gamma double 3+3=6
+'ς':'6',
+
+'Ζ':'7',
+'ζ':'7',
+
+'Η':'8',
+'η':'8',
+
+'Θ':'9',
+'θ':'9',
+
+'Ι':'10',
+'ι':'10',
+
+'Κ':'20',
+'κ':'20',
+
+'Λ':'30',
+'λ':'30',
+
+'Μ':'40',
+'μ':'40',
+
+'Ν':'50',
+'ν':'50',
+
+'Ξ':'60',
+'ξ':'60',
+
+'Ο':'70',
+'ο':'70',
+
+'Π':'80',
+'π':'80',
+
+'ϟ':'90', //(koppa κόππα)
+'Ϙ':'90', //(koppa κόππα)
+'ϙ':'90', //(koppa κόππα)
+
+'Ρ':'100',
+'ρ':'100',
+
+'Σ':'200', /* ou 6 */
+'σ':'200', /* ou 6 */
+
+'Τ':'300',
+'τ':'300',
+
+'Υ':'400',
+'υ':'400',
+
+'Φ':'500',
+'φ':'500',
+
+'Χ':'600',
+'χ':'600',
+
+'Ψ':'700',
+'ψ':'700',
+
+'Ω':'800',
+'ω':'800'
+
+}
+
+
+
+hellene2 = {
+
+//Hellene Grec 2
+'Ι':'1',
+'ι':'1',
+
+'Π':'80', //ΠΕΝΤΕ
+'π':'80', //ΠΕΝΤΕ
+
+'Δ':'10', //ΔΕΚΑ
+'δ':'10', //ΔΕΚΑ
+
+'Η':'100', //ΗΕΚΑΤΟΝ
+'η':'100', //ΗΕΚΑΤΟΝ
+
+'Χ':'1000', //ΧΙΛΙΟΙ
+'χ':'1000', //ΧΙΛΙΟΙ
+
+'Μ':'10000', //ΜΥΡΙΟΙ
+'μ':'10000', //ΜΥΡΙΟΙ
+
+
+}
+
+
+francais = {
+
+//Français
+'a':'1',
+'b':'2',
+'c':'3',
+'d':'4',
+'e':'5',
+'f':'6',
+'g':'7',
+'h':'8',
+'i':'9',
+'j':'10',
+'k':'20',
+'l':'30',
+'m':'40',
+'n':'50',
+'o':'60',
+'p':'70',
+'q':'80',
+'r':'90',
+'s':'100',
+'t':'200',
+'u':'300',
+'v':'400',
+'w':'500',
+'x':'600',
+'y':'700',
+'z':'800',
+
+'A':'1',
+'B':'2',
+'C':'3',
+'D':'4',
+'E':'5',
+'F':'6',
+'G':'7',
+'H':'8',
+'I':'9',
+'J':'10',
+'K':'20',
+'L':'30',
+'M':'40',
+'N':'50',
+'O':'60',
+'P':'70',
+'Q':'80',
+'R':'90',
+'S':'100',
+'T':'200',
+'U':'300',
+'V':'400',
+'W':'500',
+'X':'600',
+'Y':'700',
+'Z':'800',
+}
+
+
+function go ()
+{
+	nom = document.getElementById('nom').value;
+	nom = nom.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+	splitnom = nom.split('');
+	
+	document.getElementById('reponsehe1').innerHTML = '';
+	document.getElementById('reponsehe2').innerHTML = '';
+	
+	document.getElementById('reponsegr1').innerHTML = '';
+	document.getElementById('reponsegr2').innerHTML = '';
+	
+	document.getElementById('reponsero').innerHTML = '';
+	
+	document.getElementById('reponsefr').innerHTML = '';
+	
+	calculehe1 = 0;
+	calculehe2 = 0; 
+	
+	calculegr1 = 0;
+	calculegr2 = 0;
+	
+	calculero = 0;
+	
+	calculefr = 0; 
+
+//hebreu 1
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (hebreu1[splitnom[x]])
+	{
+		document.getElementById('reponsehe1').innerHTML += splitnom[x]+':'+hebreu1[splitnom[x]]+' ';
+		calculehe1 = calculehe1 + parseInt(hebreu1[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsehe1').innerHTML += splitnom[x]+':0 ';
+}
+
+
+//hebreu 2
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (hebreu2[splitnom[x]])
+	{
+		document.getElementById('reponsehe2').innerHTML += splitnom[x]+':'+hebreu2[splitnom[x]]+' ';
+		calculehe2 = calculehe2 + parseInt(hebreu2[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsehe2').innerHTML += splitnom[x]+':0 ';
+}
+
+
+
+
+//grec 1
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (hellene1[splitnom[x]])
+	{
+		document.getElementById('reponsegr1').innerHTML += splitnom[x]+':'+hellene1[splitnom[x]]+' ';
+		calculegr1 = calculegr1 + parseInt(hellene1[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsegr1').innerHTML += splitnom[x]+':0 ';
+}
+
+
+//grec 2
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (hellene2[splitnom[x]])
+	{
+		document.getElementById('reponsegr2').innerHTML += splitnom[x]+':'+hellene2[splitnom[x]]+' ';
+		calculegr2 = calculegr2 + parseInt(hellene2[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsegr2').innerHTML += splitnom[x]+':0 ';
+}
+
+
+
+
+//romain
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (romain[splitnom[x]])
+	{
+		document.getElementById('reponsero').innerHTML += splitnom[x]+':'+romain[splitnom[x]]+' ';
+		calculero = calculero + parseInt(romain[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsero').innerHTML += splitnom[x]+':0 ';
+}
+
+
+//francais
+for (x = 0 ; x != splitnom.length ; x++)
+{
+	if (francais[splitnom[x]])
+	{
+		document.getElementById('reponsefr').innerHTML += splitnom[x]+':'+francais[splitnom[x]]+' ';
+		calculefr = calculefr + parseInt(francais[splitnom[x]]);
+	}
+	else
+		document.getElementById('reponsefr').innerHTML += splitnom[x]+':0 ';
+}
+
+
+
+document.getElementById('sommehe1').innerHTML = calculehe1;
+document.getElementById('sommehe2').innerHTML = calculehe2;
+
+document.getElementById('sommegr1').innerHTML = calculegr1;
+document.getElementById('sommegr2').innerHTML = calculegr2;
+
+document.getElementById('sommero').innerHTML = calculero;
+
+document.getElementById('sommefr').innerHTML = calculefr;
+
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Nouveau Testament">
+		<meta name="keywords" content="Nouveau Testament">
+	
+		<title>ROMAIN</title>
+
+		<script src='panzoom.min.js'></script>
+		
+		<script>
+		
+			show = 0;
+			current = ""
+		
+			function view(link)
+			{
+			
+				document.getElementById('box').src = ""
+				classn = link.split('/')[0]
+			
+				if (classn != current)
+				{
+					
+					if (current != "")
+					{
+						//CLOSE
+						for (xnc = 0 ; xnc != document.getElementsByClassName(current).length ; xnc++ )
+						{
+							document.getElementsByClassName(current)[xnc].innerHTML = current.toUpperCase()
+						}
+					}
+					
+					//OPEN
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = " [  ECHAP "+classn.toUpperCase()+" ]"
+					}
+					
+					document.getElementById('left').style.width = "50%";
+					document.getElementById('right').style.width = "50%";
+					
+					document.getElementById('box').src = '../../'+link;
+					
+					current = classn;
+					
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "initial");
+					
+					show = 1;
+					
+				}
+				
+				else if (classn == current)
+				{
+					
+					//CLOSE
+					for (xnc = 0 ; xnc != document.getElementsByClassName(classn).length ; xnc++ )
+					{
+						document.getElementsByClassName(classn)[xnc].innerHTML = classn.toUpperCase()
+					}
+					
+					document.getElementById('left').style.width = "100%";
+					document.getElementById('right').style.width = "0%";
+					show = 0;
+					
+					current = "";
+				
+					document.querySelectorAll(".fleche").forEach(a=>a.style.display = "none");
+				}
+
+			window.location = (""+window.location).replace(/#.*?$/,'')+"#V"+eimiv;
+		}
+		</script>
+
+
+
+		<style>
+			html {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+			}
+			
+			
+			body {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				font-family:		sans-serif;
+			}
+			
+			a {
+				
+				color:				black;
+				text-decoration:	none;
+			}
+
+			a:hover {
+				
+				text-decoration:	underline;
+			}
+			
+			table {
+				
+				margin-top:			3px;
+				font-size:			13px;
+			}
+
+			table td {
+				
+				padding-right:		15px;
+			}
+			
+			table tr:nth-child(even) {
+				
+				background: #eee;
+			}
+			
+			table tr:hover {
+				
+				background: #ccc;
+				
+			}
+			
+			
+			#left {
+				
+				margin:0;
+				padding:0;
+				
+				width:100%;
+				height:100%;
+				
+				float:left;
+				overflow: auto;
+			
+			}
+			
+			
+			#right {
+				
+				margin:0;
+				padding:0;
+				
+				width:0%;
+				height:100%;
+				
+				float:left;
+				overflow: hidden;
+			}
+
+
+			#inleft {
+				
+				padding:5px;
+			}
+			
+			img {
+				
+				border: 2px dashed rgba(28,110,164,0.32);
+				border-radius: 14px;
+			}
+			
+			.amiatinus, .erasme_1527{
+			
+				cursor:	pointer;
+				color:	blue;
+			}
+			
+			#banniere {
+			
+				margin:0px;
+				padding:0px;
+				
+				color:white;
+				background-color:#172028;
+				
+				
+				
+				/*white-space:nowrap;*/
+				/*display: flex;*/
+			}
+		
+			.blocban {
+				
+				margin:0px;
+				padding:10px;
+				
+				display:inline-block;
+				
+				font-size:0.9em;
+				color:white;
+				text-decoration:none;
+			}
+			
+			
+			.blocban:hover {
+				
+				text-decoration:none;
+				background-color:#3f4346;
+			}
+
+		</style>
+	</head>
+
+<body>
+
+<div id="left">
+<div id="banniere"><!--
+	--><span class="blocban">Ȼ</span><!--
+	--><a class="blocban" href="../../index.html">INDEX</a><!--
+	--><a class="blocban" href="../../agora/index.html">AGORA</a><!--
+	--><a class="blocban" href="../../nd/nd.html">ND</a><!--
+	--><a class="blocban" href="../hellene/1-1.html">HELLENE</a><!--
+	--><a class="blocban" href="../romain/1-1.html">ROMAIN</a><!--
+	--><a class="blocban" href="../francais/1-1.html">FRANCAIS</a><!--
+	--><a class="blocban" href="../technique/1-1.html">TECHNIQUE</a><!--
+	--><a class="blocban" href="../../lemme/lemmes.html">LEMME</a><!--
+	--><a class="blocban" href="../../lemme/conflits.html">CONFLIT</a><!--
+	--><a class="blocban" href="../../dictionnaire/lsj.html">LSJ</a><!--
+	--><a class="blocban" href="../../dictionnaire/bailly.html">BAILLY</a><!--
+	--><a class="blocban" href="../../minidico/dictionnaire.html">MINIDICO</a><!--
+	--><a class="blocban" href="../../guematrie/index.html">GUÉMATRIE</a><!--
+	--><a class="blocban" href="https://github.com/nouveautestament/">CODE</a>
+</div>
+<div id="inleft">
+
+<p><a href="1-1.html">MATTHIEU</a>&ensp;<a href="2-1.html">MARC</a>&ensp;<a href="3-1.html">LUC</a>&ensp;<a href="4-1.html">JEAN</a>&ensp;<a href="5-1.html">ACTES</a>&ensp;</p>
+
+<p><a href="6-1.html">ROMAINS</a>&ensp;<a href="7-1.html">1CORINTHIENS</a>&ensp;<a href="8-1.html">2CORINTHIENS</a>&ensp;<a href="9-1.html">GALATES</a>&ensp;<a href="10-1.html">EPHESIENS</a>&ensp;<a href="11-1.html">PHILIPPIENS</a>&ensp;<a href="12-1.html">COLOSSIENS</a>&ensp;</p>
+
+<p><a href="13-1.html">1THESSALONICIENS</a>&ensp;<a href="14-1.html">2THESSALONICIENS</a>&ensp;<a href="15-1.html">1TIMOTHEE</a>&ensp;<a href="16-1.html">2TIMOTHEE</a>&ensp;<a href="17-1.html">TITE</a>&ensp;<a href="18-1.html">PHILEMON</a>&ensp;<a href="19-1.html">HEBREUX</a>&ensp;</p>
+
+<p><a href="20-1.html">JACQUES</a>&ensp;<a href="21-1.html">1PIERRE</a>&ensp;<a href="22-1.html">2PIERRE</a>&ensp;<a href="23-1.html"><b>[ 1JEAN ]</b></a>&ensp;<a href="24-1.html">2JEAN</a>&ensp;<a href="25-1.html">3JEAN</a>&ensp;<a href="26-1.html">JUDAS</a>&ensp;<a href="27-1.html">APOCALYPSE</a></p><br><a href="23-1.html">CH1</a>&ensp;<a href="23-2.html">CH2</a>&ensp;<a href="23-3.html">CH3</a>&ensp;<a href="23-4.html">CH4</a>&ensp;<a href="23-5.html"><b>[ CH5 ]</b></a>&ensp;<br><br><a href="#V1">V1</a>&ensp;<a href="#V2">V2</a>&ensp;<a href="#V3">V3</a>&ensp;<a href="#V4">V4</a>&ensp;<a href="#V5">V5</a>&ensp;<a href="#V6">V6</a>&ensp;<a href="#V7">V7</a>&ensp;<a href="#V8">V8</a>&ensp;<a href="#V9">V9</a>&ensp;<a href="#V10">V10</a>&ensp;<a href="#V11">V11</a>&ensp;<a href="#V12">V12</a>&ensp;<a href="#V13">V13</a>&ensp;<a href="#V14">V14</a>&ensp;<a href="#V15">V15</a>&ensp;<a href="#V16">V16</a>&ensp;<a href="#V17">V17</a>&ensp;<a href="#V18">V18</a>&ensp;<a href="#V19">V19</a>&ensp;<a href="#V20">V20</a>&ensp;<a href="#V21">V21</a>&ensp;
+<br><br><div id="V1"></div><a href="#banniere"><b>1JEAN 5 1</b></a> 
+<a href="../hellene/23-5.html#V1">EL</a> 
+<a href="../romain/23-5.html#V1">RO</a> 
+<a href="../francais/23-5.html#V1">FR</a> 
+<a href="../technique/23-5.html#V1">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=1;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Omnis, qui credit quoniam Iesus est Christus, ex Deo natus est; et omnis, qui diligit Deum, qui genuit, diligit et eum, qui natus est ex eo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> omnis qui credit quoniam Iesus est Christus ex Deo natus est et omnis qui diligit eum qui genuit diligit eum qui natus est ex eo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=1;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Omnis qui credit Iesum esse Christum, ex deo natus est. Et omnis qui diligit eum qui genuit, diligit et eum qui natus est ex eo</td></tr></tbody></table>
+<br><br><div id="V2"></div><a href="#banniere"><b>1JEAN 5 2</b></a> 
+<a href="../hellene/23-5.html#V2">EL</a> 
+<a href="../romain/23-5.html#V2">RO</a> 
+<a href="../francais/23-5.html#V2">FR</a> 
+<a href="../technique/23-5.html#V2">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=2;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> In hoc cognoscimus quoniam diligimus natos Dei, cum Deum diligamus et mandata eius faciamus.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> in hoc cognoscimus quoniam diligimus natos Dei cum Deum diligamus et mandata eius faciamus</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=2;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> In hoc cognoscimus, quod diligamus filios dei, cum deum diligimus, & praecepta eius seruamus.</td></tr></tbody></table>
+<br><br><div id="V3"></div><a href="#banniere"><b>1JEAN 5 3</b></a> 
+<a href="../hellene/23-5.html#V3">EL</a> 
+<a href="../romain/23-5.html#V3">RO</a> 
+<a href="../francais/23-5.html#V3">FR</a> 
+<a href="../technique/23-5.html#V3">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=3;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Haec est enim caritas Dei, ut mandata eius servemus; et mandata eius gravia non sunt,</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> haec est enim caritas Dei ut mandata eius custodiamus et mandata eius gravia non sunt</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=3;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Haec est emm charitas dei, ut praecepta eius seruemus, & praecepta eius grauia non sunt.</td></tr></tbody></table>
+<br><br><div id="V4"></div><a href="#banniere"><b>1JEAN 5 4</b></a> 
+<a href="../hellene/23-5.html#V4">EL</a> 
+<a href="../romain/23-5.html#V4">RO</a> 
+<a href="../francais/23-5.html#V4">FR</a> 
+<a href="../technique/23-5.html#V4">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=4;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> quoniam omne, quod natum est ex Deo, vincit mundum; et haec est victoria, quae vicit mundum: fides nostra.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quoniam omne quod natum est ex Deo vincit mundum et haec est victoria quae vincit mundum fides nostra</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=4;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Quoniam omne quod natum est ex deo, uincit mundum: & haec est uictoria quae uicit mundum, fides nostra.</td></tr></tbody></table>
+<br><br><div id="V5"></div><a href="#banniere"><b>1JEAN 5 5</b></a> 
+<a href="../hellene/23-5.html#V5">EL</a> 
+<a href="../romain/23-5.html#V5">RO</a> 
+<a href="../francais/23-5.html#V5">FR</a> 
+<a href="../technique/23-5.html#V5">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=5;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quis est qui vincit mundum, nisi qui credit quoniam Iesus est Filius Dei?</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quis est qui vincit mundum nisi qui credit quoniam Iesus est Filius Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=5;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Quis est qui uincit mundum, nisi qui credit quod Iesus est filius dei?</td></tr></tbody></table>
+<br><br><div id="V6"></div><a href="#banniere"><b>1JEAN 5 6</b></a> 
+<a href="../hellene/23-5.html#V6">EL</a> 
+<a href="../romain/23-5.html#V6">RO</a> 
+<a href="../francais/23-5.html#V6">FR</a> 
+<a href="../technique/23-5.html#V6">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=6;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Hic est, qui venit per aquam et sanguinem, Iesus Christus; non in aqua solum sed in aqua et in sanguine. Et Spiritus est, qui testificatur, quoniam Spiritus est veritas.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> hic est qui venit per aquam et sanguinem Iesus Christus non in aqua solum sed in aqua et sanguine et Spiritus est qui testificatur quoniam Christus est veritas</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=6;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Hic est qui uenit per aquam & sanguinem Iesus Christus: non per aquam solum, sed per aquam & sanguine. Et spiritus est qui testificat, quoniam spiritus est ueritas.</td></tr></tbody></table>
+<br><br><div id="V7"></div><a href="#banniere"><b>1JEAN 5 7</b></a> 
+<a href="../hellene/23-5.html#V7">EL</a> 
+<a href="../romain/23-5.html#V7">RO</a> 
+<a href="../francais/23-5.html#V7">FR</a> 
+<a href="../technique/23-5.html#V7">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=7;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Quia tres sunt, qui testificantur:</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> quia tres sunt qui testimonium dant</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=7;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> quoniam tres sunt qui testimonium</td></tr></tbody></table>
+<br><br><div id="V8"></div><a href="#banniere"><b>1JEAN 5 8</b></a> 
+<a href="../hellene/23-5.html#V8">EL</a> 
+<a href="../romain/23-5.html#V8">RO</a> 
+<a href="../francais/23-5.html#V8">FR</a> 
+<a href="../technique/23-5.html#V8">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=8;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Spiritus et aqua et sanguis; et hi tres in unum sunt.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> Spiritus et aqua et sanguis et tres unum sunt</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=8;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> dant in coelo, pater, sermo, & ppiritus san ctus: & hi tres unum sunt.</td></tr></tbody></table>
+<br><br><div id="V9"></div><a href="#banniere"><b>1JEAN 5 9</b></a> 
+<a href="../hellene/23-5.html#V9">EL</a> 
+<a href="../romain/23-5.html#V9">RO</a> 
+<a href="../francais/23-5.html#V9">FR</a> 
+<a href="../technique/23-5.html#V9">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=9;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Si testimonium hominum accipimus, testimonium Dei maius est, quoniam hoc est testimonium Dei, quia testificatus est de Filio suo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> si testimonium hominum accipimus testimonium Dei maius est quoniam hoc est testimonium Dei quod maius est quia testificatus est de Filio suo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=9;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Et tres sunt qui testimonium dant in terra, spiritus, & aqua, & sanguis: & hi tres unum sunt. Si testimonium hominum accipimus, testimonium dei maius est: quoniam hoc est testimonium dei, quo testificatus est</td></tr></tbody></table>
+<br><br><div id="V10"></div><a href="#banniere"><b>1JEAN 5 10</b></a> 
+<a href="../hellene/23-5.html#V10">EL</a> 
+<a href="../romain/23-5.html#V10">RO</a> 
+<a href="../francais/23-5.html#V10">FR</a> 
+<a href="../technique/23-5.html#V10">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=10;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Qui credit in Filium Dei, habet testimonium in se. Qui non credit Deo, mendacem facit eum, quoniam non credidit in testimonium, quod testificatus est Deus de Filio suo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> qui credit in Filio Dei habet testimonium Dei in se qui non credit Filio mendacem facit eum quoniam non credidit in testimonio quod testificatus est Deus de Filio suo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=10;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> de filio suo. Qui credit in filium dei, habet testimonium in se ipso. Qui non credit deo, mendacem fecit eum: quia no credit in testimonium, quod testificatus est deus de filio suo.</td></tr></tbody></table>
+<br><br><div id="V11"></div><a href="#banniere"><b>1JEAN 5 11</b></a> 
+<a href="../hellene/23-5.html#V11">EL</a> 
+<a href="../romain/23-5.html#V11">RO</a> 
+<a href="../francais/23-5.html#V11">FR</a> 
+<a href="../technique/23-5.html#V11">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=11;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et hoc est testimonium, quoniam vitam aeternam dedit nobis Deus, et haec vita in Filio eius est.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et hoc est testimonium quoniam vitam aeternam dedit nobis Deus et haec vita in Filio eius est</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=11;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Et hoc est testimonium, quod uitam aeternam dedit nobis deus, & haec uita in filio eius est.</td></tr></tbody></table>
+<br><br><div id="V12"></div><a href="#banniere"><b>1JEAN 5 12</b></a> 
+<a href="../hellene/23-5.html#V12">EL</a> 
+<a href="../romain/23-5.html#V12">RO</a> 
+<a href="../francais/23-5.html#V12">FR</a> 
+<a href="../technique/23-5.html#V12">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=12;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Qui habet Filium, habet vitam; qui non habet Filium Dei, vitam non habet.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> qui habet Filium habet vitam qui non habet Filium Dei vitam non habet</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=12;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Qui habet filium, habet uitam: qui non habet filium dei, uitam non habet.</td></tr></tbody></table>
+<br><br><div id="V13"></div><a href="#banniere"><b>1JEAN 5 13</b></a> 
+<a href="../hellene/23-5.html#V13">EL</a> 
+<a href="../romain/23-5.html#V13">RO</a> 
+<a href="../francais/23-5.html#V13">FR</a> 
+<a href="../technique/23-5.html#V13">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=13;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Haec scripsi vobis, ut sciatis quoniam vitam habetis aeternam, qui creditis in nomen Filii Dei.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> haec scripsi vobis ut sciatis quoniam vitam habetis aeternam qui creditis in nomine Filii Dei</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=13;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Haec scripsi uobis, qui creditis in nomie filii dei, ut sciatis quod uitam habetis aeternam, & ut credatis in nomine filii dei.</td></tr></tbody></table>
+<br><br><div id="V14"></div><a href="#banniere"><b>1JEAN 5 14</b></a> 
+<a href="../hellene/23-5.html#V14">EL</a> 
+<a href="../romain/23-5.html#V14">RO</a> 
+<a href="../francais/23-5.html#V14">FR</a> 
+<a href="../technique/23-5.html#V14">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=14;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et haec est fiducia, quam habemus ad eum, quia si quid petierimus secundum voluntatem eius, audit nos.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et haec est fiducia quam habemus ad eum quia quodcumque petierimus secundum voluntatem eius audit nos</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=14;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Et haec est fiducia quam habemus apud eum: quod si quid petierimus secundum uoluntatem eius, audit nos.</td></tr></tbody></table>
+<br><br><div id="V15"></div><a href="#banniere"><b>1JEAN 5 15</b></a> 
+<a href="../hellene/23-5.html#V15">EL</a> 
+<a href="../romain/23-5.html#V15">RO</a> 
+<a href="../francais/23-5.html#V15">FR</a> 
+<a href="../technique/23-5.html#V15">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=15;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et si scimus quoniam audit nos, quidquid petierimus, scimus quoniam habemus petitiones, quas postulavimus ab eo.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et scimus quoniam audit nos quicquid petierimus scimus quoniam habemus petitiones quas postulavimus ab eo</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=15;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Et si scimus, quod audit nos, quicquid petierimus, scimus quod habemus petitiones quas postulauimus ab eo.</td></tr></tbody></table>
+<br><br><div id="V16"></div><a href="#banniere"><b>1JEAN 5 16</b></a> 
+<a href="../hellene/23-5.html#V16">EL</a> 
+<a href="../romain/23-5.html#V16">RO</a> 
+<a href="../francais/23-5.html#V16">FR</a> 
+<a href="../technique/23-5.html#V16">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=16;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Si quis videt fratrem suum peccare peccatum non ad mortem, petet, et dabit ei Deus vitam, peccantibus non ad mortem. Est peccatum ad mortem; non pro illo dico, ut roget.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> qui scit fratrem suum peccare peccatum non ad mortem petet et dabit ei vitam peccantibus non ad mortem est peccatum ad mortem non pro illo dico ut roget</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=16;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Si quis uiderit fratrem suum peccare pec catum no ad mortem, petet, & da bit ei uitam, peccantibus non ad mortem. Est peccatum ad mortem, non pro illo dico ut roges.</td></tr></tbody></table>
+<br><br><div id="V17"></div><a href="#banniere"><b>1JEAN 5 17</b></a> 
+<a href="../hellene/23-5.html#V17">EL</a> 
+<a href="../romain/23-5.html#V17">RO</a> 
+<a href="../francais/23-5.html#V17">FR</a> 
+<a href="../technique/23-5.html#V17">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=17;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Omnis iniustitia peccatum est, et est peccatum non ad mortem.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> omnis iniquitas peccatum est et est peccatum non ad mortem</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=17;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Omis iniquitas peccatum est. Et est pec catum non ad mortem.</td></tr></tbody></table>
+<br><br><div id="V18"></div><a href="#banniere"><b>1JEAN 5 18</b></a> 
+<a href="../hellene/23-5.html#V18">EL</a> 
+<a href="../romain/23-5.html#V18">RO</a> 
+<a href="../francais/23-5.html#V18">FR</a> 
+<a href="../technique/23-5.html#V18">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=18;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Scimus quoniam omnis, qui natus est ex Deo, non peccat, sed ille, qui genitus est ex Deo, conservat eum, et Malignus non tangit eum.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> scimus quoniam omnis qui natus est ex Deo non peccat sed generatio Dei conservat eum et malignus non tangit eum</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=18;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Scimus, quod omnis qui natus est ex deo, non peccat: sed qui genitus est ex deo, seruat seipsum, & malus ille non tangit eum.</td></tr></tbody></table>
+<br><br><div id="V19"></div><a href="#banniere"><b>1JEAN 5 19</b></a> 
+<a href="../hellene/23-5.html#V19">EL</a> 
+<a href="../romain/23-5.html#V19">RO</a> 
+<a href="../francais/23-5.html#V19">FR</a> 
+<a href="../technique/23-5.html#V19">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=19;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Scimus quoniam ex Deo sumus, et mundus totus in Maligno positus est.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> scimus quoniam ex Deo sumus et mundus totus in maligno positus est</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=19;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Scimus quod ex deo sumus, & mundus totus in malo constitutus est.</td></tr></tbody></table>
+<br><br><div id="V20"></div><a href="#banniere"><b>1JEAN 5 20</b></a> 
+<a href="../hellene/23-5.html#V20">EL</a> 
+<a href="../romain/23-5.html#V20">RO</a> 
+<a href="../francais/23-5.html#V20">FR</a> 
+<a href="../technique/23-5.html#V20">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=20;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Et scimus quoniam Filius Dei venit et dedit nobis sensum, ut cognoscamus eum, qui verus est; et sumus in eo, qui verus est, in Filio eius Iesu Christo. Hic est qui verus est, Deus et vita aeterna.</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> et scimus quoniam Filius Dei venit et dedit nobis sensum ut cognoscamus verum Deum et simus in vero Filio eius hic est verus Deus et vita aeterna</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=20;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Scimus autem quod filius dei uenit, & dedit nobis mente, ut cognoscamus illum qui uerus est: & sumus in uero, in flio eius Iesu Christo. Hic est uerus deus, & uita aeterna.</td></tr></tbody></table>
+<br><br><div id="V21"></div><a href="#banniere"><b>1JEAN 5 21</b></a> 
+<a href="../hellene/23-5.html#V21">EL</a> 
+<a href="../romain/23-5.html#V21">RO</a> 
+<a href="../francais/23-5.html#V21">FR</a> 
+<a href="../technique/23-5.html#V21">TE</a>
+<span  style="padding-left:1em;display:none;" class="fleche"><span style="cursor:pointer;user-select:none;" onclick="page_left()"> GAUCHE</span> - <span style="cursor:pointer;user-select:none;" onclick="page_right()">DROITE </span></span><table cellspacing="0"><tbody><tr><td nowrap class="amiatinus" onclick="eimiv=21;view('amiatinus/23-1JEAN/440.jpg');">AMIATINUS</td><td>700</td><td></td></tr><tr><td nowrap>NOVA_VULGATA</td><td>1986</td><td> Filioli, custodite vos a simulacris!</td></tr><tr><td nowrap>VULGATE_WEB</td><td>2022</td><td> filioli custodite vos a simulacris</td></tr><tr><td nowrap class="erasme_1527" onclick="eimiv=21;view('erasme_1527/23-1JEAN/518.jpg');">ERASME_1527</td><td>1527</td><td> Filioli, cavete uobis à simulacris. Amen.</td></tr>
+</tbody></table>
+<br>
+</div></div>
+
+<div id="right">
+	<div id="inright">
+		<img onload="loader();" id="box" src=""></div>
+	</div>
+</div>
+
+</body>
+<script>
+
+
+xbook = {
+1:'MATTHIEU',
+2:'MARC',
+3:'LUC',
+4:'JEAN',
+5:'ACTES',
+6:'ROMAINS',
+7:'1CORINTHIENS',
+8:'2CORINTHIENS',
+9:'GALATES',
+10:'EPHESIENS',
+11:'PHILIPPIENS',
+12:'COLOSSIENS',
+13:'1THESSALONICIENS',
+14:'2THESSALONICIENS',
+15:'1TIMOTHEE',
+16:'2TIMOTHEE',
+17:'TITE',
+18:'PHILEMON',
+19:'HEBREUX',
+20:'JACQUES',
+21:'1PIERRE',
+22:'2PIERRE',
+23:'1JEAN',
+24:'2JEAN',
+25:'3JEAN',
+26:'JUDAS',
+27:'APOCALYPSE'
+}
+
+
+element = document.getElementById('inright')
+elempic = document.getElementById('box')
+
+lcarray = {}
+
+
+instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: 0.5,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+
+
+
+function loader()
+{
+	
+	pvx=document.getElementById('inright').offsetWidth/document.getElementById('box').offsetWidth;
+	instance.dispose()
+	
+	instance = panzoom(element, 
+	{
+		maxZoom: 100,
+		minZoom: 0.01,
+		initialX: 0,
+		initialY: 0,
+		initialZoom: pvx,
+		filterKey: function() 
+		{
+			return true;
+		}
+	});
+	
+
+	
+}
+
+
+
+function make_url (pic)
+{
+
+
+if (elempic.src.indexOf("amiatinus") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  17   )  rep="00-INTRO"
+	if  (  pic  >=  18   &&  pic  <=  70   )  rep="01-MATTHIEU"
+	if  (  pic  >=  71   &&  pic  <=  106  )  rep="02-MARC"
+	if  (  pic  >=  107  &&  pic  <=  170  )  rep="03-LUC"
+	if  (  pic  >=  171  &&  pic  <=  216  )  rep="04-JEAN"
+	if  (  pic  >=  217  &&  pic  <=  277  )  rep="05-ACTES"
+	if  (  pic  >=  278  &&  pic  <=  305  )  rep="06-ROMAINS"
+	if  (  pic  >=  306  &&  pic  <=  328  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  329  &&  pic  <=  344  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  345  &&  pic  <=  352  )  rep="09-GALATES"
+	if  (  pic  >=  353  &&  pic  <=  360  )  rep="10-EPHESIENS"
+	if  (  pic  >=  361  &&  pic  <=  366  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  367  &&  pic  <=  372  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  373  &&  pic  <=  378  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  379  &&  pic  <=  381  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  382  &&  pic  <=  388  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  389  &&  pic  <=  393  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  394  &&  pic  <=  396  )  rep="17-TITE"
+	if  (  pic  >=  397  &&  pic  <=  398  )  rep="18-PHILEMON"
+	if  (  pic  >=  399  &&  pic  <=  416  )  rep="19-HEBREUX"
+	if  (  pic  >=  417  &&  pic  <=  423  )  rep="20-JACQUES"
+	if  (  pic  >=  424  &&  pic  <=  430  )  rep="21-1PIERRE"
+	if  (  pic  >=  431  &&  pic  <=  435  )  rep="22-2PIERRE"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="23-1JEAN"
+	if  (  pic  >=  442  &&  pic  <=  443  )  rep="24-2JEAN"
+	if  (  pic  >=  444  &&  pic  <=  444  )  rep="25-3JEAN"
+	if  (  pic  >=  445  &&  pic  <=  446  )  rep="26-JUDAS"
+	if  (  pic  >=  447  &&  pic  <=  473  )  rep="27-APOCALYPSE"
+	
+	return "../../amiatinus/"+rep+'/'+pic+".jpg";
+
+}	
+
+
+else if (elempic.src.indexOf("erasme") != -1)
+{
+	if  (  pic  >=  1    &&  pic  <=  54   )  rep="00-INTRO"
+	if  (  pic  >=  55   &&  pic  <=  120  )  rep="01-MATTHIEU"
+	if  (  pic  >=  121  &&  pic  <=  161  )  rep="02-MARC"
+	if  (  pic  >=  162  &&  pic  <=  230  )  rep="03-LUC"
+	if  (  pic  >=  231  &&  pic  <=  281  )  rep="04-JEAN"
+	if  (  pic  >=  282  &&  pic  <=  349  )  rep="05-ACTES"
+	if  (  pic  >=  350  &&  pic  <=  375  )  rep="06-ROMAINS"
+	if  (  pic  >=  376  &&  pic  <=  400  )  rep="07-1CORINTHIENS"
+	if  (  pic  >=  401  &&  pic  <=  417  )  rep="08-2CORINTHIENS"
+	if  (  pic  >=  418  &&  pic  <=  426  )  rep="09-GALATES"
+	if  (  pic  >=  427  &&  pic  <=  435  )  rep="10-EPHESIENS"
+	if  (  pic  >=  436  &&  pic  <=  441  )  rep="11-PHILIPPIENS"
+	if  (  pic  >=  442  &&  pic  <=  447  )  rep="12-COLOSSIENS"
+	if  (  pic  >=  448  &&  pic  <=  453  )  rep="13-1THESSALONICIENS"
+	if  (  pic  >=  454  &&  pic  <=  456  )  rep="14-2THESSALONICIENS"
+	if  (  pic  >=  457  &&  pic  <=  463  )  rep="15-1TIMOTHEE"
+	if  (  pic  >=  464  &&  pic  <=  468  )  rep="16-2TIMOTHEE"
+	if  (  pic  >=  469  &&  pic  <=  471  )  rep="17-TITE"
+	if  (  pic  >=  472  &&  pic  <=  473  )  rep="18-PHILEMON"
+	if  (  pic  >=  474  &&  pic  <=  493  )  rep="19-HEBREUX"
+	if  (  pic  >=  494  &&  pic  <=  500  )  rep="20-JACQUES"
+	if  (  pic  >=  501  &&  pic  <=  507  )  rep="21-1PIERRE"
+	if  (  pic  >=  508  &&  pic  <=  512  )  rep="22-2PIERRE"
+	if  (  pic  >=  513  &&  pic  <=  519  )  rep="23-1JEAN"
+	if  (  pic  >=  520  &&  pic  <=  521  )  rep="24-2JEAN"
+	if  (  pic  >=  522  &&  pic  <=  523  )  rep="25-3JEAN"
+	if  (  pic  >=  524  &&  pic  <=  525  )  rep="26-JUDAS"
+	if  (  pic  >=  526  &&  pic  <=  557  )  rep="27-APOCALYPSE"
+	if  (  pic  >=  558  &&  pic  <=  563  )  rep="28-END"	
+	
+	return "../../erasme_1527/"+rep+'/'+pic+".jpg";
+}
+	
+		
+	
+	
+		
+		
+}
+
+
+
+function page_left()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (pic > 1)
+	{
+		
+		pic--
+		
+		elempic.src = make_url(pic)
+		
+	}
+	
+	
+}
+
+
+
+function page_right()
+{
+	
+	pic = elempic.src.match(/([0-9]+).jpg/)[1]
+	
+	if (elempic.src.indexOf("erasme") != -1)
+	{
+		if (pic < 563)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+
+	else if (elempic.src.indexOf("amiatinus") != -1)
+	{
+		if (pic < 473)
+			pic++
+		
+		elempic.src = make_url(pic)
+	}
+		
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey(e) 
+{
+
+	if (elempic.getAttribute("src") != "")
+	{
+
+		pic = elempic.src.match(/([0-9]+).jpg/)[1]
+
+		e = e || window.event;
+
+		//console.log(e.keyCode)
+		
+		if (e.keyCode == '27') {
+			
+			
+			if (elempic.src.indexOf("erasme") != -1)
+				view('erasme_1527')
+			else if (elempic.src.indexOf("amiatinus") != -1)
+				view('amiatinus')
+		
+		}
+		
+		
+		//else if (e.keyCode == '38') {document.getElementById('left').scrollTop = 0;}
+		
+		//else if (e.keyCode == '40') {document.getElementById('left').scrollTop = 999999;}
+		
+		
+		else if (e.keyCode == '37') {
+			
+			
+			page_left()
+			
+			
+		}
+		
+		else if (e.keyCode == '39') 
+		{
+			
+			page_right()
+			
+			
+		}
+		
+
+	}
+
+}
+
+
+</script>
+
+
+</html>
+
