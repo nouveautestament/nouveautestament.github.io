@@ -21685,7 +21685,7 @@ lemme={
   "ὅπλον"
  ],
  "ὅπλον": [
-  "armes",
+  "arme, armes",
   "armes, instruments, tout outil ou accessoire pour la préparation d'une chose.   les armes utilisées dans le combat.   un instrument",
   "Nom neutre",
   "Vient probablement d'un mot primaire 'hepo' (être occupé à)"
