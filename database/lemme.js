@@ -22105,10 +22105,10 @@ lemme={
   "οὐ  et  ἔτι"
  ],
  "οὐκοῦν": [
-  "pas donc",
-  "pas donc, ainsi donc, alors, pas donc, ainsi donc, alors",
+  "n'est-ce pas donc",
+  "n'est-ce pas donc, non donc, alors, ainsi donc",
   "Adverbe",
-  "οὐ  et  οὖν, οὐκ(non) + οῦν(donc)"
+  "οὐ οὖν οὐκ (non) + οῦν (donc) (affirmation négative)"
  ],
  "οὖν": [
   "donc",
