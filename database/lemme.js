@@ -23959,7 +23959,7 @@ lemme={
   "πέρας"
  ],
  "πετεινόν": [
-  "volatiles",
+  "volatile, volatiles",
   "volatiles, qui volent, qui ont des ailes.  animaux volants ou ailés, oiseaux.   les oiseaux du ciel, volant dans les cieux (dans l'air)",
   "Nom neutre",
   "Vient d'un dérivé de  πέτομαι"
