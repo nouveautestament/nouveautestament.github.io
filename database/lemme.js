@@ -7164,7 +7164,7 @@ lemme={
   "δεκάτη"
  ],
  "δεκτός": [
-  "accepté",
+  "accepté, acceptés, acceptée, acceptées",
   "accepté, acceptable, bien reçu, agréable, favorable, accepter, favorable",
   "Adjectif",
   "δέχομαι (LATIN:ACCIPIO)"
