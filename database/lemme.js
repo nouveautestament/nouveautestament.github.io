@@ -31472,7 +31472,7 @@ lemme={
  ],
  "φανερός": [
   "luminant, luminants, luminante, luminantes",
-  "visible, apparent, apparent, manifeste, évident, connu.  manifesté c'est à dire être clairement reconnu ou connu",
+  "visible, apparent, manifeste, évident, connu, manifesté c'est à dire être clairement reconnu ou connu",
   "Adjectif",
   "φαίνω"
  ],
@@ -34300,10 +34300,10 @@ lemme={
  
    
  "διατίθημι": [
-  "poser à travers",
-  "poser à travers",
+  "disposer",
+  "disposer, poser à travers",
   "verbe",
-  "δια τίθημι"
+  "δια τίθημι διατίθεμαι"
  ],
  
  
@@ -35407,6 +35407,14 @@ lemme={
   "véritable, légitime, sincère, fidèle, non bâtard, vrai",
   "Adjectif",
   "γνήσιος γενέσια"
+ ],
+ 
+ 
+ "φανερώτερον": [
+  "plus luminant, plus luminants, plus luminante, plus luminantes",
+  "plus visible, plus apparent, plus manifeste",
+  "Adjectif / Adverbe",
+  "φανερός"
  ],
  
  
