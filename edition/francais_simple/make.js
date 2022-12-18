@@ -55,7 +55,10 @@ css_web = `
 			font-family: sans-serif;
 			font-size:17px;
 		}
-
+		
+		h1 {
+			font-weight: 900;
+		}
 
 		.chap {
 			font-size:20px;
@@ -93,6 +96,9 @@ css_papier = `
 			font-size:11px;
 		}
 
+		h1 {
+			font-weight: 900;
+		}
 
 		.chap {
 			font-size:14px;
@@ -181,8 +187,8 @@ for (nb=0;nb!=line.length;nb++)
 
 		if (chapitre == 1 && verset == 1)
 		{
-			body_html_all	+= '\n<h3><center>'+nomdulivre+'</center></h3>\n';
-			file2.appendFileSync(livre+'.html','\n<h3><center>'+nomdulivre+'</center></h3>\n', 'utf8');
+			body_html_all	+= '\n<center><h1>'+nomdulivre+'</h1></center>\n';
+			file2.appendFileSync(livre+'.html','\n<center><h1>'+nomdulivre+'</h1></center>\n', 'utf8');
 		}
 
 
