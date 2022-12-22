@@ -95,11 +95,11 @@ css_papier = `
 			font-family: Serif;
 			font-size:11px;
 		}
-
+		/*
 		h1 {
 			font-weight: 900;
 		}
-
+		*/
 		.chap {
 			font-size:14px;
 		}
@@ -187,7 +187,7 @@ for (nb=0;nb!=line.length;nb++)
 
 		if (chapitre == 1 && verset == 1)
 		{
-			body_html_all	+= '\n<center><h1>'+nomdulivre+'</h1></center>\n';
+			body_html_all	+= '\n<center><h3>'+nomdulivre+'</h3></center>\n';
 			file2.appendFileSync(livre+'.html','\n<center><h1>'+nomdulivre+'</h1></center>\n', 'utf8');
 		}
 
@@ -204,12 +204,10 @@ for (nb=0;nb!=line.length;nb++)
 		else
 			verset2 = '0'+verset
 
-		body_html_all	+= '<br><span class="ver">'+verset2+'</span>&ensp;&ensp;<span class="text">'+texte+'</span>\n';
 
-
-
-
+		body_html_all	+=                 '<br><span class="ver">'+verset2+'</span>&ensp;&ensp;<span class="text">'+texte+'</span>\n';
 		file2.appendFileSync(livre+'.html','<br><span class="ver">'+verset2+'</span>&ensp;&ensp;<span class="text">'+texte+'</span>\n', 'utf8');
+
 
 		if (livre == 27 && chapitre == 22 && verset == 21)
 			file2.appendFileSync(livreb+'.html','</body></html>', 'utf8');
