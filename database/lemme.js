@@ -2412,7 +2412,7 @@ lemme={
   "ἀνατέλλω"
  ],
  "ἀνατρέπω": [
-  "renverser de bas en haut",
+  "tourner de bas en haut",
   "tourner de bas en haut, renverser de bas en haut , bouleverser, détruire, renverser (subversif)",
   "Verbe",
   "ἀνά  et la base de  τροπή"
