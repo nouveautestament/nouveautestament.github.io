@@ -17268,10 +17268,10 @@ lemme={
   "Vient du mot primaire 'komeo' (soigner, prendre soin de)"
  ],
  "κομψότερον": [
-  "plus portement",
+  "plus soigné",
   "en se portant mieux, trouver mieux, en meilleur état",
   "Adverbe",
-  "Comparatif d'un dérivé de  κομίζω  (ayant le sens de bien habillé, beau) κομψό(élégant) + τερον(plus)"
+  "Comparatif d'un dérivé de  κομίζω  (ayant le sens de bien habillé, beau) κομψό(élégant, soigné) + τερον(plus)"
  ],
  "κονιάω": [
   "chauler",
