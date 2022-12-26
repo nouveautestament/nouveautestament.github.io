@@ -4674,7 +4674,7 @@ lemme={
   "ἀσθενής"
  ],
  "ἀσθενέω": [
-  "être infirme",
+  "être infirme, être infirmes",
   "être infirme, malade, tomber malade, faible, faiblesse, faiblir, rendre sans force, être faible, être sans force, impuissant.  être faible en moyens, nécessiteux, pauvre.  un malade, être malade",
   "Verbe",
   "ἀσθενής"
