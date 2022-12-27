@@ -20845,8 +20845,8 @@ lemme={
   "Dimin. de  νεοσσός"
  ],
  "νοσφίζω": [
-  "détourner",
-  "détourner, détourner, mettre à part, séparer, diviser.  séparer pour soi-même.  dérober, détourner, retirer secrètement et s'approprier pour son propre usage",
+  "mettre à l'écart",
+  "mettre à part, mettre à l'écart, détourner, séparer, diviser.  séparer pour soi-même.  dérober, retirer secrètement et s'approprier pour son propre usage",
   "Verbe",
   "'nosphi' (à part ou clandestinement)"
  ],
