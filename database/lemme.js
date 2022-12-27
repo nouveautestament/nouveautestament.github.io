@@ -1380,7 +1380,7 @@ lemme={
   "ἀληθής"
  ],
  "ἀληθής": [
-  "vrai, vrais, vrai, vrais",
+  "vrai, vrais, vraie, vraies",
   "vrai, véritable , véridique , réel, vrai.  amour de la vérité, parler avec vérité, sincère",
   "Adjectif",
   "ἄλφα (négatif) et  λανθάνω"
@@ -4674,7 +4674,7 @@ lemme={
   "ἀσθενής"
  ],
  "ἀσθενέω": [
-  "être infirme, être infirmes",
+  "être infirme, être infirmes, être infirme, être infirmes",
   "être infirme, malade, tomber malade, faible, faiblesse, faiblir, rendre sans force, être faible, être sans force, impuissant.  être faible en moyens, nécessiteux, pauvre.  un malade, être malade",
   "Verbe",
   "ἀσθενής"
