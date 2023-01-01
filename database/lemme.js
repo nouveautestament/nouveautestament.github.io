@@ -9264,7 +9264,7 @@ lemme={
   "εἰ  et  τις"
  ],
  "ἐκ": [
-  "du sortant",
+  "du-sortant",
   "issu, du sortant, de hors de, vient de, par, sur, avec, hors de, depuis, de, par, loin de",
   "Préposition",
   "Préposition dénotant une origine (point d'où l'action ou le mouvement procède), de, hors (d'un lieu, du temps, d'une cause; littéral ou figuratif)"
@@ -11373,13 +11373,13 @@ lemme={
   "lendemain",
   "lendemain , le jour suivant, le lendemain, le jour suivant",
   "Adverbe",
-  "ἐπί  et  αὔριον"
+  "ἐπί et αὔριον"
  ],
  "αὐτόφωρος": [
-  "qui se dénonce soi-même comme voleur",
-  "en flagrant délit, dans l'action.  pris pendant l'action de voler.  pris en perpétuant un autre crime",
-  "Adverbe",
-  "αὐτός  et d'un dérivé de 'phor' (un voleur)"
+  "le fait même de voler",
+  "le fait même de voler, qui se dénonce soi-même comme voleur, en flagrant délit, dans l'action, pris pendant l'action de voler, pris en perpétuant un autre crime",
+  "Adjectif / Adverbe",
+  "αὐτός et dérivé de 'phor' (voleur)"
  ],
  "Ἐπαφρᾶς": [
   "Épaphras",
@@ -22033,7 +22033,7 @@ lemme={
   "ὅς  et  τέ"
  ],
  "ὅτι": [
-  "en ce que",
+  "en-ce-que",
   "en ce que, ce que, que, puisque, puisque",
   "Conjonction",
   "ὅστις  comme conjonction; (quelquefois redondant)"
