@@ -13836,14 +13836,14 @@ lemme={
   "θαῦμα"
  ],
  "θαυμάσιος": [
-  "extraordinaires",
-  "merveilleuses, merveilleux, étonnant.  faits merveilleux, étonnement",
+  "étonnantes-choses",
+  "étonnantes choses, merveilleuses choses, extraordinaires, .  faits merveilleux, étonnement",
   "Adjectif",
   "θαῦμα"
  ],
  "θαυμαστός": [
-  "extraordinaire, extraordinaires, extraordinaire, extraordinaires",
-  "extraordinaire, étonnement, admirable, merveilleux, étonnant.   digne d'une pieuse admiration, admirable, excellent.  dépassant la compréhension humaine.  causant de l'étonnement joint à de la terreur.  merveilleux.   extraordinaire, frappant, surprenant",
+  "étonnant, étonnants, étonnante, étonnantes",
+  "étonnant, extraordinaire, étonnement, admirable, merveilleux, étonnant.   digne d'une pieuse admiration, admirable, excellent.  dépassant la compréhension humaine.  causant de l'étonnement joint à de la terreur.  merveilleux.   extraordinaire, frappant, surprenant",
   "Adjectif",
   "θαυμάζω"
  ],
