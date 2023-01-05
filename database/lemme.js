@@ -17100,8 +17100,8 @@ lemme={
   "κεῖμαι"
  ],
  "κοίμησις": [
-  "dormance",
-  "dormance, un repos, une prise de repos.  une pause, un assoupissement",
+  "mise au coucher",
+  "mise au coucher, action de se coucher, dormance, un repos, une prise de repos.  une pause, un assoupissement",
   "Nom féminin",
   "κοιμάομαι"
  ],
@@ -28513,10 +28513,10 @@ lemme={
   "Vient du même mot que  Σίμων"
  ],
  "συμμαθητής": [
-  "co-apprentis",
-  "co-apprenti, un compagnon disciple",
+  "co-disciple, co-disciples",
+  "co-apprenti, compagnon disciple",
   "Nom masculin",
-  "σύν  et  μανθάνω"
+  "σύν μαθητής μανθάνω"
  ],
  "συμμαρτυρέω": [
   "témoigner avec",
