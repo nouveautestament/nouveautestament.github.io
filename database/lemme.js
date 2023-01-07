@@ -20725,7 +20725,7 @@ lemme={
   "Νινευΐ"
  ],
  "νιπτήρ": [
-  "bassin",
+  "bassin à laver",
   "bassine, bassine, cuvette",
   "Nom masculin",
   "νίπτω"
