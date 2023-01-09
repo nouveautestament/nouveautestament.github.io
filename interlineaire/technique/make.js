@@ -435,7 +435,7 @@ for (line = 0 ; line != bible.length ; line++)
 			
 			
 			//add tr
-			data += `\n<tr><td class="td1">NOUVELLE_DISPOSITION</td><td class="td2">2022</td><td class="td3">`+sebastien+`</td></tr>`;
+			data += `\n<tr><td class="td1">NOUVELLE_DISPOSITION</td><td class="td2">2023</td><td class="td3">`+sebastien+`</td></tr>`;
 		
 		}
 		

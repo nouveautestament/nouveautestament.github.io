@@ -3131,7 +3131,7 @@ motfr = motfr.slice(0,-1);
 
 
 if (process.argv[2] != "0")
-	console.log(livre+':'+chapitre+':'+verset+':'+xbook[livre]+':1:2022:NOUVELLE_DISPOSITION '+motfr)
+	console.log(livre+':'+chapitre+':'+verset+':'+xbook[livre]+':1:2023:NOUVELLE_DISPOSITION '+motfr)
 
 
 
