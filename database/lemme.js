@@ -4272,10 +4272,10 @@ lemme={
   "Vient du même mot que  ἄρσην"
  ],
  "ἀρήν": [
-  "agneaux",
-  "agneaux, un mouton, un agneau",
+  "moutons",
+  "moutons, agneaux, un mouton, un agneau",
   "Nom masculin",
-  "Peut-être le même que ἄρσην"
+  "ἀρνίον ἄρσην"
  ],
  "ἀριθμέω": [
   "nombrer",
@@ -4380,8 +4380,8 @@ lemme={
   "Vient peut-être de ἄλφα (négatif) et de  4483"
  ],
  "ἀρνίον": [
-  "petit agneau, petits agneaux",
-  "agneau, agneaux, un petit agneau, un agneau",
+  "petit mouton, petits moutons",
+  "petit mouton, petit agneau",
   "Nom neutre",
   "Diminutif de  ἀρήν"
  ],
@@ -10098,7 +10098,7 @@ lemme={
   "Vient d'un dérivé de  Ἕλλην"
  ],
  "Ἑλληνιστί": [
-  "en Helléniste",
+  "en Hellène",
   "en Grec, en grec, le langage grec",
   "Adverbe",
   "Vient du même mot que  Ἑλληνιστής"
