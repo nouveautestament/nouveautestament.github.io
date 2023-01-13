@@ -7680,7 +7680,7 @@ lemme={
   "διά  et de la base de  νόμος"
  ],
  "διανεύω": [
-  "faire signe en long",
+  "faire signe constamment",
   "faire des signes, s'exprimer au moyen de signes, signe de la tête, faire signe, clin d'œil",
   "Verbe",
   "διά  et  νεύω"
@@ -7854,8 +7854,8 @@ lemme={
   "διατάσσω"
  ],
  "διαταράσσω": [
-  "perturber entièrement",
-  "troubler,troublée, agiter grandement, inquiéter fortement",
+  "perturber",
+  "troubler au-travers, agiter grandement, inquiéter fortement",
   "Verbe",
   "διά  et  ταράσσω"
  ],
