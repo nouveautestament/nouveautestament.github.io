@@ -10668,8 +10668,8 @@ lemme={
   "ἐννεύω"
  ],
  "ἐννεύω": [
-  "faire des signes",
-  "faire des signes,firent des signes, incliner la tête, signifier ou exprimer par un signe de la tête",
+  "faire des signes dans",
+  "faire des signes dans, incliner la tête, signifier ou exprimer par un signe de la tête",
   "Verbe",
   "ἐν  et  νεύω"
  ],
