@@ -26029,10 +26029,10 @@ lemme={
   "πρωτότοκος"
  ],
  "πρωτότοκος": [
-  "premier-né, premiers-nés",
+  "premier-enfanté, premiers-enfantés",
   "premier-né, le premier-né   d'un homme ou d'un animal.  de Christ, le premier né de toute la création",
   "Adjectif",
-  "πρῶτος  et de la variante de  τίκτω"
+  "πρῶτος τίκτω τέκνον"
  ],
  "πταίω": [
   "trébucher",
@@ -29800,31 +29800,31 @@ lemme={
   "petits enfants",
   "petits enfants, un petit enfant.  dans le Nouveau Testament, mot utilisé en terme de tendresse par les enseignants à leurs disciples",
   "Nom neutre",
-  "Diminutif de  τέκνον"
+  "Diminutif de τέκνον"
  ],
  "τεκνογονέω": [
   "engendrer enfant",
   "enfanter, engendrer ou porter un enfant",
   "Verbe",
-  "τέκνον  et de  γίνομαι"
+  "τέκνον γίνομαι"
  ],
  "τεκνογονία": [
   "engendrement d'enfant",
   "procréation d'enfant, porter un enfant",
   "Nom féminin",
-  "Vient du même mot que  τεκνογονέω"
+  "τεκνογονέω"
  ],
  "τέκνον": [
   "enfant, enfants",
   "enfant, enfants, enfant légitime, fils, filles, descendant, les enfants.   enfant.   un enfant mâle, un fils.   métaphorique.   ce nom est donné à toute cette relation intime et réciproque qui est formé par les liens de l'amour, de l'amitié, de la confiance, comme d'une liaison entre parents et enfants.  dans l'interpellation affectueuse que peuvent utiliser des patrons, ou des enseignants : mon enfant.  dans le Nouveau Testament, les élèves ou disciples sont appelés enfants par leurs maîtres, car ceux-ci nourrissent leurs esprits et façonnent leurs caractères.  enfants de Dieu : dans l'Ancien Testament c'est \"le peuple d'Israël\" qui est spécialement cher à Dieu, et dans le Nouveau Testament, dans les écrits de Paul, ce sont tous ceux qui sont conduits par l'esprit de Dieu et par là étroitement liés à Dieu.  enfants du diable : ceux qui par leurs pensées et leurs actions sont conduits par le diable, et ainsi reflètent son caractère.    métaphorique.   ceux qui sont sujets à un même destin.   enfants d'une cité : ses citoyens et habitants.   les adorateurs de la sagesse, ceux dont l'âme a été comme nourrie et façonnée par la sagesse.  enfants de colère, exposés à la malédiction et condamnés au courroux ou au châtiment     Pour les Synonymes voir entrée  5868",
   "Nom neutre",
-  "τιμωρία"
+  "τιμωρία τίκτω"
  ],
  "τεκνοτροφέω": [
   "nourrir l'enfant",
   "nourrir l'enfant, nourrir l'enfant, élever des enfants",
   "Verbe",
-  "τέκνον  et  τρέφω"
+  "τέκνον τρέφω"
  ],
  "τέκτων": [
   "artisan",
@@ -30088,7 +30088,7 @@ lemme={
   "enfanter",
   "produire, apporter, porter, enfanter, produire (un fruit venant d'une graine).   d'une femme qui accouche.  de la terre produisant ses fruits.  métaphorique enfanter, avoir une postérité",
   "Verbe",
-  "Un renforcement du mot teko (tek'-o, utilisé en variante à certains temps)"
+  "τέκνον"
  ],
  "τίλλω": [
   "épiler",
