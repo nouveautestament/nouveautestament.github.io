@@ -14400,7 +14400,7 @@ lemme={
   "Vient apparemment d'un verbe primaire"
  ],
  "Ἰαρέδ": [
-  "Iared",
+  "Iaret",
   "Iared, Iared = \"qui descend\"   un des patriarches d'avant le déluge, le père d'Énoch",
   "Nom propre masculin",
   "D'origine hébraïque  03382"
@@ -15276,7 +15276,7 @@ lemme={
   "D'origine hébraïque  07014"
  ],
  "Καϊνάν": [
-  "Kainan",
+  "Kainam",
   "Kaïnam , Kaïnan, Kaïnam = \"leur forgeron\"   Kénan, le fils de Enosch, Genèse 5:9  fils d'Arpacschad et ancêtre de Christ, Luc 3.36",
   "Nom propre masculin",
   "D'origine hébraïque  07018"
