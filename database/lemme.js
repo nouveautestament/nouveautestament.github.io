@@ -7944,16 +7944,16 @@ lemme={
   "διαφέρω"
  ],
  "διαφυλάσσω": [
-  "gardienner soigneusement",
-  "garder, garder soigneusement.   la version des Septante utilise l'expression de soin providentiel de Dieu",
+  "gardienner à travers",
+  "gardienner tout le temps, garder soigneusement, la version des Septante utilise l'expression de soin providentiel de Dieu",
   "Verbe",
-  "διά  et  φυλάσσω"
+  "διά φυλάσσω"
  ],
  "διαχειρίζομαι": [
   "manipuler en séparant",
   "avoir tué , faire périr, déplacer par l'usage des mains, prendre en main, diriger, administrer, gouverner.  poser les mains sur, tuer, faire périr de ses propres mains",
   "Verbe",
-  "διά  et un dérivé de  χείρ"
+  "διά χείρ"
  ],
  "διαχωρίζομαι": [
   "séparer entièrement",
