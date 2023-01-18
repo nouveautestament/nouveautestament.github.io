@@ -5451,7 +5451,7 @@ lemme={
   "profondeur, profondeurs",
   "profond, pleine eau, profondeur, profondeur, hauteur.   de la mer \"profonde\"  métaphorique.   profond, extrême, pauvreté  les choses profondes de Dieu",
   "Nom neutre",
-  "Vient du même mot que  βαθύς"
+  "βάθος βαθύς βυθός"
  ],
  "βαθύνω": [
   "approfondir",
@@ -5463,7 +5463,7 @@ lemme={
   "profond, profonds",
   "profond, profondément, de grand matin, profond",
   "Adjectif",
-  "la base de  βάσις"
+  "βάθος βαθύς βυθός βάσις"
  ],
  "βαΐον": [
   "rameaux",
@@ -6276,16 +6276,16 @@ lemme={
   "la base de  βιβρώσκω"
  ],
  "βυθίζω": [
-  "mettre à l'abîme",
+  "mettre en profondeur",
   "abîmer, enfoncer , plonger, plonger dans les profondeurs, enfoncer, couler au fond",
   "Verbe",
   "βυθός"
  ],
  "βυθός": [
-  "abîme",
-  "abîme, le fond ou la profondeur de la mer.  la mer elle-même, la mer profonde",
+  "profondeur",
+  "profondeur, le fond ou la profondeur de la mer.  la mer elle-même, la mer profonde",
   "Nom masculin",
-  "βυθίζω ( βάθος )"
+  "βυθίζω βάθος βαθύς βυθός"
  ],
  "βυρσεύς": [
   "tanneur",
@@ -20905,8 +20905,8 @@ lemme={
   "νύμφη"
  ],
  "νυμφών": [
-  "épousaille",
-  "épousaille, la chambre contenant le lit nuptial, la chambre nuptiale.   des amis de l'époux dont le rôle et de veiller à tout ce qui compose la chambre nuptiale, tout ce qui est nécessaire à la célébration de l'union conjugale.  la pièce dans laquelle les cérémonies du mariage se tiennent",
+  "chambre d'épousaille",
+  "chambre d'épousaille, la chambre contenant le lit nuptial, la chambre nuptiale.   des amis de l'époux dont le rôle et de veiller à tout ce qui compose la chambre nuptiale, tout ce qui est nécessaire à la célébration de l'union conjugale.  la pièce dans laquelle les cérémonies du mariage se tiennent",
   "Nom masculin",
   "νύμφη"
  ],
