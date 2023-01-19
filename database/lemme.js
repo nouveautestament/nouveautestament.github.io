@@ -26449,7 +26449,7 @@ lemme={
   "D'origine latine"
  ],
  "ῥῆγμα": [
-  "fracture",
+  "fracassement",
   "fracture, ce qui a été brisé ou mis en morceaux.   une fracture, une brèche, une fente.  chute, ruine",
   "Nom neutre",
   "ῥήγνυμι"
