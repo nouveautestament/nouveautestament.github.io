@@ -18018,8 +18018,8 @@ lemme={
   "Un verbe primaire"
  ],
  "λανθάνω": [
-  "omettre",
-  "échapper, cacher, ignorer, sans savoir, être caché, secrètement, à l'insu de, sans savoir",
+  "être omis",
+  "se omettre, s'échapper, être caché, se ignorer, sans savoir, secrètement, à l'insu de, sans savoir",
   "Verbe",
   "Forme prolongée d'un verbe primaire, utilisé en variante à certains temps"
  ],
