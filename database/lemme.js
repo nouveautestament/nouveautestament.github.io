@@ -7476,7 +7476,7 @@ lemme={
   "διά  et  γογγύζω"
  ],
  "διαγρηγορέω": [
-  "veiller à travers",
+  "vigiler à travers",
   "être tenu éveillé, veiller sur.  rester éveillé  être pleinement éveillé",
   "Verbe",
   "διά  et  γρηγορέω"
@@ -7956,8 +7956,8 @@ lemme={
   "διά χείρ"
  ],
  "διαχωρίζομαι": [
-  "séparer entièrement",
-  "séparer, séparer complètement ou entièrement.  se séparer, partir",
+  "séparer à travers",
+  "séparer à travers [l'intervalle], séparer complètement ou entièrement.  se séparer, partir",
   "Verbe",
   "διά  et de  χωρίζω"
  ],
@@ -10986,7 +10986,7 @@ lemme={
   "ἐκ  et d'un dérivé de  ἄρτιος"
  ],
  "ἐξαστράπτω": [
-  "éclairer dehors",
+  "éclairer à l'excès",
   "éclairer,éclatante, renvoyer de la lumière, éclairer.  éclairer comme un avec éclair, briller, être radieux.   de vêtements",
   "Verbe",
   "ἐκ  et  ἀστράπτω"
