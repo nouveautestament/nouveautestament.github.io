@@ -14814,14 +14814,14 @@ lemme={
   "D'origine latine (\"juste\")"
  ],
  "ἱππεύς": [
-  "cavaliers",
-  "cavaliers, un cavalier",
+  "chevaliers",
+  "chevaliers, cavaliers",
   "Nom masculin",
   "ἵππος"
  ],
  "ἱππικόν": [
-  "équestre",
-  "équestre, cavalerie, équestre, les cavaliers, la cavalerie",
+  "chevalique",
+  "hippique, chevalique, équestre, cavalerie",
   "Adjectif",
   "Vient d'un dérivé de  ἵππος"
  ],
