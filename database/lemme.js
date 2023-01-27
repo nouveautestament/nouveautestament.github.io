@@ -8586,7 +8586,7 @@ lemme={
   "Particule primaire"
  ],
  "δυσβάστακτος": [
-  "difficiles mises en charges",
+  "difficiles à charger",
   "difficile à porter, difficiles charges à porter, lourd, encombrant",
   "Adjectif",
   "δυσ-  et un dérivé de  βαστάζω"
@@ -15228,8 +15228,8 @@ lemme={
   "κατά  et  ὅλος"
  ],
  "καθοπλίζω": [
-  "armer complètement",
-  "armer complètement,bien armé, fourni en armes",
+  "armer totalement",
+  "armer totalement, armer complètement, armiser de haut en bas, bien armé, fourni en armes",
   "Verbe",
   "κατά , et  ὁπλίζω"
  ],
@@ -19326,11 +19326,17 @@ lemme={
   "Particule",
   "Particule primaire"
  ],
+ "μενοῦν": [
+  "certes donc",
+  "plutôt, au contraire, même, non sûrement, plutôt",
+  "Particule",
+  "μέν οὖν"
+ ],
  "μενοῦνγε": [
   "certes donc du moins",
-  "plutôt , au contraire , même, non sûrement, plutôt",
+  "plutôt, au contraire, même, non sûrement, plutôt",
   "Particule",
-  "μέν  et  οὖν  et  γε"
+  "μέν οὖν γε"
  ],
  "μέντοι": [
   "néanmoins",
@@ -32329,8 +32335,8 @@ lemme={
   "φῶς  et  φέρω"
  ],
  "φωτεινός": [
-  "plein de lumière, pleins de lumières, pleine de lumière, pleines de lumières",
-  "lumineux, lumineuse, lumineux.   composé de lumière.  d'un caractère brillant.  plein de lumière.  bien éclairé",
+  "lumièreu, lumièreux, lumièreuse, lumièreuses",
+  "lumièreu, lumineux, composé de lumière, d'un caractère brillant, comme σκο'τεινός' de σκότος",
   "Adjectif",
   "φῶς"
  ],
