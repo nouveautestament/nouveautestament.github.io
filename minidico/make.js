@@ -253,7 +253,7 @@ for (nb=0;nb!=line.length;nb++)
 	if (line[nb] != '')
 	{
 	
-		word = line[nb].split('=');
+		word = line[nb].split('==');
 
 
 		if (word[0][0].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") != debl)

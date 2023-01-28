@@ -7668,8 +7668,8 @@ lemme={
   "διά  et  μερίζω"
  ],
  "διαμερισμός": [
-  "division en séparant",
-  "division, un partage, une distribution.  désunion, dissension",
+  "partage-séparant",
+  "partage en séparant, division, partage, mise en partage, distribution, désunion, dissension",
   "Nom masculin",
   "διαμερίζω"
  ],
@@ -18174,8 +18174,8 @@ lemme={
   "Vient du même mot que  λέπρα"
  ],
  "λεπτόν": [
-  "petite pièce, petites pièces",
-  "petite pièce , pite, mince, petit.  petite pièce de cuivre, équivalente au huitième d'un \"as\", soit quelques centimes",
+  "lepton, leptons",
+  "lepton, petite pièce , pite, mince, petit.  petite pièce de cuivre, équivalente au huitième d'un \"as\", soit quelques centimes",
   "Adjectif",
   "Dérivé du mot λεπίς"
  ],
@@ -19603,10 +19603,10 @@ lemme={
   "μετά  et  ἔχω"
  ],
  "μετεωρίζομαι": [
-  "élever haut",
-  "élever haut, se lever, élever.   tirer un navire à la côte [hors de la mer]  élever des fortifications.   métaphorique.   élever son âme, élever son esprit.   soutenir avec espérance.  se gonfler d'orgueil.  être exalté   par métaphore prise de navires jetés aux rochers par les vents et les vagues.    voir quelqu'un vaciller ou osciller dans son esprit.  agiter ou harceler de soucis.  rendre inquiet, anxieux",
+  "météoriser",
+  "élever en l'air, élever haut, se lever, tirer un navire à la côte [hors de la mer], élever des fortifications, métaphorique : élever son âme, élever son esprit, soutenir avec espérance, se gonfler d'orgueil, être exalté   par métaphore prise de navires jetés aux rochers par les vents et les vagues, voir quelqu'un vaciller ou osciller dans son esprit, agiter ou harceler de soucis, rendre inquiet, anxieux",
   "Verbe",
-  "μετά  et d'une forme de  αἴρω  ou peut-être plutôt ἀήρ (voir \"meteor\")"
+  "μετά αἴρω ἀήρ"
  ],
  "μετοικεσία": [
   "transhabitation",
@@ -21355,8 +21355,8 @@ lemme={
   "'ollumi' (détruire) ἀπόλλυμι ὀλοθρεύω"
  ],
  "ὀλιγόπιστος": [
-  "de petite croyance, de petites croyances",
-  "de petite croyance, de petite foi, croyant trop faiblement",
+  "peu-croyant, peus-croyants",
+  "peu-croyant, de petite croyance, de petite foi, croyant trop faiblement",
   "Adjectif",
   "ὀλίγος  et  πίστις"
  ],
@@ -33589,8 +33589,8 @@ lemme={
   "Voir θαυμάζω + ek(εξ)"
  ],
  "ἐνκοπὴν": [
-  "coupure",
-  "coupure, coupure",
+  "en-coupure",
+  "en-coupure, incision, coupure",
   "Nom féminin",
   "ἐγκοπή"
  ],
