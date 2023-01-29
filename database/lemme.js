@@ -3252,10 +3252,10 @@ lemme={
   "ἀπό  et  ἄρτι"
  ],
  "ἀπαρτισμός": [
-  "terme",
-  "terminer, finir, achèvement, terminaison, accomplissement",
+  "mise à terme",
+  "mise à terme, mise à ajustement, finisation, achèvement, terminaison, accomplissement",
   "Nom masculin",
-  "Vient d'un dérivé de  ἀπάρτι"
+  "ἀπό ἐξαρτίζω ἀπάρτι ἄρτιος"
  ],
  "ἀπαρχή": [
   "prémisse, prémisses, prémisse, prémisses",
