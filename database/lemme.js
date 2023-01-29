@@ -3996,10 +3996,10 @@ lemme={
   "ἀπό  et  τάσσω"
  ],
  "ἀποτελέω": [
-  "finir de loin",
-  "accomplir entièrement, consommer loin, parfaire, amener au bout.  accomplir",
+  "achever complètement",
+  "achever complètement, mener à achèvement, accomplir entièrement, consommer loin, parfaire, amener au bout, accomplir",
   "Verbe",
-  "ἀπό  et  τελέω"
+  "ἀπό τελέω"
  ],
  "ἀποτίθημι": [
   "déposer",
