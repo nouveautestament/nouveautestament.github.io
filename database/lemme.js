@@ -13404,10 +13404,10 @@ lemme={
   "ζώνη"
  ],
  "ζωογονέω": [
-  "devenir être vivant",
-  "vivifier, apporter la vie.  donner la vie.  préserver vivant",
+  "engendrer vivant",
+  "engendrer vivant, vivifier, apporter la vie, donner la vie, préserver vivant",
   "Verbe",
-  "Vient du même mot que  ζῷον  et un dérivé de  γίνομαι"
+  "ζῷον γίνομαι"
  ],
  "ζῷον": [
   "être vivant, êtres vivants",
@@ -23815,7 +23815,7 @@ lemme={
   "περί  et  πίπτω"
  ],
  "περιποιέω": [
-  "produire autour",
+  "faire entourer",
   "produire autour, préserver, faire autour, acquérir, s'acquiert, constituer une réserve.  réserver, laisser ou garder sauf.  se réserver.  se préserver pour son usage.  obtenir pour soi-même, acheter",
   "Verbe",
   "περί  et  ποιέω"
