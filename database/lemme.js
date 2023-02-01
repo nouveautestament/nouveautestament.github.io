@@ -552,8 +552,8 @@ lemme={
   "ἄδικος"
  ],
  "ἀδίκημα": [
-  "délit, délits",
-  "délits, crime , iniquité, crime, méfait, faire le mal, iniquité",
+  "acte d'injustice, actes d'injustices",
+  "acte d'injustice, délits, crime, iniquité, crime, méfait",
   "Nom neutre",
   "ἀδικέω"
  ],
