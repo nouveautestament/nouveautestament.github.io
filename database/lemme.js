@@ -8802,8 +8802,8 @@ lemme={
   "ἐγείρω"
  ],
  "ἐγκάθετος": [
-  "guetteurs",
-  "guetteurs, envoyé secret, un espion.  celui qui est payé par d'autres pour tromper par des paroles rusées",
+  "insidiateurs",
+  "insidiateur, en-descendant, guetteur, envoyé secret, un espion.  celui qui est payé par d'autres pour tromper par des paroles rusées",
   "Adjectif",
   "ἐν  et d'un dérivé de  καθίημι"
  ],
@@ -11742,10 +11742,10 @@ lemme={
   "ἐπί  et  κρίνω"
  ],
  "ἐπιλαμβάνομαι": [
-  "emparer",
-  "prendre sur, se saisir du dessus, prendre dessus, avancer la main, reprendre, venir en aide, prendre en ajout, prendre possession de, rattraper, atteindre.   saisir quelque chose avec les mains, se saisir de.  métaphorique sauver quelqu'un du péril, venir en aide, secourir",
+  "surprendre",
+  "surprendre, prendre sur, emparer, se saisir du dessus, prendre dessus, avancer la main, reprendre, venir en aide, prendre en ajout, prendre possession de, rattraper, atteindre, saisir quelque chose avec les mains, se saisir de, métaphorique sauver quelqu'un du péril, secourir",
   "Verbe",
-  "ἐπί  et  λαμβάνω"
+  "ἐπί λαμβάνω"
  ],
  "ἐπιλανθάνομαι": [
   "omettre en plus",
