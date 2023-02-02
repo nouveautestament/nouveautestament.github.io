@@ -16038,10 +16038,10 @@ lemme={
   "κατά  et  νύσσω"
  ],
  "καταξιόω": [
-  "juger digne de haut en bas",
-  "juger digne de haut en bas, avoir la force, trouver digne, juger digne",
+  "tenir pour dignes totalement",
+  "tenir pour digne totalement,  trouver digne totalement, [juger] digne de haut en bas",
   "Verbe",
-  "κατά  et  ἀξιόω"
+  "κατά ἀξιόω"
  ],
  "καταπατέω": [
   "piétiner de haut en bas",
