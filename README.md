@@ -1,8 +1,6 @@
-
-<h1>Nouveau Testament</h1>
-https://nouveautestament.github.io
-
 <h2>ΚΑΙΝΗ ΔΙΑΘΗΚΗ</h2>
 <h2>NOUVELLE DISPOSITION</h2>
+
+https://nouveautestament.github.io
 
 <br><b>Ȼ</b> Domaine public
