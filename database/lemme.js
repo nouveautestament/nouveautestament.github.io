@@ -978,7 +978,7 @@ lemme={
   "αἰχμάλωτος"
  ],
  "αἰχμαλωτίζω": [
-  "faire captif",
+  "faire captif, faire captifs",
   "captiver, emmener captif ,emmener captif ,emmené captif , rendre captif , captive, emmener au loin en captivité  métaphorique capturer les esprits, captiver",
   "Verbe",
   "αἰχμάλωτος"
