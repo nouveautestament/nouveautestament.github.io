@@ -1907,6 +1907,12 @@ lemme={
   "Nom féminin",
   "ἀναβάλλω"
  ],
+ "ἀνάγαιον": [
+  "chambre haute",
+  "chambre haute, tout ce qui est au-dessus du sol.  une pièce dans la partie supérieure de la maison",
+  "Nom neutre",
+  "ἀνά ἄνω γῆ ἀνώγεον"
+ ],
  "ἀναγγέλλω": [
   "annoncer de bas en haut",
   "proclamer, annoncer haut, répandre, raconter, annoncer, parler, rapporter, déclarer, prêcher, dire, annoncer, faire connaître.  rapporter, ramener des nouvelles, répéter",
@@ -2052,16 +2058,16 @@ lemme={
   "ἄλφα (négatif [cf ἄνευ]) et  αἰδώς"
  ],
  "ἀναίρεσις": [
-  "saisie de bas en haut",
-  "destruction , meurtre, destruction, assassinat, meurtre",
+  "élimination",
+  "hérésie-ôtante, saisie de bas en haut, élimination(écarter à la suite d'un choix, d'une sélection), destruction , meurtre, destruction, assassinat, meurtre",
   "Nom féminin",
-  "ἀναιρέω"
+  "ἀναιρέω αἵρεσις"
  ],
  "ἀναιρέω": [
-  "saisir de bas en haut",
-  "enlever haut, tuer, mettre à mort, faire mourir, ôter la vie, être tué, abolir, arracher, enlever (de la terre).   prendre pour soi-même.  posséder.   rejeter, abolir.   éliminer des coutumes ou ordonnances abrogées.  sortir du chemin, tuer un homme",
+  "éliminer",
+  "ôter, saisir de bas en haut, éliminer, enlever haut, tuer, mettre à mort, faire mourir, ôter la vie, être tué, abolir, arracher, enlever (de la terre).   prendre pour soi-même.  posséder.   rejeter, abolir.   éliminer des coutumes ou ordonnances abrogées.  sortir du chemin, tuer un homme",
   "Verbe",
-  "ἀνά  et  αἱρέω"
+  "ἀνά αἱρέω"
  ],
  "ἀναίτιος": [
   "non coupables",
@@ -3093,7 +3099,7 @@ lemme={
   "chambre haute",
   "chambre haute, tout ce qui est au-dessus du sol.  une pièce dans la partie supérieure de la maison",
   "Nom neutre",
-  "ἄνω  et  γῆ"
+  "ἄνω γῆ ἀνάγαιον"
  ],
  "ἄνωθεν": [
   "d'en haut",
@@ -8100,8 +8106,8 @@ lemme={
   "διά  et  ἵστημι"
  ],
  "διϊσχυρίζομαι": [
-  "insister",
-  "insister , affirmer, appuyer sur.  affirmer fortement, avec confiance",
+  "insister tenacement",
+  "insister tenacement, affirmer, appuyer sur, affirmer fortement, avec confiance",
   "Verbe",
   "διά  et un dérivé de  ἰσχυρός"
  ],
@@ -10896,10 +10902,10 @@ lemme={
   "ἐκ  et  αἱρέω"
  ],
  "ἐξαίρω": [
-  "ôter",
-  "ôter, enlever, ôter d'un endroit.  déplacer",
+  "lever au-sortant",
+  "lever au sortant, lever du sortant, élever, enlever, ôter d'un endroit, déplacer",
   "Verbe",
-  "ἐκ  et  αἴρω"
+  "ἐκ αἴρω"
  ],
  "ἐξαιτέω": [
   "demander dehors",
@@ -11148,8 +11154,8 @@ lemme={
   "ἔξεστιν  (sens de capacité)"
  ],
  "ἐξουσιάζω": [
-  "autoriser",
-  "avoir autorité, avoir pouvoir, asservir,  ou l'autorité, user d'un pouvoir.   être le maître de quelqu'un, exercer l'autorité sur lui.  être maître de son corps.   avoir pleine et entière autorité sur son corps.  assujettir son corps à sa volonté    être mis sous le pouvoir de quelqu'un",
+  "mettre à l'autorité",
+  "autoriser, avoir autorité, avoir pouvoir, asservir, ou l'autorité, user d'un pouvoir.   être le maître de quelqu'un, exercer l'autorité sur lui.  être maître de son corps.   avoir pleine et entière autorité sur son corps.  assujettir son corps à sa volonté    être mis sous le pouvoir de quelqu'un",
   "Verbe",
   "ἐξουσία"
  ],
@@ -16362,10 +16368,10 @@ lemme={
   "κατά  et  ἐνώπιον"
  ],
  "κατεξουσιάζω": [
-  "autoriser de haut en bas",
-  "dominer de haut en bas, exercer l'autorité, manier le pouvoir",
+  "mettre à l'autorité contre",
+  "autoriser contre, dominer de haut en bas, exercer l'autorité contre, manier le pouvoir",
   "Verbe",
-  "κατά  et  ἐξουσιάζω"
+  "κατά ἐξουσιάζω ἐξουσία"
  ],
  "κατεργάζομαι": [
   "mettre au travail complètement",
