@@ -15408,8 +15408,8 @@ lemme={
   "Apparemment un mot primaire"
  ],
  "κακοῦργος": [
-  "travailleur du mal, travailleurs du mal",
-  "malfaiteur, un malfaiteur",
+  "malicieux-travailleur, malicieux-travailleurs",
+  "malicieux-travailleur, malfaiteur, travailleur du mal",
   "Adjectif",
   "κακός  et de  ἔργον"
  ],
