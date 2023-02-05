@@ -22633,10 +22633,10 @@ lemme={
   "παραβαίνω"
  ],
  "παραβιάζομαι": [
-  "être violent auprès",
-  "forcer auprès, forcer à côté, employer une force contraire à la nature et au droit.  forcer en employant la force.  contraindre quelqu'un par des instances",
+  "mettre en violence à côté",
+  "être violent auprès, forcer auprès, forcer à côté, employer une force contraire à la nature et au droit, forcer en employant la force, contraindre quelqu'un par des instances",
   "Verbe",
-  "παρά  et de  βίαζομαι"
+  "παρά βίαζομαι"
  ],
  "παραβολή": [
   "parabole, paraboles, parabole, paraboles",
