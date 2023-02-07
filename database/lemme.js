@@ -1107,7 +1107,13 @@ lemme={
   "Akeldama",
   "Akeldama, Hakeldama = \"Champ du Sang\" (ou champ du sommeil)   un champ acheté avec l'argent de la trahison , proche de Jérusalem",
   "Nom propre locatif",
-  "D'origine Araméene [correspondant à  02506  et  01818 ]"
+  "D'origine Araméene Ἀκελδαμάχ"
+ ],
+ "Ἀκελδαμάχ": [
+  "Akeldamach",
+  "Akeldama, Hakeldama = \"Champ du Sang\" (ou champ du sommeil)   un champ acheté avec l'argent de la trahison , proche de Jérusalem",
+  "Nom propre locatif",
+  "D'origine Araméene Ἀκελδαμά"
  ],
  "ἀκέραιος": [
   "sans mélanges",
@@ -14814,10 +14820,10 @@ lemme={
   "D'origine latine"
  ],
  "Ἰοῦστος": [
-  "Ioustos",
-  "Justus, Justus = \"juste\"   un surnom de Joseph, appelé Barsabbas. Actes 1:23  un Chrétien à Corinthe, chez qui Paul logea . Actes 18:7  un surnom de Jésus, un ami de Paul. Colossiens 4.11",
+  "Ioustus",
+  "Ioustos, Ioustus, Justus, Justus = \"juste\"   un surnom de Joseph, appelé Barsabbas. Actes 1:23  un Chrétien à Corinthe, chez qui Paul logea . Actes 18:7  un surnom de Jésus, un ami de Paul. Colossiens 4.11",
   "Nom propre masculin",
-  "D'origine latine (\"juste\")"
+  "D'origine latine iustus(juste)"
  ],
  "ἱππεύς": [
   "chevaliers",
