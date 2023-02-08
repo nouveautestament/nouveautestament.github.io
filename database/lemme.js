@@ -25723,7 +25723,7 @@ lemme={
   "πρός  et du même mot que  πεινάω"
  ],
  "προσπήγνυμι": [
-  "ficher auprès",
+  "afficher",
   "ficher auprès, attacher vers",
   "Verbe",
   "πρός  et  πήγνυμι"
