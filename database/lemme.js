@@ -28465,8 +28465,8 @@ lemme={
   "σύν  et  λαμβάνω"
  ],
  "συλλέγω": [
-  "cueillir ensemble",
-  "cueillir ensemble, recueillir, rassembler.  collecter avec le but d'emporter",
+  "collecter",
+  "collecter, cueillir ensemble, recueillir, rassembler.  collecter avec le but d'emporter",
   "Verbe",
   "σύν  et  λέγω  dans son sens originel"
  ],
