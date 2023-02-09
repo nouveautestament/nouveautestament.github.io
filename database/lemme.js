@@ -28489,8 +28489,8 @@ lemme={
   "σύν  et de  βάσις"
  ],
  "συμβάλλω": [
-  "jeter ensemble",
-  "jeter ensemble, repasser, faire, délibérer, se mettre à parler, avoir rejoint, utile, jeter ensemble, apporter ensemble.   converser.  repasser dans son esprit, conférer avec soi-même.  venir ensemble, rencontrer.   rencontrer dans un sens hostile.  combattre avec quelqu'un.  donner de ses biens, contribuer, aider, secourir",
+  "conjecturer",
+  "jeter ensemble, conjecturer, repasser, faire, délibérer, se mettre à parler, avoir rejoint, utile, jeter ensemble, apporter ensemble.   converser.  repasser dans son esprit, conférer avec soi-même.  venir ensemble, rencontrer.   rencontrer dans un sens hostile.  combattre avec quelqu'un.  donner de ses biens, contribuer, aider, secourir",
   "Verbe",
   "σύν  et  βάλλω"
  ],
