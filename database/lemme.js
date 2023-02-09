@@ -9462,14 +9462,14 @@ lemme={
   "ἐκ  et  ζητέω"
  ],
  "ἐκθαμβέομαι": [
-  "stupéfier",
-  "être surpris, éprouver de la frayeur, être épouvanté, s'épouvanter, jeter dans la terreur ou la stupeur.   alarmer complètement, terrifier.   être saisi d'épouvante.   être stupéfait, étonné  être rempli de terreur",
+  "effarer à l'excès",
+  "effarer à l'excès, être surpris, stupéfier, éprouver de la frayeur, être épouvanté, s'épouvanter, jeter dans la terreur ou la stupeur.   alarmer complètement, terrifier.   être saisi d'épouvante.   être stupéfait, étonné  être rempli de terreur",
   "Verbe",
   "ἔκθαμβος"
  ],
  "ἔκθαμβος": [
-  "stupéfaits",
-  "étonné, tout à fait étonné, stupéfait.  terrifiant, affreux.  être étonné ou s'émerveiller grandement",
+  "effarés à l'excès",
+  "effaré à l'excès, étonné, stupéfait, tout à fait étonné, terrifiant, affreux.  être étonné ou s'émerveiller grandement",
   "Adjectif",
   "ἐκ  et  θάμβος"
  ],
@@ -23341,8 +23341,8 @@ lemme={
   "πατήρ  et de la fin de  μητραλῴας"
  ],
  "πατριά": [
-  "lignée de patriarche, lignées de patriarches, lignée de patriarche, lignées de patriarches",
-  "lignée de patriarche, famille, lignée arrivant à une progéniture, les aïeux.  une race ou tribu.    un groupe de familles, tous ceux qui dans un peuple donné peuvent affirmer leur origine commune.  les Israélites, divisés en douze tribus, descendant des douze fils de Jacob, ces tribus étant divisées en familles elles-mêmes divisées en maisons.   famille, au sens le plus large, nation, peuple",
+  "lignée de père, lignées de pères, lignée de père, lignées de pères",
+  "lignée de père, famille, lignée arrivant à une progéniture, les aïeux.  une race ou tribu.    un groupe de familles, tous ceux qui dans un peuple donné peuvent affirmer leur origine commune.  les Israélites, divisés en douze tribus, descendant des douze fils de Jacob, ces tribus étant divisées en familles elles-mêmes divisées en maisons.   famille, au sens le plus large, nation, peuple",
   "Nom féminin",
   "Un dérivé de  πατήρ"
  ],
