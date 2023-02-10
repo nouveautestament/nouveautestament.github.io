@@ -7650,10 +7650,10 @@ lemme={
   "διαλογίζομαι"
  ],
  "διαλύω": [
-  "délier au-travers",
-  "dissoudre complètement, dérouter,mis en déroute, dissoudre, éparpiller",
+  "délier séparément",
+  "dissoudre au-travers, dérouter, mis en déroute, dissoudre, éparpiller",
   "Verbe",
-  "διά  et  λύω"
+  "διά λύω"
  ],
  "διαμαρτύρομαι": [
   "passer témoignage",
@@ -7758,7 +7758,7 @@ lemme={
   "διά  et  πορεύομαι"
  ],
  "διαπορέω": [
-  "hésiter complètement",
+  "embarrasser séparément",
   "être dans la perplexité,ne savoir que penser, être entièrement perdu, être dans la perplexité",
   "Verbe",
   "διά  et  ἀπορέω"
