@@ -20684,9 +20684,9 @@ lemme={
  ],
  "Νικάνωρ": [
   "Nikanor",
-  "Nicanor, Nicanor = \"conquérant, victorieux\"   un des sept diacres de l'église de Jérusalem",
+  "Nicanor, vainqueur d'homme, Nicanor = \"conquérant, victorieux\"   un des sept diacres de l'église de Jérusalem",
   "Nom propre masculin",
-  "Vient probablement de  νικάω"
+  "νικάω ἀνήρ"
  ],
  "νικάω": [
   "vaincre",
@@ -22735,10 +22735,10 @@ lemme={
   "παρά  et  θάλασσα"
  ],
  "παραθεωρέω": [
-  "contempler à côté",
+  "observer de côté",
   "regarder à côté, examiner les choses placées à côté des autres, comparer.  négliger",
   "Verbe",
-  "παρά  et  θεωρέω"
+  "παρά θεωρέω"
  ],
  "παραθήκη": [
   "dépôt à côté",
