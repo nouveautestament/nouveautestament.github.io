@@ -16047,7 +16047,7 @@ lemme={
   "piquer de haut en bas",
   "piquer de haut en bas, percer violemment,vivement touché, piquer, percer.  métaphorique faire fortement de la peine à l'esprit, l'agiter violemment.   en particulier émotion de douleur",
   "Verbe",
-  "κατά  et  νύσσω"
+  "κατά νύσσω"
  ],
  "καταξιόω": [
   "tenir pour dignes totalement",
@@ -16059,13 +16059,13 @@ lemme={
   "piétiner de haut en bas",
   "piétiner de haut en bas, marcher dessus, piétiner, fouler aux pieds.  métaphorique traiter avec rudesse et insulte.   repousser, traiter en négligeant d'une manière insultante",
   "Verbe",
-  "κατά  et  πατέω"
+  "κατά πατέω"
  ],
  "κατάπαυσις": [
   "pause de haut en bas",
-  "pause de haut en bas, une mise en repos.   une accalmie des vents.   un lieu de repos.    métaphorique les bénédictions célestes dans lesquelles Dieu demeure et qu'il a promises aux croyants en Christ qui persévéreront et en deviendront participants après les épreuves errestres subies pendant leur vie",
+  "pause de haut en bas, totale pause, une mise en repos, une accalmie des vents, un lieu de repos, métaphorique les bénédictions célestes dans lesquelles Dieu demeure et qu'il a promises aux croyants en Christ qui persévéreront et en deviendront participants après les épreuves terrestres subies pendant leur vie",
   "Nom féminin",
-  "κατά κατά + παυσις(pause)"
+  "κατά + παυσις(pause)"
  ],
  "καταπαύω": [
   "pauser de haut en bas",
@@ -16200,7 +16200,7 @@ lemme={
   "κατά  (intensif) et  σκοπός  (sens de veilleur)"
  ],
  "κατασοφίζομαι": [
-  "être fait trompé par sophisme contre",
+  "tromper par sophisme contre",
   "être tromper par des sophismes, circonvenir par artifice ou fraude, conquérir par de subtils moyens.  être plus malin que.  jouer, duper.  user d'astuce",
   "Verbe",
   "κατά  et  σοφίζω"
