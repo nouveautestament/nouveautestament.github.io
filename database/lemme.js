@@ -8442,7 +8442,7 @@ lemme={
   "δόξα"
  ],
  "Δορκάς": [
-  "Dorcas",
+  "Dorkas",
   "Dorcas, Dorcas = \"gazelle\"   nom d'une femme que Pierre ressuscita",
   "Nom propre féminin",
   "Racine primaire"
@@ -34453,8 +34453,8 @@ lemme={
  
    
  "ἐνισχύω": [
-  "avoir la ténacité dans",
-  "avoir la ténacité dans",
+  "avoir ténacité intérieure",
+  "avoir ténacité intérieure, avoir la ténacité dans",
   "verbe",
   "εν ἰσχύω"
  ],
