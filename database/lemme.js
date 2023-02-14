@@ -19519,7 +19519,7 @@ lemme={
   "μετά  et  αἴρω"
  ],
  "μετακαλέω": [
-  "appeler avec au-delà",
+  "appeler au-delà",
   "appeler avec après, appeler d'un lieu à un autre, convoquer.  s'appeler",
   "Verbe",
   "μετά  et  καλέω"
@@ -25717,10 +25717,10 @@ lemme={
   "πρός  et une forme de ochtheo (être irrité par quelque chose)"
  ],
  "πρόσπεινος": [
-  "affamé auprès",
-  "affamé auprès, très affamé, très affamé",
+  "affamé",
+  "vers la faim, affamé auprès, très affamé, très affamé",
   "Adjectif",
-  "πρός  et du même mot que  πεινάω"
+  "πρός πεινάω"
  ],
  "προσπήγνυμι": [
   "afficher",
@@ -33529,8 +33529,8 @@ lemme={
   "διά + χλευάζω"
  ],
  "διενθυμέομαι": [
-  "réfléchir deux fois",
-  "réfléchir deux fois, réfléchir deux fois",
+  "réfléchir en fureur au travers",
+  "réfléchir en fureur au travers",
   "Verbe",
   "ἐνθυμέομαι"
  ],
