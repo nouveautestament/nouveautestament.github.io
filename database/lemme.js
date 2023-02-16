@@ -9246,10 +9246,10 @@ lemme={
   "εἰς  et  πορεύομαι"
  ],
  "εἰστρέχω": [
-  "courir dans",
-  "courir,courut, courir",
+  "courir envers",
+  "courir envers",
   "Verbe",
-  "εἰς  et  τρέχω"
+  "εἰς τρέχω"
  ],
  "εἰσφέρω": [
   "importer",
@@ -27541,10 +27541,10 @@ lemme={
   "σκύλλω"
  ],
  "σκωληκόβρωτος": [
-  "mangé de ver",
-  "mangé de ver, mangé de ver",
+  "dévoré de ver",
+  "dévoré de ver, mangé de ver, vermoulu",
   "Adjectif",
-  "σκώληξ  et d'un dérivé de  βιβρώσκω"
+  "σκώληξ βιβρώσκω"
  ],
  "σκώληξ": [
   "ver",
