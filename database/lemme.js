@@ -24373,7 +24373,7 @@ lemme={
   "πληροφορέω"
  ],
  "πληρόω": [
-  "faire plénitude",
+  "faire plénitude, faire plénitudes, faire plénitude, faire plénitudes",
   "rendre plérôme, accomplir,combler,achever,parfaite,s'acquitter, remplir c'est à dire remplir jusqu'au bord.   faire abonder, fournir d'une façon libérale.  rendre plein c'est à dire compléter.   remplir au sommet : plus rien n'étant nécessaire, à ras bord, une pleine mesure.  consommer : un nombre.   compléter dans chaque cas, rendre parfait.  amener au bout, à ses fins, accomplir.   amener à la réalisation, réaliser.   accomplir, exécuter.  de dires, promesses, prophéties : ratifier, accomplir.  accomplir, c'est à dire faire que la volonté de Dieu, connue par loi soit obéie autant qu'elle peut l'être, que les promesses données par les prophètes reçoivent leur accomplissement",
   "Verbe",
   "πλήρης"

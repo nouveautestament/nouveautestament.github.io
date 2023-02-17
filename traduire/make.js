@@ -1034,30 +1034,30 @@ else
 		else if (morph.includes('verbe'))
 		{
 
-		if (morph.includes('féminin') && morph.includes('singulier'))
-		{
-		fr = fr[2].replace(/^ | $/,'');
-		}
+			if (morph.includes('féminin') && morph.includes('singulier'))
+			{
+			fr = fr[2].replace(/^ | $/,'');
+			}
 
-		else if (morph.includes('féminin') && morph.includes('pluriel'))
-		{
-		fr = fr[3].replace(/^ | $/,'');
-		}
+			else if (morph.includes('féminin') && morph.includes('pluriel'))
+			{
+			fr = fr[3].replace(/^ | $/,'');
+			}
 
-		else if (morph.includes('singulier'))
-		{
-		fr = fr[0].replace(/^ | $/,'');
-		}
+			else if (morph.includes('singulier'))
+			{
+			fr = fr[0].replace(/^ | $/,'');
+			}
 
-		else if (morph.includes('pluriel'))
-		{
-		fr = fr[1].replace(/^ | $/,'');
-		}
+			else if (morph.includes('pluriel'))
+			{
+			fr = fr[1].replace(/^ | $/,'');
+			}
 
-		else
-		{
-		fr = fr[0].replace(/^ | $/,'');
-		}	
+			else
+			{
+			fr = fr[0].replace(/^ | $/,'');
+			}	
 		}
 
 
