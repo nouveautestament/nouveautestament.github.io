@@ -5580,7 +5580,7 @@ lemme={
   "D'origine Araméene  01247  et  08526"
  ],
  "Βαρϊησοῦς": [
-  "Bar-Iéshou",
+  "Bar-Iésous",
   "Bar-Jésus, Bar-Jésus = \"fils de Jésus\"   un certain faux prophète",
   "Nom propre masculin",
   "D'origine Araméene  01247  et  03091"
@@ -10140,8 +10140,8 @@ lemme={
   "'elpo' (anticiper, généralement avec plaisir)"
  ],
  "Ἐλύμας": [
-  "Élumas",
-  "Élumas, Élymas = \"un homme sage\"   le nom arabe du mage Juif, le sorcier Bar-Jésus, Actes 13:6",
+  "Élymas",
+  "Élymas, Élymas = \"un homme sage\"   le nom arabe du mage Juif, le sorcier Bar-Jésus, Actes 13:6",
   "Nom propre masculin",
   "D'origine étrangère"
  ],
@@ -23617,7 +23617,7 @@ lemme={
   "πύργος"
  ],
  "Πέργη": [
-  "Perge",
+  "Pergé",
   "Perge, Perge = \"terreux\"   ville de Pamphilie, sur le fleuve Cestius, à environ 10 km de son embouchure, et fameuse dans l'antiquité pour son culte d'Artémis (Diane)",
   "Nom propre locatif",
   "Vient probablement du même mot que  Πέργαμος"
