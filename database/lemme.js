@@ -16069,9 +16069,9 @@ lemme={
  ],
  "καταπαύω": [
   "pauser de haut en bas",
-  "pauser de haut en bas, pauser, se reposer, donner le repos, rendre tranquille, être au repos, garantir le repos.   amener à une demeure tranquille.  tranquilliser, contenir, amener quelqu'un à cesser.   se reposer, prendre du repos",
+  "pauser de haut en bas, pauser totalement, se reposer contre, donner le repos total, rendre tranquille, être au repos complet, garantir le repos de haut en bas, amener à une demeure tranquille, tranquilliser, contenir, amener quelqu'un à cesser, s'apaiser, prendre du repos",
   "Verbe",
-  "κατά + πέτασμα(tapis, rideau, tissu)"
+  "κατά παύω"
  ],
  "καταπέτασμα": [
   "rideau étendu",
@@ -18522,10 +18522,10 @@ lemme={
   "Vient peut-être vaguement de  λύκος"
  ],
  "Λυκαονιστί": [
-  "lycaonien",
-  "lycaonien, dans des paroles ou une langue de la Lycaonie",
+  "en lycaonien",
+  "en lycaonien, dans des paroles ou une langue de la Lycaonie",
   "Adverbe",
-  "Vient d'un dérivé de  Λυκαονία"
+  "Λυκαονία"
  ],
  "Λυκία": [
   "Lycie",
@@ -21505,7 +21505,7 @@ lemme={
   "ὅμοιος"
  ],
  "ὁμοιοπαθής": [
-  "de similaire souffrance, de similaires souffrances",
+  "de semblable affect, de semblables affects",
   "de similaire souffrance, homéopathique, souffrant avec un autre, de sentiments ou affections semblables",
   "Adjectif",
   "ὅμοιος  et la variante de  πάσχω"
