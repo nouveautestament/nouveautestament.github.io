@@ -12030,7 +12030,7 @@ lemme={
   "ἐπί  et  στρέφω"
  ],
  "ἐπιστροφή": [
-  "retournement au-dessus",
+  "sur-tournure",
   "conversion, conversion (des païens, des Gentils, de l'idolâtrie vers le vrai Dieu)",
   "Nom féminin",
   "ἐπιστρέφω"
