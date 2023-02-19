@@ -12738,8 +12738,8 @@ lemme={
   "εὐθύς"
  ],
  "εὐθυδρομέω": [
-  "courser droit",
-  "courser droit, prendre un trajet direct, aller en ligne droite",
+  "courser direct",
+  "courser direct, courser directement, prendre un trajet direct, aller en ligne droite",
   "Verbe",
   "εὐθύς  et  δρόμος"
  ],
