@@ -18582,7 +18582,7 @@ lemme={
   "Troisième personne du singulier au présent de l'indicatif d'un composé de  λύσις  et  τέλος"
  ],
  "Λύστρα": [
-  "Lystre",
+  "Lystre, Lystres, Lystre, Lystres",
   "Lystre, Lystre = \"qui rançonne, qui rachète\"   cité de la partie orientale de la grande plaine de Lycaonie",
   "Nom propre locatif",
   "Origine incertaine"
