@@ -9729,13 +9729,13 @@ lemme={
   "tourner à l'excès",
   "pervertir,perverti, retourner ou tordre, déchirer.  invertir, renverser.  changer pour le pire, pervertir, corrompre",
   "Verbe",
-  "ἐκ  et  στρέφω"
+  "ἐκ στρέφω"
  ],
  "ἐκταράσσω": [
-  "troubler dehors",
-  "troubler,troublent, agiter, troubler à l'extrême",
+  "troubler à l'excès",
+  "troubler à l'excès, troubler dehors, agiter profondément, troubler à l'extrême",
   "Verbe",
-  "ἐκ  et  ταράσσω"
+  "ἐκ ταράσσω"
  ],
  "ἐκτείνω": [
   "étendre",
@@ -18510,7 +18510,7 @@ lemme={
   "D'origine hébraïque  03850"
  ],
  "Λυδία": [
-  "Ludia",
+  "Lydia",
   "Ludia, Lydie = \"travail\"   femme originaire de Thyatire, vendeuse de pourpre, première Européenne convertie par Paul, puis ensuite son hôtesse pendant son premier séjour à Philippes",
   "Nom propre féminin",
   "Féminin de Ludios (mot d'origine étrangère, un Lydien, en Asie Mineure occidentale, capitale : Sardes)"
