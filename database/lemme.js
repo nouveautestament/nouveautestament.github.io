@@ -8190,10 +8190,10 @@ lemme={
   "διά ὅς"
  ],
  "διοδεύω": [
-  "faire route à travers",
-  "aller, passer par, passer ou voyager à travers.  voyager ici et là, parcourir",
+  "cheminer à travers",
+  "cheminer à travers, faire route à travers, passer par, passer ou voyager à travers, voyager ici et là, parcourir",
   "Verbe",
-  "διά  et  ὁδεύω"
+  "διά ὁδεύω"
  ],
  "Διονύσιος": [
   "Dionusios",
@@ -22999,8 +22999,8 @@ lemme={
   "παρά  et  τίθημι"
  ],
  "παρατυγχάνω": [
-  "rencontrer à côté",
-  "rencontrer à côté, rencontrer à côté, arriver à être proche",
+  "obtenir à côté",
+  "obtenir à côté, rencontrer à côté, arriver à être proche",
   "Verbe",
   "παρά  et  τυγχάνω"
  ],
@@ -25282,7 +25282,7 @@ lemme={
   "promptitude fureur",
   "promptitude, zèle, esprit, empressement.  penchant, inclination, empressement de l'esprit",
   "Nom féminin",
-  "πρόθυμος : πρό (avant) + θυμός (« esprit, âme »)"
+  "πρό θυμός"
  ],
  "πρόθυμος": [
   "de promptitude fureur",
