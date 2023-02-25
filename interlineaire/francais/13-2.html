@@ -172,7 +172,7 @@
 				border-radius: 14px;
 			}
 			
-			.lefevre, .olivetan, .grosjean, .bayard, .martin_1707 {
+			.lefevre, .olivetan, .grosjean, .bayard, .boyer, .martin_1707 {
 			
 				cursor:	pointer;
 				color:	blue;
@@ -481,6 +481,21 @@ function page_left()
 		else if (elempic.src.indexOf('martin') != -1)
 			elempic.src = "../../martin_1707/"+array_martin_1707[pic]
 		
+		else if (elempic.src.indexOf('boyer') != -1)
+		{
+			
+			if  (  pic  >=  1    &&  pic  <=  88   )  rep="00-INTRO"
+			if  (  pic  >=  89   &&  pic  <=  215  )  rep="01-MATTHIEU"
+			if  (  pic  >=  216  &&  pic  <=  292  )  rep="02-MARC"
+			if  (  pic  >=  293  &&  pic  <=  420  )  rep="03-LUC"
+			if  (  pic  >=  421  &&  pic  <=  518  )  rep="04-JEAN"
+			if  (  pic  >=  519  &&  pic  <=  521  )  rep="05-END"
+			
+			if (pic > 0)
+				elempic.src = "../../boyer/"+rep+"/"+pic+".jpg";
+		
+		}
+		
 		
 	}
 	
@@ -538,6 +553,27 @@ function page_right()
 	}
 	
 	
+	else if (elempic.src.indexOf('boyer') != -1)
+	{
+		
+		pic++
+		
+		if  (  pic  >=  1    &&  pic  <=  88   )  rep="00-INTRO"
+		if  (  pic  >=  89   &&  pic  <=  215  )  rep="01-MATTHIEU"
+		if  (  pic  >=  216  &&  pic  <=  292  )  rep="02-MARC"
+		if  (  pic  >=  293  &&  pic  <=  420  )  rep="03-LUC"
+		if  (  pic  >=  421  &&  pic  <=  518  )  rep="04-JEAN"
+		if  (  pic  >=  519  &&  pic  <=  522  )  rep="05-END"
+		
+		if (pic < 523)
+		{	
+			elempic.src = "../../boyer/"+rep+"/"+pic+".jpg";
+		}
+		
+	}
+	
+	
+	
 }
 
 
@@ -578,6 +614,9 @@ function checkKey(e)
 
 			if (elempic.src.indexOf('martin') != -1)
 				view('martin_1707')
+			
+			if (elempic.src.indexOf('boyer') != -1)
+				view('boyer')
 
 		}
 		

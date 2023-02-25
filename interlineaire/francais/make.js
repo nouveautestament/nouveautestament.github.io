@@ -1434,7 +1434,97 @@ martin_1707_lc =
 
 
 
-
+boyer_lc = {
+ "MATTHIEU:1": "boyer/01-MATTHIEU/90.jpg",
+ "MATTHIEU:2": "boyer/01-MATTHIEU/94.jpg",
+ "MATTHIEU:3": "boyer/01-MATTHIEU/98.jpg",
+ "MATTHIEU:4": "boyer/01-MATTHIEU/101.jpg",
+ "MATTHIEU:5": "boyer/01-MATTHIEU/104.jpg",
+ "MATTHIEU:6": "boyer/01-MATTHIEU/111.jpg",
+ "MATTHIEU:7": "boyer/01-MATTHIEU/116.jpg",
+ "MATTHIEU:8": "boyer/01-MATTHIEU/120.jpg",
+ "MATTHIEU:9": "boyer/01-MATTHIEU/124.jpg",
+ "MATTHIEU:10": "boyer/01-MATTHIEU/128.jpg",
+ "MATTHIEU:11": "boyer/01-MATTHIEU/133.jpg",
+ "MATTHIEU:12": "boyer/01-MATTHIEU/137.jpg",
+ "MATTHIEU:13": "boyer/01-MATTHIEU/143.jpg",
+ "MATTHIEU:14": "boyer/01-MATTHIEU/150.jpg",
+ "MATTHIEU:15": "boyer/01-MATTHIEU/154.jpg",
+ "MATTHIEU:16": "boyer/01-MATTHIEU/158.jpg",
+ "MATTHIEU:17": "boyer/01-MATTHIEU/161.jpg",
+ "MATTHIEU:18": "boyer/01-MATTHIEU/164.jpg",
+ "MATTHIEU:19": "boyer/01-MATTHIEU/168.jpg",
+ "MATTHIEU:20": "boyer/01-MATTHIEU/172.jpg",
+ "MATTHIEU:21": "boyer/01-MATTHIEU/175.jpg",
+ "MATTHIEU:22": "boyer/01-MATTHIEU/181.jpg",
+ "MATTHIEU:23": "boyer/01-MATTHIEU/185.jpg",
+ "MATTHIEU:24": "boyer/01-MATTHIEU/189.jpg",
+ "MATTHIEU:25": "boyer/01-MATTHIEU/194.jpg",
+ "MATTHIEU:26": "boyer/01-MATTHIEU/198.jpg",
+ "MATTHIEU:27": "boyer/01-MATTHIEU/206.jpg",
+ "MATTHIEU:28": "boyer/01-MATTHIEU/213.jpg",
+ "MARC:1": "boyer/02-MARC/217.jpg",
+ "MARC:2": "boyer/02-MARC/222.jpg",
+ "MARC:3": "boyer/02-MARC/226.jpg",
+ "MARC:4": "boyer/02-MARC/230.jpg",
+ "MARC:5": "boyer/02-MARC/234.jpg",
+ "MARC:6": "boyer/02-MARC/238.jpg",
+ "MARC:7": "boyer/02-MARC/244.jpg",
+ "MARC:8": "boyer/02-MARC/248.jpg",
+ "MARC:9": "boyer/02-MARC/252.jpg",
+ "MARC:10": "boyer/02-MARC/257.jpg",
+ "MARC:11": "boyer/02-MARC/263.jpg",
+ "MARC:12": "boyer/02-MARC/267.jpg",
+ "MARC:13": "boyer/02-MARC/272.jpg",
+ "MARC:14": "boyer/02-MARC/276.jpg",
+ "MARC:15": "boyer/02-MARC/284.jpg",
+ "MARC:16": "boyer/02-MARC/289.jpg",
+ "LUC:1": "boyer/03-LUC/294.jpg",
+ "LUC:2": "boyer/03-LUC/302.jpg",
+ "LUC:3": "boyer/03-LUC/308.jpg",
+ "LUC:4": "boyer/03-LUC/312.jpg",
+ "LUC:5": "boyer/03-LUC/317.jpg",
+ "LUC:6": "boyer/03-LUC/321.jpg",
+ "LUC:7": "boyer/03-LUC/328.jpg",
+ "LUC:8": "boyer/03-LUC/334.jpg",
+ "LUC:9": "boyer/03-LUC/341.jpg",
+ "LUC:10": "boyer/03-LUC/348.jpg",
+ "LUC:11": "boyer/03-LUC/353.jpg",
+ "LUC:12": "boyer/03-LUC/359.jpg",
+ "LUC:13": "boyer/03-LUC/365.jpg",
+ "LUC:14": "boyer/03-LUC/369.jpg",
+ "LUC:15": "boyer/03-LUC/373.jpg",
+ "LUC:16": "boyer/03-LUC/377.jpg",
+ "LUC:17": "boyer/03-LUC/381.jpg",
+ "LUC:18": "boyer/03-LUC/385.jpg",
+ "LUC:19": "boyer/03-LUC/389.jpg",
+ "LUC:20": "boyer/03-LUC/394.jpg",
+ "LUC:21": "boyer/03-LUC/399.jpg",
+ "LUC:22": "boyer/03-LUC/403.jpg",
+ "LUC:23": "boyer/03-LUC/410.jpg",
+ "LUC:24": "boyer/03-LUC/416.jpg",
+ "JEAN:1": "boyer/04-JEAN/422.jpg",
+ "JEAN:2": "boyer/04-JEAN/428.jpg",
+ "JEAN:3": "boyer/04-JEAN/431.jpg",
+ "JEAN:4": "boyer/04-JEAN/435.jpg",
+ "JEAN:5": "boyer/04-JEAN/440.jpg",
+ "JEAN:6": "boyer/04-JEAN/445.jpg",
+ "JEAN:7": "boyer/04-JEAN/452.jpg",
+ "JEAN:8": "boyer/04-JEAN/457.jpg",
+ "JEAN:9": "boyer/04-JEAN/463.jpg",
+ "JEAN:10": "boyer/04-JEAN/467.jpg",
+ "JEAN:11": "boyer/04-JEAN/471.jpg",
+ "JEAN:12": "boyer/04-JEAN/476.jpg",
+ "JEAN:13": "boyer/04-JEAN/482.jpg",
+ "JEAN:14": "boyer/04-JEAN/486.jpg",
+ "JEAN:15": "boyer/04-JEAN/490.jpg",
+ "JEAN:16": "boyer/04-JEAN/494.jpg",
+ "JEAN:17": "boyer/04-JEAN/498.jpg",
+ "JEAN:18": "boyer/04-JEAN/502.jpg",
+ "JEAN:19": "boyer/04-JEAN/506.jpg",
+ "JEAN:20": "boyer/04-JEAN/511.jpg",
+ "JEAN:21": "boyer/04-JEAN/515.jpg"
+}
 
 
 
@@ -1613,7 +1703,7 @@ intro =
 				border-radius: 14px;
 			}
 			
-			.lefevre, .olivetan, .grosjean, .bayard, .martin_1707 {
+			.lefevre, .olivetan, .grosjean, .bayard, .boyer, .martin_1707 {
 			
 				cursor:	pointer;
 				color:	blue;
@@ -1807,6 +1897,21 @@ function page_left()
 		else if (elempic.src.indexOf('martin') != -1)
 			elempic.src = "../../martin_1707/"+array_martin_1707[pic]
 		
+		else if (elempic.src.indexOf('boyer') != -1)
+		{
+			
+			if  (  pic  >=  1    &&  pic  <=  88   )  rep="00-INTRO"
+			if  (  pic  >=  89   &&  pic  <=  215  )  rep="01-MATTHIEU"
+			if  (  pic  >=  216  &&  pic  <=  292  )  rep="02-MARC"
+			if  (  pic  >=  293  &&  pic  <=  420  )  rep="03-LUC"
+			if  (  pic  >=  421  &&  pic  <=  518  )  rep="04-JEAN"
+			if  (  pic  >=  519  &&  pic  <=  521  )  rep="05-END"
+			
+			if (pic > 0)
+				elempic.src = "../../boyer/"+rep+"/"+pic+".jpg";
+		
+		}
+		
 		
 	}
 	
@@ -1864,6 +1969,27 @@ function page_right()
 	}
 	
 	
+	else if (elempic.src.indexOf('boyer') != -1)
+	{
+		
+		pic++
+		
+		if  (  pic  >=  1    &&  pic  <=  88   )  rep="00-INTRO"
+		if  (  pic  >=  89   &&  pic  <=  215  )  rep="01-MATTHIEU"
+		if  (  pic  >=  216  &&  pic  <=  292  )  rep="02-MARC"
+		if  (  pic  >=  293  &&  pic  <=  420  )  rep="03-LUC"
+		if  (  pic  >=  421  &&  pic  <=  518  )  rep="04-JEAN"
+		if  (  pic  >=  519  &&  pic  <=  522  )  rep="05-END"
+		
+		if (pic < 523)
+		{	
+			elempic.src = "../../boyer/"+rep+"/"+pic+".jpg";
+		}
+		
+	}
+	
+	
+	
 }
 
 
@@ -1904,6 +2030,9 @@ function checkKey(e)
 
 			if (elempic.src.indexOf('martin') != -1)
 				view('martin_1707')
+			
+			if (elempic.src.indexOf('boyer') != -1)
+				view('boyer')
 
 		}
 		
@@ -2012,6 +2141,7 @@ martin_1707       =  fichier.readFileSync('../../database/fr/martin_1707.txt',  
 martin_1744       =  fichier.readFileSync('../../database/fr/martin_1744.txt',       'utf8');
 colombe           =  fichier.readFileSync('../../database/fr/colombe.txt',           'utf8');
 segond_21         =  fichier.readFileSync('../../database/fr/segond-21.txt',         'utf8');
+boyer             =  fichier.readFileSync('../../database/fr/boyer.txt',             'utf8');
 bayard            =  fichier.readFileSync('../../database/fr/bayard.txt',            'utf8');
 shora_kuetu       =  fichier.readFileSync('../../database/fr/kuetu.txt',             'utf8');
 chouraqui         =  fichier.readFileSync('../../database/fr/chouraqui.txt',         'utf8');
@@ -2066,6 +2196,7 @@ martin_1707       +
 martin_1744       +
 colombe           +
 segond_21         +
+boyer             +
 bayard            +
 chouraqui         +
 calame            +
@@ -2201,7 +2332,6 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	else if (traducteur == "OLIVETAN")
 	{
-		//lien	= pic_olivetan(livre, chapitre)
 		
 		data	+= 
 			'<tr><td nowrap class="olivetan" onclick="eimiv='+verset+';view(\''+olivetan_lc[xbook[livre]+':'+chapitre]+'\');">'+traducteur+'</a></td>'+
@@ -2213,7 +2343,6 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	else if (traducteur == "GROSJEAN")
 	{
-		//lien	= pic_olivetan(livre, chapitre)
 		
 		data	+= 
 			'<tr><td nowrap class="grosjean" onclick="eimiv='+verset+';view(\''+grosjean_lc[xbook[livre]+':'+chapitre]+'\');">'+traducteur+'</a></td>'+
@@ -2222,9 +2351,18 @@ for (line = 0 ; line != bible.length ; line++)
 		
 	}
 	
+	else if (traducteur == "BOYER")
+	{
+		
+		data	+= 
+			'<tr><td nowrap class="boyer" onclick="eimiv='+verset+';view(\''+boyer_lc[xbook[livre]+':'+chapitre]+'\');">'+traducteur+'</a></td>'+
+			'<td>'+date+'</td>'+
+			'<td>'+texte+'</td></tr>'
+		
+	}
+	
 	else if (traducteur == "BAYARD")
 	{
-		//lien	= pic_olivetan(livre, chapitre)
 		
 		data	+= 
 			'<tr><td nowrap class="bayard" onclick="eimiv='+verset+';view(\''+bayard_lc[xbook[livre]+':'+chapitre]+'\');">'+traducteur+'</a></td>'+
@@ -2235,7 +2373,6 @@ for (line = 0 ; line != bible.length ; line++)
 	
 	else if (traducteur == "MARTIN_1707") 
 	{
-		//lien	= pic_olivetan(livre, chapitre)
 		
 		data	+= 
 			'<tr><td nowrap class="martin_1707" onclick="eimiv='+verset+';view(\''+martin_1707_lc[xbook[livre]+':'+chapitre]+'\');">'+traducteur+'</a></td>'+
