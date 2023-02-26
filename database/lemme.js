@@ -33007,8 +33007,8 @@ lemme={
   "ψευδής  et  ἀδελφός"
  ],
  "ψευδαπόστολος": [
-  "faux apôtres",
-  "faux apôtres, un faux apôtre, quelqu'un qui clame faussement être un ambassadeur de Christ",
+  "faux envoyés",
+  "faux envoyés, faux apôtres, un faux apôtre, quelqu'un qui clame faussement être un ambassadeur de Christ",
   "Nom masculin",
   "ψευδής  et  ἀπόστολος"
  ],
