@@ -2046,10 +2046,10 @@ lemme={
   "ἀνάθεμα"
  ],
  "ἀναθεωρέω": [
-  "contempler de bas en haut",
-  "regarder haut, considérer, regarder attentivement, bien considérer, observer précisément",
+  "observer de bas en haut",
+  "re-observer, observer vers le haut, regarder haut, regarder attentivement, bien considérer, observer précisément",
   "Verbe",
-  "ἀνά  et  θεωρέω"
+  "ἀνά θεωρέω"
  ],
  "ἀνάθημα": [
   "offres",
@@ -30997,10 +30997,10 @@ lemme={
   "ὑπερβάλλω"
  ],
  "ὑπερεῖδον": [
-  "savoir au-dessus",
-  "savoir au-dessus, savoir au-dessus",
+  "voir d'au-dessus",
+  "voir d'au-dessus, super-voir, savoir au-dessus",
   "Verbe",
-  "ὑπέρ  et  οἶδα"
+  "ὑπέρ οἶδα εἶδος ἀπείδω προείδω"
  ],
  "ὑπερέκεινα": [
   "au-dessus-de-ces-parts-là",
