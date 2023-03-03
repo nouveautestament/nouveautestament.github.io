@@ -1266,7 +1266,7 @@ lemme={
   ""
  ],
  "Ἀκύλας": [
-  "Akulas",
+  "Akylas",
   "Akulas, Aquilas, Aquilas = \"un aigle\"   Juif, né dans le royaume du Pont, fabricant de tente, converti à Christ, compagnon et allié de Paul dans la propagation du christianisme. Epoux de Priscille",
   "Nom propre masculin",
   "Probablement du Latin aquila (un aigle)"
@@ -18402,8 +18402,8 @@ lemme={
   "λόγιος"
  ],
  "λόγιος": [
-  "de logion",
-  "de logion, de logion",
+  "de discours",
+  "de discours, de logion, éloquent, de comptine",
   "Adjectif",
   "λόγος"
  ],
