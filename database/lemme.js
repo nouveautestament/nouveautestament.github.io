@@ -3114,8 +3114,8 @@ lemme={
   "ἄνω -θεν"
  ],
  "ἀνωτερικός": [
-  "hautes",
-  "hautes, supérieur, le plus haut",
+  "plus hautiques",
+  "plus hautiques, supérieurs, ce qui est plus haut",
   "Adjectif",
   "ἀνώτερον"
  ],
