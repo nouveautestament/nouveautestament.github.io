@@ -14562,16 +14562,16 @@ lemme={
   "Ἱεροσόλυμα"
  ],
  "ἱεροσυλέω": [
-  "voler sanctuaire",
-  "voler le temple, profaner, commets des sacrilèges, commettre un sacrilège, voler un temple.    dans Romains 2:22, où le sens est : \"ceux qui abhorrent les idoles et leur contamination, n'hésitent cependant pas à piller leurs sanctuaires\"",
+  "piller sanctuaire",
+  "piller sanctuaire, voler le temple, profaner, commets des sacrilèges, commettre un sacrilège, voler un temple, dans Romains 2:22, où le sens est : \"ceux qui abhorrent les idoles et leur contamination, n'hésitent cependant pas à piller leurs sanctuaires\"",
   "Verbe",
-  "ἱερόσυλος"
+  "συλάω ἱερόν ἱερόσυλος"
  ],
  "ἱερόσυλος": [
-  "voleurs sacrilèges de temples",
+  "pilleurs de sanctuaire",
   "voleur de temple, coupable de sacrilège, dérober ce qui appartient à une église",
   "Nom masculin",
-  "ἱερόν  et  συλάω"
+  "ἱερόν συλάω ἱεροσυλέω"
  ],
  "ἱερουργέω": [
   "travailler au sacré",
@@ -25424,9 +25424,9 @@ lemme={
  ],
  "προπετής": [
   "tombant en avant, tombants en avant",
-  "tombant en avant, tomber en avant, la tête la première, précipitamment.  se précipiter, être téméraire",
+  "tombant en avant, précipité, la tête la première, se précipiter précipitamment, être téméraire",
   "Adjectif",
-  "πρό  et  πίπτω"
+  "πρό πίπτω"
  ],
  "προπορεύομαι": [
   "marcher en avant",
