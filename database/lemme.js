@@ -3396,7 +3396,7 @@ lemme={
   "ἀπό  et  ἐλαύνω"
  ],
  "ἀπελεγμός": [
-  "reproche loin",
+  "longue-réfutation",
   "discrédit, censure, répudiation d'une chose jugée indigne, discrédit, rien, nul",
   "Nom masculin",
   "ἀπό  et  ἐλέγχω"
@@ -11022,7 +11022,7 @@ lemme={
   "ἐκ  et 'eimi' (aller)"
  ],
  "ἐξελέγχω": [
-  "réprimander hors",
+  "réfuter à l'excès",
   "faire rendre compte, prouver qu'une chose est fausse, condamner",
   "Verbe",
   "ἐκ  et  ἐλέγχω"
@@ -20587,10 +20587,10 @@ lemme={
   "Affinité incertaine"
  ],
  "νεωκόρος": [
-  "néocore",
-  "néocore, celui qui a charge d'un temple, le garde et le décore, un sacristain.  l'adorateur d'une divinité   c'était un titre honoraire dans certaines cités (gardien du temple) spécialement en Asie Mineure. Dans ces cités on adorait une divinité, et certaines règles d'adoration avaient été établies par les hommes ;  utilisé pour Ephèse",
-  "Nom masculin",
-  "Vient d'une forme de  ναός  et 'koreo' (balayer)"
+  "templière-balayeuse",
+  "néocore, templière-balayeuse, celui qui a charge d'un temple, le garde et le décore, un sacristain.  l'adorateur d'une divinité   c'était un titre honoraire dans certaines cités (gardien du temple) spécialement en Asie Mineure. Dans ces cités on adorait une divinité, et certaines règles d'adoration avaient été établies par les hommes ;  utilisé pour Ephèse",
+  "Nom masculin / féminin",
+  "ναός νεώς κορέω (balayer)"
  ],
  "νεωτερικός": [
   "plus jeuniques",
