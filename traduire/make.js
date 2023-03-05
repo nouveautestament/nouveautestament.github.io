@@ -904,7 +904,7 @@ else
 
 
 
-		else if ( lemma == 'διά')
+		else if (lemma == 'διά')
 		{
 		if (morph.includes('génitif'))
 		{
@@ -920,7 +920,7 @@ else
 
 
 		//de haut en bas, contre, selon
-		else if ( lemma == 'κατά')
+		else if (lemma == 'κατά')
 		{
 
 		if (morph.includes('accusatif'))
@@ -941,7 +941,7 @@ else
 
 
 		//au-delà, avec
-		else if ( lemma == 'μετά')
+		else if (lemma == 'μετά')
 		{
 
 		if (morph.includes('accusatif'))
@@ -955,6 +955,23 @@ else
 		else
 		console.log('NO MORPH --->'+morph+' '+lemma);
 		}
+
+	
+		//sous, sous l'effet
+		else if (lemma == 'ὑπό')
+		{
+		if (morph.includes('accusatif'))
+		{
+		fr = fr[0].replace(/^ | $/,'');
+		}
+		else if (morph.includes('génitif'))
+		{
+		fr = fr[1].replace(/^ | $/,'');
+		}
+		else
+		console.log('NO MORPH --->'+morph+' '+lemma);
+		}
+
 
 
 		else if ( lemma == 'καί')

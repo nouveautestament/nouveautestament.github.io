@@ -31135,10 +31135,10 @@ lemme={
   "primaire (peut-être parent de  ὑπό  à travers l'idée d'apaisement)"
  ],
  "ὑπό": [
-  "sous",
-  "sous, sous, par",
+  "sous, sous l'effet",
+  "sous, sous l'effet, par",
   "Préposition",
-  "Une préposition primaire"
+  "préposition primaire"
  ],
  "ὑποβάλλω": [
   "jeter sous",
