@@ -1,5 +1,6 @@
-<h2>ΚΑΙΝΗ ΔΙΑΘΗΚΗ</h2>
-<h2>NOUVELLE DISPOSITION</h2>
+ΚΑΙΝΗ ΔΙΑΘΗΚΗ
+<br>
+NOUVELLE DISPOSITION
 
 https://nouveautestament.github.io
 
