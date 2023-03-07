@@ -5832,8 +5832,8 @@ lemme={
   "Peut-être une forme populaire de  πέραν  [Peroea, c'est à dire la région au delà de la côte]"
  ],
  "Βεροιαῖος": [
-  "de Bérée",
-  "de Bérée, un habitant de Bérée",
+  "Béréen",
+  "Béréen, Béroéen, de Béroea, de Bérée, un habitant de Bérée",
   "Adjectif",
   "Βέροια"
  ],
@@ -6372,8 +6372,8 @@ lemme={
   "γάζα  et  φυλακή"
  ],
  "Γάϊος": [
-  "Gaïos",
-  "Gaios, Gaïus (de Corinthe) , Gaïus (de Macédoine) , Gaïus (de Derbe) , Gaïus (un Chrétien), Gaïus = \"seigneur\"   un Macédonien qui accompagna Paul dans ses voyages.  un homme de Derbe qui vint avec Paul depuis Corinthe lors de son dernier voyage à Jérusalem.  un homme de Corinthe qui reçut Paul lors de son second séjour dans cette ville.  un Chrétien inconnu à qui la troisième épître de Jean est adressée",
+  "Gaïus",
+  "Gaïos, Gaïus (de Corinthe) , Gaïus (de Macédoine) , Gaïus (de Derbe) , Gaïus (un Chrétien), Gaïus = \"seigneur\"   un Macédonien qui accompagna Paul dans ses voyages.  un homme de Derbe qui vint avec Paul depuis Corinthe lors de son dernier voyage à Jérusalem.  un homme de Corinthe qui reçut Paul lors de son second séjour dans cette ville.  un Chrétien inconnu à qui la troisième épître de Jean est adressée",
   "Nom propre masculin",
   "D'origine latine"
  ],
@@ -11562,10 +11562,10 @@ lemme={
   "ἐπί  et  βοάω"
  ],
  "ἐπιβουλή": [
-  "complot, complots, complot, complots",
-  "embûches , complot, un projet formé contre quelqu'un, un complot, une intrigue",
+  "sur-dessein, sur-desseins, sur-dessein, sur-desseins",
+  "sur-dessein, embûches , complot, projet formé contre quelqu'un, intrigue",
   "Nom féminin",
-  "Vient du composé présumé de  ἐπί  et  βούλομαι"
+  "ἐπί βουλή βούλομαι"
  ],
  "ἐπιγαμβρεύω": [
   "épouser",
@@ -13026,8 +13026,8 @@ lemme={
   "εὖ  et d'un dérivé de  τροπή  (du sens de bien tourné, c'est à dire avec répartie, badin)"
  ],
  "Εὔτυχος": [
-  "Eutuchos",
-  "Eutuchos, Eutuchos = \"heureux, fortuné\"   jeune homme ressuscité par Paul",
+  "Eutychos",
+  "Eutychos, Eutuchos = \"heureux, fortuné\"   jeune homme ressuscité par Paul",
   "Nom propre masculin",
   "εὖ  et d'un dérivé de  τυγχάνω"
  ],
@@ -19981,7 +19981,7 @@ lemme={
   "μισθόω"
  ],
  "Μιτυλήνη": [
-  "Mytilène",
+  "Mitylène",
   "Mytilène, Mytilène = \"mutilée\"   ville entre Assos et Chios, capitale de l'île grecque appelée autrefois Lesbos, dans la mer Egée. De nos jours c'est l'île entière qui s'appelle Mytilène",
   "Nom propre locatif",
   "Pour 'mutilene' (abondant en coquillages)"
@@ -27043,7 +27043,7 @@ lemme={
   "Apparemment un verbe primaire"
  ],
  "Σεκοῦνδος": [
-  "Sekoundos",
+  "Secundus",
   "Sekoundos, Sekoundos, Second = \"le deuxième\"   un Chrétien Thessalonicien",
   "Nom propre masculin",
   "D'origine latine"
