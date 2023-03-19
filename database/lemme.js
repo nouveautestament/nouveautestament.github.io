@@ -14299,7 +14299,7 @@ lemme={
  ],
  "θυμός": [
   "fureur, fureurs",
-  "souffle colérique, passion, chaleur, colère immédiate, bouillante et qui subsiste.  chaleur, ardeur, le vin de la passion, le vin qui enflamme, qui conduit le buveur à la folie",
+  "fureur, ardeur, humeur, thymie, souffle colérique, passion, chaleur, colère immédiate, bouillante et qui subsiste.  chaleur, le vin de la passion, le vin qui enflamme, qui conduit le buveur à la folie",
   "Nom masculin",
   "θύω"
  ],
