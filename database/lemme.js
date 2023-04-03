@@ -25951,7 +25951,7 @@ lemme={
   "πρό  et  φθάνω"
  ],
  "προχειρίζομαι": [
-  "mainmettre en avant",
+  "mainmettre d'avance",
   "mainmettre en avant, destiner, établir, remettre dans les mains d'avance.  prendre dans les mains.  déterminer.  choisir, désigner, nommer.   pour un usage.  pour le salut",
   "Verbe",
   "πρό  et d'un dérivé de  χείρ"
