@@ -1866,8 +1866,8 @@ lemme={
   "Préposition et adverbe primaire"
  ],
  "ἀναβαθμός": [
-  "degrés",
-  "degrés, une montée.  un moyen pour monter, des marches, des degrés",
+  "degrés-montants",
+  "degrés-montants, une montée, un moyen pour monter, des marches, des degrés, des escaliers",
   "Nom masculin",
   "ἀναβαίνω  [cf βαθμός]"
  ],
@@ -28123,7 +28123,7 @@ lemme={
   "στρατιά  et  λέγω  (dans son sens originel)"
  ],
  "στρατοπεδάρχης": [
-  "commandant d'armée",
+  "chef de camps d'armées de soldats",
   "commandant d'armée, le commandant d'un camp et d'une armée, un tribun militaire.  préfet Prétorien, commandant des cohortes prétoriennes, capitaine du corps de garde de l'empereur romain. Il y avait deux préfets prétoriens, qui avaient en charge les prisonniers en détention envoyés à l'empereur",
   "Nom masculin",
   "στρατόπεδον  et  ἄρχω"
@@ -32623,7 +32623,7 @@ lemme={
   "χίλιοι"
  ],
  "χιλίαρχος": [
-  "chiliarque, chiliarques",
+  "chef de mille, chefs de mille",
   "chiliarque, commandant de mille, un chiliarque, le commandant d'un millier de soldats.  le commandant d'une cohorte Romaine (un tribunal militaire), un tribun.  tout chef militaire",
   "Nom masculin",
   "χίλιοι  et  ἄρχω"
