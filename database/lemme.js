@@ -7194,8 +7194,8 @@ lemme={
   "Vient probablement de drus (un chêne)"
  ],
  "δεξιόλαβος": [
-  "gardes droites",
-  "archers, qui tire de la main droite, un frondeur, un archer, un lanceur de javelot",
+  "prenants droites",
+  "prenants droites, lanciers, archers, qui tire de la main droite, frondeurs, lanceurs de javelots",
   "Nom masculin",
   "δεξιός  et  λαμβάνω"
  ],
@@ -29239,8 +29239,8 @@ lemme={
   "σύν  et  ὠδίνω"
  ],
  "συνωμοσία": [
-  "conspiration",
-  "conspiration, serment commun, un serment fait ensemble.  une conspiration, un complot",
+  "conjuration",
+  "conjuration, juron-ensemble, co-juron, serment commun, un serment fait ensemble.  une conspiration, un complot",
   "Nom féminin",
   "σύν  et  ὀμνύω"
  ],
