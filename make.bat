@@ -31,6 +31,7 @@ echo:
 echo TRS
 echo ===
 cd trs
+echo trs
 node make.js
 cd ..
 
