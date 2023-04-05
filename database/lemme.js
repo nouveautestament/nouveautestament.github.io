@@ -26035,8 +26035,8 @@ lemme={
   "Superlatif contracté de  πρό"
  ],
  "πρωτοστάτης": [
-  "premier à se placer debout",
-  "premier à se placer debout, chef, quelqu'un qui se tient au premier rang.   un meneur, un chef, un champion",
+  "premier à se dresser",
+  "premier à se dresser, premier à se placer debout, chef, quelqu'un qui se tient au premier rang.   un meneur, un chef, un champion",
   "Nom masculin",
   "πρῶτος  et  ἵστημι"
  ],
