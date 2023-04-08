@@ -10212,8 +10212,8 @@ lemme={
   "Affinité incertaine"
  ],
  "ἐμμαίνομαι": [
-  "enrager",
-  "rager,fureur contre, être en rage contre quelqu'un",
+  "délirer en",
+  "délirer en, enrager, fureur contre, être en rage contre quelqu'un",
   "Verbe",
   "ἐν  et  μαίνομαι"
  ],
