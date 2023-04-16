@@ -1188,10 +1188,10 @@ lemme={
   "Vient du même mot que  ἀκριβέστατος"
  ],
  "ἀκριβέστατος": [
-  "plus exacte",
-  "plus exacte, exact, soigneux.  dans une secte stricte : l'interprétation la plus précise et la plus rigoureuse de la loi Mosaïque, l'observation des moindres préceptes de la loi et de la tradition",
-  "Adjectif",
-  "Superlatif de akribes (dérivé du même mot que  ἄκρον )"
+  "très exacte",
+  "très exacte, plus exacte, exact, soigneux.  dans une secte stricte : l'interprétation la plus précise et la plus rigoureuse de la loi Mosaïque, l'observation des moindres préceptes de la loi et de la tradition",
+  "Adjectif Superlatif",
+  "Superlatif de akribes ( dérivé du même mot que  ἄκρον )"
  ],
  "ἀκριβέστερον": [
   "plus exactement",
@@ -4794,9 +4794,9 @@ lemme={
   "D'origine latine"
  ],
  "ἆσσον": [
-  "de près",
-  "de près, près de, proche",
-  "Adverbe",
+  "plus près",
+  "plus près, plus près de, plus proche",
+  "Adverbe Comparatif",
   "ἐγγύς"
  ],
  "Ἄσσος": [
@@ -31765,13 +31765,13 @@ lemme={
   "φίλος  et  ἀνήρ"
  ],
  "φιλανθρωπία": [
-  "amitié de l'humain",
+  "amitié humaine",
   "amitié de l'humain, amour pour le genre humain, bienveillance.  notre mot : philanthropie",
   "Nom féminin",
   "Vient du même as φιλανθρώπως"
  ],
  "φιλανθρώπως": [
-  "en amitié de l'humain",
+  "en humaine amitié",
   "en amitié de l'humain, humainement, avec bonté, avec courtoisie",
   "Adverbe",
   "φίλος  et  ἄνθρωπος"
@@ -33709,8 +33709,8 @@ lemme={
   "εὖ παρεδρεύω εὐπρόσεδρος"
  ],
  "Εὐρακύλων": [
-  "Eurakulon",
-  "Eurakulon, Eurakulon",
+  "Eurakylôn",
+  "Eurakylôn, Eurakylon, Eurakulon, Euraquilon, Euraquillon, Euroaquilo",
   "Nom masculin",
   "Εὐροκλύδων"
  ],
