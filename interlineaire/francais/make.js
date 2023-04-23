@@ -2120,7 +2120,9 @@ fichier	= require('fs');
 
 
 
-nouvelle_disposition     =  fichier.readFileSync('../../database/fr/nouvelle_disposition.txt',      'utf8').replace(/#/g,' ');
+//nouvelle_disposition     =  fichier.readFileSync('../../database/fr/nouvelle_disposition.txt',      'utf8').replace(/#/g,' ');
+
+nouvelle_disposition_s = fichier.readFileSync('../../database/fr/nouvelle_disposition_s.txt',         'utf8');
 alain_dumont      =  fichier.readFileSync('../../database/fr/alain-dumont.txt',      'utf8');
 jacqueline        =  fichier.readFileSync('../../database/fr/jacqueline.txt',        'utf8');
 osty_et_trinquet  =  fichier.readFileSync('../../database/fr/osty-et-trinquet.txt',  'utf8');
@@ -2174,7 +2176,8 @@ nvg               =  fichier.readFileSync('../../database/fr/nvg.txt',          
 
 
 bible = 
-nouvelle_disposition     +
+//nouvelle_disposition     +
+nouvelle_disposition_s     +
 alain_dumont      +
 jacqueline        +
 osty_et_trinquet  +

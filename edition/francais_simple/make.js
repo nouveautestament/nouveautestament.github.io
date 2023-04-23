@@ -120,17 +120,20 @@ css_papier = `
 
 body_html_all	= '';
 
+versetb			= 1;
 chapitreb		= 0;
 livreb			= '';
 
 fs			= require('fs');
 file		= require('fs');
 file2		= require('fs');
+
 result	= fs.readFileSync('nt-manuel-seb-final.txt', 'utf8');
-
 result2 = fs.readFileSync('barnabas.txt', 'utf8');
+result  = result+"\n"+result2
 
-result = result+"\n"+result2
+
+
 
 
 line = result.split(/\r?\n/);
@@ -162,6 +165,19 @@ for (nb=0;nb!=line.length;nb++)
 		chapitre	= lcv_split[1];
 		verset		= lcv_split[2];
 		
+		
+		
+		if (livre != 28)
+			console.log(livre+':'+chapitre+':'+verset+':'+nomdulivre+':1:2023:NOUVELLE_DISPOSITION '+texte)
+		
+		
+		//CHECK NUMBER
+		if (isNaN(verset))
+			console.log(verset+'  '+line[nb])
+		
+		if (isNaN(chapitre))
+			console.log(chapitre+'  '+line[nb])
+		
 		/*
 		livre		= lcv_split[0];
 		chapitre	= lcv_split[1];
@@ -176,12 +192,19 @@ for (nb=0;nb!=line.length;nb++)
 		
 		//console.log(lcv+' '+nb)
 
+		
+		change_li_ch = 0;
+		
+
 		if (livreb != livre)
 		{
 			chapitreb	= 0;
 			if (livreb != '')
 				file2.appendFileSync(livreb+'.html','</body></html>', 'utf8');
 			file2.writeFileSync(livre+'.html',head_html+css_web, 'utf8');
+			
+			change_li_ch = 1;
+			
 		}
 
 
@@ -196,8 +219,23 @@ for (nb=0;nb!=line.length;nb++)
 		{
 			body_html_all	+= '<br><br><div class="chap">'+nomdulivre+' &ensp;'+chapitre+'</div>\n';
 			file2.appendFileSync(livre+'.html','<br><br><div class="chap">'+nomdulivre+' &ensp;'+chapitre+'</div>\n', 'utf8');
+			
+			change_li_ch = 1;
 		}
 
+		
+		
+		//CHECK SUITE NUMBER
+		if (change_li_ch == 0)
+		{
+			piv  = parseInt(verset)
+			pivb = parseInt(versetb)+1
+			
+			if (piv != pivb)
+				console.log(piv +' '+ pivb+' '+line[nb])
+		
+		}
+		
 
 		if (verset.length > 1)
 			verset2 = verset
@@ -214,6 +252,7 @@ for (nb=0;nb!=line.length;nb++)
 
 		livreb		= livre;
 		chapitreb	= chapitre;
+		versetb		= verset;
 	}
 
 
